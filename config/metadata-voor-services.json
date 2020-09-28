@@ -1,0 +1,18 @@
+[
+{
+  "name": "metadata-voor-services-ap",
+  "type": "ap",
+  "eap": "OSLO-metadatavoorservices.eap",
+  "diagram": "OSLO-metadataVoorServices",
+  "template": "metadata-voor-services-ap.j2",
+  "title": "Metadata voor services",
+  "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+  "publication-date": "2020-09-28",
+  "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+  "contributors-file": "stakeholders.csv",
+  "contributors-column": "MijnKolom",
+  "site": "site-skeleton/metadata-voor-services-ap",
+  "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServicesa/issues",
+  "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html"
+}
+]

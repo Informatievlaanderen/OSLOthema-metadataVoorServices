@@ -1,4 +1,4 @@
-# OSLOthema-mijnThema
+# OSLOthema-metadataVoorServices
 
 **_Editors:_**
 - Lees eerst [deze richtlijnen](https://github.com/Informatievlaanderen/OSLO-toolchain/blob/master/doc-user/README.md).
