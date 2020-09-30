@@ -1,0 +1,100 @@
+URI;Klasse/Datatype;Eigenschap (in klasse/datatype)
+http://www.w3.org/2006/vcard/ns#Kind;Contactinfo;
+http://www.w3.org/2006/vcard/ns#hasEmail;;e-mail
+http://www.w3.org/2000/01/rdf-schema#Resource;Endpointbeschrijving;
+;Gebruiksbepaling;
+;Kostprijs;
+;Operationale Beschrijving Service;
+;Release Informatie;
+;Resolutie;
+;Ruimtelijke Begrenzing;
+;Service Beschrijving;
+;;error repons
+;;operatie
+;;query parameters
+;;respons
+;;type
+;Temporele Begrenzing;
+;Toegangsinformatie;
+;Updatefrequentie;
+;Versie;
+http://purl.org/dc/terms/Agent;Agent;
+http://www.w3.org/ns/dcat#Catalog;Catalogus;
+http://purl.org/dc/terms/description;;beschrijving
+http://purl.org/dc/terms/conformsTo;;conform standaard
+;;context bereik
+http://purl.org/dc/terms/identifier;;identificator
+http://purl.org/dc/terms/license;;licentie
+;;status
+http://purl.org/dc/terms/LinguisticSystem;;taal
+http://purl.org/dc/terms/title;;titel
+http://www.w3.org/ns/dcat#record;;record
+http://www.w3.org/ns/dcat#CatalogRecord;Catalogus Record;
+http://purl.org/dc/terms/issued;;aanmaakdatum
+http://purl.org/dc/terms/description;;beschrijving
+http://purl.org/dc/terms/conformsTo;;conform standaard
+;;geldigheidstermijn
+http://purl.org/dc/terms/identifier;;identificator
+http://purl.org/dc/terms/title;;titel
+;;verwijst naar type
+http://purl.org/dc/terms/modified;;wijzigingsdatum
+http://xmlns.com/foaf/0.1/primaryTopic;;hoofdonderwerp
+http://www.w3.org/ns/dcat#Resource;Catalogus Resource;
+;;beheerder
+http://purl.org/dc/terms/creator;;creator
+http://purl.org/dc/terms/publisher;;uitgever
+;;verantwoordelijke
+;Datamodel;
+http://www.w3.org/ns/dcat#DataService;Data Service;
+http://purl.org/dc/terms/description;;beschrijving
+http://www.w3.org/ns/dcat#contactPoint;;contactinformatie
+http://www.w3.org/ns/dcat#endpointDescription;;endpointbeschrijving
+http://www.w3.org/ns/dcat#endpointURL;;endpointURL
+;;gebruiksbepaling
+http://purl.org/dc/terms/identifier;;identificator
+;;operationele beschrijving service
+http://purl.org/dc/terms/spatial;;ruimtelijke begrenzing
+;;status
+http://purl.org/dc/terms/LinguisticSystem;;taal
+;;temporele begrenzing
+http://purl.org/dc/terms/title;;titel
+;;toegangspagina
+;;trefwoord
+;;veiligheidsniveau
+;;versie
+http://www.w3.org/ns/dcat#Dataset;Dataset;
+http://purl.org/dc/terms/description;;beschrijving
+;;datamodel
+;;doel
+;;niveau
+;;release informatie
+;;resolutie
+;;status
+http://purl.org/dc/terms/LinguisticSystem;;taal
+http://www.w3.org/ns/dcat#theme;;thema
+http://purl.org/dc/terms/title;;titel
+;;toegangsinformatie
+;;updatefrequentie
+http://purl.org/dc/terms/modified;;wijzigingsdatum
+http://www.w3.org/ns/dcat#distribution;;distributie
+http://www.w3.org/ns/dcat#Distribution;Distributie;
+http://purl.org/dc/terms/description;;beschrijving
+;;checksum
+http://www.w3.org/ns/dcat#downloadURL;;downloadURL
+;;kostprijs
+http://purl.org/dc/terms/license;;licentie
+;;overdrachtopties
+http://purl.org/dc/terms/title;;titel
+http://www.w3.org/ns/dcat#accessURL;;toegangsURL
+;Doel;
+http://purl.org/dc/terms/LicenseDocument;Licentie Document;
+;Niveau;
+http://purl.org/dc/terms/Standard;Standaard;
+;Type;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
