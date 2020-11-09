@@ -2,7 +2,7 @@
 {
   "name": "metadata-voor-services-ap",
   "type": "ap",
-  "eap": "OSLO-metadatavoorservices.eap",
+  "eap": "OSLO-metadatavoorservices-reduced.eap",
   "diagram": "OSLO-metadataVoorServices",
   "template": "metadata-voor-services-ap.j2",
   "title": "Metadata voor services",
