@@ -2,33 +2,33 @@ Voornaam;Naam;Affiliatie;E-mail;Website;metadata-dcat;
 AuteurVoornaam;AuteurNaam;AuteurAffiliatie;auteurvoornaam.auteurnaam@auteurdomein;https://auteurwebsiteurl;A;
 EditorVoornaam;EditorNaam;EditorAffiliatie;editorvoornaam.editornaam@editordomein;https://editorwebsiteurl;E;
 MedewerkerVoornaam;MedewerkerNaam;MedewerkerAffiliatie;medewerkervoornaam.medewerkernaam@medewerkerdomein;https://medewerkerwebsiteurl;C;
-Geraldine;Nolf;Informatie Vlaanderen;;;A
-Bert;Van Nuffelen;Informatie Vlaanderen;;;E
-Martin;Vanbrabant;Informatie Vlaanderen;;;E
-Alex; Tavernier;ABB;;;C
-An;Heirman;GIM
-Bert;Van Kets;Informatie Vlaanderen;;;C
-Chrisophe;Borry;Fluvius;;;C
-Chrysoula;Logara;Smals;;;C
-Cor;;RIVM;;;C
-Dirk;De Baere;Informatie Vlaanderen;;;C
-Dries;Vlaeminck;Fluvius;;;C
-Dwight; Van Lancker;Informatie Vlaanderen;;;C
-Eline;Deweirdt;Informatie Vlaanderen;;;C
-Floris;Zuallaert;Werkplaats Immaterieel Erfgoed;;;C
-Frédéric;Hennequin;Informatie Vlaanderen;;;C
-Geert;Van Haute;DIDM/Departement Omgeving;;;C
-Gustaaf;Vandeboel;GIM;;;C
-Henk;Vanderstraeten;Informatie Vlaanderen;;;C
-Laurian;Van Maldeghem;VLIZ - Vlaams Instituut voor de zee;;;C
-Loes;Deventer;Informatie Vlaanderen;;;C
-Marleen;Van Damme;Departement Omgeving;;;C
-Mathias;De Schrijver;Informatie Vlaanderen;;;C
-Matthias;Ghijs;Digipolis;;;C
-Odette;Buntix;MOW;;;C
-Pieter;Heyvaert;Universiteit Gent;;;C
-SarahlBlomme;Informatie Vlaanderen;;;C
-Tim;Coninx;De Lijn;;;C
-Tom;Van Haute;Informatie Vlaanderen;;;C
-Willem;Van Hoecke;Cipal Schaubroeck;;;C
-Wim;Joostens;Informatie Vlaanderen;;;C
+Geraldine;Nolf;Informatie Vlaanderen;;;A;
+Bert;Van Nuffelen;Informatie Vlaanderen;;;E;
+Martin;Vanbrabant;Informatie Vlaanderen;;;E;
+Alex; Tavernier;ABB;;;C;
+An;Heirman;GIM;;;C;
+Bert;Van Kets;Informatie Vlaanderen;;;C;
+Chrisophe;Borry;Fluvius;;;C;
+Chrysoula;Logara;Smals;;;C;
+Cor;;RIVM;;;C;
+Dirk;De Baere;Informatie Vlaanderen;;;C;
+Dries;Vlaeminck;Fluvius;;;C;
+Dwight; Van Lancker;Informatie Vlaanderen;;;C;
+Eline;Deweirdt;Informatie Vlaanderen;;;C;
+Floris;Zuallaert;Werkplaats Immaterieel Erfgoed;;;C;
+Frédéric;Hennequin;Informatie Vlaanderen;;;C;
+Geert;Van Haute;DIDM/Departement Omgeving;;;C;
+Gustaaf;Vandeboel;GIM;;;C;
+Henk;Vanderstraeten;Informatie Vlaanderen;;;C;
+Laurian;Van Maldeghem;VLIZ - Vlaams Instituut voor de zee;;;C;
+Loes;Deventer;Informatie Vlaanderen;;;C;
+Marleen;Van Damme;Departement Omgeving;;;C;
+Mathias;De Schrijver;Informatie Vlaanderen;;;C;
+Matthias;Ghijs;Digipolis;;;C;
+Odette;Buntix;MOW;;;C;
+Pieter;Heyvaert;Universiteit Gent;;;C;
+SarahlBlomme;Informatie Vlaanderen;;;C;
+Tim;Coninx;De Lijn;;;C;
+Tom;Van Haute;Informatie Vlaanderen;;;C;
+Willem;Van Hoecke;Cipal Schaubroeck;;;C;
+Wim;Joostens;Informatie Vlaanderen;;;C;
