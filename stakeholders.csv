@@ -1,7 +1,4 @@
 Voornaam;Naam;Affiliatie;E-mail;Website;metadata-dcat;
-AuteurVoornaam;AuteurNaam;AuteurAffiliatie;auteurvoornaam.auteurnaam@auteurdomein;https://auteurwebsiteurl;A;
-EditorVoornaam;EditorNaam;EditorAffiliatie;editorvoornaam.editornaam@editordomein;https://editorwebsiteurl;E;
-MedewerkerVoornaam;MedewerkerNaam;MedewerkerAffiliatie;medewerkervoornaam.medewerkernaam@medewerkerdomein;https://medewerkerwebsiteurl;C;
 Geraldine;Nolf;Informatie Vlaanderen;;;A;
 Bert;Van Nuffelen;Informatie Vlaanderen;;;E;
 Martin;Vanbrabant;Informatie Vlaanderen;;;E;
