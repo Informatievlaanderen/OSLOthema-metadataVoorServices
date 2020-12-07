@@ -10,7 +10,7 @@
   "publication-date": "2020-10-07",
   "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
   "contributors-file": "stakeholders.csv",
-  "contributors-column": "MijnKolom",
+  "contributors-column": "metadata-dcat",
   "site": "site-skeleton/metadata-voor-services-ap",
   "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServicesa/issues",
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/standaarden-in-ontwikkeling/metadata-voor-services/index.html"
