@@ -12,7 +12,7 @@
   "contributors-file": "stakeholders.csv",
   "contributors-column": "metadata-dcat",
   "site": "site-skeleton/metadata-voor-services-ap",
-  "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServicesa/issues",
+  "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices/issues",
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/standaarden-in-ontwikkeling/metadata-voor-services/index.html"
 }
 ]
