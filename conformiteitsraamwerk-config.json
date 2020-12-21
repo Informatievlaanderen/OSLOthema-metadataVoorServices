@@ -1,0 +1,31 @@
+{
+  "naam": "Conformiteitsraamwerk voor data standaarden",
+  "rapport" : "",
+  "verantwoordelijke_organisatie": "Agentschap Informatie Vlaanderen",
+  "identificator_organisatie": "http://data.vlaanderen.be/id/organisatie/OVO002949",
+  "publicatiedatum": "TBD",
+  "type_toepassing": "TBD",
+  "categorie": "Standaard voor technische interoperabiliteit",
+  "beschrijving" : "conformiteitsraamwerk.md",
+  "specificatiedocument": [
+    {
+      "naam": "Draft conformiteitsraamwerk",
+      "waarde": "OSLO Conformiteitsraamwerk v1.00_DRAFT.pdf"
+    }
+  ],
+  "documentatie": [],
+  "charter": [ ],
+  "verslagen": [  ],
+  "presentaties": [
+    {
+      "naam" : "Presentatie workshop - 30 november 2020",
+      "waarde" : "OSLO Conformiteitsraamwerk v1.00_DRAFT.pdf"
+    }
+  ],
+  "functioneel_toepassingsgebied": "Conformiteitsraamwerk voor data standaarden in Vlaanderen",
+  "organisatorisch_werkingsgebied": "Alle entiteiten van de Vlaamse overheid",
+  "datum_van_aanmelding": "TBD",
+  "erkenning_werkgroep_datastandaarden": "TBD",
+  "erkenning_stuurgroep": "TBD",
+  "register": "https://overheid.vlaanderen.be/opleiding/publieke-werkgroepen-oslo-metadatastandaard-voor-services"
+}
