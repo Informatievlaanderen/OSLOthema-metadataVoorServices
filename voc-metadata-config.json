@@ -1,0 +1,70 @@
+{
+  "naam": "Vocabularium metadata voor services",
+  "rapport": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Generated/test/report/doc/vocabularium/metadata-dcat/kandidaatstandaard/2020-12-14/all-metadata-dcat.jsonld",
+  "verantwoordelijke_organisatie": "Agentschap Informatie Vlaanderen",
+  "identificator_organisatie": "http://data.vlaanderen.be/id/organisatie/OVO002949",
+  "publicatiedatum": "2020-12-14",
+  "type_toepassing": "TBD",
+  "categorie": "Vocabularia en applicatieprofielen",
+  "beschrijving": "metadata.md",
+  "specificatiedocument": [
+    {
+      "naam": "Vocabularium Kandidaat Standaard",
+      "waarde": "https://test.data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/"
+    }
+  ],
+  "documentatie": [],
+  "charter": [
+    {
+      "naam": "Charter",
+      "waarde": "Werkgroep-charter-OSLO-metadatastandaard-voor-services.pdf"
+    }
+  ],
+  "verslagen": [
+    {
+      "waarde": "20200903 - OSLO Metadata voor services - Business Werkgroep - Verslag.pdf",
+      "naam": "Verslag business werkgroep - 3 september 2020"
+    },
+    {
+      "waarde": "20200922 - OSLO Metadata voor services - Thematische werkgroep 1 - Verslag.pdf",
+      "naam": "Verslag thematische werkgroep 1 - 22 september 2020"
+    },
+    {
+      "waarde": "Verwerking thematische werkgroep 1.pdf",
+      "naam": "Verwerking thematische werkgroep 1"
+    },
+    {
+      "waarde": "20201013 - OSLO Metadata voor services - Thematische werkgroep 2 - Verslag.pdf",
+      "naam": "Verslag thematische werkgroep 2 - 13 oktober 2020"
+    },
+    {
+      "waarde": "Verwerking thematische werkgroep 2.pdf",
+      "naam": "Verwerking thematische werkgroep 2"
+    }
+  ],
+  "presentaties": [
+    {
+      "waarde": "20200903 - OSLO Metadata voor services - Business Werkgroep - Presentatie.pdf",
+      "naam": "Presentatie business werkgroep - 3 september 2020<"
+    },
+    {
+      "waarde": "20200922 - OSLO Metadata voor services - Thematische Werkgroep 1 - Presentatie.pdf",
+      "naam": "Presentatie thematische werkgroep 1 - 22 september 2020"
+    },
+    {
+      "waarde": "20201013 - OSLO Metadata voor services - Thematische Werkgroep 2 - Presentatie.pdf",
+      "naam": "Presentatie thematische werkgroep 2 - 13 oktober 2020"
+    },
+    {
+      "waarde": "20201110 - OSLO Metadata voor services - Thematische Werkgroep 3 - Presentatie.pdf",
+      "naam": "Presentatie thematische werkgroep 3 - 10 november 2020"
+    }
+  ],
+  "functioneel_toepassingsgebied": "Semantische standaard voor metadata van services",
+  "organisatorisch_werkingsgebied": "Alle entiteiten van de Vlaamse overheid",
+  "datum_van_aanmelding": "TBD",
+  "datum_van_review": "van 2020-12-14 tot 2021-02-12",
+  "erkenning_werkgroep_datastandaarden": "TBD",
+  "erkenning_stuurgroep": "TBD",
+  "register": "https://overheid.vlaanderen.be/opleiding/publieke-werkgroepen-oslo-metadatastandaard-voor-services"
+}
