@@ -9,7 +9,7 @@
   "beschrijving": "metadata.md",
   "specificatiedocument": [
     {
-      "naam": "Vocabularium Kandidaat Standaard",
+      "naam": "Applicatieprofiel Kandidaat Standaard",
       "waarde": "https://test.data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/"
     }
   ],
@@ -17,7 +17,7 @@
   "charter": [
     {
       "naam": "Charter",
-      "waarde": "Werkgroep-charter-OSLO-metadatastandaard-voor-services.pdf"
+      "waarde": "Werkgroep charter OSLO metadatastandaard voor services.pdf"
     }
   ],
   "verslagen": [
@@ -40,6 +40,14 @@
     {
       "waarde": "Verwerking thematische werkgroep 2.pdf",
       "naam": "Verwerking thematische werkgroep 2"
+    },
+    {
+      "waarde": "20201110 - OSLO Metadata voor services - Thematische werkgroep 3 - Verslag.pdf",
+      "naam": "Verslag thematische werkgroep 3 - 10 november 2020"
+    },
+    {
+      "waarde": "20201207 - OSLO Metadata voor services - Plenaire sessie - Verslag.pdf",
+      "naam": "Verslag plenaire sessie - 7 december 2020"
     }
   ],
   "presentaties": [
@@ -58,6 +66,10 @@
     {
       "waarde": "20201110 - OSLO Metadata voor services - Thematische Werkgroep 3 - Presentatie.pdf",
       "naam": "Presentatie thematische werkgroep 3 - 10 november 2020"
+    },
+    {
+      "waarde": "20201207 - OSLO Metadata voor services - Plenaire sessie - Presentatie.pdf",
+      "naam": "Presentatie plenaire sessie - 7 december 2020"
     }
   ],
   "functioneel_toepassingsgebied": "Semantische standaard voor metadata van services",
