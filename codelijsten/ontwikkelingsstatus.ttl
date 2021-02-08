@@ -18,7 +18,7 @@
     a skos:Concept ;
     skos:definition "team test omgeving met automatische integratie testen en manuele functionele testen." ;
     skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/ontwikkelingsstatus> ;
-    skos:prefLabel "development" ;
+    skos:prefLabel "test" ;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/ontwikkelingsstatus> .
 
 
@@ -26,7 +26,7 @@
     a skos:Concept ;
     skos:definition "test omgeving voor integratietesten met andere teams/partijen. vb: end-to end testen van componenten die reeds in hun eigen TEST omgeving getest zijn met mock data/interfaces." ;
     skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/ontwikkelingsstatus> ;
-    skos:prefLabel "development" ;
+    skos:prefLabel "beta" ;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/ontwikkelingsstatus> .
 
 
@@ -34,7 +34,7 @@
     a skos:Concept ;
     skos:definition "Stabiele omgeving, waar code gedeployed wordt NA succesvolle integratie testen op BETA. Kan dienst doen als demo omgeving, indien meerdere partijen met elkaar moeten integreren (vb: T&I versies van Magda en ACM/IDM)" ;
     skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/ontwikkelingsstatus> ;
-    skos:prefLabel "development" ;
+    skos:prefLabel "tni" ;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/ontwikkelingsstatus> .
 
 
@@ -42,12 +42,12 @@
     a skos:Concept ;
     skos:definition "Mirror van productie omgeving, uat voor hotfix." ;
     skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/ontwikkelingsstatus> ;
-    skos:prefLabel "development" ;
+    skos:prefLabel "staging" ;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/ontwikkelingsstatus> .
 
 <https://data.vlaanderen.be/id/concept/ontwikkelingsstatus/PROD>
     a skos:Concept ;
     skos:definition "Live omgeving" ;
     skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/ontwikkelingsstatus> ;
-    skos:prefLabel "development" ;
+    skos:prefLabel "productie" ;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/ontwikkelingsstatus> .
