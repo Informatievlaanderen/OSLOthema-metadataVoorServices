@@ -1,0 +1,15 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://data.vlaanderen.be/id/conceptscheme/ontwikkelingsstatus>
+    a skos:ConceptScheme ;
+    skos:prefLabel "conceptscheme ontwikkelingsstatus" ;
+    skos:definition "Codelijst voor de ontwikkelingstoestand van een softwareomgeving aan te duiden." .
+
+<https://data.vlaanderen.be/id/concept/ontwikkelingsstatus/DEV>
+    a skos:Concept ;
+    skos:definition "Persoonlijke ontwikkel omgeving" ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/ontwikkelingsstatus> ;
+    skos:prefLabel "development" ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/ontwikkelingsstatus> .
+
