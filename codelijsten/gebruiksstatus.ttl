@@ -28,11 +28,11 @@
     skos:prefLabel "sunset" ;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> .
    
-<https://data.vlaanderen.be/id/concept/gebruiksstatus/desprecated>
+<https://data.vlaanderen.be/id/concept/gebruiksstatus/deprecated>
     a skos:Concept ;
     skos:definition "De service is nog beschikbaar maar is nog slechts beschikbaar om de overstap te vergemakkelijken naar een levensfase. Geen nieuwe aansluitingen zijn mogelijk. " ;
     skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
-    skos:prefLabel "sunset" ;
+    skos:prefLabel "deprecated" ;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> .
     
     
