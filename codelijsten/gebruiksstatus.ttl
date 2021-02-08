@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus>
+    a skos:ConceptScheme ;
+    skos:prefLabel "conceptscheme gebruiksstatus" ;
+    skos:definition "Codelijst voor de gebruikstoestand van een software service  aan te duiden." .
+
+<https://data.vlaanderen.be/id/concept/gebruiksstatus/design>
+    a skos:Concept ;
+    skos:definition "De service is in ontwerp/in ontwikkeling. Veranderingen kunnen dus snel en ontverwacht gebeuren. " ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
+    skos:prefLabel "design" ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> .
+    
+    
+<https://data.vlaanderen.be/id/concept/gebruiksstatus/live>
+    a skos:Concept ;
+    skos:definition "De service is in actief gebruik. Stabiliteit wordt nagestreefd " ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
+    skos:prefLabel "live" ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> .
+    
+ <https://data.vlaanderen.be/id/concept/gebruiksstatus/sunset>
+    a skos:Concept ;
+    skos:definition "De service is zijn laatste levensfase. Geen veranderingen meer verwacht, uitgezonderd van belangrijke (security) patches. " ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
+    skos:prefLabel "sunset" ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> .
+   
+<https://data.vlaanderen.be/id/concept/gebruiksstatus/desprecated>
+    a skos:Concept ;
+    skos:definition "De service is nog beschikbaar maar is nog slechts beschikbaar om de overstap te vergemakkelijken naar een levensfase. Geen nieuwe aansluitingen zijn mogelijk. " ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
+    skos:prefLabel "sunset" ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> .
+    
+    
