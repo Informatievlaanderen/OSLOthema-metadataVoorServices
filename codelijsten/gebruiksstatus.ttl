@@ -10,7 +10,7 @@
     a skos:Concept ;
     skos:definition "De service is in ontwerp/in ontwikkeling. Veranderingen kunnen dus snel en ontverwacht gebeuren. " ;
     skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
-    skos:prefLabel "design" ;
+    skos:prefLabel "in ontwikkeling" ;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> .
     
     
@@ -25,14 +25,14 @@
     a skos:Concept ;
     skos:definition "De service is zijn laatste levensfase. Geen veranderingen meer verwacht, uitgezonderd van belangrijke (security) patches. " ;
     skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
-    skos:prefLabel "sunset" ;
+    skos:prefLabel "in uitfasering" ;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> .
    
 <https://data.vlaanderen.be/id/concept/gebruiksstatus/deprecated>
     a skos:Concept ;
     skos:definition "De service is nog beschikbaar maar is nog slechts beschikbaar om de overstap te vergemakkelijken naar een levensfase. Geen nieuwe aansluitingen zijn mogelijk. " ;
     skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
-    skos:prefLabel "deprecated" ;
+    skos:prefLabel "offline" ;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> .
     
     
