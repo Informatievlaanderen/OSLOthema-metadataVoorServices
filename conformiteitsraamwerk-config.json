@@ -1,12 +1,12 @@
 {
   "naam": "Conformiteitsraamwerk voor data standaarden",
-  "rapport" : "",
+  "rapport": "",
   "verantwoordelijke_organisatie": "Agentschap Informatie Vlaanderen",
   "identificator_organisatie": "http://data.vlaanderen.be/id/organisatie/OVO002949",
   "publicatiedatum": "TBD",
   "type_toepassing": "TBD",
   "categorie": "Standaard voor technische interoperabiliteit",
-  "beschrijving" : "conformiteitsraamwerk.md",
+  "beschrijving": "conformiteitsraamwerk.md",
   "specificatiedocument": [
     {
       "naam": "Draft conformiteitsraamwerk",
@@ -14,12 +14,17 @@
     }
   ],
   "documentatie": [],
-  "charter": [ ],
-  "verslagen": [  ],
+  "charter": [],
+  "verslagen": [
+    {
+      "naam": "Verslag workshop - 30 november 2020",
+      "waarde": "Verslag werkgroep OSLO conformiteit.pdf"
+    }
+  ],
   "presentaties": [
     {
-      "naam" : "Presentatie workshop - 30 november 2020",
-      "waarde" : "20201130 Workshop conformiteitsraamwerk.pdf"
+      "naam": "Presentatie workshop - 30 november 2020",
+      "waarde": "20201130 Workshop conformiteitsraamwerk.pdf"
     }
   ],
   "functioneel_toepassingsgebied": "Conformiteitsraamwerk voor data standaarden in Vlaanderen",
