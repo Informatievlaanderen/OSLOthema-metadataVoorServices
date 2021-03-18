@@ -1,6 +1,6 @@
 {
   "naam": "Applicatieprofiel metadata DCAT",
-  "rapport": "https://raw.githubusercontent.com/Informatievlaanderen/OSLO-Generated/test/report/doc/applicatieprofiel/metadata-voor-services/ontwerpstandaard/2020-11-10/all-metadata-voor-services-ap.jsonld",
+  "rapport": "https://github.com/Informatievlaanderen/OSLO-Generated/raw/test/report/doc/applicatieprofiel/metadata-dcat/kandidaatstandaard/2021-03-04/all-metadata-voor-services-ap.jsonld",
   "verantwoordelijke_organisatie": "Agentschap Informatie Vlaanderen",
   "identificator_organisatie": "http://data.vlaanderen.be/id/organisatie/OVO002949",
   "publicatiedatum": "2021-03-23",
