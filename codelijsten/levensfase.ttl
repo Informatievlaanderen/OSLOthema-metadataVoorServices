@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://data.vlaanderen.be/id/conceptscheme/levensfase>
+    a skos:ConceptScheme ;
+    skos:prefLabel "conceptscheme gebruiksstatus" ;
+    skos:definition "Codelijst voor de levensfase waarin de dataservice zich bevindt." .
+
+<https://data.vlaanderen.be/id/concept/levensfase/design>
+    a skos:Concept ;
+    skos:definition "De service is in ontwerp/in ontwikkeling. Veranderingen kunnen dus snel en onverwacht gebeuren. " ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/gebruiksstatus> ;
+    skos:prefLabel "in ontwikkeling" ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/levensfase> .
+    
+    
+<https://data.vlaanderen.be/id/concept/levensfase/live>
+    a skos:Concept ;
+    skos:definition "De service is actief. Stabiliteit wordt nagestreefd. " ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/levensfase> ;
+    skos:prefLabel "live" ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/levensfase> .
+    
+ <https://data.vlaanderen.be/id/concept/levensfase/sunset>
+    a skos:Concept ;
+    skos:definition "De service is in zijn laatste levensfase. Geen veranderingen meer verwacht, uitgezonderd van belangrijke (security) patches. " ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/levensfase> ;
+    skos:prefLabel "in uitfasering" ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/levensfase> .
+   
+<https://data.vlaanderen.be/id/concept/levensfase/deprecated>
+    a skos:Concept ;
+    skos:definition "De service is nog beschikbaar maar is nog slechts beschikbaar om de overstap te vergemakkelijken naar een levensfase. Geen nieuwe aansluitingen zijn mogelijk. " ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/levensfase> ;
+    skos:prefLabel "offline" ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/levensfase> .
+    
+    
