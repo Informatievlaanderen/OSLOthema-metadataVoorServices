@@ -2,7 +2,7 @@
 
 {% block summary %}
 <p>Het applicatieprofiel “metadata dcat”. Dit is een applicatieprofiel gebaseerd op <a href="https://www.w3.org/TR/vocab-dcat-2/">DCAT</a> en richt zich op het verzamelen van informatie over generieke datasets, distributies en services die door een overheid beschikbaar gesteld worden. De datasets en services 
-omvatten zowel publiek toegankelijke als afgeschermde data en diensten (ontwikkeld in en voor eender welk technisch perspectief). Het samenbrengen van al deze informatie in een catalogus laat toe om de vindbaarheid van deze services te verhogen.
+omvatten zowel publiek toegankelijke als afgeschermde data en diensten (ontwikkeld in en voor eender welk technisch perspectief). Het samenbrengen van al deze informatie in een catalogus laat toe om de vindbaarheid van deze datasets en services te verhogen.
 Dit applicatieprofiel is het generieke basisprofiel. Afgeleide profielen kunnen zeker aangemaakt worden voor specifieke domeinen of communities. Bijvoorbeeld is DCAT-AP-VL zo’n afgeleid applicatieprofiel, specifiek voor het Open data domein en bijhorende community. 
 </p>
 
@@ -69,17 +69,17 @@ Dikwijls zal die informatie via een andere eigenschap, via een toegangspagina, t
 <p/>
 <h3 class="h3">Service beschrijving en de payload beschrijving</h3>
 <p>
-Indien een data service beschreven wordt dan is er meestal ook de noodzaak om informatie te geven over de data die ontsloten wordt via de dataservice. Om dit onderscheid eenduidig vast te leggen wordt de volgende ontwerpbeslissing gevolgd. Eigenschappen die rechtstreeks te maken hebben met de dataservice zijn eigenschappen van de dataservice. Eigenschappen die slaan op de ontsloten data zijn eigenschappen van de verbonden aangeboden dataset (of datasets). Bijvoorbeeld, de eigenschap taal voor een dataservice: de service kan in het Engels geschreven zijn waarbij deze antwoordt op queries in het Engels, terwijl de data uit de dataset die aangeboden wordt in die dataservice Nederlandstalig is. Echter indien men wil aangeven dat de informatie ontsloten wordt slechts beschikbaar is in het Nederlands, dan wordt dat aan gegeven als waarde voor de taal eigenschap van de aangeboden dataset.  
+Indien een data service beschreven wordt dan is er meestal ook de noodzaak om informatie te geven over de data die ontsloten wordt via de dataservice. Om dit onderscheid eenduidig vast te leggen wordt de volgende ontwerpbeslissing gevolgd. Eigenschappen die rechtstreeks te maken hebben met de dataservice zijn eigenschappen van de dataservice. Eigenschappen die slaan op de ontsloten data zijn eigenschappen van de verbonden aangeboden dataset (of datasets). Bijvoorbeeld, de eigenschap taal voor een dataservice: de service kan in het Engels geschreven zijn waarbij deze antwoordt op queries in het Engels, terwijl de data uit de dataset die aangeboden wordt in die dataservice Nederlandstalig is. Echter indien men wil aangeven dat de informatie ontsloten wordt slechts beschikbaar is in het Nederlands, dan wordt dat aangegeven als waarde voor de taal eigenschap van de aangeboden dataset.  
 </p>
   </div>
 
   <div>
 <p/>
-<h3 class="h3">Onderscheid distributie en dataservice.</h3>
+<h3 class="h3">Onderscheid distributie en dataservice</h3>
 <p>
 In een dagdagelijks gesprek over datasets en hun onsluitingsvormen wordt de term distributie gebruikt in een brede zin. Een distributie is daarin de aanduiding van eender welke vorm van ontsluiting. DCAT heeft ervoor gekozen om een service als een onafhankelijke entiteit op te nemen. Hierdoor ontstaat een spanningsveld tussen de dagdagelijkse terminologie en de formele terminologie van DCAT. Echter zelfs op basis van de definities in DCAT kan men geen precies afgelijnd onderscheid maken tussen een distributie en een dataservice. 
 </p><p>
-Om de catalogusbeheerders in Vlaanderen een uniformere aanpak te geven, wordt het volgende afgesproken. Een distributie zal voornamelijk gebruikt worden om een afgerond geheel van data aan te duiden. Iets dat  downloadbaar is als een file. Een dataset is een abstracte entiteit (een naam voor een geheel aan data); een distributie van de dataset is een concrete vorm die de afnemer van de dataset lokaal kan gebruiken zzonder enige andere systeemtoegang. Een distributie zal dus niet bestaan zonder een dataset. 
+Om de catalogusbeheerders in Vlaanderen een uniformere aanpak te geven, wordt het volgende afgesproken. Een distributie zal voornamelijk gebruikt worden om een afgerond geheel van data aan te duiden. Iets dat  downloadbaar is als een file. Een dataset is een abstracte entiteit (een naam voor een geheel aan data); een distributie van de dataset is een concrete vorm die de afnemer van de dataset lokaal kan gebruiken zonder enige andere systeemtoegang. Een distributie zal dus niet bestaan zonder een dataset. 
 </p><p>
 Alle andere vormen zullen als een dataservice beschreven worden. Een dataservice heeft dikwijls een hoge mate van onafhankelijkheid van een distributie (effectieve data) van een dataset; het kan zelfs niet gebonden zijn aan één dataset. Of het biedt een slimme toegang tot de data (bv. via een query interface).  
 </p>
