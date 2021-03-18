@@ -252,7 +252,7 @@
                   <dl>
                     <dt>Beschrijving</dt><dd>{{ entity.description[language] }}</dd>
                     {% if entity.usage[language] %}
-                    <dt>Gebruik</dt><dd>{{ entity.usage[language] }}</dd>
+                    <dt>Gebruik</dt><dd>{{ entity.usage[language] | safe }}</dd>
                     {% endif %}
 		    {% if ((entity.parents | length) > 0 ) %} 
 		    <dt>Subklasse van <dt><dd>
@@ -306,7 +306,7 @@
                         </td>
                         <td>{{ prop.cardinality }}</td>
                         <td property="rdfs:comment">{{ prop.description[language] }}</td>
-                        <td property="vann:usageNote">{{ prop.usage[language] }}</td>
+                        <td property="vann:usageNote">{{ prop.usage[language] | safe }}</td>
                         <td>{% if prop['codelist_uri'] %}<a href="{{ prop['codelist_uri'] }}">Link</a>{% endif %}</td>
                       </tr>
                     {% endfor %}
@@ -332,7 +332,7 @@
                   <dl>
                     <dt>Beschrijving</dt><dd>{{ entity.description[language] }}</dd>
                     {% if entity.usage[language] %}
-                    <dt>Gebruik</dt><dd>{{ entity.usage[language] }}</dd>
+                    <dt>Gebruik</dt><dd>{{ entity.usage[language] | safe }}</dd>
                     {% endif %}
 		    {% if ((entity.parents | length) > 0 ) %} 
 		    <dt>Subklasse van <dt><dd>
@@ -385,7 +385,7 @@
                         </td>
                         <td>{{ prop['cardinality'] }}</td>
                         <td property="rdfs:comment">{{ prop.description[language] }}</td>
-                        <td property="vann:usageNote">{{ prop.usage[language] }}</td>
+                        <td property="vann:usageNote">{{ prop.usage[language] | safe }}</td>
                         <td>{% if prop['codelist_uri'] %}<a href="{{ prop['codelist_uri'] }}">Link</a>{% endif %}</td>
                       </tr>
                       {% endfor %}
