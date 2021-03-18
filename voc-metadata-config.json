@@ -1,6 +1,6 @@
 {
   "naam": "Vocabularium metadata DCAT",
-  "rapport": "https://github.com/Informatievlaanderen/OSLO-Generated/raw/test/report/doc/vocabularium/metadata-dcat/kandidaatstandaard/2021-03-04/all-metadata-dcat.jsonld",
+  "rapport": "https://github.com/Informatievlaanderen/OSLO-Generated/raw/test/report/doc/vocabularium/metadata-dcat/kandidaatstandaard/2021-03-23/all-metadata-dcat.jsonld",
   "verantwoordelijke_organisatie": "Agentschap Informatie Vlaanderen",
   "identificator_organisatie": "http://data.vlaanderen.be/id/organisatie/OVO002949",
   "publicatiedatum": "2021-03-23",
@@ -70,7 +70,11 @@
     {
       "waarde": "20201207 - OSLO Metadata voor services - Plenaire sessie - Presentatie.pdf",
       "naam": "Presentatie plenaire sessie - 7 december 2020"
-    }
+    },
+    {
+      "waarde": "OSLO_MetadataDCAT_WG_Datastandaarden_20210311.pdf",
+      "naam": "Presentatie WG datastandaarden - 11 maart 2021"
+     }
   ],
   "functioneel_toepassingsgebied": "Semantische standaard voor metadata van catalogi van datasets en data services",
   "organisatorisch_werkingsgebied": "Alle entiteiten van de Vlaamse overheid",

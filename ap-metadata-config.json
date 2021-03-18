@@ -1,6 +1,6 @@
 {
   "naam": "Applicatieprofiel metadata DCAT",
-  "rapport": "https://github.com/Informatievlaanderen/OSLO-Generated/raw/test/report/doc/applicatieprofiel/metadata-dcat/kandidaatstandaard/2021-03-04/all-metadata-voor-services-ap.jsonld",
+  "rapport": "https://github.com/Informatievlaanderen/OSLO-Generated/raw/test/report/doc/applicatieprofiel/metadata-dcat/kandidaatstandaard/2021-03-23/all-metadata-voor-services-ap.jsonld",
   "verantwoordelijke_organisatie": "Agentschap Informatie Vlaanderen",
   "identificator_organisatie": "http://data.vlaanderen.be/id/organisatie/OVO002949",
   "publicatiedatum": "2021-03-23",
@@ -70,13 +70,17 @@
     {
       "waarde": "20201207 - OSLO Metadata voor services - Plenaire sessie - Presentatie.pdf",
       "naam": "Presentatie plenaire sessie - 7 december 2020"
+    },
+    {
+      "waarde": "OSLO_MetadataDCAT_WG_Datastandaarden_20210311.pdf",
+      "naam": "Presentatie WG datastandaarden - 11 maart 2021"
     }
   ],
   "functioneel_toepassingsgebied": "Semantische standaard voor metadata van catalogi van datasets en data services",
   "organisatorisch_werkingsgebied": "Alle entiteiten van de Vlaamse overheid",
   "datum_van_aanmelding": "2020-07-20",
   "datum_van_review": "van 2020-12-14 tot 2021-02-12",
-  "erkenning_werkgroep_datastandaarden": "(voorwaardelijke) 2021-03-11",
+  "erkenning_werkgroep_datastandaarden": "(voorwaardelijk) 2021-03-11",
   "erkenning_stuurgroep": "TBD",
   "register": "https://overheid.vlaanderen.be/opleiding/publieke-werkgroepen-oslo-metadatastandaard-voor-services"
 }
