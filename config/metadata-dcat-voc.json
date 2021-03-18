@@ -7,7 +7,7 @@
   "template": "metadata-dcat-voc.j2",
   "title": "Metadata DCAT",
   "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/KandidaatStandaard",
-  "publication-date": "2020-12-14",
+  "publication-date": "2021-03-23",
   "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
   "contributors-file": "stakeholders.csv",
   "contributors-column": "metadata-dcat",
