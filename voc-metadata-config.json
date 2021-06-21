@@ -3,7 +3,7 @@
   "rapport": "https://github.com/Informatievlaanderen/OSLO-Generated/raw/test/report/doc/vocabularium/metadata-dcat/kandidaatstandaard/2021-03-23/all-metadata-dcat.jsonld",
   "verantwoordelijke_organisatie": "Agentschap Informatie Vlaanderen",
   "identificator_organisatie": "http://data.vlaanderen.be/id/organisatie/OVO002949",
-  "publicatiedatum": "2021-03-23",
+  "publicatiedatum": "2021-04-22",
   "type_toepassing": "aanbevolen (vrijwillig)",
   "categorie": "Vocabularium",
   "beschrijving": "metadata.md",
@@ -80,7 +80,7 @@
   "organisatorisch_werkingsgebied": "Alle entiteiten van de Vlaamse overheid",
   "datum_van_aanmelding": "2021-07-20",
   "datum_van_review": "van 2020-12-14 tot 2021-02-12",
-  "erkenning_werkgroep_datastandaarden": "(voorwaardelijk) 2021-03-11",
-  "erkenning_stuurgroep": "TBD",
+  "erkenning_werkgroep_datastandaarden": "2021-03-11",
+  "erkenning_stuurgroep": "2021-04-22",
   "register": "https://overheid.vlaanderen.be/opleiding/publieke-werkgroepen-oslo-metadatastandaard-voor-services"
 }
