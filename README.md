@@ -5,14 +5,5 @@
 - Gebruik [TagsAndNotes.xlsm](https://github.com/Informatievlaanderen/OSLO-allerleiTooltjes/tree/master/EA-Excel/TagsAndNotes) om gemakkelijk tags te editeren. Bestanden `*.xlsm` worden overigens git-ignored in repo's gemaakt volgens deze template.
 
 
-## Administratieve informatie
-
-### Tags
-Voor de beschikbare git tags om naar te refereren bij het maken van publicaties, zie de "Releases" tab in deze repo.
-
-### Branches
-Overzicht van git branches die niet behoren tot de branches voor fixes die gedocumenteerd werden in de richtlijnen.
-
-| Branch | Bedoeling | Nog actief (j/n) |
-| ------ | --------- | ---------------- | 
-|  |  |  |
+Deze branch omvat de uitbreiding van het metadata DCAT vocabularium op basis van de WG DCAT-AP Vlaanderen. 
+Zie o.a. [issue 8](https://github.com/Informatievlaanderen/OSLOthema-DCATAPVlaanderen/issues/8)
