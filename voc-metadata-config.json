@@ -1,7 +1,7 @@
 {
   "naam": "Vocabularium metadata DCAT",
   "rapport": "https://github.com/Informatievlaanderen/OSLO-Generated/raw/test/report/doc/vocabularium/metadata-dcat/kandidaatstandaard/2021-03-23/all-metadata-dcat.jsonld",
-  "verantwoordelijke_organisatie": "Agentschap Informatie Vlaanderen",
+  "verantwoordelijke_organisatie": "Agentschap Digitaal Vlaanderen",
   "identificator_organisatie": "http://data.vlaanderen.be/id/organisatie/OVO002949",
   "publicatiedatum": "2021-04-22",
   "type_toepassing": "aanbevolen (vrijwillig)",
