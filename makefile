@@ -12,14 +12,14 @@ all: final.csv
 
 %.csv: %.jsonld
 	# Entract the ruleid and the id into a file which sorted on the first key (ruleid)
-	jq '.shapes[]."sh:property"[] | [."vl:rule",."@id"] | join(",")' $< | sed 's/\"//g' | sort -t "," -k 1 > $@
+	jq '.shapes[]."sh:property"[] | [."vl:rule",."@id"] | join(";")' $< | sed 's/\"//g' | sort -t ";" -k 1 > $@
 	# Add the filename as a header for the 2nd column
-	sed -i '1s/.*/,$</' $@
+	sed -i '1s/.*/;$</' $@
 
 	# join the files as needed
 final.csv: ${OUTPUTCSV}
 	cat ${FIRST} > final.csv ; \
-	for f in ${REM}; do join --header -t "," -j 1 final.csv $${f} > tmp.csv; mv tmp.csv final.csv; done
+	for f in ${REM}; do join --header -t ";" -j 1 final.csv $${f} > tmp.csv; mv tmp.csv final.csv; done
 
 clean:
 	rm -rf ${OUTPUTCSV} final.csv tm.csv
