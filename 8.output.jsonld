@@ -2615,7 +2615,8 @@
       "sh:property": [
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/2ea1d293b25f05ec202dd2dcf8924e8518262c91",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusResource%3Astatuut",
+	    "vl:rule" : "zzz1",
+            "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusResource%3Astatuut",
           "sh:definition": {
             "nl": "Een aanduiding van op welke basis de catalogusresource beschikbaar is."
           },
@@ -2626,7 +2627,8 @@
           "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#statuut"
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/67325124afc7d6eac4402056620665f7348ef62a",
+            "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/67325124afc7d6eac4402056620665f7348ef62a",
+	    "vl:rule" : "zzz2",	    
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusResource%3Astatuut",
           "sh:definition": {
             "nl": "Een aanduiding van op welke basis de catalogusresource beschikbaar is."
