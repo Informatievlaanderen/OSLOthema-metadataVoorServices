@@ -1,11 +1,6 @@
-# List of input files
+# List of input files (example files)
 INPUTS=6.output.jsonld 7.output.jsonld 8.output.jsonld
 OUTPUTCSV=$(patsubst %.jsonld,%.csv,${INPUTS})
-
-# The first in the list used as the seed
-FIRST := $(shell echo ${OUTPUTCSV} | awk '{print $$1;}')
-# The remainder of the list of files minus the seed file (used when joining)
-REM := $(shell echo ${OUTPUTCSV} | awk '{for (i=2; i<=NF; i++) print $$i}')
 
 all: final_with_description.csv
 
