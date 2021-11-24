@@ -1,5 +1,6 @@
 # List of input files (example files)
-INPUTS=6.output.jsonld 7.output.jsonld 8.output.jsonld
+#INPUTS=6.output.jsonld 7.output.jsonld 8.output.jsonld
+INPUTS=metadata_dcat.jsonld dcatapvl.jsonld
 OUTPUTCSV=$(patsubst %.jsonld,%.csv,${INPUTS})
 
 all: final_with_description.csv

@@ -1,0 +1,3561 @@
+{
+  "@context": {
+    "@vocab": "https://data.vlaanderen.be/shacl/DCAT-AP-VL",
+    "qb": "http://purl.org/linked-data/cube#",
+    "qb:codeList": {
+      "@id": "qb:codeList",
+      "@type": "@id"
+    },
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rdfs:comment": {
+      "@id": "rdfs:comment"
+    },
+    "sh": "http://www.w3.org/ns/shacl#",
+    "sh:class": {
+      "@id": "sh:class",
+      "@type": "@id"
+    },
+    "sh:datatype": {
+      "@id": "sh:datatype",
+      "@type": "@id"
+    },
+    "sh:description": {
+      "@container": "@language",
+      "@id": "sh:description"
+    },
+    "sh:hasValue": {
+      "@id": "sh:hasValue",
+      "@type": "@id"
+    },
+    "sh:maxCount": {
+      "@id": "sh:maxCount",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "sh:minCount": {
+      "@id": "sh:minCount",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "sh:name": {
+      "@container": "@language",
+      "@id": "sh:name"
+    },
+    "sh:node": {
+      "@id": "sh:node",
+      "@type": "@id"
+    },
+    "sh:nodeKind": {
+      "@id": "sh:nodeKind",
+      "@type": "@id"
+    },
+    "sh:path": {
+      "@id": "sh:path",
+      "@type": "@id"
+    },
+    "sh:property": {
+      "@id": "sh:property",
+      "@type": "@id"
+    },
+    "sh:severity": {
+      "@id": "sh:severity",
+      "@type": "@id"
+    },
+    "sh:targetClass": {
+      "@id": "sh:targetClass",
+      "@type": "@id"
+    },
+    "sh:uniqueLang": {
+      "@id": "sh:uniqueLang",
+      "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "shapes": {
+      "@id": "rdfs:member",
+      "@type": "@id"
+    },
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "vl": "https://data.vlaanderen.be/ns/shacl#"
+  },
+  "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL",
+  "shapes": [
+    {
+      "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#AgentShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#AgentShape/1399bd400d4637b15d5fe38202d6572f82150aac",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Agent%3Anaam",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "nl": "De naam van de agent."
+          },
+          "sh:name": {
+            "nl": "naam"
+          },
+          "sh:path": "http://xmlns.com/foaf/0.1/name",
+          "vl:message": {
+            "nl": "De range van naam moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#AgentShape/a598a69ea42b9b21520d0d04721dee61cacdc5d9",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Agent%3Anaam",
+          "sh:description": {
+            "nl": "De naam van de agent."
+          },
+          "sh:name": {
+            "nl": "naam"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://xmlns.com/foaf/0.1/name",
+          "vl:message": {
+            "nl": "De verwachte waarde voor naam is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#AgentShape/b96a7391d2808d207ce4e3c269dec2c6efad55c3",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Agent%3Anaam",
+          "sh:description": {
+            "nl": "De naam van de agent."
+          },
+          "sh:name": {
+            "nl": "naam"
+          },
+          "sh:path": "http://xmlns.com/foaf/0.1/name",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor naam"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#AgentShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Agent%3Anaam",
+          "sh:description": {
+            "nl": "De naam van de agent."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "naam"
+          },
+          "sh:path": "http://xmlns.com/foaf/0.1/name",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor naam"
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "http://purl.org/dc/terms/Agent"
+    },
+    {
+      "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#LicentieDocumentShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://purl.org/dc/terms/LicenseDocument"
+    },
+    {
+      "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#JuridischeBepalingShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://purl.org/dc/terms/RightsStatement"
+    },
+    {
+      "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#StandaardShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://purl.org/dc/terms/Standard"
+    },
+    {
+      "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#ContactinfoShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#ContactinfoShape/0d43849949c290efe2f3d4ad1d010cdb7f0505bf",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Contactinfo%3Acontactpagina",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
+          "sh:description": {
+            "nl": "Een webpagina die ofwel toelaat om contact op te nemen (via b.v. een webformulier) of die informatie bevat hoe men contact kan opnemen."
+          },
+          "sh:name": {
+            "nl": "contactpagina"
+          },
+          "sh:path": "http://xmlns.com/foaf/0.1/page",
+          "vl:message": {
+            "nl": "De range van contactpagina moet van het type <http://www.w3.org/2001/XMLSchema#anyURI> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#ContactinfoShape/376ba2894840068d71059e7be03bfaf8995aee90",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Contactinfo%3Acontactpagina",
+          "sh:description": {
+            "nl": "Een webpagina die ofwel toelaat om contact op te nemen (via b.v. een webformulier) of die informatie bevat hoe men contact kan opnemen."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "contactpagina"
+          },
+          "sh:path": "http://xmlns.com/foaf/0.1/page",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor contactpagina"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#ContactinfoShape/e8ea77ad8b718eacfb82e9303184b04c2e87225e",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Contactinfo%3Acontactpagina",
+          "sh:description": {
+            "nl": "Een webpagina die ofwel toelaat om contact op te nemen (via b.v. een webformulier) of die informatie bevat hoe men contact kan opnemen."
+          },
+          "sh:name": {
+            "nl": "contactpagina"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://xmlns.com/foaf/0.1/page",
+          "vl:message": {
+            "nl": "De verwachte waarde voor contactpagina is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#ContactinfoShape/2cf221c2b6f9a619b0515c507ddd2bbb40fbb285",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Contactinfo%3Ae-mail",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
+          "sh:description": {
+            "nl": "Het e-mailadres waarmee een gebruiker contact kan opnemen voor informatie."
+          },
+          "sh:name": {
+            "nl": "e-mail"
+          },
+          "sh:path": "http://www.w3.org/2006/vcard/ns#hasEmail",
+          "vl:message": {
+            "nl": "De range van e-mail moet van het type <http://www.w3.org/2001/XMLSchema#anyURI> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#ContactinfoShape/42ad698554950cda0098f1f04803fac8470af8ad",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Contactinfo%3Ae-mail",
+          "sh:description": {
+            "nl": "Het e-mailadres waarmee een gebruiker contact kan opnemen voor informatie."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "e-mail"
+          },
+          "sh:path": "http://www.w3.org/2006/vcard/ns#hasEmail",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor e-mail"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#ContactinfoShape/e852461175947767d03ec8134f830a3e0bd16767",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Contactinfo%3Ae-mail",
+          "sh:description": {
+            "nl": "Het e-mailadres waarmee een gebruiker contact kan opnemen voor informatie."
+          },
+          "sh:name": {
+            "nl": "e-mail"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://www.w3.org/2006/vcard/ns#hasEmail",
+          "vl:message": {
+            "nl": "De verwachte waarde voor e-mail is een Literal"
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/2006/vcard/ns#Kind"
+    },
+    {
+      "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/39607ae8317e4f99846f57f713d51b19528e5764",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Aalternatieve%20identificator",
+          "sh:class": "http://www.w3.org/ns/adms#Identifier",
+          "sh:description": {
+            "nl": "Een alternatieve identificator (dan de unieke identificator) voor de catalogus kan hier beschreven worden."
+          },
+          "sh:name": {
+            "nl": "alternatieve identificator"
+          },
+          "sh:path": "http://www.w3.org/ns/adms#identifier",
+          "vl:message": {
+            "nl": "De range van alternatieve identificator moet van het type <http://www.w3.org/ns/adms#Identifier> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/4264dad4a2bf40f022d463c951c04da90d006652",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Aalternatieve%20identificator",
+          "sh:description": {
+            "nl": "Een alternatieve identificator (dan de unieke identificator) voor de catalogus kan hier beschreven worden."
+          },
+          "sh:name": {
+            "nl": "alternatieve identificator"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/adms#identifier",
+          "vl:message": {
+            "nl": "De verwachte waarde voor alternatieve identificator is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/0e9a7d4dbf6ec19568d474169ad717f71e882319",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Abeschrijving",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "nl": "Een bondige tekstuele omschrijving van de catalogus."
+          },
+          "sh:name": {
+            "nl": "beschrijving"
+          },
+          "sh:path": "http://purl.org/dc/terms/description",
+          "vl:message": {
+            "nl": "De range van beschrijving moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/2217949528fdd3dba0d2e3fc7e6fb662caa193f5",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Abeschrijving",
+          "sh:description": {
+            "nl": "Een bondige tekstuele omschrijving van de catalogus."
+          },
+          "sh:name": {
+            "nl": "beschrijving"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/description",
+          "vl:message": {
+            "nl": "De verwachte waarde voor beschrijving is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/4a16176c26d8d5526c76974a1530f1ffdd596e93",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Abeschrijving",
+          "sh:description": {
+            "nl": "Een bondige tekstuele omschrijving van de catalogus."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "beschrijving"
+          },
+          "sh:path": "http://purl.org/dc/terms/description",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor beschrijving"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/7521953addc62cf367ab3c8ec0dc63cb5981ea23",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Abeschrijving",
+          "sh:description": {
+            "nl": "Een bondige tekstuele omschrijving van de catalogus."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "beschrijving"
+          },
+          "sh:path": "http://purl.org/dc/terms/description",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor beschrijving"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/da05d674f29a225a7115411e9f7ca442a25f2c88",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Abeschrijving",
+          "sh:description": {
+            "nl": "Een bondige tekstuele omschrijving van de catalogus."
+          },
+          "sh:name": {
+            "nl": "beschrijving"
+          },
+          "sh:path": "http://purl.org/dc/terms/description",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor beschrijving"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/0ec26077ea6669e10915c5e26c04670b80711a2d",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Acontactinformatie",
+          "sh:description": {
+            "nl": "De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de catalogus."
+          },
+          "sh:name": {
+            "nl": "contactinformatie"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/dcat#contactPoint",
+          "vl:message": {
+            "nl": "De verwachte waarde voor contactinformatie is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/19ee039173472235e539aea2aa961ff7d3b89f5a",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Acontactinformatie",
+          "sh:description": {
+            "nl": "De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de catalogus."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "contactinformatie"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#contactPoint",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor contactinformatie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/458062b0ae03c559426b85df3dd28e1c785acb0b",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Acontactinformatie",
+          "sh:class": "http://www.w3.org/2006/vcard/ns#Kind",
+          "sh:description": {
+            "nl": "De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de catalogus."
+          },
+          "sh:name": {
+            "nl": "contactinformatie"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#contactPoint",
+          "vl:message": {
+            "nl": "De range van contactinformatie moet van het type <http://www.w3.org/2006/vcard/ns#Kind> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/e332dbce5947de4314c3ed3fe5862f26d70a15c4",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Acontactinformatie",
+          "sh:description": {
+            "nl": "De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de catalogus."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "contactinformatie"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#contactPoint",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor contactinformatie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/0b8b2df06927907abbf1e09b9c0c9c59bc6696f5",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Aheeft%20DataService",
+          "sh:class": "http://www.w3.org/ns/dcat#DataService",
+          "sh:description": {
+            "nl": "Een dataservice die deel uitmaakt van de catalogus."
+          },
+          "sh:name": {
+            "nl": "heeft DataService"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#service",
+          "vl:message": {
+            "nl": "De range van heeft DataService moet van het type <http://www.w3.org/ns/dcat#DataService> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/fbf00c5e4e8102dac359cf0374d3d407be7da321",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Aheeft%20DataService",
+          "sh:description": {
+            "nl": "Een dataservice die deel uitmaakt van de catalogus."
+          },
+          "sh:name": {
+            "nl": "heeft DataService"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/dcat#service",
+          "vl:message": {
+            "nl": "De verwachte waarde voor heeft DataService is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/b36184e1993242352bd0fb0cc0c9f8bdeea645ef",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Aheeft%20Dataset",
+          "sh:class": "http://www.w3.org/ns/dcat#Dataset",
+          "sh:description": {
+            "nl": "Een dataset die deel uitmaakt van de catalogus."
+          },
+          "sh:name": {
+            "nl": "heeft Dataset"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#dataset",
+          "vl:message": {
+            "nl": "De range van heeft Dataset moet van het type <http://www.w3.org/ns/dcat#Dataset> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/b7542310056ea0b90b7ddaea10300a37eafb9d26",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Aheeft%20Dataset",
+          "sh:description": {
+            "nl": "Een dataset die deel uitmaakt van de catalogus."
+          },
+          "sh:name": {
+            "nl": "heeft Dataset"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/dcat#dataset",
+          "vl:message": {
+            "nl": "De verwachte waarde voor heeft Dataset is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Aidentificator",
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:description": {
+            "nl": "De unieke identificator voor de catalogus."
+          },
+          "sh:name": {
+            "nl": "identificator"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier",
+          "vl:message": {
+            "nl": "De range van identificator moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/972d73e7a13100b66c0c2f44466edac47aa1ab28",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Aidentificator",
+          "sh:description": {
+            "nl": "De unieke identificator voor de catalogus."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "identificator"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor identificator"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/bb43a48c77e7d98609af3d3bb1b1648370465308",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Aidentificator",
+          "sh:description": {
+            "nl": "De unieke identificator voor de catalogus."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "identificator"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor identificator"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/dea743ba34d85e4615aa135025555bb2247c99e0",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Aidentificator",
+          "sh:description": {
+            "nl": "De unieke identificator voor de catalogus."
+          },
+          "sh:name": {
+            "nl": "identificator"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/identifier",
+          "vl:message": {
+            "nl": "De verwachte waarde voor identificator is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/509740cc7b3c86ebee90dc6303c11c40e2b08212",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Alicentie",
+          "sh:class": "http://purl.org/dc/terms/LicenseDocument",
+          "sh:description": {
+            "nl": "De licentie van de catalogus."
+          },
+          "sh:name": {
+            "nl": "licentie"
+          },
+          "sh:path": "http://purl.org/dc/terms/license",
+          "vl:message": {
+            "nl": "De range van licentie moet van het type <http://purl.org/dc/terms/LicenseDocument> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/cafd2e3e66044d8ba2c435a9353e6880952086c5",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Alicentie",
+          "sh:description": {
+            "nl": "De licentie van de catalogus."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "licentie"
+          },
+          "sh:path": "http://purl.org/dc/terms/license",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor licentie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/d8e54950e23e8ca205dca07c1a4beb29f5a25aae",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Alicentie",
+          "sh:description": {
+            "nl": "De licentie van de catalogus."
+          },
+          "sh:name": {
+            "nl": "licentie"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/license",
+          "vl:message": {
+            "nl": "De verwachte waarde voor licentie is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/337cf55721093cc585693a5397601643d59a4c46",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Arecord",
+          "sh:class": "http://www.w3.org/ns/dcat#CatalogRecord",
+          "sh:description": {
+            "nl": "Een record beschrijft de registratie van één enkele dataset of dataservice die onderdeel is van de catalogus."
+          },
+          "sh:name": {
+            "nl": "record"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#record",
+          "vl:message": {
+            "nl": "De range van record moet van het type <http://www.w3.org/ns/dcat#CatalogRecord> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/34db0dabef6e2aa992eab790fc3e8d1e3f83bc12",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Arecord",
+          "sh:description": {
+            "nl": "Een record beschrijft de registratie van één enkele dataset of dataservice die onderdeel is van de catalogus."
+          },
+          "sh:name": {
+            "nl": "record"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/dcat#record",
+          "vl:message": {
+            "nl": "De verwachte waarde voor record is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/25d18a6e2598024ea186cc7be4391bdfd1bca21f",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Atitel",
+          "sh:description": {
+            "nl": "De naam van de catalogus."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "titel"
+          },
+          "sh:path": "http://purl.org/dc/terms/title",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor titel"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/3abb021249628221a667bec0bbd94407f1c77f06",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Atitel",
+          "sh:description": {
+            "nl": "De naam van de catalogus."
+          },
+          "sh:name": {
+            "nl": "titel"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/title",
+          "vl:message": {
+            "nl": "De verwachte waarde voor titel is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/5c245f65e6c2294cd7079eb566de6fd4e4adb829",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Atitel",
+          "sh:description": {
+            "nl": "De naam van de catalogus."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "titel"
+          },
+          "sh:path": "http://purl.org/dc/terms/title",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor titel"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/8041fe094c27b123422bd03a4e13ff0641087607",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Atitel",
+          "sh:description": {
+            "nl": "De naam van de catalogus."
+          },
+          "sh:name": {
+            "nl": "titel"
+          },
+          "sh:path": "http://purl.org/dc/terms/title",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor titel"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Atitel",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "nl": "De naam van de catalogus."
+          },
+          "sh:name": {
+            "nl": "titel"
+          },
+          "sh:path": "http://purl.org/dc/terms/title",
+          "vl:message": {
+            "nl": "De range van titel moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/4e2d6a9c70cecbd8ed9da2e8728fa8f5d0b57f2b",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Auitgever",
+          "sh:description": {
+            "nl": "De uitgever, de entiteit die verantwoordelijk is voor het beschikbaar stellen, van de catalogus."
+          },
+          "sh:name": {
+            "nl": "uitgever"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/publisher",
+          "vl:message": {
+            "nl": "De verwachte waarde voor uitgever is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/5334cf8edf5cc07e349524728fe4c9b076e4c45e",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Auitgever",
+          "sh:description": {
+            "nl": "De uitgever, de entiteit die verantwoordelijk is voor het beschikbaar stellen, van de catalogus."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "uitgever"
+          },
+          "sh:path": "http://purl.org/dc/terms/publisher",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor uitgever"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/aabe67e6a56c5e2fc5695716e8f7b66edd525085",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Auitgever",
+          "sh:class": "http://purl.org/dc/terms/Agent",
+          "sh:description": {
+            "nl": "De uitgever, de entiteit die verantwoordelijk is voor het beschikbaar stellen, van de catalogus."
+          },
+          "sh:name": {
+            "nl": "uitgever"
+          },
+          "sh:path": "http://purl.org/dc/terms/publisher",
+          "vl:message": {
+            "nl": "De range van uitgever moet van het type <http://purl.org/dc/terms/Agent> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/e2d4034a0a398701f4257641ebcbc85e8683b29d",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Catalogus%3Auitgever",
+          "sh:description": {
+            "nl": "De uitgever, de entiteit die verantwoordelijk is voor het beschikbaar stellen, van de catalogus."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "uitgever"
+          },
+          "sh:path": "http://purl.org/dc/terms/publisher",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor uitgever"
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/dcat#Catalog"
+    },
+    {
+      "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusRecordShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusRecordShape/73a4bdd8cd7b0472b3b38dc9f56b0f32b8239284",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusRecord%3Aaanmaakdatum",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "sh:description": {
+            "nl": "De datum van (formele) opname van de bijbehorende dataset of dataservice in de catalogus."
+          },
+          "sh:name": {
+            "nl": "aanmaakdatum"
+          },
+          "sh:path": "http://purl.org/dc/terms/issued",
+          "vl:message": {
+            "nl": "De range van aanmaakdatum moet van het type <http://www.w3.org/2001/XMLSchema#dateTime> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusRecordShape/8172f8df2a73384c65fdb3332d8ee0c9ef574804",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusRecord%3Aaanmaakdatum",
+          "sh:description": {
+            "nl": "De datum van (formele) opname van de bijbehorende dataset of dataservice in de catalogus."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "aanmaakdatum"
+          },
+          "sh:path": "http://purl.org/dc/terms/issued",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor aanmaakdatum"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusRecordShape/a7aeb94b9cd0e4b19bf818a3beb7db346655eaa7",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusRecord%3Aaanmaakdatum",
+          "sh:description": {
+            "nl": "De datum van (formele) opname van de bijbehorende dataset of dataservice in de catalogus."
+          },
+          "sh:name": {
+            "nl": "aanmaakdatum"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/issued",
+          "vl:message": {
+            "nl": "De verwachte waarde voor aanmaakdatum is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusRecordShape/39607ae8317e4f99846f57f713d51b19528e5764",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusRecord%3Aalternatieve%20identificator",
+          "sh:class": "http://www.w3.org/ns/adms#Identifier",
+          "sh:description": {
+            "nl": "Een alternatieve identificator (dan de unieke identificator) voor een record in de catalogus kan hier beschreven worden."
+          },
+          "sh:name": {
+            "nl": "alternatieve identificator"
+          },
+          "sh:path": "http://www.w3.org/ns/adms#identifier",
+          "vl:message": {
+            "nl": "De range van alternatieve identificator moet van het type <http://www.w3.org/ns/adms#Identifier> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusRecordShape/4264dad4a2bf40f022d463c951c04da90d006652",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusRecord%3Aalternatieve%20identificator",
+          "sh:description": {
+            "nl": "Een alternatieve identificator (dan de unieke identificator) voor een record in de catalogus kan hier beschreven worden."
+          },
+          "sh:name": {
+            "nl": "alternatieve identificator"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/adms#identifier",
+          "vl:message": {
+            "nl": "De verwachte waarde voor alternatieve identificator is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusRecordShape/2a7abc3b7d6df32e4a340775a9e1522a0ac1c669",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusRecord%3Ahoofdonderwerp",
+          "sh:description": {
+            "nl": "De resource (dataset of dataservice) beschreven in het record."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "hoofdonderwerp"
+          },
+          "sh:path": "http://xmlns.com/foaf/0.1/primaryTopic",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor hoofdonderwerp"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusRecordShape/530e8a8cfc0af0e6e38413dfdf98d2c5e8364b59",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusRecord%3Ahoofdonderwerp",
+          "sh:description": {
+            "nl": "De resource (dataset of dataservice) beschreven in het record."
+          },
+          "sh:name": {
+            "nl": "hoofdonderwerp"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://xmlns.com/foaf/0.1/primaryTopic",
+          "vl:message": {
+            "nl": "De verwachte waarde voor hoofdonderwerp is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusRecordShape/e7d5497a1597fc6c5856517ab46c01bae413001b",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusRecord%3Ahoofdonderwerp",
+          "sh:class": "http://www.w3.org/ns/dcat#Resource",
+          "sh:description": {
+            "nl": "De resource (dataset of dataservice) beschreven in het record."
+          },
+          "sh:name": {
+            "nl": "hoofdonderwerp"
+          },
+          "sh:path": "http://xmlns.com/foaf/0.1/primaryTopic",
+          "vl:message": {
+            "nl": "De range van hoofdonderwerp moet van het type <http://www.w3.org/ns/dcat#Resource> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusRecordShape/f806d2d1fd264df77aee55564a0a70eecd47ee2e",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusRecord%3Ahoofdonderwerp",
+          "sh:description": {
+            "nl": "De resource (dataset of dataservice) beschreven in het record."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "hoofdonderwerp"
+          },
+          "sh:path": "http://xmlns.com/foaf/0.1/primaryTopic",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor hoofdonderwerp"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusRecordShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusRecord%3Aidentificator",
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:description": {
+            "nl": "De unieke identificator van het record in de catalogus."
+          },
+          "sh:name": {
+            "nl": "identificator"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier",
+          "vl:message": {
+            "nl": "De range van identificator moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusRecordShape/972d73e7a13100b66c0c2f44466edac47aa1ab28",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusRecord%3Aidentificator",
+          "sh:description": {
+            "nl": "De unieke identificator van het record in de catalogus."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "identificator"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor identificator"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusRecordShape/bb43a48c77e7d98609af3d3bb1b1648370465308",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusRecord%3Aidentificator",
+          "sh:description": {
+            "nl": "De unieke identificator van het record in de catalogus."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "identificator"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor identificator"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusRecordShape/dea743ba34d85e4615aa135025555bb2247c99e0",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusRecord%3Aidentificator",
+          "sh:description": {
+            "nl": "De unieke identificator van het record in de catalogus."
+          },
+          "sh:name": {
+            "nl": "identificator"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/identifier",
+          "vl:message": {
+            "nl": "De verwachte waarde voor identificator is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusRecordShape/3abb021249628221a667bec0bbd94407f1c77f06",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusRecord%3Atitel",
+          "sh:description": {
+            "nl": "De naam van het record in de catalogus."
+          },
+          "sh:name": {
+            "nl": "titel"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/title",
+          "vl:message": {
+            "nl": "De verwachte waarde voor titel is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusRecordShape/5c245f65e6c2294cd7079eb566de6fd4e4adb829",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusRecord%3Atitel",
+          "sh:description": {
+            "nl": "De naam van het record in de catalogus."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "titel"
+          },
+          "sh:path": "http://purl.org/dc/terms/title",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor titel"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusRecordShape/8041fe094c27b123422bd03a4e13ff0641087607",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusRecord%3Atitel",
+          "sh:description": {
+            "nl": "De naam van het record in de catalogus."
+          },
+          "sh:name": {
+            "nl": "titel"
+          },
+          "sh:path": "http://purl.org/dc/terms/title",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor titel"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusRecordShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusRecord%3Atitel",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "nl": "De naam van het record in de catalogus."
+          },
+          "sh:name": {
+            "nl": "titel"
+          },
+          "sh:path": "http://purl.org/dc/terms/title",
+          "vl:message": {
+            "nl": "De range van titel moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusRecordShape/29906bf16cadf6d568c4da3e161ef38ba2f726fd",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusRecord%3Awijzigingsdatum",
+          "sh:description": {
+            "nl": "De meest recente datum waarop de record in de catalogus is gewijzigd, bijgewerkt of aangepast."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "wijzigingsdatum"
+          },
+          "sh:path": "http://purl.org/dc/terms/modified",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor wijzigingsdatum"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusRecordShape/6a51b2354ea38a815d6131b4e05f8587791de4e0",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusRecord%3Awijzigingsdatum",
+          "sh:description": {
+            "nl": "De meest recente datum waarop de record in de catalogus is gewijzigd, bijgewerkt of aangepast."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "wijzigingsdatum"
+          },
+          "sh:path": "http://purl.org/dc/terms/modified",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor wijzigingsdatum"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusRecordShape/9e7585433d0896bc44cb41cdd8189793bd115cd0",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusRecord%3Awijzigingsdatum",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "sh:description": {
+            "nl": "De meest recente datum waarop de record in de catalogus is gewijzigd, bijgewerkt of aangepast."
+          },
+          "sh:name": {
+            "nl": "wijzigingsdatum"
+          },
+          "sh:path": "http://purl.org/dc/terms/modified",
+          "vl:message": {
+            "nl": "De range van wijzigingsdatum moet van het type <http://www.w3.org/2001/XMLSchema#dateTime> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusRecordShape/de6d17a0bf0295b5d5cf59b23bd7f20dc83c017c",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusRecord%3Awijzigingsdatum",
+          "sh:description": {
+            "nl": "De meest recente datum waarop de record in de catalogus is gewijzigd, bijgewerkt of aangepast."
+          },
+          "sh:name": {
+            "nl": "wijzigingsdatum"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/modified",
+          "vl:message": {
+            "nl": "De verwachte waarde voor wijzigingsdatum is een Literal"
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/dcat#CatalogRecord"
+    },
+    {
+      "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/39607ae8317e4f99846f57f713d51b19528e5764",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Aalternatieve%20identificator",
+          "sh:class": "http://www.w3.org/ns/adms#Identifier",
+          "sh:description": {
+            "nl": "Een alternatieve identificator (dan de unieke identificator) voor een dataservice kan hier beschreven worden."
+          },
+          "sh:name": {
+            "nl": "alternatieve identificator"
+          },
+          "sh:path": "http://www.w3.org/ns/adms#identifier",
+          "vl:message": {
+            "nl": "De range van alternatieve identificator moet van het type <http://www.w3.org/ns/adms#Identifier> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/4264dad4a2bf40f022d463c951c04da90d006652",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Aalternatieve%20identificator",
+          "sh:description": {
+            "nl": "Een alternatieve identificator (dan de unieke identificator) voor een dataservice kan hier beschreven worden."
+          },
+          "sh:name": {
+            "nl": "alternatieve identificator"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/adms#identifier",
+          "vl:message": {
+            "nl": "De verwachte waarde voor alternatieve identificator is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/0e9a7d4dbf6ec19568d474169ad717f71e882319",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Abeschrijving",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "nl": "Een bondige tekstuele omschrijving van de dataservice."
+          },
+          "sh:name": {
+            "nl": "beschrijving"
+          },
+          "sh:path": "http://purl.org/dc/terms/description",
+          "vl:message": {
+            "nl": "De range van beschrijving moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/2217949528fdd3dba0d2e3fc7e6fb662caa193f5",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Abeschrijving",
+          "sh:description": {
+            "nl": "Een bondige tekstuele omschrijving van de dataservice."
+          },
+          "sh:name": {
+            "nl": "beschrijving"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/description",
+          "vl:message": {
+            "nl": "De verwachte waarde voor beschrijving is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/4a16176c26d8d5526c76974a1530f1ffdd596e93",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Abeschrijving",
+          "sh:description": {
+            "nl": "Een bondige tekstuele omschrijving van de dataservice."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "beschrijving"
+          },
+          "sh:path": "http://purl.org/dc/terms/description",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor beschrijving"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/da05d674f29a225a7115411e9f7ca442a25f2c88",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Abeschrijving",
+          "sh:description": {
+            "nl": "Een bondige tekstuele omschrijving van de dataservice."
+          },
+          "sh:name": {
+            "nl": "beschrijving"
+          },
+          "sh:path": "http://purl.org/dc/terms/description",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor beschrijving"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/3d1fe6ee04f229078b8e8305b15438a54ec0b96f",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Abiedt%20informatie%20aan%20over",
+          "sh:description": {
+            "nl": "De data die via deze dataservice worden aangeboden."
+          },
+          "sh:name": {
+            "nl": "biedt informatie aan over"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/dcat#servesdataset",
+          "vl:message": {
+            "nl": "De verwachte waarde voor biedt informatie aan over is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/5ed2c890f2c7588313cc9f93b35524bdb2d6328d",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Abiedt%20informatie%20aan%20over",
+          "sh:class": "http://www.w3.org/ns/dcat#Dataset",
+          "sh:description": {
+            "nl": "De data die via deze dataservice worden aangeboden."
+          },
+          "sh:name": {
+            "nl": "biedt informatie aan over"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#servesdataset",
+          "vl:message": {
+            "nl": "De range van biedt informatie aan over moet van het type <http://www.w3.org/ns/dcat#Dataset> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/80a839685f13d2584ebe2f9b5d9a93ae2c1b21a0",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Aconform%20aan%20protocol",
+          "sh:class": "http://purl.org/dc/terms/Standard",
+          "sh:description": {
+            "nl": "Een protocol waaraan de dataservice voldoet."
+          },
+          "sh:name": {
+            "nl": "conform aan protocol"
+          },
+          "sh:path": "http://purl.org/dc/terms/conformsTo",
+          "vl:message": {
+            "nl": "De range van conform aan protocol moet van het type <http://purl.org/dc/terms/Standard> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/902fa93f6c25dce51a3f851d2f19c4d8b3b656a4",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Aconform%20aan%20protocol",
+          "sh:description": {
+            "nl": "Een protocol waaraan de dataservice voldoet."
+          },
+          "sh:name": {
+            "nl": "conform aan protocol"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/conformsTo",
+          "vl:message": {
+            "nl": "De verwachte waarde voor conform aan protocol is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/0ec26077ea6669e10915c5e26c04670b80711a2d",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Acontactinformatie",
+          "sh:description": {
+            "nl": "De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de dataservice."
+          },
+          "sh:name": {
+            "nl": "contactinformatie"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/dcat#contactPoint",
+          "vl:message": {
+            "nl": "De verwachte waarde voor contactinformatie is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/19ee039173472235e539aea2aa961ff7d3b89f5a",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Acontactinformatie",
+          "sh:description": {
+            "nl": "De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de dataservice."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "contactinformatie"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#contactPoint",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor contactinformatie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/458062b0ae03c559426b85df3dd28e1c785acb0b",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Acontactinformatie",
+          "sh:class": "http://www.w3.org/2006/vcard/ns#Kind",
+          "sh:description": {
+            "nl": "De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de dataservice."
+          },
+          "sh:name": {
+            "nl": "contactinformatie"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#contactPoint",
+          "vl:message": {
+            "nl": "De range van contactinformatie moet van het type <http://www.w3.org/2006/vcard/ns#Kind> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/e332dbce5947de4314c3ed3fe5862f26d70a15c4",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Acontactinformatie",
+          "sh:description": {
+            "nl": "De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de dataservice."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "contactinformatie"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#contactPoint",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor contactinformatie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/67c89165b0f38567bf099862ffdef88f25e68714",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3AendpointURL",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
+          "sh:description": {
+            "nl": "De rootlocatie of het primaire endpoint van de dienst (een web-resolvable URI)."
+          },
+          "sh:name": {
+            "nl": "endpointURL"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#endpointURL",
+          "vl:message": {
+            "nl": "De range van endpointURL moet van het type <http://www.w3.org/2001/XMLSchema#anyURI> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/846f320ee268e398ffe1d99bdac79c12284f408e",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3AendpointURL",
+          "sh:description": {
+            "nl": "De rootlocatie of het primaire endpoint van de dienst (een web-resolvable URI)."
+          },
+          "sh:name": {
+            "nl": "endpointURL"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/dcat#endpointURL",
+          "vl:message": {
+            "nl": "De verwachte waarde voor endpointURL is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/9978564bd5823785ddace8934e848c68e6e813e3",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3AendpointURL",
+          "sh:description": {
+            "nl": "De rootlocatie of het primaire endpoint van de dienst (een web-resolvable URI)."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "endpointURL"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#endpointURL",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor endpointURL"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/bc15a30c5a91fb01a98d4b0969c268df7f6ff717",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3AendpointURL",
+          "sh:description": {
+            "nl": "De rootlocatie of het primaire endpoint van de dienst (een web-resolvable URI)."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "endpointURL"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#endpointURL",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor endpointURL"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/24daec299dcda6530d6dec07fed5e9832fb0be61",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Aendpointbeschrijving",
+          "sh:description": {
+            "nl": "Een beschrijving van de diensten die beschikbaar zijn via de end-points, met inbegrip van hun operaties, parameters, enz."
+          },
+          "sh:name": {
+            "nl": "endpointbeschrijving"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/dcat#endpointDescription",
+          "vl:message": {
+            "nl": "De verwachte waarde voor endpointbeschrijving is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/66883b2795f003760d4bb617bd1f472da1e1524f",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Aendpointbeschrijving",
+          "sh:description": {
+            "nl": "Een beschrijving van de diensten die beschikbaar zijn via de end-points, met inbegrip van hun operaties, parameters, enz."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "endpointbeschrijving"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#endpointDescription",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor endpointbeschrijving"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/bd44e3e6c4317f226cd1124fbaf1d72e94e8f15e",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Aendpointbeschrijving",
+          "sh:description": {
+            "nl": "Een beschrijving van de diensten die beschikbaar zijn via de end-points, met inbegrip van hun operaties, parameters, enz."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "endpointbeschrijving"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#endpointDescription",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor endpointbeschrijving"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/dbc2548616486a154002cfba6a3bc2cbc554a682",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Aendpointbeschrijving",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
+          "sh:description": {
+            "nl": "Een beschrijving van de diensten die beschikbaar zijn via de end-points, met inbegrip van hun operaties, parameters, enz."
+          },
+          "sh:name": {
+            "nl": "endpointbeschrijving"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#endpointDescription",
+          "vl:message": {
+            "nl": "De range van endpointbeschrijving moet van het type <http://www.w3.org/2001/XMLSchema#anyURI> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Aidentificator",
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:description": {
+            "nl": "De unieke identificator van de dataservice."
+          },
+          "sh:name": {
+            "nl": "identificator"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier",
+          "vl:message": {
+            "nl": "De range van identificator moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/972d73e7a13100b66c0c2f44466edac47aa1ab28",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Aidentificator",
+          "sh:description": {
+            "nl": "De unieke identificator van de dataservice."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "identificator"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor identificator"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/bb43a48c77e7d98609af3d3bb1b1648370465308",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Aidentificator",
+          "sh:description": {
+            "nl": "De unieke identificator van de dataservice."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "identificator"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor identificator"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/dea743ba34d85e4615aa135025555bb2247c99e0",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Aidentificator",
+          "sh:description": {
+            "nl": "De unieke identificator van de dataservice."
+          },
+          "sh:name": {
+            "nl": "identificator"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/identifier",
+          "vl:message": {
+            "nl": "De verwachte waarde voor identificator is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/8d3107c28b9832ee11242608b2a2a2e2f13b450c",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Alandingspagina",
+          "sh:description": {
+            "nl": "Een algemene webpagina waarnaar kan worden genavigeerd in een webbrowser, met algemene aanvullende informatie over de dataservice."
+          },
+          "sh:name": {
+            "nl": "landingspagina"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/dcat#landingPage",
+          "vl:message": {
+            "nl": "De verwachte waarde voor landingspagina is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/fe1a78c9169da2469a23fd783cf9a69060bfe198",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Alandingspagina",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
+          "sh:description": {
+            "nl": "Een algemene webpagina waarnaar kan worden genavigeerd in een webbrowser, met algemene aanvullende informatie over de dataservice."
+          },
+          "sh:name": {
+            "nl": "landingspagina"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#landingPage",
+          "vl:message": {
+            "nl": "De range van landingspagina moet van het type <http://www.w3.org/2001/XMLSchema#anyURI> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/2be8f764879c3f2218306704a430503d286c30e9",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Alandingspagina%20voor%20authenticatie",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
+          "sh:description": {
+            "nl": "Een verwijzing naar de landingspagina met de specifieke informatie over de authenticatie voor de dataservice."
+          },
+          "sh:name": {
+            "nl": "landingspagina voor authenticatie"
+          },
+          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorAuthenticatie",
+          "vl:message": {
+            "nl": "De range van landingspagina voor authenticatie moet van het type <http://www.w3.org/2001/XMLSchema#anyURI> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/691064e031359f672c6f0cf7b73a7e0cabba9b1b",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Alandingspagina%20voor%20authenticatie",
+          "sh:description": {
+            "nl": "Een verwijzing naar de landingspagina met de specifieke informatie over de authenticatie voor de dataservice."
+          },
+          "sh:name": {
+            "nl": "landingspagina voor authenticatie"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorAuthenticatie",
+          "vl:message": {
+            "nl": "De verwachte waarde voor landingspagina voor authenticatie is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/e9bf439f5272396af4486645c4dd4ae47c27c030",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Alandingspagina%20voor%20authenticatie",
+          "sh:description": {
+            "nl": "Een verwijzing naar de landingspagina met de specifieke informatie over de authenticatie voor de dataservice."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "landingspagina voor authenticatie"
+          },
+          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorAuthenticatie",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor landingspagina voor authenticatie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/435b1ff3b643fab60b89d726c90369c0329db971",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Alandingspagina%20voor%20gebruiksinformatie",
+          "sh:description": {
+            "nl": "Een verwijzing naar de landingspagina met de specifieke informatie over het gebruik van de dataservice."
+          },
+          "sh:name": {
+            "nl": "landingspagina voor gebruiksinformatie"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorGebruiksinformatie",
+          "vl:message": {
+            "nl": "De verwachte waarde voor landingspagina voor gebruiksinformatie is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/b643cb8952d752ef63a2b25c7fcebd89d08fb015",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Alandingspagina%20voor%20gebruiksinformatie",
+          "sh:description": {
+            "nl": "Een verwijzing naar de landingspagina met de specifieke informatie over het gebruik van de dataservice."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "landingspagina voor gebruiksinformatie"
+          },
+          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorGebruiksinformatie",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor landingspagina voor gebruiksinformatie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/c4eb7e771a95c6c3e5c04255458173a2b0b40f43",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Alandingspagina%20voor%20gebruiksinformatie",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
+          "sh:description": {
+            "nl": "Een verwijzing naar de landingspagina met de specifieke informatie over het gebruik van de dataservice."
+          },
+          "sh:name": {
+            "nl": "landingspagina voor gebruiksinformatie"
+          },
+          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorGebruiksinformatie",
+          "vl:message": {
+            "nl": "De range van landingspagina voor gebruiksinformatie moet van het type <http://www.w3.org/2001/XMLSchema#anyURI> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/0cdcfe2387440711ebbe94a2fcc93a29377956c5",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Alandingspagina%20voor%20statusinformatie",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
+          "sh:description": {
+            "nl": "Een verwijzing naar de statuspagina van de dataservice"
+          },
+          "sh:name": {
+            "nl": "landingspagina voor statusinformatie"
+          },
+          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie",
+          "vl:message": {
+            "nl": "De range van landingspagina voor statusinformatie moet van het type <http://www.w3.org/2001/XMLSchema#anyURI> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/82850377d4b3f60622237636f916abbbd0487e8f",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Alandingspagina%20voor%20statusinformatie",
+          "sh:description": {
+            "nl": "Een verwijzing naar de statuspagina van de dataservice"
+          },
+          "sh:name": {
+            "nl": "landingspagina voor statusinformatie"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie",
+          "vl:message": {
+            "nl": "De verwachte waarde voor landingspagina voor statusinformatie is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/82e4f4e38a285ebeffb0f14c036b491b71a26200",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Alandingspagina%20voor%20statusinformatie",
+          "sh:description": {
+            "nl": "Een verwijzing naar de statuspagina van de dataservice"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "landingspagina voor statusinformatie"
+          },
+          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor landingspagina voor statusinformatie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/0aea9e8a54457ca50f1b00c07872cb7c7b39e8ba",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Alevensfase",
+          "sh:description": {
+            "nl": "De levensfase waarin de dataservice zich bevindt."
+          },
+          "sh:name": {
+            "nl": "levensfase"
+          },
+          "sh:node": {
+            "@type": "sh:NodeShape",
+            "rdfs:comment": "codelist restriction",
+            "sh:property": {
+              "sh:class": "skos:ConceptScheme",
+              "sh:hasValue": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices/raw/master/codelijsten/levensfase.ttl",
+              "sh:minCount": "1",
+              "sh:nodeKind": "sh:IRI",
+              "sh:path": "skos:inScheme"
+            }
+          },
+          "sh:nodeKind": "sh:IRI",
+          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#levensfase",
+          "sh:severity": "sh:Warning",
+          "vl:message": {
+            "nl": "Enkel waarden uit codelijst <https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices/raw/master/codelijsten/levensfase.ttl> verwacht voor levensfase"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/13afabc6c35a0042403bd3a9f50222200152231a",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Alevensfase",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "nl": "De levensfase waarin de dataservice zich bevindt."
+          },
+          "sh:name": {
+            "nl": "levensfase"
+          },
+          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#levensfase",
+          "vl:message": {
+            "nl": "De range van levensfase moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/6fcde61d8f2df94280fec9a081ade83c372a4f6d",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Alevensfase",
+          "sh:description": {
+            "nl": "De levensfase waarin de dataservice zich bevindt."
+          },
+          "sh:name": {
+            "nl": "levensfase"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#levensfase",
+          "vl:message": {
+            "nl": "De verwachte waarde voor levensfase is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/8a32a3e6b5ca4b68f8846b184e7faa4f48a0ee1d",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Alevensfase",
+          "sh:description": {
+            "nl": "De levensfase waarin de dataservice zich bevindt."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "levensfase"
+          },
+          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#levensfase",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor levensfase"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/509740cc7b3c86ebee90dc6303c11c40e2b08212",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Alicentie",
+          "sh:class": "http://purl.org/dc/terms/LicenseDocument",
+          "sh:description": {
+            "nl": "De licentie van de dataservice."
+          },
+          "sh:name": {
+            "nl": "licentie"
+          },
+          "sh:path": "http://purl.org/dc/terms/license",
+          "vl:message": {
+            "nl": "De range van licentie moet van het type <http://purl.org/dc/terms/LicenseDocument> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/a42564b7be6f290f20410a7d087232aece0c058e",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Alicentie",
+          "sh:description": {
+            "nl": "De licentie van de dataservice."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "licentie"
+          },
+          "sh:path": "http://purl.org/dc/terms/license",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor licentie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/cafd2e3e66044d8ba2c435a9353e6880952086c5",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Alicentie",
+          "sh:description": {
+            "nl": "De licentie van de dataservice."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "licentie"
+          },
+          "sh:path": "http://purl.org/dc/terms/license",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor licentie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/d8e54950e23e8ca205dca07c1a4beb29f5a25aae",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Alicentie",
+          "sh:description": {
+            "nl": "De licentie van de dataservice."
+          },
+          "sh:name": {
+            "nl": "licentie"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/license",
+          "vl:message": {
+            "nl": "De verwachte waarde voor licentie is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/4523d6e75f8993d15c9332b0aae5dbbe64a85b5a",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Aontwikkelingstoestand",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "nl": "De ontwikkelingstoestand waarin de dataservice is gedeployed."
+          },
+          "sh:name": {
+            "nl": "ontwikkelingstoestand"
+          },
+          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand",
+          "vl:message": {
+            "nl": "De range van ontwikkelingstoestand moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/76f6cfca9a1964a539a879c911777c741a37cff0",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Aontwikkelingstoestand",
+          "sh:description": {
+            "nl": "De ontwikkelingstoestand waarin de dataservice is gedeployed."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "ontwikkelingstoestand"
+          },
+          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor ontwikkelingstoestand"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/c3c71d97499e137df1bd9ec4b3414bea7566e3aa",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Aontwikkelingstoestand",
+          "sh:description": {
+            "nl": "De ontwikkelingstoestand waarin de dataservice is gedeployed."
+          },
+          "sh:name": {
+            "nl": "ontwikkelingstoestand"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand",
+          "vl:message": {
+            "nl": "De verwachte waarde voor ontwikkelingstoestand is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/f9862087b9d1ec8465f46ee21e166c45776cf8bd",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Aontwikkelingstoestand",
+          "sh:description": {
+            "nl": "De ontwikkelingstoestand waarin de dataservice is gedeployed."
+          },
+          "sh:name": {
+            "nl": "ontwikkelingstoestand"
+          },
+          "sh:node": {
+            "@type": "sh:NodeShape",
+            "rdfs:comment": "codelist restriction",
+            "sh:property": {
+              "sh:class": "skos:ConceptScheme",
+              "sh:hasValue": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices/raw/master/codelijsten/ontwikkelingstoestand.ttl",
+              "sh:minCount": "1",
+              "sh:nodeKind": "sh:IRI",
+              "sh:path": "skos:inScheme"
+            }
+          },
+          "sh:nodeKind": "sh:IRI",
+          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand",
+          "sh:severity": "sh:Warning",
+          "vl:message": {
+            "nl": "Enkel waarden uit codelijst <https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices/raw/master/codelijsten/ontwikkelingstoestand.ttl> verwacht voor ontwikkelingstoestand"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/62bb7a143add01ac0956709b58850f4f5e5a0e47",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Arechten",
+          "sh:class": "http://purl.org/dc/terms/RightsStatement",
+          "sh:description": {
+            "nl": "Bepalingen van juridische aard die gelden op de dataservice."
+          },
+          "sh:name": {
+            "nl": "rechten"
+          },
+          "sh:path": "http://purl.org/dc/terms/rights",
+          "vl:message": {
+            "nl": "De range van rechten moet van het type <http://purl.org/dc/terms/RightsStatement> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/cf9b6e63030c3f6ad84bdae422a9e7e4d7e45cdb",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Arechten",
+          "sh:description": {
+            "nl": "Bepalingen van juridische aard die gelden op de dataservice."
+          },
+          "sh:name": {
+            "nl": "rechten"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/rights",
+          "vl:message": {
+            "nl": "De verwachte waarde voor rechten is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/1712ef1b325d7d2807bc601d6409b70a42eaff10",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Athema",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "nl": "De hoofdcategorie waartoe de dataservice behoort."
+          },
+          "sh:name": {
+            "nl": "thema"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#theme",
+          "vl:message": {
+            "nl": "De range van thema moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/48290800138d735a1909018da1426a5d120eedf0",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Athema",
+          "sh:description": {
+            "nl": "De hoofdcategorie waartoe de dataservice behoort."
+          },
+          "sh:name": {
+            "nl": "thema"
+          },
+          "sh:node": {
+            "@type": "sh:NodeShape",
+            "rdfs:comment": "codelist restriction",
+            "sh:property": {
+              "sh:class": "skos:ConceptScheme",
+              "sh:hasValue": "https://vocab.belgif.be/auth/datatheme",
+              "sh:minCount": "1",
+              "sh:nodeKind": "sh:IRI",
+              "sh:path": "skos:inScheme"
+            }
+          },
+          "sh:nodeKind": "sh:IRI",
+          "sh:path": "http://www.w3.org/ns/dcat#theme",
+          "sh:severity": "sh:Warning",
+          "vl:message": {
+            "nl": "Enkel waarden uit codelijst <https://vocab.belgif.be/auth/datatheme> verwacht voor thema"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/61806e0b195f68dda3838714307ac84578cad381",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Athema",
+          "sh:description": {
+            "nl": "De hoofdcategorie waartoe de dataservice behoort."
+          },
+          "sh:name": {
+            "nl": "thema"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/dcat#theme",
+          "vl:message": {
+            "nl": "De verwachte waarde voor thema is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/25d18a6e2598024ea186cc7be4391bdfd1bca21f",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Atitel",
+          "sh:description": {
+            "nl": "De naam van de dataservice."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "titel"
+          },
+          "sh:path": "http://purl.org/dc/terms/title",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor titel"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/3abb021249628221a667bec0bbd94407f1c77f06",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Atitel",
+          "sh:description": {
+            "nl": "De naam van de dataservice."
+          },
+          "sh:name": {
+            "nl": "titel"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/title",
+          "vl:message": {
+            "nl": "De verwachte waarde voor titel is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/5c245f65e6c2294cd7079eb566de6fd4e4adb829",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Atitel",
+          "sh:description": {
+            "nl": "De naam van de dataservice."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "titel"
+          },
+          "sh:path": "http://purl.org/dc/terms/title",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor titel"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/8041fe094c27b123422bd03a4e13ff0641087607",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Atitel",
+          "sh:description": {
+            "nl": "De naam van de dataservice."
+          },
+          "sh:name": {
+            "nl": "titel"
+          },
+          "sh:path": "http://purl.org/dc/terms/title",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor titel"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Atitel",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "nl": "De naam van de dataservice."
+          },
+          "sh:name": {
+            "nl": "titel"
+          },
+          "sh:path": "http://purl.org/dc/terms/title",
+          "vl:message": {
+            "nl": "De range van titel moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/4def3dfdce28c39c939d893efc2e4974f90a00e6",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Atoegankelijkheid",
+          "sh:description": {
+            "nl": "De toegankelijkheid voor de dataservice."
+          },
+          "sh:name": {
+            "nl": "toegankelijkheid"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/accessRights",
+          "vl:message": {
+            "nl": "De verwachte waarde voor toegankelijkheid is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/7463895a2bb9e7e4c96cd9a2e7f83ce2cf787098",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Atoegankelijkheid",
+          "sh:description": {
+            "nl": "De toegankelijkheid voor de dataservice."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "toegankelijkheid"
+          },
+          "sh:path": "http://purl.org/dc/terms/accessRights",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor toegankelijkheid"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/a81035a5dbbdae24651c34e5602a1fe6fe5427a3",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Atoegankelijkheid",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "nl": "De toegankelijkheid voor de dataservice."
+          },
+          "sh:name": {
+            "nl": "toegankelijkheid"
+          },
+          "sh:path": "http://purl.org/dc/terms/accessRights",
+          "vl:message": {
+            "nl": "De range van toegankelijkheid moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/c5f6c428a4ae32239d9662d58fa65ae4f0cf49e6",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Atoegankelijkheid",
+          "sh:description": {
+            "nl": "De toegankelijkheid voor de dataservice."
+          },
+          "sh:name": {
+            "nl": "toegankelijkheid"
+          },
+          "sh:node": {
+            "@type": "sh:NodeShape",
+            "rdfs:comment": "codelist restriction",
+            "sh:property": {
+              "sh:class": "skos:ConceptScheme",
+              "sh:hasValue": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
+              "sh:minCount": "1",
+              "sh:nodeKind": "sh:IRI",
+              "sh:path": "skos:inScheme"
+            }
+          },
+          "sh:nodeKind": "sh:IRI",
+          "sh:path": "http://purl.org/dc/terms/accessRights",
+          "sh:severity": "sh:Warning",
+          "vl:message": {
+            "nl": "Enkel waarden uit codelijst <http://publications.europa.eu/resource/authority/access-right/PUBLIC> verwacht voor toegankelijkheid"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/f9524ba86e28981345a2b84aea788460ad4e805e",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Atoegankelijkheid",
+          "sh:description": {
+            "nl": "De toegankelijkheid voor de dataservice."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "toegankelijkheid"
+          },
+          "sh:path": "http://purl.org/dc/terms/accessRights",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor toegankelijkheid"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/1b8b3557ea1ccbabc0962c345782ae53740e72e1",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Atrefwoord",
+          "sh:description": {
+            "nl": "Een trefwoord of tag die de resource beschrijft."
+          },
+          "sh:name": {
+            "nl": "trefwoord"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#keyword",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor trefwoord"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/44f6426e2306c5bc0421823eb4a1a034b615f715",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Atrefwoord",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "nl": "Een trefwoord of tag die de resource beschrijft."
+          },
+          "sh:name": {
+            "nl": "trefwoord"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#keyword",
+          "vl:message": {
+            "nl": "De range van trefwoord moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/e6c6ca31b0392ad15853ad4651c1c36e2afee378",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Atrefwoord",
+          "sh:description": {
+            "nl": "Een trefwoord of tag die de resource beschrijft."
+          },
+          "sh:name": {
+            "nl": "trefwoord"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/dcat#keyword",
+          "vl:message": {
+            "nl": "De verwachte waarde voor trefwoord is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/302090a90a5755780bc8fe09be4bcd29193cfd6d",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Aversie",
+          "sh:description": {
+            "nl": "Een unieke aanduiding van een variant van de dataservice door middel van een versienummer of -naam van de dataservice."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "versie"
+          },
+          "sh:path": "http://www.w3.org/2002/07/owl#versionInfo",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor versie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/587f313308111b587d1bd2440a56622e64624864",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Aversie",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "nl": "Een unieke aanduiding van een variant van de dataservice door middel van een versienummer of -naam van de dataservice."
+          },
+          "sh:name": {
+            "nl": "versie"
+          },
+          "sh:path": "http://www.w3.org/2002/07/owl#versionInfo",
+          "vl:message": {
+            "nl": "De range van versie moet van het type <http://www.w3.org/2001/XMLSchema#string> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/da14fb4265d70298230c80c3146555ce89f97077",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Aversie",
+          "sh:description": {
+            "nl": "Een unieke aanduiding van een variant van de dataservice door middel van een versienummer of -naam van de dataservice."
+          },
+          "sh:name": {
+            "nl": "versie"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://www.w3.org/2002/07/owl#versionInfo",
+          "vl:message": {
+            "nl": "De verwachte waarde voor versie is een Literal"
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/dcat#DataService"
+    },
+    {
+      "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/39607ae8317e4f99846f57f713d51b19528e5764",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Aalternatieve%20identificator",
+          "sh:class": "http://www.w3.org/ns/adms#Identifier",
+          "sh:description": {
+            "nl": "Een alternatieve identificator (dan de unieke identificator) voor een dataset kan hier beschreven worden."
+          },
+          "sh:name": {
+            "nl": "alternatieve identificator"
+          },
+          "sh:path": "http://www.w3.org/ns/adms#identifier",
+          "vl:message": {
+            "nl": "De range van alternatieve identificator moet van het type <http://www.w3.org/ns/adms#Identifier> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/4264dad4a2bf40f022d463c951c04da90d006652",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Aalternatieve%20identificator",
+          "sh:description": {
+            "nl": "Een alternatieve identificator (dan de unieke identificator) voor een dataset kan hier beschreven worden."
+          },
+          "sh:name": {
+            "nl": "alternatieve identificator"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/adms#identifier",
+          "vl:message": {
+            "nl": "De verwachte waarde voor alternatieve identificator is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/0e9a7d4dbf6ec19568d474169ad717f71e882319",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Abeschrijving",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "nl": "Een bondige tekstuele omschrijving van de dataset."
+          },
+          "sh:name": {
+            "nl": "beschrijving"
+          },
+          "sh:path": "http://purl.org/dc/terms/description",
+          "vl:message": {
+            "nl": "De range van beschrijving moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/2217949528fdd3dba0d2e3fc7e6fb662caa193f5",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Abeschrijving",
+          "sh:description": {
+            "nl": "Een bondige tekstuele omschrijving van de dataset."
+          },
+          "sh:name": {
+            "nl": "beschrijving"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/description",
+          "vl:message": {
+            "nl": "De verwachte waarde voor beschrijving is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/4a16176c26d8d5526c76974a1530f1ffdd596e93",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Abeschrijving",
+          "sh:description": {
+            "nl": "Een bondige tekstuele omschrijving van de dataset."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "beschrijving"
+          },
+          "sh:path": "http://purl.org/dc/terms/description",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor beschrijving"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/7521953addc62cf367ab3c8ec0dc63cb5981ea23",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Abeschrijving",
+          "sh:description": {
+            "nl": "Een bondige tekstuele omschrijving van de dataset."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "beschrijving"
+          },
+          "sh:path": "http://purl.org/dc/terms/description",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor beschrijving"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/da05d674f29a225a7115411e9f7ca442a25f2c88",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Abeschrijving",
+          "sh:description": {
+            "nl": "Een bondige tekstuele omschrijving van de dataset."
+          },
+          "sh:name": {
+            "nl": "beschrijving"
+          },
+          "sh:path": "http://purl.org/dc/terms/description",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor beschrijving"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/cd62e61c68b4ddb716bf1522d14d29af560b9efe",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Aconform",
+          "sh:description": {
+            "nl": "Een standaard, schema, applicatieprofiel, vocabularium waaraan de dataset voldoet."
+          },
+          "sh:name": {
+            "nl": "conform"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/conformsTo",
+          "vl:message": {
+            "nl": "De verwachte waarde voor conform is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/dd5cf5b162b3f92600a391f44660bf2b255693ac",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Aconform",
+          "sh:class": "http://purl.org/dc/terms/Standard",
+          "sh:description": {
+            "nl": "Een standaard, schema, applicatieprofiel, vocabularium waaraan de dataset voldoet."
+          },
+          "sh:name": {
+            "nl": "conform"
+          },
+          "sh:path": "http://purl.org/dc/terms/conformsTo",
+          "vl:message": {
+            "nl": "De range van conform moet van het type <http://purl.org/dc/terms/Standard> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/0ec26077ea6669e10915c5e26c04670b80711a2d",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Acontactinformatie",
+          "sh:description": {
+            "nl": "De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de dataset."
+          },
+          "sh:name": {
+            "nl": "contactinformatie"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/dcat#contactPoint",
+          "vl:message": {
+            "nl": "De verwachte waarde voor contactinformatie is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/19ee039173472235e539aea2aa961ff7d3b89f5a",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Acontactinformatie",
+          "sh:description": {
+            "nl": "De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de dataset."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "contactinformatie"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#contactPoint",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor contactinformatie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/458062b0ae03c559426b85df3dd28e1c785acb0b",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Acontactinformatie",
+          "sh:class": "http://schema.org/ContactPoint",
+          "sh:description": {
+            "nl": "De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de dataset."
+          },
+          "sh:name": {
+            "nl": "contactinformatie"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#contactPoint",
+          "vl:message": {
+            "nl": "De range van contactinformatie moet van het type <http://schema.org/ContactPoint> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/e332dbce5947de4314c3ed3fe5862f26d70a15c4",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Acontactinformatie",
+          "sh:description": {
+            "nl": "De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de dataset."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "contactinformatie"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#contactPoint",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor contactinformatie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/c019c438ed692cc3b30ca44c066f7e82400a1a50",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Adistributie",
+          "sh:description": {
+            "nl": "Een beschikbare distributie van de dataset."
+          },
+          "sh:name": {
+            "nl": "distributie"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/dcat#distribution",
+          "vl:message": {
+            "nl": "De verwachte waarde voor distributie is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/cfbe0a11423fe15e990c3cbd5209404c26dbef0f",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Adistributie",
+          "sh:class": "http://www.w3.org/ns/dcat#Distribution",
+          "sh:description": {
+            "nl": "Een beschikbare distributie van de dataset."
+          },
+          "sh:name": {
+            "nl": "distributie"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#distribution",
+          "vl:message": {
+            "nl": "De range van distributie moet van het type <http://www.w3.org/ns/dcat#Distribution> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Aidentificator",
+          "sh:class": "http://www.w3.org/ns/adms#Identifier",
+          "sh:description": {
+            "nl": "De unieke identificator van de dataset."
+          },
+          "sh:name": {
+            "nl": "identificator"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier",
+          "vl:message": {
+            "nl": "De range van identificator moet van het type <http://www.w3.org/ns/adms#Identifier> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/972d73e7a13100b66c0c2f44466edac47aa1ab28",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Aidentificator",
+          "sh:description": {
+            "nl": "De unieke identificator van de dataset."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "identificator"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor identificator"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/bb43a48c77e7d98609af3d3bb1b1648370465308",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Aidentificator",
+          "sh:description": {
+            "nl": "De unieke identificator van de dataset."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "identificator"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor identificator"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/dea743ba34d85e4615aa135025555bb2247c99e0",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Aidentificator",
+          "sh:description": {
+            "nl": "De unieke identificator van de dataset."
+          },
+          "sh:name": {
+            "nl": "identificator"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/identifier",
+          "vl:message": {
+            "nl": "De verwachte waarde voor identificator is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/8d3107c28b9832ee11242608b2a2a2e2f13b450c",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Alandingspagina",
+          "sh:description": {
+            "nl": "Een algemene webpagina waarnaar kan worden genavigeerd in een webbrowser, met algemene informatie over de dataset, zijn distributies en/of aanvullende informatie."
+          },
+          "sh:name": {
+            "nl": "landingspagina"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/dcat#landingPage",
+          "vl:message": {
+            "nl": "De verwachte waarde voor landingspagina is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/fe1a78c9169da2469a23fd783cf9a69060bfe198",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Alandingspagina",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
+          "sh:description": {
+            "nl": "Een algemene webpagina waarnaar kan worden genavigeerd in een webbrowser, met algemene informatie over de dataset, zijn distributies en/of aanvullende informatie."
+          },
+          "sh:name": {
+            "nl": "landingspagina"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#landingPage",
+          "vl:message": {
+            "nl": "De range van landingspagina moet van het type <http://www.w3.org/2001/XMLSchema#anyURI> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/1712ef1b325d7d2807bc601d6409b70a42eaff10",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Athema",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "nl": "De hoofdcategorie waartoe de dataset behoort."
+          },
+          "sh:name": {
+            "nl": "thema"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#theme",
+          "vl:message": {
+            "nl": "De range van thema moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/48290800138d735a1909018da1426a5d120eedf0",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Athema",
+          "sh:description": {
+            "nl": "De hoofdcategorie waartoe de dataset behoort."
+          },
+          "sh:name": {
+            "nl": "thema"
+          },
+          "sh:node": {
+            "@type": "sh:NodeShape",
+            "rdfs:comment": "codelist restriction",
+            "sh:property": {
+              "sh:class": "skos:ConceptScheme",
+              "sh:hasValue": "https://vocab.belgif.be/auth/datatheme",
+              "sh:minCount": "1",
+              "sh:nodeKind": "sh:IRI",
+              "sh:path": "skos:inScheme"
+            }
+          },
+          "sh:nodeKind": "sh:IRI",
+          "sh:path": "http://www.w3.org/ns/dcat#theme",
+          "sh:severity": "sh:Warning",
+          "vl:message": {
+            "nl": "Enkel waarden uit codelijst <https://vocab.belgif.be/auth/datatheme> verwacht voor thema"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/61806e0b195f68dda3838714307ac84578cad381",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Athema",
+          "sh:description": {
+            "nl": "De hoofdcategorie waartoe de dataset behoort."
+          },
+          "sh:name": {
+            "nl": "thema"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/dcat#theme",
+          "vl:message": {
+            "nl": "De verwachte waarde voor thema is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/25d18a6e2598024ea186cc7be4391bdfd1bca21f",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Atitel",
+          "sh:description": {
+            "nl": "De naam van de dataset."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "titel"
+          },
+          "sh:path": "http://purl.org/dc/terms/title",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor titel"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/3abb021249628221a667bec0bbd94407f1c77f06",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Atitel",
+          "sh:description": {
+            "nl": "De naam van de dataset."
+          },
+          "sh:name": {
+            "nl": "titel"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/title",
+          "vl:message": {
+            "nl": "De verwachte waarde voor titel is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/5c245f65e6c2294cd7079eb566de6fd4e4adb829",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Atitel",
+          "sh:description": {
+            "nl": "De naam van de dataset."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "titel"
+          },
+          "sh:path": "http://purl.org/dc/terms/title",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor titel"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/8041fe094c27b123422bd03a4e13ff0641087607",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Atitel",
+          "sh:description": {
+            "nl": "De naam van de dataset."
+          },
+          "sh:name": {
+            "nl": "titel"
+          },
+          "sh:path": "http://purl.org/dc/terms/title",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor titel"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Atitel",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "nl": "De naam van de dataset."
+          },
+          "sh:name": {
+            "nl": "titel"
+          },
+          "sh:path": "http://purl.org/dc/terms/title",
+          "vl:message": {
+            "nl": "De range van titel moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/4def3dfdce28c39c939d893efc2e4974f90a00e6",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Atoegankelijkheid",
+          "sh:description": {
+            "nl": "De toegankelijkheid voor de dataset."
+          },
+          "sh:name": {
+            "nl": "toegankelijkheid"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/accessRights",
+          "vl:message": {
+            "nl": "De verwachte waarde voor toegankelijkheid is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/7463895a2bb9e7e4c96cd9a2e7f83ce2cf787098",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Atoegankelijkheid",
+          "sh:description": {
+            "nl": "De toegankelijkheid voor de dataset."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "toegankelijkheid"
+          },
+          "sh:path": "http://purl.org/dc/terms/accessRights",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor toegankelijkheid"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/a81035a5dbbdae24651c34e5602a1fe6fe5427a3",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Atoegankelijkheid",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "nl": "De toegankelijkheid voor de dataset."
+          },
+          "sh:name": {
+            "nl": "toegankelijkheid"
+          },
+          "sh:path": "http://purl.org/dc/terms/accessRights",
+          "vl:message": {
+            "nl": "De range van toegankelijkheid moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/c5f6c428a4ae32239d9662d58fa65ae4f0cf49e6",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Atoegankelijkheid",
+          "sh:description": {
+            "nl": "De toegankelijkheid voor de dataset."
+          },
+          "sh:name": {
+            "nl": "toegankelijkheid"
+          },
+          "sh:node": {
+            "@type": "sh:NodeShape",
+            "rdfs:comment": "codelist restriction",
+            "sh:property": {
+              "sh:class": "skos:ConceptScheme",
+              "sh:hasValue": "https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/access-right",
+              "sh:minCount": "1",
+              "sh:nodeKind": "sh:IRI",
+              "sh:path": "skos:inScheme"
+            }
+          },
+          "sh:nodeKind": "sh:IRI",
+          "sh:path": "http://purl.org/dc/terms/accessRights",
+          "sh:severity": "sh:Warning",
+          "vl:message": {
+            "nl": "Enkel waarden uit codelijst <https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/access-right> verwacht voor toegankelijkheid"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/f9524ba86e28981345a2b84aea788460ad4e805e",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Atoegankelijkheid",
+          "sh:description": {
+            "nl": "De toegankelijkheid voor de dataset."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "toegankelijkheid"
+          },
+          "sh:path": "http://purl.org/dc/terms/accessRights",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor toegankelijkheid"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/1b8b3557ea1ccbabc0962c345782ae53740e72e1",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Atrefwoord",
+          "sh:description": {
+            "nl": "Een trefwoord of tag die de resource beschrijft."
+          },
+          "sh:name": {
+            "nl": "trefwoord"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#keyword",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor trefwoord"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/44f6426e2306c5bc0421823eb4a1a034b615f715",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Atrefwoord",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "nl": "Een trefwoord of tag die de resource beschrijft."
+          },
+          "sh:name": {
+            "nl": "trefwoord"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#keyword",
+          "vl:message": {
+            "nl": "De range van trefwoord moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/e6c6ca31b0392ad15853ad4651c1c36e2afee378",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Atrefwoord",
+          "sh:description": {
+            "nl": "Een trefwoord of tag die de resource beschrijft."
+          },
+          "sh:name": {
+            "nl": "trefwoord"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/dcat#keyword",
+          "vl:message": {
+            "nl": "De verwachte waarde voor trefwoord is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/302090a90a5755780bc8fe09be4bcd29193cfd6d",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Aversie",
+          "sh:description": {
+            "nl": "Een unieke aanduiding van een variant van de dataset door middel van een versienummer of -naam van de dataset."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "versie"
+          },
+          "sh:path": "http://www.w3.org/2002/07/owl#versionInfo",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor versie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/587f313308111b587d1bd2440a56622e64624864",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Aversie",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:description": {
+            "nl": "Een unieke aanduiding van een variant van de dataset door middel van een versienummer of -naam van de dataset."
+          },
+          "sh:name": {
+            "nl": "versie"
+          },
+          "sh:path": "http://www.w3.org/2002/07/owl#versionInfo",
+          "vl:message": {
+            "nl": "De range van versie moet van het type <http://www.w3.org/2001/XMLSchema#string> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/da14fb4265d70298230c80c3146555ce89f97077",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Aversie",
+          "sh:description": {
+            "nl": "Een unieke aanduiding van een variant van de dataset door middel van een versienummer of -naam van de dataset."
+          },
+          "sh:name": {
+            "nl": "versie"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://www.w3.org/2002/07/owl#versionInfo",
+          "vl:message": {
+            "nl": "De verwachte waarde voor versie is een Literal"
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/dcat#Dataset"
+    },
+    {
+      "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/39607ae8317e4f99846f57f713d51b19528e5764",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3Aalternatieve%20identificator",
+          "sh:class": "http://www.w3.org/ns/adms#Identifier",
+          "sh:description": {
+            "nl": "Een alternatieve identificator (dan de unieke identificator) voor een distributie kan hier beschreven worden."
+          },
+          "sh:name": {
+            "nl": "alternatieve identificator"
+          },
+          "sh:path": "http://www.w3.org/ns/adms#identifier",
+          "vl:message": {
+            "nl": "De range van alternatieve identificator moet van het type <http://www.w3.org/ns/adms#Identifier> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/4264dad4a2bf40f022d463c951c04da90d006652",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3Aalternatieve%20identificator",
+          "sh:description": {
+            "nl": "Een alternatieve identificator (dan de unieke identificator) voor een distributie kan hier beschreven worden."
+          },
+          "sh:name": {
+            "nl": "alternatieve identificator"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/adms#identifier",
+          "vl:message": {
+            "nl": "De verwachte waarde voor alternatieve identificator is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/0e61107f343f202ee672ef465cfcdbbcd746e21d",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3AdownloadURL",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
+          "sh:description": {
+            "nl": "De URL waar de data gedownload kan worden."
+          },
+          "sh:name": {
+            "nl": "downloadURL"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#downloadURL",
+          "vl:message": {
+            "nl": "De range van downloadURL moet van het type <http://www.w3.org/2001/XMLSchema#anyURI> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/1ff94e5c0d35c7d1a7f2c4bd160a8c8e4eee6f97",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3AdownloadURL",
+          "sh:description": {
+            "nl": "De URL waar de data gedownload kan worden."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "downloadURL"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#downloadURL",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor downloadURL"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/d897fcbd717ff4c82191a32465ea8a6e46fbd63b",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3AdownloadURL",
+          "sh:description": {
+            "nl": "De URL waar de data gedownload kan worden."
+          },
+          "sh:name": {
+            "nl": "downloadURL"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/dcat#downloadURL",
+          "vl:message": {
+            "nl": "De verwachte waarde voor downloadURL is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3Aidentificator",
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:description": {
+            "nl": "De unieke identificator van de distributie."
+          },
+          "sh:name": {
+            "nl": "identificator"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier",
+          "vl:message": {
+            "nl": "De range van identificator moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/972d73e7a13100b66c0c2f44466edac47aa1ab28",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3Aidentificator",
+          "sh:description": {
+            "nl": "De unieke identificator van de distributie."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "identificator"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor identificator"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/bb43a48c77e7d98609af3d3bb1b1648370465308",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3Aidentificator",
+          "sh:description": {
+            "nl": "De unieke identificator van de distributie."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "identificator"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor identificator"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/dea743ba34d85e4615aa135025555bb2247c99e0",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3Aidentificator",
+          "sh:description": {
+            "nl": "De unieke identificator van de distributie."
+          },
+          "sh:name": {
+            "nl": "identificator"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/identifier",
+          "vl:message": {
+            "nl": "De verwachte waarde voor identificator is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/509740cc7b3c86ebee90dc6303c11c40e2b08212",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3Alicentie",
+          "sh:class": "http://purl.org/dc/terms/LicenseDocument",
+          "sh:description": {
+            "nl": "De licentie van de distributie."
+          },
+          "sh:name": {
+            "nl": "licentie"
+          },
+          "sh:path": "http://purl.org/dc/terms/license",
+          "vl:message": {
+            "nl": "De range van licentie moet van het type <http://purl.org/dc/terms/LicenseDocument> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/cafd2e3e66044d8ba2c435a9353e6880952086c5",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3Alicentie",
+          "sh:description": {
+            "nl": "De licentie van de distributie."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "licentie"
+          },
+          "sh:path": "http://purl.org/dc/terms/license",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor licentie"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/d8e54950e23e8ca205dca07c1a4beb29f5a25aae",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3Alicentie",
+          "sh:description": {
+            "nl": "De licentie van de distributie."
+          },
+          "sh:name": {
+            "nl": "licentie"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/license",
+          "vl:message": {
+            "nl": "De verwachte waarde voor licentie is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/62bb7a143add01ac0956709b58850f4f5e5a0e47",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3Arechten",
+          "sh:class": "http://purl.org/dc/terms/RightsStatement",
+          "sh:description": {
+            "nl": "Bepalingen van juridische aard die gelden op de distributie."
+          },
+          "sh:name": {
+            "nl": "rechten"
+          },
+          "sh:path": "http://purl.org/dc/terms/rights",
+          "vl:message": {
+            "nl": "De range van rechten moet van het type <http://purl.org/dc/terms/RightsStatement> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/cf9b6e63030c3f6ad84bdae422a9e7e4d7e45cdb",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3Arechten",
+          "sh:description": {
+            "nl": "Bepalingen van juridische aard die gelden op de distributie."
+          },
+          "sh:name": {
+            "nl": "rechten"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/rights",
+          "vl:message": {
+            "nl": "De verwachte waarde voor rechten is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/3abb021249628221a667bec0bbd94407f1c77f06",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3Atitel",
+          "sh:description": {
+            "nl": "De naam van de distributie."
+          },
+          "sh:name": {
+            "nl": "titel"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/title",
+          "vl:message": {
+            "nl": "De verwachte waarde voor titel is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/5c245f65e6c2294cd7079eb566de6fd4e4adb829",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3Atitel",
+          "sh:description": {
+            "nl": "De naam van de distributie."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "titel"
+          },
+          "sh:path": "http://purl.org/dc/terms/title",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor titel"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/8041fe094c27b123422bd03a4e13ff0641087607",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3Atitel",
+          "sh:description": {
+            "nl": "De naam van de distributie."
+          },
+          "sh:name": {
+            "nl": "titel"
+          },
+          "sh:path": "http://purl.org/dc/terms/title",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor titel"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3Atitel",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "nl": "De naam van de distributie."
+          },
+          "sh:name": {
+            "nl": "titel"
+          },
+          "sh:path": "http://purl.org/dc/terms/title",
+          "vl:message": {
+            "nl": "De range van titel moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/28a9b5a610271b2ad2cd6917763075560213ca20",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3AtoegangsURL",
+          "sh:description": {
+            "nl": "Een URL waar de data kan gevonden worden."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "toegangsURL"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#accessURL",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor toegangsURL"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/3d0e850677d211050dd9e93ec6496e6af9908da6",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3AtoegangsURL",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
+          "sh:description": {
+            "nl": "Een URL waar de data kan gevonden worden."
+          },
+          "sh:name": {
+            "nl": "toegangsURL"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#accessURL",
+          "vl:message": {
+            "nl": "De range van toegangsURL moet van het type <http://www.w3.org/2001/XMLSchema#anyURI> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/857e891dfe5fb73c3b3556b73636ba878a8d6098",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3AtoegangsURL",
+          "sh:description": {
+            "nl": "Een URL waar de data kan gevonden worden."
+          },
+          "sh:name": {
+            "nl": "toegangsURL"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://www.w3.org/ns/dcat#accessURL",
+          "vl:message": {
+            "nl": "De verwachte waarde voor toegangsURL is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/bf4475984ce7d0eb4bade6e749e672a8efa7dd2d",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3AtoegangsURL",
+          "sh:description": {
+            "nl": "Een URL waar de data kan gevonden worden."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "toegangsURL"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#accessURL",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor toegangsURL"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/c612c1f62d45c84405f45260ab0737a10f5b0a18",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3Awordt%20aangeboden%20door",
+          "sh:class": "http://www.w3.org/ns/dcat#DataService",
+          "sh:description": {
+            "nl": "Een dataservice die deze distributie aanbiedt."
+          },
+          "sh:name": {
+            "nl": "wordt aangeboden door"
+          },
+          "sh:path": "http://www.w3.org/ns/dcat#accessService",
+          "vl:message": {
+            "nl": "De range van wordt aangeboden door moet van het type <http://www.w3.org/ns/dcat#DataService> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/c80491e2442911980bfa39aa3959c6bd2173bdd7",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3Awordt%20aangeboden%20door",
+          "sh:description": {
+            "nl": "Een dataservice die deze distributie aanbiedt."
+          },
+          "sh:name": {
+            "nl": "wordt aangeboden door"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://www.w3.org/ns/dcat#accessService",
+          "vl:message": {
+            "nl": "De verwachte waarde voor wordt aangeboden door is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/dcat#Distribution"
+    },
+    {
+      "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/2ea1d293b25f05ec202dd2dcf8924e8518262c91",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusResource%3Astatuut",
+          "sh:description": {
+            "nl": "Een aanduiding van op welke basis de catalogusresource beschikbaar is."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "statuut"
+          },
+          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor statuut"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/67325124afc7d6eac4402056620665f7348ef62a",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusResource%3Astatuut",
+          "sh:description": {
+            "nl": "Een aanduiding van op welke basis de catalogusresource beschikbaar is."
+          },
+          "sh:name": {
+            "nl": "statuut"
+          },
+          "sh:node": {
+            "@type": "sh:NodeShape",
+            "rdfs:comment": "codelist restriction",
+            "sh:property": {
+              "sh:class": "skos:ConceptScheme",
+              "sh:hasValue": "https://metadata.vlaanderen.be/id/GDI-Vlaanderen-Trefwoorden/",
+              "sh:minCount": "1",
+              "sh:nodeKind": "sh:IRI",
+              "sh:path": "skos:inScheme"
+            }
+          },
+          "sh:nodeKind": "sh:IRI",
+          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
+          "sh:severity": "sh:Warning",
+          "vl:message": {
+            "nl": "Enkel waarden uit codelijst <https://metadata.vlaanderen.be/id/GDI-Vlaanderen-Trefwoorden/> verwacht voor statuut"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/689a62fc19cecbb3a76f9ab47547113775587884",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusResource%3Astatuut",
+          "sh:description": {
+            "nl": "Een aanduiding van op welke basis de catalogusresource beschikbaar is."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "statuut"
+          },
+          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor statuut"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/7e4566e17c28c1eb8ddfceb33f62db08bca6106f",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusResource%3Astatuut",
+          "sh:description": {
+            "nl": "Een aanduiding van op welke basis de catalogusresource beschikbaar is."
+          },
+          "sh:name": {
+            "nl": "statuut"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
+          "vl:message": {
+            "nl": "De verwachte waarde voor statuut is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/f96c5f798f9e9c00220a293bd11f37e83616d33b",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusResource%3Astatuut",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:description": {
+            "nl": "Een aanduiding van op welke basis de catalogusresource beschikbaar is."
+          },
+          "sh:name": {
+            "nl": "statuut"
+          },
+          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
+          "vl:message": {
+            "nl": "De range van statuut moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/4e2d6a9c70cecbd8ed9da2e8728fa8f5d0b57f2b",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusResource%3Auitgever",
+          "sh:description": {
+            "nl": "De uitgever, de entiteit die verantwoordelijk is voor het beschikbaar stellen, van de resource in de catalogus."
+          },
+          "sh:name": {
+            "nl": "uitgever"
+          },
+          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/publisher",
+          "vl:message": {
+            "nl": "De verwachte waarde voor uitgever is een rdfs:Resource (URI of blank node)"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/5334cf8edf5cc07e349524728fe4c9b076e4c45e",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusResource%3Auitgever",
+          "sh:description": {
+            "nl": "De uitgever, de entiteit die verantwoordelijk is voor het beschikbaar stellen, van de resource in de catalogus."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "uitgever"
+          },
+          "sh:path": "http://purl.org/dc/terms/publisher",
+          "vl:message": {
+            "nl": "Maximaal 1 waarden toegelaten voor uitgever"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/aabe67e6a56c5e2fc5695716e8f7b66edd525085",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusResource%3Auitgever",
+          "sh:class": "http://purl.org/dc/terms/Agent",
+          "sh:description": {
+            "nl": "De uitgever, de entiteit die verantwoordelijk is voor het beschikbaar stellen, van de resource in de catalogus."
+          },
+          "sh:name": {
+            "nl": "uitgever"
+          },
+          "sh:path": "http://purl.org/dc/terms/publisher",
+          "vl:message": {
+            "nl": "De range van uitgever moet van het type <http://purl.org/dc/terms/Agent> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/e2d4034a0a398701f4257641ebcbc85e8683b29d",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusResource%3Auitgever",
+          "sh:description": {
+            "nl": "De uitgever, de entiteit die verantwoordelijk is voor het beschikbaar stellen, van de resource in de catalogus."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "uitgever"
+          },
+          "sh:path": "http://purl.org/dc/terms/publisher",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor uitgever"
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/dcat#Resource"
+    }
+  ]
+}
