@@ -890,7 +890,8 @@
           "sh:path": "http://purl.org/dc/terms/modified"
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusRecordShape/de6d17a0bf0295b5d5cf59b23bd7f20dc83c017c",
+            "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusRecordShape/de6d17a0bf0295b5d5cf59b23bd7f20dc83c017c",
+	    "vl:rule": "rule-122",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusRecord%3Awijzigingsdatum",
           "sh:definition": {
             "nl": "De meest recente datum waarop de record in de catalogus is gewijzigd, bijgewerkt of aangepast."
@@ -2426,7 +2427,8 @@
           "sh:path": "http://purl.org/dc/terms/identifier"
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/509740cc7b3c86ebee90dc6303c11c40e2b08212",
+            "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/509740cc7b3c86ebee90dc6303c11c40e2b08212",
+	    "vl:rule": "rule-87",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3Alicentie",
           "sh:class": "http://purl.org/dc/terms/LicenseDocument",
           "sh:definition": {
@@ -2438,7 +2440,8 @@
           "sh:path": "http://purl.org/dc/terms/license"
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/cafd2e3e66044d8ba2c435a9353e6880952086c5",
+            "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/cafd2e3e66044d8ba2c435a9353e6880952086c5",
+	    "vl:rule": "rule-88",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Distributie%3Alicentie",
           "sh:definition": {
             "nl": "De licentie van de distributie."

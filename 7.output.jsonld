@@ -2698,7 +2698,8 @@
           "sh:path": "http://purl.org/dc/terms/publisher"
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/5334cf8edf5cc07e349524728fe4c9b076e4c45e",
+            "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/5334cf8edf5cc07e349524728fe4c9b076e4c45e",
+	    "vl:rule" : "yyy3",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusResource%3Auitgever",
           "sh:definition": {
             "nl": "De uitgever, de entiteit die verantwoordelijk is voor het beschikbaar stellen, van de resource in de catalogus."
@@ -2710,7 +2711,8 @@
           "sh:path": "http://purl.org/dc/terms/publisher"
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/aabe67e6a56c5e2fc5695716e8f7b66edd525085",
+            "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/aabe67e6a56c5e2fc5695716e8f7b66edd525085",
+	    "vl:rule" : "yyy2",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusResource%3Auitgever",
           "sh:class": "http://purl.org/dc/terms/Agent",
           "sh:definition": {
@@ -2722,7 +2724,8 @@
           "sh:path": "http://purl.org/dc/terms/publisher"
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/e2d4034a0a398701f4257641ebcbc85e8683b29d",
+            "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/e2d4034a0a398701f4257641ebcbc85e8683b29d",
+	    "vl:rule" : "yyy1",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusResource%3Auitgever",
           "sh:definition": {
             "nl": "De uitgever, de entiteit die verantwoordelijk is voor het beschikbaar stellen, van de resource in de catalogus."
