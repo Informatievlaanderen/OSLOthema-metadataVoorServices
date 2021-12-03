@@ -1,0 +1,43 @@
+<http://mir.geopunt.be/cl/Geopunt/VlaamseAdminRegios/Vlaanderen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Location> .
+<http://mir.geopunt.be/cl/Geopunt/VlaamseAdminRegios/Vlaanderen> <http://www.w3.org/ns/locn#geometry> "POLYGON ((5.92 50.67,5.92 51.51,2.53 51.51,2.53 50.67,5.92 50.67))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard> <http://purl.org/dc/terms/description> "Deze catalogus/distribution/mincard bevat datasets ontsloten door Mijn Organisatie. "@nl .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard> <http://purl.org/dc/terms/issued> "2016-12-10T12:54:04Z" .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard> <http://purl.org/dc/terms/license> <https://data.vlaanderen.be/id/licentie/creative-commons-zero-verklaring/v1.0> .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard> <http://purl.org/dc/terms/modified> "2019-02-27T15:15:08Z" .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard> <http://purl.org/dc/terms/publisher> _:b0 .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard> <http://purl.org/dc/terms/title> "Open Data Catalogus van Mijn Organisatie"@nl .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Catalog> .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard> <http://www.w3.org/ns/dcat#dataset> <https://mijnorganisatie/opendata/catalogus/distribution/mincard/1> .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard> <http://xmlns.com/foaf/0.1/homepage> <https://mijnorganisatie/index.html> .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard/1/distributies/csv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard/1> <http://purl.org/dc/terms/accessRights> <http://publications.europa.eu/resource/authority/access-right/PUBLIC> .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard/1> <http://purl.org/dc/terms/description> "Deze dataset geeft informatie over het zwembadbezoek."@nl .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard/1> <http://purl.org/dc/terms/identifier> "d27f4899-13e2-4e56-8702-29b06120f80d" .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard/1> <http://purl.org/dc/terms/identifier> "https://mijnorganisatie/opendata/catalogus/distribution/mincard/1" .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard/1> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard/1> <http://purl.org/dc/terms/publisher> _:b1 .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard/1> <http://purl.org/dc/terms/spatial> <http://mir.geopunt.be/cl/Geopunt/VlaamseAdminRegios/Vlaanderen> .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard/1> <http://purl.org/dc/terms/temporal> _:b2 .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard/1> <http://purl.org/dc/terms/title> "zwembadbezoekers"@nl .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard/1> <http://www.w3.org/2002/07/owl#versionInfo> "versie/1.0.1" .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard/1> <http://www.w3.org/ns/dcat#contactPoint> _:b3 .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard/1> <http://www.w3.org/ns/dcat#distribution> <https://mijnorganisatie/opendata/catalogus/distribution/mincard/1/distributies/csv> .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard/1> <http://www.w3.org/ns/dcat#keyword> "bezoekers"^^<http://www.w3.org/2000/01/rdf-schema#string> .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard/1> <http://www.w3.org/ns/dcat#keyword> "statistiek"^^<http://www.w3.org/2000/01/rdf-schema#string> .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard/1> <http://www.w3.org/ns/dcat#keyword> "zwembad"^^<http://www.w3.org/2000/01/rdf-schema#string> .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard/1> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/datatheme/SOCI> .
+<https://mijnorganisatie/opendata/catalogus/distribution/mincard/1> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/en/theme/29> .
+_:b0 <http://purl.org/dc/terms/type> <http://purl.org/adms/publishertype/LocalAuthority> .
+_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+_:b0 <http://xmlns.com/foaf/0.1/name> "Mijn Organisatie"@nl .
+_:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+_:b1 <http://xmlns.com/foaf/0.1/name> "Mijn Organisatie"@nl .
+_:b2 <http://schema.org/endDate> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:b2 <http://schema.org/startDate> "2018-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2006/vcard/ns#Organization> .
+_:b3 <http://www.w3.org/2006/vcard/ns#fn> "Mijn Toffe Organisatie" .
+_:b3 <http://www.w3.org/2006/vcard/ns#hasEmail> <mailto:opendata@mijnorganisatie.be> .
+_:b3 <http://www.w3.org/2006/vcard/ns#hasURL> "http://mijnorganisatie.org/" .
+_:b3 <http://www.w3.org/2006/vcard/ns#organization-name> "Mijn Toffe Organisatie" .

@@ -1,0 +1,23 @@
+<https://mijnorganisatie/opendata/catalogus/range> <http://purl.org/dc/terms/description> <http://dummy.com/dummy>.
+<https://mijnorganisatie/opendata/catalogus/range> <http://purl.org/dc/terms/issued> <http://dummy.com/dummy>.
+<https://mijnorganisatie/opendata/catalogus/range> <http://purl.org/dc/terms/language> "nl".
+<https://mijnorganisatie/opendata/catalogus/range> <http://purl.org/dc/terms/license> "licentie".
+<https://mijnorganisatie/opendata/catalogus/range> <http://purl.org/dc/terms/modified> <http://dummy.com/dummy>.
+<https://mijnorganisatie/opendata/catalogus/range> <http://purl.org/dc/terms/publisher> _:b0 .
+<https://mijnorganisatie/opendata/catalogus/range> <http://purl.org/dc/terms/title> <http://dummy.com/dummy>.
+<https://mijnorganisatie/opendata/catalogus/range> <http://www.w3.org/ns/dcat#themeTaxonomy> <http://dummy.com/theme>.
+<http://dummy.com/theme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dummy.com/someval> .
+<https://mijnorganisatie/opendata/catalogus/range> <http://purl.org/dc/terms/hasPart> <http://dummy.com/dummyCatalog>.
+<https://mijnorganisatie/opendata/catalogus/range> <http://purl.org/dc/terms/isPartOf> <http://dummy.com/dummyCatalog>.
+<http://dummy.com/dummyCatalog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dummy.com/someval> .
+<https://mijnorganisatie/opendata/catalogus/range> <http://www.w3.org/ns/dcat#record> <http://dummy.com/record>.
+<http://dummy.com/record> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dummy.com/someval> .
+<https://mijnorganisatie/opendata/catalogus/range> <http://purl.org/dc/terms/rights> <http://dummy.com/dummyRight>.
+<http://dummy.com/dummyRight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dummy.com/someval> .
+<https://mijnorganisatie/opendata/catalogus/range> <http://purl.org/dc/terms/spatial> <http://dummy.com/dummySpatial>.
+<http://dummy.com/dummySpatial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dummy.com/someval> .
+<https://mijnorganisatie/opendata/catalogus/range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Catalog> .
+<https://mijnorganisatie/opendata/catalogus/range> <http://xmlns.com/foaf/0.1/homepage> "https://mijnorganisatie/index.html".
+_:b0 <http://purl.org/dc/terms/type> <http://purl.org/adms/publishertype/LocalAuthority> .
+_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+_:b0 <http://xmlns.com/foaf/0.1/name> <https://dummy.com/dummy>.

@@ -1,0 +1,28 @@
+<https://mijnorganisatie/opendata/catalogus/maxcarderror> <http://purl.org/dc/terms/description> "A second description"@nl .
+<https://mijnorganisatie/opendata/catalogus/maxcarderror> <http://purl.org/dc/terms/description> "Deze catalogus/maxcarderror bevat datasets ontsloten door Mijn Organisatie. "@nl .
+<https://mijnorganisatie/opendata/catalogus/maxcarderror> <http://purl.org/dc/terms/issued> "2016-12-10T12:54:04Z" .
+<https://mijnorganisatie/opendata/catalogus/maxcarderror> <http://purl.org/dc/terms/issued> "2019-12-10T12:54:04Z" .
+<https://mijnorganisatie/opendata/catalogus/maxcarderror> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/ENG> .
+<https://mijnorganisatie/opendata/catalogus/maxcarderror> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://mijnorganisatie/opendata/catalogus/maxcarderror> <http://purl.org/dc/terms/license> <https://data.vlaanderen.be/id/licentie/creative-commons-zero-verklaring/v1.0> .
+<https://mijnorganisatie/opendata/catalogus/maxcarderror> <http://purl.org/dc/terms/license> <https://license.org/dummyvalue/2> .
+<https://mijnorganisatie/opendata/catalogus/maxcarderror> <http://purl.org/dc/terms/rights> <https://dummy.com/dummy/rights1>.
+<https://mijnorganisatie/opendata/catalogus/maxcarderror> <http://purl.org/dc/terms/rights> <https://dummy.com/dummy/rights2>.
+<https://mijnorganisatie/opendata/catalogus/maxcarderror> <http://purl.org/dc/terms/modified> "2019-02-27T15:15:08Z" .
+<https://mijnorganisatie/opendata/catalogus/maxcarderror> <http://purl.org/dc/terms/modified> "2019-12-10T12:54:04Z" .
+<https://mijnorganisatie/opendata/catalogus/maxcarderror> <http://purl.org/dc/terms/publisher> _:b0 .
+<https://mijnorganisatie/opendata/catalogus/maxcarderror> <http://purl.org/dc/terms/publisher> _:b1 .
+<https://mijnorganisatie/opendata/catalogus/maxcarderror> <http://purl.org/dc/terms/title> "An Open Data Catalogue"@nl .
+<https://mijnorganisatie/opendata/catalogus/maxcarderror> <http://purl.org/dc/terms/title> "Open Data Catalogus van Mijn Organisatie"@nl .
+<https://mijnorganisatie/opendata/catalogus/maxcarderror> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Catalog> .
+<https://mijnorganisatie/opendata/catalogus/maxcarderror> <http://xmlns.com/foaf/0.1/homepage> <https://mijnorganisatie/index.html> .
+<https://mijnorganisatie/opendata/catalogus/maxcarderror> <http://xmlns.com/foaf/0.1/homepage> <https://mijnorganisatie/second.html> .
+<https://mijnorganisatie/opendata/catalogus/maxcarderror> <http://purl.org/dc/terms/isPartOf> <https://dummy.com/dummy1>.
+<https://mijnorganisatie/opendata/catalogus/maxcarderror> <http://purl.org/dc/terms/isPartOf> <https://dummy.com/dummy2>.
+_:b0 <http://purl.org/dc/terms/type> <http://purl.org/adms/publishertype/LocalAuthority> .
+_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+_:b0 <http://xmlns.com/foaf/0.1/name> "Mijn Organisatie"@nl .
+_:b0 <http://xmlns.com/foaf/0.1/name> "Mijn Organisatie2"@nl .
+_:b1 <http://purl.org/dc/terms/type> <http://purl.org/adms/publishertype/LocalAuthority> .
+_:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+_:b1 <http://xmlns.com/foaf/0.1/name> "second organisation"@nl .

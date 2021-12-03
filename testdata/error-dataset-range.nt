@@ -1,0 +1,78 @@
+<http://mir.geopunt.be/cl/Geopunt/VlaamseAdminRegios/Vlaanderen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Location> .
+<http://mir.geopunt.be/cl/Geopunt/VlaamseAdminRegios/Vlaanderen> <http://www.w3.org/ns/locn#geometry> "POLYGON ((5.92 50.67,5.92 51.51,2.53 51.51,2.53 50.67,5.92 50.67))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+<https://mijnorganisatie/opendata/catalogus/dataset/range> <http://purl.org/dc/terms/description> "Deze catalogus/dataset/range bevat datasets ontsloten door Mijn Organisatie. "@nl .
+<https://mijnorganisatie/opendata/catalogus/dataset/range> <http://purl.org/dc/terms/issued> "2016-12-10T12:54:04Z" .
+<https://mijnorganisatie/opendata/catalogus/dataset/range> <http://purl.org/dc/terms/language> <http://publications.europa.eu/resource/authority/language/NLD> .
+<https://mijnorganisatie/opendata/catalogus/dataset/range> <http://purl.org/dc/terms/license> <https://data.vlaanderen.be/id/licentie/creative-commons-zero-verklaring/v1.0> .
+<https://mijnorganisatie/opendata/catalogus/dataset/range> <http://purl.org/dc/terms/modified> "2019-02-27T15:15:08Z" .
+<https://mijnorganisatie/opendata/catalogus/dataset/range> <http://purl.org/dc/terms/publisher> _:b0 .
+<https://mijnorganisatie/opendata/catalogus/dataset/range> <http://purl.org/dc/terms/title> "Open Data Catalogus van Mijn Organisatie"@nl .
+<https://mijnorganisatie/opendata/catalogus/dataset/range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Catalog> .
+<https://mijnorganisatie/opendata/catalogus/dataset/range> <http://www.w3.org/ns/dcat#dataset> <https://mijnorganisatie/opendata/catalogus/dataset/range/1> .
+<https://mijnorganisatie/opendata/catalogus/dataset/range> <http://xmlns.com/foaf/0.1/homepage> <https://mijnorganisatie/index.html> .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://xmlns.com/foaf/0.1/page> <https://dummy.com/dummyPage> .
+<https://dummy.com/dummyPage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dummy.com/someval> .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://purl.org/dc/terms/hasVersion> <https://dummy.com/dummyDataset> .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://purl.org/dc/terms/isVersionOf> <https://dummy.com/dummyDataset> .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://purl.org/dc/terms/source> <https://dummy.com/dummyDataset> .
+<https://dummy.com/dummyDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dummy.com/someval> .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://purl.org/dc/terms/provenance> <https://dummy.com/dummyProv> .
+<https://dummy.com/dummyProv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dummy.com/someval> .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://purl.org/dc/terms/relation> "a related item".
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://purl.org/dc/terms/conformsTo> <https://dummy.com/dummyStandard> .
+<https://dummy.com/dummyStandard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dummy.com/someval> .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://purl.org/dc/terms/accrualPeriodicity> <https://dummy.com/dummyFreq> .
+<https://dummy.com/dummyFreq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dummy.com/someval> .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://purl.org/dc/terms/accessRights> "".
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://purl.org/dc/terms/description> "".
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://purl.org/dc/terms/description> <http://dummy.com/dummy>.
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://purl.org/dc/terms/identifier> <https://mijnorganisatie/opendata/catalogus/dataset/range/1> .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://purl.org/dc/terms/language> "http://publications.europa.eu/resource/authority/language/ENG".
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://purl.org/dc/terms/publisher> _:b1 .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://purl.org/dc/terms/publisher> _:b2 .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://purl.org/dc/terms/spatial> <http://mir.geopunt.be/cl/Geopunt/VlaamseAdminRegios/Vlaanderen> .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://purl.org/dc/terms/temporal> _:b3 .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://purl.org/dc/terms/temporal> _:b4 .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://purl.org/dc/terms/issued> "2016-12-10T12:54:04Z" .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://purl.org/dc/terms/modified> "2016-12-11T12:54:04Z" .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://purl.org/dc/terms/title> "" .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://purl.org/dc/terms/title> <https://dummy.com/dummy> .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://purl.org/dc/terms/type> <https://dummy.com/dummyType> .
+<https://dummy.com/dummyType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dummy.com/someval> .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://www.w3.org/ns/adms#sample> <https://dummy.com/dummySample> .
+<https://dummy.com/dummySample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dummy.com/someval> .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://www.w3.org/ns/adms#identifier> <https://dummy.com/dummyID> .
+<https://dummy.com/dummyID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dummy.com/someval> .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://www.w3.org/ns/adms#versionNotes> <https://dummy.com/dummyNotes> .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://www.w3.org/2002/07/owl#versionInfo> <http://dummy.com/dummy>.
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://www.w3.org/ns/dcat#contactPoint> _:b5 .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://www.w3.org/ns/dcat#contactPoint> _:b6 .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://www.w3.org/ns/dcat#keyword> <http://dummy.com/dummy>.
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://www.w3.org/ns/dcat#landingPage> <http://dummy.com/dummyLpage>.
+<https://dummy.com/dummyLpage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dummy.com/someval> .
+<https://mijnorganisatie/opendata/catalogus/dataset/range/1> <http://www.w3.org/ns/dcat#theme> "http://vocab.belgif.be/auth/datatheme/SOCI" .
+_:b0 <http://purl.org/dc/terms/type> <http://purl.org/adms/publishertype/LocalAuthority> .
+_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+_:b0 <http://xmlns.com/foaf/0.1/name> "Mijn Organisatie"@nl .
+_:b0 <http://purl.org/dc/terms/type> "Een type" .
+_:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+_:b1 <http://xmlns.com/foaf/0.1/name> "Mijn Organisatie"@nl .
+_:b1 <http://purl.org/dc/terms/type> <https://legistation.country/orgtype1>.
+<https://legistation.country/orgtype1> <http://purl.org/dc/terms/type> <https://legistation.country/somevalue>.
+_:b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+_:b2 <http://xmlns.com/foaf/0.1/name> "Mijn Organisatie 2"@nl .
+_:b3 <http://schema.org/endDate> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:b3 <http://schema.org/startDate> "2018-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:b4 <http://schema.org/endDate> "2019-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:b4 <http://schema.org/startDate> "2018-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2006/vcard/ns#Organization> .
+_:b5 <http://www.w3.org/2006/vcard/ns#fn> "Mijn Toffe Organisatie" .
+_:b5 <http://www.w3.org/2006/vcard/ns#hasEmail> "mailto:opendata@mijnorganisatie.be" .
+_:b5 <http://www.w3.org/2006/vcard/ns#hasURL> "http://mijnorganisatie.org/" .
+_:b5 <http://www.w3.org/2006/vcard/ns#organization-name> "Mijn Toffe Organisatie" .
+_:b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dummy.com/dummyType>.
+_:b6 <http://www.w3.org/2006/vcard/ns#fn> "Mijn Toffe Organisatie 2" .
+_:b6 <http://www.w3.org/2006/vcard/ns#hasEmail> <http://opendata@mijnorganisatie.be> .
+_:b6 <http://www.w3.org/2006/vcard/ns#hasURL> <http://mijnorganisatie.org/2> .
+_:b6 <http://www.w3.org/2006/vcard/ns#organization-name> "" .
