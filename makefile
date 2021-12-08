@@ -17,16 +17,13 @@ final.csv: ${OUTPUTCSV}
 	#Extract all the ids know from the csv files and sort as seed file
 	cat ${OUTPUTCSV} | awk -F ";" '$$1!="f"{print $$1"";}' | sort -t ";" -k 1 > final.csv
 	sed -i '1s/.*/vl:rule;/' final.csv
-	cat final.csv > sfinal.csv # just to save a copy for checking
 	for f in ${OUTPUTCSV}; do join --header -t ";" -j 1 -a 1 final.csv $${f} > tmp.csv; mv tmp.csv final.csv; done
 	sed -i "s/\r//g" final.csv
 
 	# Merge in any description/extra information which is needed.
 final_with_description.csv: final.csv description.csv
 	sort -t ";" -k 1 description.csv > sdescription.csv
-	cp sdescription.csv sdescription.csv1
 	sed -i '1s/.*/;description/' sdescription.csv
-	cp sdescription.csv sdescription.csv2
 	join --header -t ";" -j 1 -a 1 final.csv sdescription.csv > final_with_description.csv
 
 # Process the rulefiles
@@ -34,7 +31,7 @@ TESTDATAFILES=${wildcard testdata/*.nt}
 TESTDATARES=$(patsubst %.nt,%.jsonld,${TESTDATAFILES})
 TESTDATARESCSV=$(patsubst %.nt,%.csv,${TESTDATAFILES})
 
-test_report: uniq.csv final_with_description.csv
+final_with_testcount.csv: uniq.csv final_with_description.csv
 	sort -t ";" -k 2 final_with_description.csv > sdescription.csv
 	sed -i '1s/.*/;;test-count/' uniq.csv
 	join --header -t ";" -1 2 -2 1 -a 1 sdescription.csv uniq.csv > final_with_testcount.csv
@@ -55,4 +52,4 @@ uniq.csv: ${TESTDATARESCSV}
 	cat ${TESTDATARESCSV} | awk -F ';' '{print $1;}' | sort | uniq -c | awk '{print $$2";"$$1;}' > uniq.csv
 
 clean:
-	rm -rf ${OUTPUTCSV} final.csv tmp.csv final_with_description.csv ${TESTDATARESCSV} uniq.csv final_with_testcount.csv ${TESTDATARES}
+	rm -rf ${OUTPUTCSV} final.csv tmp.csv final_with_description.csv ${TESTDATARESCSV} uniq.csv final_with_testcount.csv ${TESTDATARES} sdescription.csv sfinal.csv
