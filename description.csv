@@ -1,4 +1,154 @@
-;description
-xxx1;this is desciption of xxx1
-xxx2;this is desciption of xxx2
-xxx3;this is desciption of xxx3
+vodapid;description
+v000;foaf:name is a required property for Agent
+v001;foaf:name should be a literal
+v002;dct:type is a recommended property for Agent
+v003;dct:type should be a skos:Concept
+v011;dct:publisher should be a foaf:Agent
+v012;dct:title is a required property for Cataalog
+v098;dct:type has maximum cardinality of 1 for Agent
+v113;foaf:Agent does not exist
+v112;dcat:Catalog does not exist
+v138;dct:license should be a dct:LicenseDocument
+v013;dct:title should be a literal
+v014;foaf:homepage is a recommended property for Catalog
+v015;foaf:homepage has maximum cardinality of 1 for Catalog
+v017;foaf:homepage should be a foaf:Document
+v018;dct:language is a recommended property for Catalog
+v020;dct:language should be a dct:LinguisticSystem
+v021;dct:license is a recommended property for Catalog
+v023;dct:license has a maximum cardinality of 1 for Catalog
+v024;dct:issued is a recommended property for Catalog
+v025;dct:issued should be literal typed as date or dateTime
+v026;dct:issued has maximum cardinality of 1 for Catalog
+v030;dcat:record should be a dcat:CatalogRecord
+v031;dct:modified is a recommended property for Catalog
+v032;dct:modified should be a literal typed as date or dateTime
+v033;dct:modified has maximum cardinality of 1 for Catalog
+v004;dcat:dataset is a required property for Catalog
+v005;dcat:dataset should be a dcat:Dataset
+v006;dct:description is a required property for Catalog
+v007;dct:description should be a literal
+v008;dct:publisher is a required property for Catalog
+v119;foaf:primaryTopic is a required property for Catalog Record
+v120;dct:modified is a required property for Catalog Record
+v121;foaf:primaryTopic has a maximum cardinality of 1 for Catalog Record
+v127;dct:issued has a maximum cardinality of 1 for dcat:Catalog Record
+v142;foaf:primaryTopic should be a dcat:Dataset
+v143;dct:modified should be a literal typed as date or dateTime
+v146;dct:issued is a recommended property for Catalog Record
+v147;dct:issued should be a literal typed as date or dateTime
+v122;dct:modified has a maximum cardinality of 1 for Catalog Record
+v123;dct:conformsTo has a maximum cardinality of 1 for Catalog Record
+v124;dct:conformsTo should be a resource
+v125;adms:status has a maximum cardinality of 1 for Catalog Record
+v126;adms:status should be a skos:Concept
+v128;dct:source should be a dcat:CatalogRecord
+v129;dct:source has a maximum cardinality of 1 for Catalog Record
+v131;dct:language should be a dct:LinguisticSystem
+v144;dct:conformsTo is a recommended property for Catalog Record
+v145;adms:status is a recommended property for Catalog Record
+v148;dct:description should be a literal
+v149;dct:title should be a literal
+v139;dcat:themeTaxonomy should be a skos:ConceptScheme
+v140;dct:hasPart should be a dcat:Catalog
+v141;dct:isPartOf should be a dcat:Catalog
+v027;dcat:themeTaxonomy is a recommended property for Catalog
+v034;dct:rights should be a dct:RightsStatement
+v035;dct:rights has maximum cardinality of 1 for Catalog
+v036;dct:spatial should be a dct:Location
+v099;dct:isPartOf has maximum cardinality of 1 for Catalog
+v009;dct:publisher has maximum cardinality of 1 for Catalog
+v167;skos:Concept does not exist
+v169;skos:prefLabel is a required property for Category
+v173;skos:prefLabel should be a literal
+v168;skos:ConceptScheme does not exist
+v171;dct:title is a required property for Category scheme
+v172;dct:title should be a literal
+v132;spdx:algorithm is a required property for Checksum
+v133;spdx:checksumValue is a required property for Checksum
+v134;spdx:algorithm has a maximum cardinality of 1 for spdx:Checksum
+v135;spdx:checksumValue has a maximum cardinality of 1 for spdx:Checksum
+v164;spdx:checksumValue should be literal typed as hexBinary
+v114;dcat:Dataset does not exist
+v115;dcat:theme should be a skos:Concept
+v037;dct:description is a required property for Dataset
+v038;dct:description should be a literal
+v039;dct:title is a required property for Dataset
+v040;dct:title should be a literal
+v041;dcat:contactPoint is a required property for Dataset
+v411;vcard:hasEmail is a required property for a contactpoint of a Dataset
+v043;dcat:contactPoint should be a vcard:Kind
+v044;dcat:distribution is a required property for Dataset
+v046;dcat:distribution should be a dcat:Distribution
+v049;dct:publisher is a required property for Dataset
+v050;dct:publisher has maximum cardinality of 1 for Dataset
+v052;dct:publisher should be a foaf:Agent
+v063;dcat:landingPage should be a foaf:Document
+v100;dct:accessRights has maximum cardinality of 1 for Dataset
+v103;dct:type has maximum cardinality of 1 for Dataset
+v104;dct:type should be a skos:Concept
+v150;dct:accessRights should be a dct:RightsStatement
+v151;foaf:page should be a foaf:Document
+v152;dct:hasVersion should be a dcat:Dataset
+v153;dct:isVersionOf should be a dcat:Dataset
+v154;dct:provenance should be a dct:ProvenanceStatement
+v155;dct:relation should be a resource
+v156;adms:sample should be a dcat:Distribution
+v157;dct:source should be a dcat:Dataset
+v047;dcat:keyword is a recommended property for Dataset
+v048;dcat:keyword should be a literal
+v053;dcat:theme is a recommended property for Dataset
+v056;dct:conformsTo should be a dct:Standard
+v058;dct:accrualPeriodicity should be a dct:Frequency
+v059;dct:accrualPeriodicity has maximum cardinality of 1 for Dataset
+v060;dct:identifier should be a literal
+v065;dct:language should be a dct:LinguisticSystem
+v067;adms:identifier should be a adms:Identifier
+v068;dct:issued should be literal typed as date or dateTime
+v069;dct:issued has maximum cardinality of 1 for Dataset
+v071;dct:spatial should be a dct:Location
+v072;dct:temporal should be a dct:PeriodOfTime
+v073;dct:modified should be a literal typed as date or dateTime
+v074;dct:modified has maximum cardinality of 1 for Dataset
+v075;owl:versionInfo should be a literal
+v076;owl:versionInfo has maximum cardinality of 1 for Dataset
+v077;adms:versionNotes should be literal
+v111;dct:modified has a maximum cardinality of 1 for Distribution
+v159;foaf:page should be a foaf:Document
+v163;dcat:Distribution does not exist
+v079;dcat:accessURL is a required property for Distribution
+v081;dct:description is a required property for Distribution
+v082;dct:description should be a literal
+v086;dct:license is a required property for Distribution
+v087;dct:license should be a dct:LicenseDocument
+v088;dct:license has a maximum cardinality of 1 for Distribution
+v092;dct:issued should be literal typed as date or dateTime
+v200;dct:title is a required property for Distribution
+v095;dct:title should be a literal
+v096;dct:modified should be a literal literal typed as date or dateTime
+v105;spdx:checksum has a maximum cardinality of 1 for Distribution
+v106;spdx:checksum should be a spdx:Checksum
+v107;dct:issued has a maximum cardinality of 1 for Distribution
+v108;dct:rights has a maximum cardinality of 1 for Distribution
+v109;adms:status has maximum cardinality of 1 for Distribution
+v110;adms:status should be a skos:Concept
+v158;dct:byteSize has a maximum cardinality of 1 for Distribution
+v160;dct:language should be a dct:LinguisticSystem
+v161;dct:conformsTo should be a dct:Standard
+v162;dcat:mediaType has a maximum cardinality of 1 for Distribution
+v080;dcat:accessURL should be a resource
+v083;dct:format is a recommended property for Distribution
+v084;dct:format should be a dct:MediaTypeOrExtent
+v085;dct:format has a maximum cardinality of 1 for Distribution
+v089;dct:byteSize should be a literal typed as decimal
+v090;dcat:downloadURL should be a resource
+v091;dcat:mediaType should be a dct:MediaTypeOrExtent
+v093;dct:rights should be a dct:RightsStatement
+v118;dct:type has a maximum cardinality of 1 for dct:LicenseDocument
+v166;dct:LicenseDocument does not exist
+v170;dct:type is a required property for Licence Document
+v165;dct:type should be a skos:Concept
+v136;schema:startDate has a maximum cardinality of 1 for dct:PeriodOfTime
+v137;schema:endDate has a maximum cardinality of 1 for dct:PeriodOfTime
+v174;schema:startDate should be a literal typed as date or dateTime
+v175;schema:endDate should be a literal typed as date or dateTime
