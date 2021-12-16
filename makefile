@@ -27,7 +27,7 @@ final_with_description.csv: final.csv sdescription.csv
 	join -e "_" -o auto --header -t ";" -j 1 -a 1 final.csv sdescription.csv > $@
 
 sdescription.csv: description.csv
-	sort -d -t ";" -k 1 description.csv > $@
+	sort -t ";" -k 1 description.csv > $@
 	sed -i '1s/.*/;description/' $@
 
 # Process the rulefiles
@@ -36,9 +36,9 @@ TESTDATARES=$(patsubst %.nt,%.jsonld,${TESTDATAFILES})
 TESTDATARESCSV=$(patsubst %.nt,%.csv,${TESTDATAFILES})
 
 final_with_testcount.csv: uniq.csv final_with_description.csv
-	(head -n 2 final_with_description.csv && tail -n +3 final_with_description.csv | sort -d -t ";" -k 3 ) > sdescription.csv
-	sed -i '1s/.*/;;test-count/' uniq.csv
-	join --header -t ";" -1 3 -2 1 -a 1 -o 1.1,2.3,1.2,1.3,1.4 -e "_" sdescription.csv uniq.csv > final_with_testcount.csv
+	(head -n 1 final_with_description.csv && tail -n +2 final_with_description.csv | sort -t ";" -k 3 ) > fdescriptions.csv
+	join --header -t ";" -1 3 -2 1 -a 1 -o 1.1,2.2,1.2,1.3,1.4 -e "_" fdescriptions.csv uniq.csv > final_with_tc.csv
+	(head -n 1 final_with_tc.csv && tail -n +2 final_with_tc.csv | sort -d -t ";" -k 1 ) > $@
 
 .PRECIOUS: testdata/%.jsonld
 testdata/%.jsonld: testdata/%.nt
@@ -53,7 +53,8 @@ testdata/%.csv: testdata/%.jsonld
 	sed -i "s/\r//g" $@
 
 uniq.csv: ${TESTDATARESCSV}
-	cat ${TESTDATARESCSV} | awk -F ';' '{print $1;}' | sort | uniq -c | awk '{print $$2";"$$1;}' > uniq.csv
+	cat ${TESTDATARESCSV} | awk -F ';' '{print $$1;}' | sort -t ';' -k 1 | uniq -c | awk '{print $$2";"$$1;}' > $@
+	sed -i '1s/.*/;test-count/' $@
 
 clean:
-	rm -rf ${OUTPUTCSV} final.csv tmp.csv final_with_description.csv ${TESTDATARESCSV} uniq.csv final_with_testcount.csv ${TESTDATARES} sdescription.csv sfinal.csv
+	rm -rf ${OUTPUTCSV} final.csv tmp.csv final_with_description.csv ${TESTDATARESCSV} uniq.csv final_with_testcount.csv ${TESTDATARES} sdescription.csv sdescriptions.csv fdescription.csv fdescriptions.csv sfinal.csv final_with_tc.csv final_seed.csv final2.csv
