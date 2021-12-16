@@ -788,7 +788,7 @@
           "vl:message": {
             "nl": "De range van uitgever moet van het type <http://purl.org/dc/terms/Agent> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "v952"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusShape/e2d4034a0a398701f4257641ebcbc85e8683b29d",
@@ -804,7 +804,7 @@
           "vl:message": {
             "nl": "Minimaal 1 waarden verwacht voor uitgever"
           },
-          "vl:rule": ""
+          "vl:rule": "v049"
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/dcat#Catalog"
@@ -2244,7 +2244,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor trefwoord is een Literal"
           },
-          "vl:rule": ""
+          "vl:rule": "v048"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DataServiceShape/302090a90a5755780bc8fe09be4bcd29193cfd6d",
@@ -2932,7 +2932,7 @@
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor versie"
           },
-          "vl:rule": ""
+          "vl:rule": "v076"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DatasetShape/587f313308111b587d1bd2440a56622e64624864",
@@ -2964,7 +2964,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor versie is een Literal"
           },
-          "vl:rule": ""
+          "vl:rule": "v075"
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/dcat#Dataset"

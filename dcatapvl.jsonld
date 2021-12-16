@@ -452,7 +452,7 @@
           "vl:message": {
             "nl": "Minimaal 1 waarden verwacht voor contactinformatie"
           },
-          "vl:rule": ""
+          "vl:rule": "v411"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/0b8b2df06927907abbf1e09b9c0c9c59bc6696f5",
@@ -2948,7 +2948,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor trefwoord is een Literal"
           },
-          "vl:rule": ""
+          "vl:rule": "v048"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/302090a90a5755780bc8fe09be4bcd29193cfd6d",
@@ -3536,7 +3536,7 @@
           "vl:message": {
             "nl": "De range van uitgever moet van het type <http://purl.org/dc/terms/Agent> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "v052"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/e2d4034a0a398701f4257641ebcbc85e8683b29d",
@@ -3552,7 +3552,7 @@
           "vl:message": {
             "nl": "Minimaal 1 waarden verwacht voor uitgever"
           },
-          "vl:rule": ""
+          "vl:rule": "v049"
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/dcat#Resource"
