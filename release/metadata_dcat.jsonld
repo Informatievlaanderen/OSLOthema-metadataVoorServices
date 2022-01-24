@@ -1748,7 +1748,7 @@
             "rdfs:comment": "codelist restriction",
             "sh:property": {
               "sh:class": "skos:ConceptScheme",
-              "sh:hasValue": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices/raw/master/codelijsten/levensfase.ttl",
+              "sh:hasValue": "https://data.vlaanderen.be/id/conceptscheme/levensfase",
               "sh:minCount": "1",
               "sh:nodeKind": "sh:IRI",
               "sh:path": "skos:inScheme"
@@ -1758,7 +1758,7 @@
           "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#levensfase",
           "sh:severity": "sh:Warning",
           "vl:message": {
-            "nl": "Enkel waarden uit codelijst <https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices/raw/master/codelijsten/levensfase.ttl> verwacht voor levensfase"
+            "nl": "Enkel waarden uit codelijst <https://data.vlaanderen.be/id/conceptscheme/levensfase> verwacht voor levensfase"
           },
           "vl:rule": ""
         },
@@ -1920,7 +1920,7 @@
             "rdfs:comment": "codelist restriction",
             "sh:property": {
               "sh:class": "skos:ConceptScheme",
-              "sh:hasValue": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices/raw/master/codelijsten/ontwikkelingstoestand.ttl",
+              "sh:hasValue": "https://data.vlaanderen.be/id/conceptscheme/ontwikkelingstoestand",
               "sh:minCount": "1",
               "sh:nodeKind": "sh:IRI",
               "sh:path": "skos:inScheme"
@@ -1930,7 +1930,7 @@
           "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand",
           "sh:severity": "sh:Warning",
           "vl:message": {
-            "nl": "Enkel waarden uit codelijst <https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices/raw/master/codelijsten/ontwikkelingstoestand.ttl> verwacht voor ontwikkelingstoestand"
+            "nl": "Enkel waarden uit codelijst <https://data.vlaanderen.be/id/conceptscheme/ontwikkelingstoestand> verwacht voor ontwikkelingstoestand"
           },
           "vl:rule": ""
         },
@@ -2545,7 +2545,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DatasetShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Dataset%3Aidentificator",
-          "sh:class": "http://www.w3.org/ns/adms#Identifier",
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
           "sh:description": {
             "nl": "De unieke identificator van de dataset."
           },
@@ -2554,7 +2554,7 @@
           },
           "sh:path": "http://purl.org/dc/terms/identifier",
           "vl:message": {
-            "nl": "De range van identificator moet van het type <http://www.w3.org/ns/adms#Identifier> zijn."
+            "nl": "De range van identificator moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
           },
           "vl:rule": ""
         },
@@ -2840,7 +2840,7 @@
             "rdfs:comment": "codelist restriction",
             "sh:property": {
               "sh:class": "skos:ConceptScheme",
-              "sh:hasValue": "https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/access-right",
+              "sh:hasValue": "http://publications.europa.eu/resource/authority/access-right",
               "sh:minCount": "1",
               "sh:nodeKind": "sh:IRI",
               "sh:path": "skos:inScheme"
@@ -2850,7 +2850,7 @@
           "sh:path": "http://purl.org/dc/terms/accessRights",
           "sh:severity": "sh:Warning",
           "vl:message": {
-            "nl": "Enkel waarden uit codelijst <https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/access-right> verwacht voor toegankelijkheid"
+            "nl": "Enkel waarden uit codelijst <http://publications.europa.eu/resource/authority/access-right> verwacht voor toegankelijkheid"
           },
           "vl:rule": ""
         },
