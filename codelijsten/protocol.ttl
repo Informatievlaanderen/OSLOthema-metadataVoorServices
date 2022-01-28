@@ -1,5 +1,9 @@
+
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
 
 <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol>
     a skos:ConceptScheme ;
@@ -13,8 +17,8 @@
     skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
     skos:prefLabel "REST"@nl ;
-    dct:title "Representational State Transfer (REST)"@nl
-    skos:definition "Representational State Transfer of kortweg REST is een architecturale stijl voor gedistribueerde hypermedia-systemen zoals ingevoerd en gedefinieerd in 2000 door Roy Fielding, waarbij de toegang tot en bewerking van objecten in een bepaald domein worden beschreven als standaard web operaties op web resources. REST stoelt sterk op de concepten en principes van het HTTP-protocol waarvan Roy Fielding mede-auteur is. "@nl ;
+    dct:title "Representational State Transfer (REST)"@nl ;
+    skos:definition "Representational State Transfer of kortweg REST is een architecturale stijl voor gedistribueerde hypermedia-systemen zoals ingevoerd en gedefinieerd in 2000 door Roy Fielding, waarbij de toegang tot en bewerking van objecten in een bepaald domein worden beschreven als standaard web operaties op web resources. REST stoelt sterk op de concepten en principes van het HTTP-protocol waarvan Roy Fielding mede-auteur is."@nl ;
     dct:description "Representational State Transfer of kortweg REST is een architecturale stijl voor gedistribueerde hypermedia-systemen zoals ingevoerd en gedefinieerd in 2000 door Roy Fielding, waarbij de toegang tot en bewerking van objecten in een bepaald domein worden beschreven als standaard web operaties op web resources. REST stoelt sterk op de concepten en principes van het HTTP-protocol waarvan Roy Fielding mede-auteur is."@nl ;
     rdfs:seeAlso <https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm>.
 
@@ -47,84 +51,648 @@
     skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wms> ;
     rdfs:seeAlso <https://www.ogc.org/standards/wms>. 
 
-# OGC:WMS-1.1.1-http-get-map
-# OGC:WMS-1.1.1-http-get-capabilities
-# OGC:WMS-1.1.1-http-get-featureinfo
-# OGC:WMS-1.3.0-http-get-map
-# OGC:WMS-1.3.0-http-get-capabilities
-# OGC:WMS-1.3.0-http-get-featureinfo
-# OGC:WFS
-# OGC:WFS-1.0.0-http-get-capabilities
-# OGC:WFS-1.0.0-http-get-feature
-# OGC:WFS-1.0.0-http-describefeaturetype
-# OGC:WFS-1.1.0-http-get-capabilities
-# OGC:WFS-1.1.0-http-get-feature
-# OGC:WFS-1.1.0-http-describefeaturetype
-# OGC:WFS-1.1.0-http-getgmlobject
-# OGC:WFS-2.0.0-http-get-capabilities
-# OGC:WFS-2.0.0-http-get-feature
-# OGC:WFS-2.0.0-http-describefeaturetype
-# OGC:WCS
-# OGC:WCS-1.0.0-http-get-capabilities
-# OGC:WCS-1.0.0-http-get-coverage
-# OGC:WCS-1.1.0-http-get-capabilities
-# OGC:WCS-1.1.0-http-get-coverage
-# OGC:WCS-1.1.1-http-get-capabilities
-# OGC:WCS-1.1.1-http-get-coverage
-# OGC:WCS-2.0.0-http-get-capabilities
-# OGC:WCS-2.0.0-http-get-coverage
-# OGC:WCS-2.0.1-http-get-capabilities
-# OGC:WCS-2.0.1-http-get-coverage
-# OGC:WMTS
-# OGC:WMTS-1.0.0-http-get-capabilities
-# OGC:WMTS-1.0.0-http-get-tile
-# OGC:KML
-# GLG:KML-2.0-http-get-map
-# WWW:DOWNLOAD-1.0-ftp--download
-# WWW:DOWNLOAD-1.0-http--download
-# LINK download-store
-# WWW:LINK-1.0-http--atom
-# WWW:LINK-1.0-http--link
-# WWW:LINK-1.0-http--related
-# ESRI:AIMS-http-configuration
-# ESRI:AIMS-http-get-feature
-# ESRI:AIMS-http-get-image
-# OGC:CSW
-# OGC:CSW-2.0.2-http-get-capabilities
-# OGC:CSW-2.0.2-http-describerecord
-# OGC:CSW-2.0.2-http-get-records
-# OGC:CSW-2.0.2-http-get-recordbyid
-# OGC:CSW-2.0.2-http-get-domain
-# OGC:CSW-2.0.2-http-harvest
-# OGC:CSW-2.0.2-http-transaction
-# OGC:GML
-# OGC:ODS
-# OGC:OGS
-# OGC:OUS
-# OGC:OPS
-# OGC:ORS
-# OGC:SOS
-# OGC:SOS-1.0.0-http-get-observation
-# OGC:SOS-1.0.0-http-post-observation
-# OGC:SPS
-# OGC:SAS
-# FILE:GEO
-# FILE:RASTER
-# DB:ORACLE
-# WWW:LINK-1.0-http-opendap
-# RBNB:DATATURBINE
-# OGC:WCTS
-# `OGC:WFS-G
-# OGC:WMC-1.1.0-http-get-capabilities
-# DB:POSTGIS
-# WWW:LINK-1.0-http-ical
-# WWW:LINK-1.0-http-partners
-# WWW:LINK-1.0-http-rss
-# WWW:LINK-1.0-http-samples
-# invoke
-# discovery
-# download
-# other
-# transformation
-# view
-# UKST
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMS-1.1.1-http-get-map>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WMS-1.1.1-http-get-map" ;
+    skos:definition "Web Map Services GetMap retourneert een kaart. Na ontvangst van een GetMap-verzoek, zal een WMS ofwel: aan het verzoek voldoen of een service-uitzondering afgeven."@nl;
+    dct:title "Web Map Service Get Map Operatie"@nl;
+    dct:description "Web Map Services GetMap retourneert een kaart. Na ontvangst van een GetMap-verzoek, zal een WMS ofwel: aan het verzoek voldoen of een service-uitzondering afgeven."@nl;
+    owl:versionInfo "1.1.1";
+    skos:notation "OGC:WMS-1.1.1-http-get-map" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wms> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wms>. 
+
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMS-1.1.1-http-get-capabilities>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WMS-1.1.1-http-get-capabilities" ;
+    skos:definition "Web Map Services Get Capabilities is het verkrijgen van servicemetadata in een machineleesbare (en door mensen leesbare) beschrijving van de informatie-inhoud van de server en de verzoekparameterwaarden."@nl;
+    dct:title "Web Map Service Get Capabilities Operatie"@nl;
+    dct:description "Web Map Services Get Capabilities is het verkrijgen van servicemetadata in een machineleesbare (en door mensen leesbare) beschrijving van de informatie-inhoud van de server en de verzoekparameterwaarden."@nl;
+    owl:versionInfo "1.1.1";
+    skos:notation "OGC:WMS-1.1.1-http-get-capabilities" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wms> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wms>. 
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMS-1.1.1-http-get-featureinfo>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WMS-1.1.1-http-get-featureinfo" ;
+    skos:definition "Web Map Services Get Featureinfo biedt aanvullende informatie aan over functies in de afbeeldingen van kaarten die zijn geretourneerd door een eerder verzoek van GetMap."@nl;
+    dct:title "Web Map Service Get Featureinfo"@nl;
+    dct:description "Web Map Services Get Featureinfo biedt aanvullende informatie aan over functies in de afbeeldingen van kaarten die zijn geretourneerd door een eerder verzoek van GetMap."@nl;
+    owl:versionInfo "1.1.1";
+    skos:notation "OGC:WMS-1.1.1-http-get-featureinfo" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wms> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wms>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMS-1.3.0-http-get-map>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WMS-1.3.0-http-get-map" ;
+    skos:definition "Web Map Services GetMap retourneert een kaart. Na ontvangst van een GetMap-verzoek, zal een WMS ofwel: aan het verzoek voldoen of een service-uitzondering afgeven."@nl;
+    dct:title "Web Map Service Get Map"@nl;
+    dct:description "Web Map Services GetMap retourneert een kaart. Na ontvangst van een GetMap-verzoek, zal een WMS ofwel: aan het verzoek voldoen of een service-uitzondering afgeven."@nl;
+    owl:versionInfo "1.3.0";
+    skos:notation "OGC:WMS-1.3.0-http-get-map" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wms> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wms>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMS-1.3.0-http-get-capabilities>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WMS-1.3.0-http-get-capabilities" ;
+    skos:definition "Web Map Services Get Capabilities is het verkrijgen van servicemetadata in een machineleesbare (en door mensen leesbare) beschrijving van de informatie-inhoud van de server en de verzoekparameterwaarden."@nl;
+    dct:title "Web Map Service Get Capabilities"@nl;
+    dct:description "Web Map Services Get Capabilities is het verkrijgen van servicemetadata in een machineleesbare (en door mensen leesbare) beschrijving van de informatie-inhoud van de server en de verzoekparameterwaarden."@nl;
+    owl:versionInfo "1.3.0";
+    skos:notation "OGC:WMS-1.3.0-http-get-capabilities" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wms> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wms>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMS-1.3.0-http-get-featureinfo>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WMS-1.3.0-http-get-featureinfo" ;
+    skos:definition "Web Map Services Get Featureinfo biedt aanvullende informatie aan over functies in de afbeeldingen van kaarten die zijn geretourneerd door een eerder verzoek van GetMap."@nl;
+    dct:title "Web Map Service Get Featureinfo"@nl;
+    dct:description "Web Map Services Get Featureinfo biedt aanvullende informatie aan over functies in de afbeeldingen van kaarten die zijn geretourneerd door een eerder verzoek van GetMap."@nl;
+    owl:versionInfo "1.3.0";
+    skos:notation "OGC:WMS-1.3.0-http-get-featureinfo" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wms> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wms>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WFS" ;
+    skos:definition "Web Feature Service biedt directe gedetailleerde toegang tot geografische informatie op feature- en feature-propertyniveau."@nl;
+    dct:title "Web Feature Service"@nl;
+    dct:description "Web Feature Service biedt directe ged etailleerde toegang tot geografische informatie op feature- en feature-propertyniveau."@nl;
+    owl:versionInfo "";
+    skos:notation "OGC:WFS" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wfs> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wfs>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-1.0.0-http-get-capabilities>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WFS" ;
+    skos:definition "Web Feature Service GetCapabilities genereert een service-metadatadocument dat een WFS beschrijft service geleverd door een server."@nl;
+    dct:title "Web Feature Service Get Capabilities"@nl;
+    dct:description "Web Feature Service GetCapabilities genereert een service-metadatadocument dat een WFS beschrijft service geleverd door een server."@nl;
+    owl:versionInfo "1.0.0";
+    skos:notation "OGC:WFS-1.0.0-http-get-capabilities" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wfs> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wfs>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-1.0.0-http-get-feature>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WFS-1.0.0-http-get-feature" ;
+    skos:definition "Web Feature Services Get Feature retourneert een selectie van functies uit een gegevensarchief die voldoen aan de query-expressies die zijn opgegeven in het verzoek."@nl;
+    dct:title "Web Feature Service Get Feature"@nl;
+    dct:description "Web Feature Services Get Feature retourneert een selectie van functies uit een gegevensarchief die voldoen aan de query-expressies die zijn opgegeven in het verzoek."@nl;
+    owl:versionInfo "1.0.0";
+    skos:notation "OGC:WFS-1.0.0-http-get-feature" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wfs> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wfs>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-1.0.0-http-describefeaturetype>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WFS-1.0.0-http-describefeaturetype" ;
+    skos:definition "Web Feature Services DescribeFeatureType retourneert een schemabeschrijving van de aangeboden functietypen door een WFS-instantie die definiëren hoe een WFS feature-instanties verwacht te coderen op output."@nl;
+    dct:title "Web Feature Service Describe FeatureType"@nl;
+    dct:description "Web Feature Services DescribeFeatureType retourneert een schemabeschrijving van de aangeboden functietypen door een WFS-instantie die definiëren hoe een WFS feature-instanties verwacht te coderen op output."@nl;
+    owl:versionInfo "1.0.0";
+    skos:notation "OGC:WFS-1.0.0-http-describefeaturetype" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wfs> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wfs>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-1.1.0-http-get-capabilities>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WFS-1.1.0-http-get-capabilities" ;
+    skos:definition "Web Feature Service GetCapabilities genereert een service-metadatadocument dat een WFS beschrijft service geleverd door een server."@nl;
+    dct:title "Web Feature Service Get Capabilities"@nl;
+    dct:description "Web Feature Service GetCapabilities genereert een service-metadatadocument dat een WFS beschrijft service geleverd door een server."@nl;
+    owl:versionInfo "1.1.0";
+    skos:notation "OGC:WFS-1.1.0-http-get-capabilities" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wfs> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wfs>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-1.1.0-http-get-feature>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WFS-1.1.0-http-get-feature" ;
+    skos:definition "Web Feature Services Get Feature retourneert een selectie van functies uit een gegevensarchief die voldoen aan de query-expressies die zijn opgegeven in het verzoek."@nl;
+    dct:title "Web Feature Service Get Feature"@nl;
+    dct:description "Web Feature Services Get Feature retourneert een selectie van functies uit een gegevensarchief die voldoen aan de query-expressies die zijn opgegeven in het verzoek."@nl;
+    owl:versionInfo "1.1.0";
+    skos:notation "OGC:WFS-1.1.0-http-get-feature" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wfs> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wfs>. 
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-1.1.0-http-describefeaturetype>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WFS-1.1.0-http-describefeaturetype" ;
+    skos:definition "Web Feature Services DescribeFeatureType retourneert een schemabeschrijving van de aangeboden functietypen door een WFS-instantie die definiëren hoe een WFS feature-instanties verwacht te coderen op output."@nl;
+    dct:title "Web Feature Service Describe FeatureType"@nl;
+    dct:description "Web Feature Services DescribeFeatureType retourneert een schemabeschrijving van de aangeboden functietypen door een WFS-instantie die definiëren hoe een WFS feature-instanties verwacht te coderen op output."@nl;
+    owl:versionInfo "1.1.0";
+    skos:notation "OGC:WFS-1.1.0-http-describefeaturetype" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wfs> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wfs>. 
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-1.1.0-http-getgmlobject>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WFS-1.1.0-http-getgmlobject" ;
+    skos:definition "Web Feature Service biedt directe gedetailleerde toegang tot geografische informatie op feature- en feature-propertyniveau."@nl;
+    dct:title "Web Feature Service Get GML Object"@nl;
+    dct:description "Web Feature Service biedt directe ged etailleerde toegang tot geografische informatie op feature- en feature-propertyniveau."@nl;
+    owl:versionInfo "1.1.0";
+    skos:notation "OGC:WFS-1.1.0-http-getgmlobject" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wfs> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wfs>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-2.0.0-http-get-capabilities>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WFS-2.0.0-http-get-capabilities" ;
+    skos:definition "Web Feature Service GetCapabilities genereert een service-metadatadocument dat een WFS beschrijft service geleverd door een server."@nl;
+    dct:title "Web Feature Service Get Capabilities"@nl;
+    dct:description "Web Feature Service GetCapabilities genereert een service-metadatadocument dat een WFS beschrijft service geleverd door een server."@nl;
+    owl:versionInfo "2.0.0";
+    skos:notation "OGC:WFS-2.0.0-http-get-capabilities" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wfs> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wfs>. 
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-2.0.0-http-get-feature>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WFS-2.0.0-http-get-feature" ;
+    skos:definition "Web Feature Services Get Feature retourneert een selectie van functies uit een gegevensarchief die voldoen aan de query-expressies die zijn opgegeven in het verzoek."@nl;
+    dct:title "Web Feature Service Get Feature"@nl;
+    dct:description "Web Feature Services Get Feature retourneert een selectie van functies uit een gegevensarchief die voldoen aan de query-expressies die zijn opgegeven in het verzoek."@nl;
+    owl:versionInfo "2.0.0";
+    skos:notation "OGC:WFS-2.0.0-http-get-feature" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wfs> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wfs>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS-2.0.0-http-describefeaturetype>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WFS-2.0.0-http-describefeaturetype" ;
+    skos:definition "Web Feature Services DescribeFeatureType retourneert een schemabeschrijving van de aangeboden functietypen door een WFS-instantie die definiëren hoe een WFS feature-instanties verwacht te coderen op output."@nl;
+    dct:title "Web Feature Service Get Featureinfo"@nl;
+    dct:description "Web Feature Services DescribeFeatureType retourneert een schemabeschrijving van de aangeboden functietypen door een WFS-instantie die definiëren hoe een WFS feature-instanties verwacht te coderen op output."@nl;
+    owl:versionInfo "2.0.0";
+    skos:notation "OGC:WFS-2.0.0-http-describefeaturetype" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wfs> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wfs>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WCS>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WCS" ;
+    skos:definition """Web Coverage Service ondersteunt het elektronisch ophalen van geospatiale gegevens als 'dekkingen', wat digitale geospatiale informatie is die ruimte/tijd-variërende verschijnselen vertegenwoordigt, met name ruimtelijke en tijdelijke regelmatige en onregelmatige rasters, puntenwolken en algemene meshes."""@nl;
+    dct:title "Web Coverage Service"@nl;
+    dct:description """Web Coverage Service ondersteunt het elektronisch ophalen van geospatiale gegevens als 'dekkingen', wat digitale geospatiale informatie is die ruimte/tijd-variërende verschijnselen vertegenwoordigt, met name ruimtelijke en tijdelijke regelmatige en onregelmatige rasters, puntenwolken en algemene meshes."""@nl;
+    owl:versionInfo "";
+    skos:notation "OGC:WCS" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wcs> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wcs>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WCS-1.0.0-http-get-capabilities>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WCS-1.0.0-http-get-capabilities" ;
+    skos:definition """Web Coverage Service ondersteunt het elektronisch ophalen van geospatiale gegevens als 'dekkingen', wat digitale geospatiale informatie is die ruimte/tijd-variërende verschijnselen vertegenwoordigt, met name ruimtelijke en tijdelijke regelmatige en onregelmatige rasters, puntenwolken en algemene meshes."""@nl;
+    dct:title "Web Coverage Service Get Capabilities"@nl;
+    dct:description """Web Coverage Service ondersteunt het elektronisch ophalen van geospatiale gegevens als 'dekkingen', wat digitale geospatiale informatie is die ruimte/tijd-variërende verschijnselen vertegenwoordigt, met name ruimtelijke en tijdelijke regelmatige en onregelmatige rasters, puntenwolken en algemene meshes."""@nl;
+    owl:versionInfo "1.0.0";
+    skos:notation "OGC:WCS-1.0.0-http-get-capabilities" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wcs> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wcs>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WCS-1.0.0-http-get-coverage>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WCS-1.0.0-http-get-coverage" ;
+    skos:definition """Web Coverage Service ondersteunt het elektronisch ophalen van geospatiale gegevens als 'dekkingen', wat digitale geospatiale informatie is die ruimte/tijd-variërende verschijnselen vertegenwoordigt, met name ruimtelijke en tijdelijke regelmatige en onregelmatige rasters, puntenwolken en algemene meshes."""@nl;
+    dct:title "Web Coverage Service Get Coverage"@nl;
+    dct:description """Web Coverage Service ondersteunt het elektronisch ophalen van geospatiale gegevens als 'dekkingen', wat digitale geospatiale informatie is die ruimte/tijd-variërende verschijnselen vertegenwoordigt, met name ruimtelijke en tijdelijke regelmatige en onregelmatige rasters, puntenwolken en algemene meshes."""@nl;
+    owl:versionInfo "1.0.0";
+    skos:notation "OGC:WCS-1.0.0-http-get-coverage" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wcs> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wcs>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WCS-1.1.0-http-get-capabilities>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WCS-1.1.0-http-get-capabilities" ;
+    skos:definition """Web Coverage Service ondersteunt het elektronisch ophalen van geospatiale gegevens als 'dekkingen', wat digitale geospatiale informatie is die ruimte/tijd-variërende verschijnselen vertegenwoordigt, met name ruimtelijke en tijdelijke regelmatige en onregelmatige rasters, puntenwolken en algemene meshes."""@nl;
+    dct:title "Web Coverage Service Get Capabilities"@nl;
+    dct:description """Web Coverage Service ondersteunt het elektronisch ophalen van geospatiale gegevens als 'dekkingen', wat digitale geospatiale informatie is die ruimte/tijd-variërende verschijnselen vertegenwoordigt, met name ruimtelijke en tijdelijke regelmatige en onregelmatige rasters, puntenwolken en algemene meshes."""@nl;
+    owl:versionInfo "1.1.0";
+    skos:notation "OGC:WCS-1.1.0-http-get-capabilities" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wcs> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wcs>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WCS-1.1.0-http-get-coverage>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WCS-1.1.0-http-get-coverage" ;
+    skos:definition """Web Coverage Service ondersteunt het elektronisch ophalen van geospatiale gegevens als 'dekkingen', wat digitale geospatiale informatie is die ruimte/tijd-variërende verschijnselen vertegenwoordigt, met name ruimtelijke en tijdelijke regelmatige en onregelmatige rasters, puntenwolken en algemene meshes."""@nl;
+    dct:title "Web Coverage Service Get Coverage"@nl;
+    dct:description """Web Coverage Service ondersteunt het elektronisch ophalen van geospatiale gegevens als 'dekkingen', wat digitale geospatiale informatie is die ruimte/tijd-variërende verschijnselen vertegenwoordigt, met name ruimtelijke en tijdelijke regelmatige en onregelmatige rasters, puntenwolken en algemene meshes."""@nl;
+    owl:versionInfo "1.1.0";
+    skos:notation "OGC:WCS-1.1.0-http-get-coverage" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wcs> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wcs>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WCS-1.1.1-http-get-capabilities>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WCS-1.1.1-http-get-capabilities" ;
+    skos:definition """Web Coverage Service ondersteunt het elektronisch ophalen van geospatiale gegevens als 'dekkingen', wat digitale geospatiale informatie is die ruimte/tijd-variërende verschijnselen vertegenwoordigt, met name ruimtelijke en tijdelijke regelmatige en onregelmatige rasters, puntenwolken en algemene meshes."""@nl;
+    dct:title "Web Coverage Service Get Capabilities"@nl;
+    dct:description """Web Coverage Service ondersteunt het elektronisch ophalen van geospatiale gegevens als 'dekkingen', wat digitale geospatiale informatie is die ruimte/tijd-variërende verschijnselen vertegenwoordigt, met name ruimtelijke en tijdelijke regelmatige en onregelmatige rasters, puntenwolken en algemene meshes."""@nl;
+    owl:versionInfo "1.1.1";
+    skos:notation "OGC:WCS-1.1.1-http-get-capabilities" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wcs> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wcs>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WCS-1.1.1-http-get-coverage>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WCS-1.1.1-http-get-coverage" ;
+    skos:definition """Web Coverage Service ondersteunt het elektronisch ophalen van geospatiale gegevens als 'dekkingen', wat digitale geospatiale informatie is die ruimte/tijd-variërende verschijnselen vertegenwoordigt, met name ruimtelijke en tijdelijke regelmatige en onregelmatige rasters, puntenwolken en algemene meshes."""@nl;
+    dct:title "Web Coverage Service Get Coverage"@nl;
+    dct:description """Web Coverage Service ondersteunt het elektronisch ophalen van geospatiale gegevens als 'dekkingen', wat digitale geospatiale informatie is die ruimte/tijd-variërende verschijnselen vertegenwoordigt, met name ruimtelijke en tijdelijke regelmatige en onregelmatige rasters, puntenwolken en algemene meshes."""@nl;
+    owl:versionInfo "1.1.1";
+    skos:notation "OGC:WCS-1.1.1-http-get-coverage" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wcs> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wcs>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WCS-2.0.0-http-get-capabilities>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WCS-2.0.0-http-get-capabilities" ;
+    skos:definition """Web Coverage Service ondersteunt het elektronisch ophalen van geospatiale gegevens als 'dekkingen', wat digitale geospatiale informatie is die ruimte/tijd-variërende verschijnselen vertegenwoordigt, met name ruimtelijke en tijdelijke regelmatige en onregelmatige rasters, puntenwolken en algemene meshes."""@nl;
+    dct:title "Web Coverage Service Get Capabilities"@nl;
+    dct:description """Web Coverage Service ondersteunt het elektronisch ophalen van geospatiale gegevens als 'dekkingen', wat digitale geospatiale informatie is die ruimte/tijd-variërende verschijnselen vertegenwoordigt, met name ruimtelijke en tijdelijke regelmatige en onregelmatige rasters, puntenwolken en algemene meshes."""@nl;
+    owl:versionInfo "2.0.0";
+    skos:notation "OGC:WCS-2.0.0-http-get-capabilities" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wcs> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wcs>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WCS-2.0.0-http-get-coverage>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WCS-2.0.0-http-get-coverage" ;
+    skos:definition """Web Coverage Service ondersteunt het elektronisch ophalen van geospatiale gegevens als 'dekkingen', wat digitale geospatiale informatie is die ruimte/tijd-variërende verschijnselen vertegenwoordigt, met name ruimtelijke en tijdelijke regelmatige en onregelmatige rasters, puntenwolken en algemene meshes."""@nl;
+    dct:title "Web Coverage Service Get Coverage"@nl;
+    dct:description """Web Coverage Service ondersteunt het elektronisch ophalen van geospatiale gegevens als 'dekkingen', wat digitale geospatiale informatie is die ruimte/tijd-variërende verschijnselen vertegenwoordigt, met name ruimtelijke en tijdelijke regelmatige en onregelmatige rasters, puntenwolken en algemene meshes."""@nl;
+    owl:versionInfo "2.0.0";
+    skos:notation "OGC:WCS-2.0.0-http-get-coverage" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wcs> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wcs>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WCS-2.0.1-http-get-capabilities>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WCS-2.0.1-http-get-capabilities" ;
+    skos:definition """Web Coverage Service ondersteunt het elektronisch ophalen van geospatiale gegevens als 'dekkingen', wat digitale geospatiale informatie is die ruimte/tijd-variërende verschijnselen vertegenwoordigt, met name ruimtelijke en tijdelijke regelmatige en onregelmatige rasters, puntenwolken en algemene meshes."""@nl;
+    dct:title "Web Coverage Service Get Capabilities"@nl;
+    dct:description """Web Coverage Service ondersteunt het elektronisch ophalen van geospatiale gegevens als 'dekkingen', wat digitale geospatiale informatie is die ruimte/tijd-variërende verschijnselen vertegenwoordigt, met name ruimtelijke en tijdelijke regelmatige en onregelmatige rasters, puntenwolken en algemene meshes."""@nl;
+    owl:versionInfo "2.0.1";
+    skos:notation "OGC:WCS-2.0.1-http-get-capabilities" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wcs> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wcs>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WCS-2.0.1-http-get-coverage>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WCS-2.0.1-http-get-coverage" ;
+    skos:definition """Web Coverage Service ondersteunt het elektronisch ophalen van geospatiale gegevens als 'dekkingen', wat digitale geospatiale informatie is die ruimte/tijd-variërende verschijnselen vertegenwoordigt, met name ruimtelijke en tijdelijke regelmatige en onregelmatige rasters, puntenwolken en algemene meshes."""@nl;
+    dct:title "Web Coverage Service Get Coverage"@nl;
+    dct:description """Web Coverage Service ondersteunt het elektronisch ophalen van geospatiale gegevens als 'dekkingen', wat digitale geospatiale informatie is die ruimte/tijd-variërende verschijnselen vertegenwoordigt, met name ruimtelijke en tijdelijke regelmatige en onregelmatige rasters, puntenwolken en algemene meshes."""@nl;
+    owl:versionInfo "2.0.1";
+    skos:notation "OGC:WCS-2.0.1-http-get-coverage" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wcs> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wcs>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMTS>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WMTS" ;
+    skos:definition "Web Map Tile Service kan kaarttegels ophalen van ruimtelijk gerefereerde gegevens met behulp van tegelafbeeldingen met vooraf gedefinieerde inhoud, omvang en resolutie."@nl;
+    dct:title "Web Map Tile Service"@nl;
+    dct:description "Web Map Tile Service kan kaarttegels ophalen van ruimtelijk gerefereerde gegevens met behulp van tegelafbeeldingen met vooraf gedefinieerde inhoud, omvang en resolutie."@nl;
+    owl:versionInfo "";
+    skos:notation "OGC:WMTS" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wmts> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wmts>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMTS-1.0.0-http-get-capabilities>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WMTS-1.0.0-http-get-capabilities" ;
+    skos:definition "Web Map Tile Service kan kaarttegels ophalen van ruimtelijk gerefereerde gegevens met behulp van tegelafbeeldingen met vooraf gedefinieerde inhoud, omvang en resolutie."@nl;
+    dct:title "Web Map Tile Service Get Capabilities"@nl;
+    dct:description "Web Map Tile Service kan kaarttegels ophalen van ruimtelijk gerefereerde gegevens met behulp van tegelafbeeldingen met vooraf gedefinieerde inhoud, omvang en resolutie."@nl;
+    owl:versionInfo "1.0.0";
+    skos:notation "OGC:WMTS-1.0.0-http-get-capabilities" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wmts> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wmts>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WMTS-1.0.0-http-get-tile>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "WMTS-1.0.0-http-get-tile" ;
+    skos:definition "Web Map Tile Service kan kaarttegels ophalen van ruimtelijk gerefereerde gegevens met behulp van tegelafbeeldingen met vooraf gedefinieerde inhoud, omvang en resolutie."@nl;
+    dct:title "Web Map Tile Service Get Tile"@nl;
+    dct:description "Web Map Tile Service kan kaarttegels ophalen van ruimtelijk gerefereerde gegevens met behulp van tegelafbeeldingen met vooraf gedefinieerde inhoud, omvang en resolutie."@nl;
+    owl:versionInfo "1.0.0";
+    skos:notation "OGC:WMTS-1.0.0-http-get-tile" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wmts> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/wmts>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:KML>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "KML" ;
+    skos:definition "Keyhole Markup Language is een XML-taal gericht op geografische visualisatie, inclusief annotatie van kaarten en afbeeldingen. Dit omvat niet alleen de presentatie van grafische gegevens over de wereld, maar ook de controle van de navigatie van de gebruiker in de zin van waar te gaan en waar te kijken."@nl;
+    dct:title "Keyhole Markup Language"@nl;
+    dct:description "Keyhole Markup Language is een XML-taal gericht op geografische visualisatie, inclusief annotatie van kaarten en afbeeldingen. Dit omvat niet alleen de presentatie van grafische gegevens over de wereld, maar ook de controle van de navigatie van de gebruiker in de zin van waar te gaan en waar te kijken."@nl;
+    owl:versionInfo "";
+    skos:notation "OGC:KML" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wmts> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/kml>. 
+
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/GLG:KML-2.0-http-get-map>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "KML-2.0-http-get-map" ;
+    skos:definition "Keyhole Markup Language is een XML-taal gericht op geografische visualisatie, inclusief annotatie van kaarten en afbeeldingen. Dit omvat niet alleen de presentatie van grafische gegevens over de wereld, maar ook de controle van de navigatie van de gebruiker in de zin van waar te gaan en waar te kijken."@nl;
+    dct:title "Keyhole Markup Language Get Map"@nl;
+    dct:description "Keyhole Markup Language is een XML-taal gericht op geografische visualisatie, inclusief annotatie van kaarten en afbeeldingen. Dit omvat niet alleen de presentatie van grafische gegevens over de wereld, maar ook de controle van de navigatie van de gebruiker in de zin van waar te gaan en waar te kijken."@nl;
+    owl:versionInfo "2.0";
+    skos:notation "GLG:KML-2.0-http-get-map" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wmts> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/kml>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/WWW:DOWNLOAD-1.0-ftp--download>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "DOWNLOAD-1.0-ftp--download" ;
+    skos:definition "Het Download FTP protocol levert een bestand ter directe download over FTP."@nl;
+    dct:title "Download FTP"@nl;
+    dct:description "Het Download FTP protocol levert een bestand ter directe download over FTP."@nl;
+    owl:versionInfo "1.0";
+    skos:notation "WWW:DOWNLOAD-1.0-ftp--download" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wmts> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/kml>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/WWW:DOWNLOAD-1.0-http--download>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "DOWNLOAD-1.0-http--download" ;
+    skos:definition "Het Download HTTP protocol levert een bestand ter directe download over HTTP."@nl;
+    dct:title "Download HTTP"@nl;
+    dct:description "Het Download HTTP protocol levert een bestand ter directe download over HTTP."@nl;
+    owl:versionInfo "1.0";
+    skos:notation "WWW:DOWNLOAD-1.0-http--download" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wmts> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/kml>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/LINK-download-store>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "LINK-download-store" ;
+    skos:definition "Het Link Download store protocol levert een link op naar de download-store, dit is een folder, winkel... voor directe download."@nl;
+    dct:title "Download FTP"@nl;
+    dct:description "Het Link Download store protocol levert een link op naar de download-store, dit is een folder, winkel... voor directe download."@nl;
+    owl:versionInfo "";
+    skos:notation "LINK-download-store" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wmts> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/kml>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/WWW:LINK-1.0-http--atom> 
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "LINK-1.0-http--atom" ;
+    skos:definition "Het Link Atom Feed protocol levert toegang tot een ATOM feed via een URL."@nl;
+    dct:title "Link Atom Feed"@nl;
+    dct:description "Het Link Atom Feed protocol levert toegang tot een ATOM feed via een URL."@nl;
+    owl:versionInfo "1.0";
+    skos:notation "WWW:LINK-1.0-http--atom" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wmts> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/kml>. 
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/WWW:LINK-1.0-http--link>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "LINK-1.0-http--link" ;
+    skos:definition "Het Link protocol levert toegang tot een webadres via een URL."@nl;
+    dct:title "Link"@nl;
+    dct:description "Het Link protocol levert toegang tot een webadres via een URL."@nl;
+    owl:versionInfo "1.0";
+    skos:notation "WWW:LINK-1.0-http--link" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wmts> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/kml>. 
+
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/WWW:LINK-1.0-http--related>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "LINK-1.0-http--related" ;
+    skos:definition "Het Link Related protocol levert toegang tot een gerelateerde link via een URL."@nl;
+    dct:title "Link Related"@nl;
+    dct:description "Het Link Related protocol levert toegang tot een gerelateerde link via een URL."@nl;
+    owl:versionInfo "1.0";
+    skos:notation "WWW:LINK-1.0-http--related" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wmts> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/kml>. 
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/ESRI:AIMS-http-configuration>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "ESRI:AIMS-http-configuration" ;
+    skos:definition "Het Link Related protocol levert toegang tot een gerelateerde link via een URL."@nl;
+    dct:title "Link Related"@nl;
+    dct:description "Het Link Related protocol levert toegang tot een gerelateerde link via een URL."@nl;
+    owl:versionInfo "";
+    skos:notation "ESRI:AIMS-http-configuration" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/wmts> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/kml>. 
+
+
+
+
+
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:CSW>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "CSW" ;
+    skos:definition "Het Catalogue Service Web protocol levert toegang tot een endpoint."@nl;
+    dct:title "Catalogue Service Web"@nl;
+    dct:description "Het Catalogue Service Web protocol levert toegang tot een endpoint."@nl; 
+    owl:versionInfo "";
+    skos:notation "OGC:CSW" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/csw> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/csw>.
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:GML>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "GML" ;
+    skos:definition "Geography Markup Language is een XML-grammatica voor het uitdrukken van geografische kenmerken."@nl;
+    dct:title "Geography Markup Language"@nl;
+    dct:description "Geography Markup Language is een XML-grammatica voor het uitdrukken van geografische kenmerken."@nl; 
+    owl:versionInfo "";
+    skos:notation "OGC:GML" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/gml> ;
+    rdfs:seeAlso <https://www.ogc.org/standards/gml>. 
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:ODS>
+    a skos:Concept ;
+    a dct:Standard ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel "ODS" ;
+    skos:definition "Geography Markup Language is een XML-grammatica voor het uitdrukken van geografische kenmerken."@nl; 
+    dct:title "Geography Markup Language"@nl;
+    dct:description "Geography Markup Language is een XML-grammatica voor het uitdrukken van geografische kenmerken."@nl; 
+    owl:versionInfo "";
+    skos:notation "OGC:ODS" ;
+    skos:exactMatch <http://www.opengis.net/def/serviceType/ogc/ods> ; 
+    rdfs:seeAlso <https://www.ogc.org/standards/ods>.  
+
