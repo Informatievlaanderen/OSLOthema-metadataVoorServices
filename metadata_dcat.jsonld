@@ -828,7 +828,7 @@
           "vl:message": {
             "nl": "De range van aanmaakdatum moet van het type <http://www.w3.org/2001/XMLSchema#dateTime> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "1201"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/8172f8df2a73384c65fdb3332d8ee0c9ef574804",
@@ -844,7 +844,7 @@
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor aanmaakdatum"
           },
-          "vl:rule": ""
+          "vl:rule": "1202"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/a7aeb94b9cd0e4b19bf818a3beb7db346655eaa7",
@@ -860,7 +860,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor aanmaakdatum is een Literal"
           },
-          "vl:rule": ""
+          "vl:rule": "1203"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/39607ae8317e4f99846f57f713d51b19528e5764",
@@ -876,7 +876,7 @@
           "vl:message": {
             "nl": "De range van alternatieve identificator moet van het type <http://www.w3.org/ns/adms#Identifier> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "1204"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/4264dad4a2bf40f022d463c951c04da90d006652",
@@ -892,7 +892,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor alternatieve identificator is een rdfs:Resource (URI of blank node)"
           },
-          "vl:rule": ""
+          "vl:rule": "1205"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/2a7abc3b7d6df32e4a340775a9e1522a0ac1c669",
@@ -908,7 +908,7 @@
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor hoofdonderwerp"
           },
-          "vl:rule": ""
+          "vl:rule": "1206"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/530e8a8cfc0af0e6e38413dfdf98d2c5e8364b59",
@@ -924,7 +924,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor hoofdonderwerp is een rdfs:Resource (URI of blank node)"
           },
-          "vl:rule": ""
+          "vl:rule": "1207"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/e7d5497a1597fc6c5856517ab46c01bae413001b",
@@ -940,7 +940,7 @@
           "vl:message": {
             "nl": "De range van hoofdonderwerp moet van het type <http://www.w3.org/ns/dcat#Resource> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "1208"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/f806d2d1fd264df77aee55564a0a70eecd47ee2e",
@@ -956,7 +956,7 @@
           "vl:message": {
             "nl": "Minimaal 1 waarden verwacht voor hoofdonderwerp"
           },
-          "vl:rule": ""
+          "vl:rule": "1209"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d",
@@ -972,7 +972,7 @@
           "vl:message": {
             "nl": "De range van identificator moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "1210"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/972d73e7a13100b66c0c2f44466edac47aa1ab28",
@@ -988,7 +988,7 @@
           "vl:message": {
             "nl": "Minimaal 1 waarden verwacht voor identificator"
           },
-          "vl:rule": ""
+          "vl:rule": "1211"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/bb43a48c77e7d98609af3d3bb1b1648370465308",
@@ -1004,7 +1004,7 @@
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor identificator"
           },
-          "vl:rule": ""
+          "vl:rule": "1212"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/dea743ba34d85e4615aa135025555bb2247c99e0",
@@ -1020,7 +1020,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor identificator is een Literal"
           },
-          "vl:rule": ""
+          "vl:rule": "1213"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/3abb021249628221a667bec0bbd94407f1c77f06",
@@ -1036,7 +1036,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor titel is een Literal"
           },
-          "vl:rule": ""
+          "vl:rule": "1214"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/5c245f65e6c2294cd7079eb566de6fd4e4adb829",
@@ -1052,7 +1052,7 @@
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor titel"
           },
-          "vl:rule": ""
+          "vl:rule": "1215"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/8041fe094c27b123422bd03a4e13ff0641087607",
@@ -1068,7 +1068,7 @@
           "vl:message": {
             "nl": "Slechts 1 waarde voor elke taal toegelaten voor titel"
           },
-          "vl:rule": ""
+          "vl:rule": "1216"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab",
@@ -1084,7 +1084,7 @@
           "vl:message": {
             "nl": "De range van titel moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "1217"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/29906bf16cadf6d568c4da3e161ef38ba2f726fd",
@@ -1100,7 +1100,7 @@
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor wijzigingsdatum"
           },
-          "vl:rule": "v033"
+          "vl:rule": "1218"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/6a51b2354ea38a815d6131b4e05f8587791de4e0",
@@ -1116,7 +1116,7 @@
           "vl:message": {
             "nl": "Minimaal 1 waarden verwacht voor wijzigingsdatum"
           },
-          "vl:rule": ""
+          "vl:rule": "1219"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/9e7585433d0896bc44cb41cdd8189793bd115cd0",
@@ -1132,7 +1132,7 @@
           "vl:message": {
             "nl": "De range van wijzigingsdatum moet van het type <http://www.w3.org/2001/XMLSchema#dateTime> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "1220"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/de6d17a0bf0295b5d5cf59b23bd7f20dc83c017c",
@@ -1148,7 +1148,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor wijzigingsdatum is een Literal"
           },
-          "vl:rule": ""
+          "vl:rule": "1221"
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/dcat#CatalogRecord"
