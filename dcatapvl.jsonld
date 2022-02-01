@@ -2348,7 +2348,7 @@
           "vl:message": {
             "nl": "De range van alternatieve identificator moet van het type <http://www.w3.org/ns/adms#Identifier> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "v067"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/4264dad4a2bf40f022d463c951c04da90d006652",
@@ -2364,7 +2364,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor alternatieve identificator is een rdfs:Resource (URI of blank node)"
           },
-          "vl:rule": ""
+          "vl:rule": "1701"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/0e9a7d4dbf6ec19568d474169ad717f71e882319",
@@ -2380,7 +2380,7 @@
           "vl:message": {
             "nl": "De range van beschrijving moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "v207"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/2217949528fdd3dba0d2e3fc7e6fb662caa193f5",
@@ -2396,7 +2396,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor beschrijving is een Literal"
           },
-          "vl:rule": ""
+          "vl:rule": "v038"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/4a16176c26d8d5526c76974a1530f1ffdd596e93",
@@ -2412,7 +2412,7 @@
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor beschrijving"
           },
-          "vl:rule": ""
+          "vl:rule": "1702"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/7521953addc62cf367ab3c8ec0dc63cb5981ea23",
@@ -2428,7 +2428,7 @@
           "vl:message": {
             "nl": "Minimaal 1 waarden verwacht voor beschrijving"
           },
-          "vl:rule": ""
+          "vl:rule": "v037"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/da05d674f29a225a7115411e9f7ca442a25f2c88",
@@ -2444,7 +2444,7 @@
           "vl:message": {
             "nl": "Slechts 1 waarde voor elke taal toegelaten voor beschrijving"
           },
-          "vl:rule": ""
+          "vl:rule": "v215"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/cd62e61c68b4ddb716bf1522d14d29af560b9efe",
@@ -2460,7 +2460,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor conform is een rdfs:Resource (URI of blank node)"
           },
-          "vl:rule": ""
+          "vl:rule": "1703"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/dd5cf5b162b3f92600a391f44660bf2b255693ac",
@@ -2476,7 +2476,7 @@
           "vl:message": {
             "nl": "De range van conform moet van het type <http://purl.org/dc/terms/Standard> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "v056"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/0ec26077ea6669e10915c5e26c04670b80711a2d",
@@ -2492,7 +2492,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor contactinformatie is een rdfs:Resource (URI of blank node)"
           },
-          "vl:rule": ""
+          "vl:rule": "1704"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/19ee039173472235e539aea2aa961ff7d3b89f5a",
@@ -2508,7 +2508,7 @@
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor contactinformatie"
           },
-          "vl:rule": "v041"
+          "vl:rule": "1705"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/458062b0ae03c559426b85df3dd28e1c785acb0b",
@@ -2524,7 +2524,7 @@
           "vl:message": {
             "nl": "De range van contactinformatie moet van het type <http://schema.org/ContactPoint> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "1706"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/e332dbce5947de4314c3ed3fe5862f26d70a15c4",
@@ -2540,7 +2540,7 @@
           "vl:message": {
             "nl": "Minimaal 1 waarden verwacht voor contactinformatie"
           },
-          "vl:rule": ""
+          "vl:rule": "v041"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/c019c438ed692cc3b30ca44c066f7e82400a1a50",
@@ -2556,7 +2556,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor distributie is een rdfs:Resource (URI of blank node)"
           },
-          "vl:rule": ""
+          "vl:rule": "1707"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/cfbe0a11423fe15e990c3cbd5209404c26dbef0f",
@@ -2572,7 +2572,7 @@
           "vl:message": {
             "nl": "De range van distributie moet van het type <http://www.w3.org/ns/dcat#Distribution> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "v046"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d",
@@ -2587,8 +2587,8 @@
           "sh:path": "http://purl.org/dc/terms/identifier",
           "vl:message": {
             "nl": "De range van identificator moet van het type <http://www.w3.org/ns/adms#Identifier> zijn."
-          },
-          "vl:rule": ""
+          
+          "vl:rule": "v060" 
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/972d73e7a13100b66c0c2f44466edac47aa1ab28",
@@ -2604,7 +2604,7 @@
           "vl:message": {
             "nl": "Minimaal 1 waarden verwacht voor identificator"
           },
-          "vl:rule": ""
+          "vl:rule": "1708"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/bb43a48c77e7d98609af3d3bb1b1648370465308",
@@ -2620,7 +2620,7 @@
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor identificator"
           },
-          "vl:rule": ""
+          "vl:rule": "1709"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/dea743ba34d85e4615aa135025555bb2247c99e0",
@@ -2636,7 +2636,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor identificator is een rdfs:Resource (URI of blank node)"
           },
-          "vl:rule": ""
+          "vl:rule": "1710"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/8d3107c28b9832ee11242608b2a2a2e2f13b450c",
@@ -2652,7 +2652,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor landingspagina is een Literal"
           },
-          "vl:rule": ""
+          "vl:rule": "1711"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/fe1a78c9169da2469a23fd783cf9a69060bfe198",
@@ -2668,7 +2668,7 @@
           "vl:message": {
             "nl": "De range van landingspagina moet van het type <http://www.w3.org/2001/XMLSchema#anyURI> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "1712"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/1712ef1b325d7d2807bc601d6409b70a42eaff10",
@@ -2684,7 +2684,7 @@
           "vl:message": {
             "nl": "De range van thema moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "v115"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/48290800138d735a1909018da1426a5d120eedf0",
@@ -2712,7 +2712,7 @@
           "vl:message": {
             "nl": "Enkel waarden uit codelijst <https://vocab.belgif.be/auth/datatheme> verwacht voor thema"
           },
-          "vl:rule": ""
+          "vl:rule": "1713"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/61806e0b195f68dda3838714307ac84578cad381",
@@ -2728,7 +2728,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor thema is een rdfs:Resource (URI of blank node)"
           },
-          "vl:rule": ""
+          "vl:rule": "1714"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/25d18a6e2598024ea186cc7be4391bdfd1bca21f",
@@ -2744,7 +2744,7 @@
           "vl:message": {
             "nl": "Minimaal 1 waarden verwacht voor titel"
           },
-          "vl:rule": ""
+          "vl:rule": "v039"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/3abb021249628221a667bec0bbd94407f1c77f06",
@@ -2760,7 +2760,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor titel is een Literal"
           },
-          "vl:rule": ""
+          "vl:rule": "v040"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/5c245f65e6c2294cd7079eb566de6fd4e4adb829",
@@ -2792,7 +2792,7 @@
           "vl:message": {
             "nl": "Slechts 1 waarde voor elke taal toegelaten voor titel"
           },
-          "vl:rule": ""
+          "vl:rule": "v214"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab",
@@ -2808,7 +2808,7 @@
           "vl:message": {
             "nl": "De range van titel moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "v206"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/4def3dfdce28c39c939d893efc2e4974f90a00e6",
@@ -2824,7 +2824,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor toegankelijkheid is een rdfs:Resource (URI of blank node)"
           },
-          "vl:rule": ""
+          "vl:rule": "1715"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/7463895a2bb9e7e4c96cd9a2e7f83ce2cf787098",
@@ -2840,7 +2840,7 @@
           "vl:message": {
             "nl": "Minimaal 1 waarden verwacht voor toegankelijkheid"
           },
-          "vl:rule": ""
+          "vl:rule": "1716"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/a81035a5dbbdae24651c34e5602a1fe6fe5427a3",
@@ -2856,7 +2856,7 @@
           "vl:message": {
             "nl": "De range van toegankelijkheid moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "1717"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/c5f6c428a4ae32239d9662d58fa65ae4f0cf49e6",
@@ -2884,7 +2884,7 @@
           "vl:message": {
             "nl": "Enkel waarden uit codelijst <https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/access-right> verwacht voor toegankelijkheid"
           },
-          "vl:rule": ""
+          "vl:rule": "1718"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/f9524ba86e28981345a2b84aea788460ad4e805e",
@@ -2900,7 +2900,7 @@
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor toegankelijkheid"
           },
-          "vl:rule": ""
+          "vl:rule": "v100"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/1b8b3557ea1ccbabc0962c345782ae53740e72e1",
@@ -2916,7 +2916,7 @@
           "vl:message": {
             "nl": "Slechts 1 waarde voor elke taal toegelaten voor trefwoord"
           },
-          "vl:rule": ""
+          "vl:rule": "1719"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/44f6426e2306c5bc0421823eb4a1a034b615f715",
@@ -2932,7 +2932,7 @@
           "vl:message": {
             "nl": "De range van trefwoord moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "1720"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/e6c6ca31b0392ad15853ad4651c1c36e2afee378",
@@ -2964,7 +2964,7 @@
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor versie"
           },
-          "vl:rule": ""
+          "vl:rule": "v076"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/587f313308111b587d1bd2440a56622e64624864",
@@ -2980,7 +2980,7 @@
           "vl:message": {
             "nl": "De range van versie moet van het type <http://www.w3.org/2001/XMLSchema#string> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "v075"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/da14fb4265d70298230c80c3146555ce89f97077",
@@ -2996,7 +2996,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor versie is een Literal"
           },
-          "vl:rule": ""
+          "vl:rule": "075"
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/dcat#Dataset"
@@ -3020,7 +3020,7 @@
           "vl:message": {
             "nl": "De range van alternatieve identificator moet van het type <http://www.w3.org/ns/adms#Identifier> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "1801"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/4264dad4a2bf40f022d463c951c04da90d006652",
@@ -3036,7 +3036,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor alternatieve identificator is een rdfs:Resource (URI of blank node)"
           },
-          "vl:rule": ""
+          "vl:rule": "1802"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/0e61107f343f202ee672ef465cfcdbbcd746e21d",
@@ -3068,7 +3068,7 @@
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor downloadURL"
           },
-          "vl:rule": ""
+          "vl:rule": "v090"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/d897fcbd717ff4c82191a32465ea8a6e46fbd63b",
@@ -3084,7 +3084,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor downloadURL is een Literal"
           },
-          "vl:rule": ""
+          "vl:rule": "1901"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d",
@@ -3100,7 +3100,7 @@
           "vl:message": {
             "nl": "De range van identificator moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "1902"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/972d73e7a13100b66c0c2f44466edac47aa1ab28",
@@ -3116,7 +3116,7 @@
           "vl:message": {
             "nl": "Minimaal 1 waarden verwacht voor identificator"
           },
-          "vl:rule": ""
+          "vl:rule": "1903"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/bb43a48c77e7d98609af3d3bb1b1648370465308",
@@ -3132,7 +3132,7 @@
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor identificator"
           },
-          "vl:rule": ""
+          "vl:rule": "1904"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/dea743ba34d85e4615aa135025555bb2247c99e0",
@@ -3148,7 +3148,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor identificator is een Literal"
           },
-          "vl:rule": ""
+          "vl:rule": "1905"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/509740cc7b3c86ebee90dc6303c11c40e2b08212",
@@ -3164,7 +3164,7 @@
           "vl:message": {
             "nl": "De range van licentie moet van het type <http://purl.org/dc/terms/LicenseDocument> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "v087"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/cafd2e3e66044d8ba2c435a9353e6880952086c5",
@@ -3180,7 +3180,7 @@
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor licentie"
           },
-          "vl:rule": ""
+          "vl:rule": "v088"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/d8e54950e23e8ca205dca07c1a4beb29f5a25aae",
@@ -3196,7 +3196,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor licentie is een rdfs:Resource (URI of blank node)"
           },
-          "vl:rule": ""
+          "vl:rule": "1906"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/62bb7a143add01ac0956709b58850f4f5e5a0e47",
@@ -3212,7 +3212,7 @@
           "vl:message": {
             "nl": "De range van rechten moet van het type <http://purl.org/dc/terms/RightsStatement> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "1907"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/cf9b6e63030c3f6ad84bdae422a9e7e4d7e45cdb",
@@ -3228,7 +3228,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor rechten is een rdfs:Resource (URI of blank node)"
           },
-          "vl:rule": ""
+          "vl:rule": "1908"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/3abb021249628221a667bec0bbd94407f1c77f06",
@@ -3244,7 +3244,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor titel is een Literal"
           },
-          "vl:rule": ""
+          "vl:rule": "v095"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/5c245f65e6c2294cd7079eb566de6fd4e4adb829",
@@ -3260,7 +3260,7 @@
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor titel"
           },
-          "vl:rule": ""
+          "vl:rule": "1909"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/8041fe094c27b123422bd03a4e13ff0641087607",
@@ -3276,7 +3276,7 @@
           "vl:message": {
             "nl": "Slechts 1 waarde voor elke taal toegelaten voor titel"
           },
-          "vl:rule": ""
+          "vl:rule": "v216"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/f28ce523c4b4fcb15d8c7d4f279da195ba7403ab",
@@ -3292,7 +3292,7 @@
           "vl:message": {
             "nl": "De range van titel moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "v205"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/28a9b5a610271b2ad2cd6917763075560213ca20",
@@ -3308,7 +3308,7 @@
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor toegangsURL"
           },
-          "vl:rule": ""
+          "vl:rule": "v220"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/3d0e850677d211050dd9e93ec6496e6af9908da6",
@@ -3324,7 +3324,7 @@
           "vl:message": {
             "nl": "De range van toegangsURL moet van het type <http://www.w3.org/2001/XMLSchema#anyURI> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "1910"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/857e891dfe5fb73c3b3556b73636ba878a8d6098",
@@ -3340,7 +3340,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor toegangsURL is een Literal"
           },
-          "vl:rule": ""
+          "vl:rule": "1911"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/bf4475984ce7d0eb4bade6e749e672a8efa7dd2d",
@@ -3372,7 +3372,7 @@
           "vl:message": {
             "nl": "De range van wordt aangeboden door moet van het type <http://www.w3.org/ns/dcat#DataService> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "1912"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DistributieShape/c80491e2442911980bfa39aa3959c6bd2173bdd7",
@@ -3388,7 +3388,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor wordt aangeboden door is een rdfs:Resource (URI of blank node)"
           },
-          "vl:rule": ""
+          "vl:rule": "1913"
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/dcat#Distribution"
@@ -3412,7 +3412,7 @@
           "vl:message": {
             "nl": "Minimaal 1 waarden verwacht voor statuut"
           },
-          "vl:rule": ""
+          "vl:rule": "2005"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/67325124afc7d6eac4402056620665f7348ef62a",
@@ -3440,7 +3440,7 @@
           "vl:message": {
             "nl": "Enkel waarden uit codelijst <https://metadata.vlaanderen.be/id/GDI-Vlaanderen-Trefwoorden/> verwacht voor statuut"
           },
-          "vl:rule": ""
+          "vl:rule": "2006"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/689a62fc19cecbb3a76f9ab47547113775587884",
@@ -3456,7 +3456,7 @@
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor statuut"
           },
-          "vl:rule": ""
+          "vl:rule": "2007"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/7e4566e17c28c1eb8ddfceb33f62db08bca6106f",
@@ -3472,7 +3472,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor statuut is een rdfs:Resource (URI of blank node)"
           },
-          "vl:rule": ""
+          "vl:rule": "2008"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/f96c5f798f9e9c00220a293bd11f37e83616d33b",
@@ -3488,7 +3488,7 @@
           "vl:message": {
             "nl": "De range van statuut moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
           },
-          "vl:rule": ""
+          "vl:rule": "2009"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/4e2d6a9c70cecbd8ed9da2e8728fa8f5d0b57f2b",
@@ -3504,7 +3504,7 @@
           "vl:message": {
             "nl": "De verwachte waarde voor uitgever is een rdfs:Resource (URI of blank node)"
           },
-          "vl:rule": ""
+          "vl:rule": "2001"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/5334cf8edf5cc07e349524728fe4c9b076e4c45e",
@@ -3520,7 +3520,7 @@
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor uitgever"
           },
-          "vl:rule": ""
+          "vl:rule": "2002"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/aabe67e6a56c5e2fc5695716e8f7b66edd525085",
