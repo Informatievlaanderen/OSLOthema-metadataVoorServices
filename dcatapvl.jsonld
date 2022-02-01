@@ -2587,7 +2587,7 @@
           "sh:path": "http://purl.org/dc/terms/identifier",
           "vl:message": {
             "nl": "De range van identificator moet van het type <http://www.w3.org/ns/adms#Identifier> zijn."
-          
+          },
           "vl:rule": "v060" 
         },
         {
