@@ -122,7 +122,12 @@
     skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA-categorie> ;
     skos:prefLabel "Verzenden en ontvangen" ;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA-categorie> .
-
+<https://data.vlaanderen.be/id/concept/MAGDA-categorie/VlaamsLoketWoningKwaliteit>
+    a skos:Concept ;
+    skos:definition "Het Vlaams Loket Woningkwaliteit (VLOK) ondersteunt de lokale besturen bij al hun opdrachten rond woningkwaliteitsbewaking.Het is een onmisbaar hulpmiddel bij, onder meer, de volledige opvolging van procedures ongeschikt- en onbewoonbaarheid, de opmaak en het beheer van conformiteitsattesten en het registreren van besluiten met betrekking tot de nieuwe gemeentewet. Via de diensten in dit domein kan er worden gecommuniceerd met het Vlaams Loket Woningkwaliteit." ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/MAGDA-categorie> ;
+    skos:prefLabel "Vlaams Loket Woningkwaliteit" ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/MAGDA-categorie> .
 
 
 
