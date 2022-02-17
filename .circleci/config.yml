@@ -1,0 +1,66 @@
+version: 2
+jobs:
+  extract-codelists:
+    docker:
+      - image: bertvannuffelen/codelist-aggregator
+    steps:
+      - checkout
+      - run: mkdir -p workspace
+      - run:
+          name: aggregate-codelists
+          command: |
+            /scripts/aggregatecodelist.sh codelijsten
+      - run:
+          name: List the files which have been created
+          command: ls -al /tmp/workspace/*
+      - persist_to_workspace:
+          root: /tmp/workspace
+          paths:
+            - target/
+  create-artifact:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/workspace
+      - add_ssh_keys:
+          fingerprints:
+            - "a2:33:ba:57:de:72:21:ea:12:ab:51:8d:ce:48:09:9d"
+      - run:
+          name: Checkout target repo
+          workdir: /tmp
+          command: |
+            rm -rf codelist-generated
+            git clone git@github.com:Informatievlaanderen/OSLO-codelistgenerated.git
+      - run:
+          name: Switch to the target directory
+          workdir: /tmp/OSLO-codelistgenerated
+          command: |
+            git fetch origin
+            git checkout -b "metadataDCAT-${CIRCLE_BRANCH}" --track "origin/metadataDCAT-${CIRCLE_BRANCH}" || git checkout "metadataDCAT-${CIRCLE_BRANCH}"
+      - run:
+          name: Copy assets
+          workdir: /tmp/workspace
+          command: |
+            cp -R target/all.nt.gz /tmp/OSLO-codelistgenerated/
+            gunzip -f /tmp/OSLO-codelistgenerated/all.nt.gz
+            cp -R target/all.ttl /tmp/OSLO-codelistgenerated/
+            cp -R target/muuid.nt /tmp/OSLO-codelistgenerated/
+      - run:
+          name: Push results to github
+          workdir: /tmp/OSLO-codelistgenerated
+          command: |
+            git config user.email "circleci@data.vlaanderen.be"
+            git config user.name "Circle CI Builder"
+            git add .
+            git commit -m "Applying changes from commit ${CIRCLE_SHA1}" --allow-empty
+            git push origin "gebouwEnAdres-${CIRCLE_BRANCH}"
+workflows:
+  version: 2
+  generate_documentation:
+    jobs:
+      - extract-codelists
+      - create-artifact:
+          requires:
+            - extract-codelists
