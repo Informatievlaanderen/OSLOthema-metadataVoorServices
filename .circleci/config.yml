@@ -55,7 +55,7 @@ jobs:
             git config user.name "Circle CI Builder"
             git add .
             git commit -m "Applying changes from commit ${CIRCLE_SHA1}" --allow-empty
-            git push origin "gebouwEnAdres-${CIRCLE_BRANCH}"
+            git push origin "metadataDCAT-${CIRCLE_BRANCH}"
 workflows:
   version: 2
   generate_documentation:
