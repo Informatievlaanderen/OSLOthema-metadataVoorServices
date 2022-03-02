@@ -1,7 +1,7 @@
 # List of input files (example files)
 #INPUTS=6.output.jsonld 7.output.jsonld 8.output.jsonld
-INPUTS=metadata_dcat.jsonld dcatapvl.jsonld
-# INPUTS=release/metadata_dcat.jsonld release/dcatapvl.jsonld
+#INPUTS=metadata_dcat.jsonld dcatapvl.jsonld geodcatapvl.jsonld
+INPUTS=release/metadata_dcat.jsonld release/dcatapvl.jsonld release/geodcatapvl.jsonld
 OUTPUTCSV=$(patsubst %.jsonld,%.csv,${INPUTS})
 
 all: final_with_description.csv final_with_testcount.csv
@@ -36,8 +36,8 @@ TESTDATARES=$(patsubst %.nt,%.jsonld,${TESTDATAFILES})
 TESTDATARESCSV=$(patsubst %.nt,%.csv,${TESTDATAFILES})
 
 final_with_testcount.csv: uniq.csv final_with_description.csv
-	(head -n 1 final_with_description.csv && tail -n +2 final_with_description.csv | sort -t ";" -k 3 ) > fdescriptions.csv
-	join --header -t ";" -1 3 -2 1 -a 1 -o 1.1,2.2,1.2,1.3,1.4 -e "_" fdescriptions.csv uniq.csv > final_with_tc.csv
+	(head -n 1 final_with_description.csv && tail -n +2 final_with_description.csv | LANG=en_EN sort -f -t ";" -k 3 ) > fdescriptions.csv
+	LANG=en_EN join -i --header -t ";" -1 3 -2 1 -a 1 -o 1.1,2.2,1.2,1.3,1.4 -e "_" fdescriptions.csv uniq.csv > final_with_tc.csv
 	(head -n 1 final_with_tc.csv && tail -n +2 final_with_tc.csv | sort -d -t ";" -k 1 ) > $@
 
 .PRECIOUS: testdata/%.jsonld
