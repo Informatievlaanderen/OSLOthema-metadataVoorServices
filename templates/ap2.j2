@@ -1,13 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 {% set language = "nl" %}
-{% set sortattr = "sort_nl" %}
+{% set sortattr = "sort" %}
 
 <html xml:lang="nl" lang="nl" dir="ltr" typeof="bibo:Document " about="" property="dcterms:language" content="nl" prefix="dcterms: http://purl.org/dc/terms/ bibo: http://purl.org/ontology/bibo/ schema: http://schema.org/ w3p: http://www.w3.org/2001/02pd/rec54#" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-  {% set name = metadata.title[language]|lower|replace(' ', '-') %} 
-  <title>{{ metadata.title[language] }}</title>
+  {% set name = metadata.title|lower|replace(' ', '-') %} 
+  <title>{{ metadata.title }}</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -46,7 +46,7 @@
         <div class="layout layout--wide">
           <div class="grid u-hr">
             <div class="col--9-12 col--1-1--s">
-              <h1 class="h1">{{ metadata.title[language] }}</h1>
+              <h1 class="h1">{{ metadata.title }}</h1>
 
               <div class="head" role="status" id="status">
               <dl>
@@ -162,7 +162,7 @@
             <div class="region" id="introduction">
               <div class="introduction typography">
               {% block introduction %}
-                <p>Dit document beschrijft een <strong>applicatieprofiel</strong>, in dit geval <strong>{{ metadata.title[language] }}</strong>.
+                <p>Dit document beschrijft een <strong>applicatieprofiel</strong>, in dit geval <strong>{{ metadata.title }}</strong>.
                 <!--Een applicatieprofiel is een specificatie die bestaande termen hergebruikt van verschillende basis-standaarden en daar meer specificiteit aan toevoegt.-->
                 <!-- Daarbij wordt het gebruik van de termen toegelicht voor de interbestuurlijke uitwisseling van overheidsinformatie.-->
                 Dit applicatieprofiel beantwoordt de vraag over hoe het corresponderende domeinmodel in de praktijk kan toegepast worden.
@@ -217,7 +217,7 @@
                       <br />
                       |
                       {%- for class in classes |sort(attribute=sortattr) %}
-                      <a href="#{{ class.name[language] }}">{{ class.name[language] }}</a> |
+                      <a href="#{{ class.name }}">{{ class.label[language] }}</a> |
                       {%- endfor %}
                     </p>
                   </div>
@@ -228,7 +228,7 @@
                       <br />
                       |
                       {%- for datatype in datatypes |sort(attribute=sortattr) %}
-                      <a href="#{{ datatype.name[language] }}">{{ datatype.name[language] }}</a> |
+                      <a href="#{{ datatype.name }}">{{ datatype.label[language] }}</a> |
                       {%- endfor %}
                     </p>
                   </div>
@@ -247,7 +247,7 @@
             </div>
             {% for entity in classes | sort(attribute=sortattr) %}
               <div class="region region--no-space-top">
-              <h3 class="h3" id="{{ entity.name[language] }}"><a href="{{ entity.uri }}" data-toggle="tooltip" data-content="{{ entity.uri }}" data-placement="right">{{ entity.name[language] }}</a></h3>
+              <h3 class="h3" id="{{ entity.name }}"><a href="{{ entity.uri }}" data-toggle="tooltip" data-content="{{ entity.uri }}" data-placement="right">{{ entity.label[language] }}</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Beschrijving</dt><dd>{{ entity.description[language] }}</dd>
@@ -265,7 +265,7 @@
 		    {% if ((entity.properties | length) > 0 ) %} 
                     <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
                     {%- for prop in entity['properties'] | sort(attribute=sortattr) %}
-                      <a href="#{{ (entity.name[language] ~ ':' ~ prop.name[language]) | urlencode }}">{{ prop.name[language] }}</a>{% if not loop.last %}, {% endif %}
+                      <a href="#{{ (entity.name ~ ':' ~ prop.name) | urlencode }}">{{ prop.label[language] }}</a>{% if not loop.last %}, {% endif %}
                     {%- endfor %}.</dd>
                     {% else %}
                     <dd>Voor deze entiteit zijn geen eigenschappen gedefinieerd.</dd>
@@ -288,11 +288,11 @@
 
                     <tbody class="supertype">
                     {% for prop in entity['properties'] | sort(attribute=sortattr) %}
-                      <tr id="{{ (entity.name[language] ~ ':' ~ prop.name[language]) | urlencode }}" typeof="rdfs:Property" resource="{{ prop.uri }}">
+                      <tr id="{{ (entity.name ~ ':' ~ prop.name) | urlencode }}" typeof="rdfs:Property" resource="{{ prop.uri }}">
                         <td>
                           <code property="rdfs:label">
                             <a href="{{ prop.uri }}" data-toggle="tooltip" data-content="{{ prop.uri }}" data-placement="right">
-                            {{ prop.name[language] }}</a>
+                            {{ prop.label[language] }}</a>
                           </code>
                         </td>
                         <td>
@@ -324,9 +324,9 @@
             {% for entity in datatypes | sort(attribute=sortattr)%}
             <div class="region region--no-space-top">
               {% if entity.scopeduri %}
-              <h3 class="h3" id="{{ entity.name[language] }}"><a href="{{ entity.scopeduri }}" data-toggle="tooltip" data-content="{{ entity.uri }}" data-placement="right">{{ entity.name[language] }}</a></h3>
+              <h3 class="h3" id="{{ entity.name }}"><a href="{{ entity.scopeduri }}" data-toggle="tooltip" data-content="{{ entity.uri }}" data-placement="right">{{ entity.label[language] }}</a></h3>
 	      {% else %}
-              <h3 class="h3" id="{{ entity.name[language] }}"><a href="{{ entity.uri }}" data-toggle="tooltip" data-content="{{ entity.uri }}" data-placement="right">{{ entity.name[language] }}</a></h3>
+              <h3 class="h3" id="{{ entity.name }}"><a href="{{ entity.uri }}" data-toggle="tooltip" data-content="{{ entity.uri }}" data-placement="right">{{ entity.label[language] }}</a></h3>
 	      {% endif %}
                 <div class="region region--no-space-top">
                   <dl>
@@ -345,7 +345,7 @@
 		    {% if ((entity.properties | length) > 0 ) %} 
                     <dd>Voor dit datatype zijn de volgende eigenschappen gedefinieerd:
                     {%- for prop in entity['properties'] | sort(attribute=sortattr) %}
-                      <a href="#{{ (entity.name[language] ~ ':' ~ prop.name[language]) | urlencode }}">{{ prop.name[language] }}</a>{% if not loop.last %}, {% endif %}
+                      <a href="#{{ (entity.name ~ ':' ~ prop.name) | urlencode }}">{{ prop.label[language] }}</a>{% if not loop.last %}, {% endif %}
                     {%- endfor %}.</dd>
                     {% else %}
                     <dd>Voor dit datatype zijn geen eigenschappen gedefinieerd.</dd>
@@ -368,10 +368,10 @@
 
                     <tbody class="supertype">
                       {% for prop in entity['properties'] | sort(attribute=sortattr) %}
-                      <tr id="{{ (entity.name[language] ~ ':' ~ prop.name[language] ) | urlencode }}" typeof="rdfs:Property" resource="{{ prop.uri }}">
+                      <tr id="{{ (entity.name ~ ':' ~ prop.name ) | urlencode }}" typeof="rdfs:Property" resource="{{ prop.uri }}">
                         <td>
                           <code property="rdfs:label">
-                            <a href="{{ prop.uri }}" data-toggle="tooltip" data-content="{{ prop.uri }}" data-placement="right">{{ prop.name[language] }}</a>
+                            <a href="{{ prop.uri }}" data-toggle="tooltip" data-content="{{ prop.uri }}" data-placement="right">{{ prop.label[language] }}</a>
                           </code>
                         </td>
                         <td>
