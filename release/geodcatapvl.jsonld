@@ -689,7 +689,7 @@
       "sh:targetClass": "http://schema.org/ContactPoint"
     },
     {
-      "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#Contactinfo Shape",
+      "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#ContactinfoShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
