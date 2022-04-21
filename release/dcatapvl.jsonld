@@ -3443,22 +3443,6 @@
           "vl:rule": "2006"
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/689a62fc19cecbb3a76f9ab47547113775587884",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusResource%3Astatuut",
-          "sh:description": {
-            "nl": "Een aanduiding van op welke basis de catalogusresource beschikbaar is."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "nl": "statuut"
-          },
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor statuut"
-          },
-          "vl:rule": "2007"
-        },
-        {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusResourceShape/7e4566e17c28c1eb8ddfceb33f62db08bca6106f",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#CatalogusResource%3Astatuut",
           "sh:description": {
