@@ -2200,7 +2200,7 @@
             "rdfs:comment": "codelist restriction",
             "sh:property": {
               "sh:class": "skos:ConceptScheme",
-              "sh:hasValue": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
+              "sh:hasValue": "http://publications.europa.eu/resource/authority/access-right",
               "sh:minCount": "1",
               "sh:nodeKind": "sh:IRI",
               "sh:path": "skos:inScheme"
@@ -2210,7 +2210,7 @@
           "sh:path": "http://purl.org/dc/terms/accessRights",
           "sh:severity": "sh:Warning",
           "vl:message": {
-            "nl": "Enkel waarden uit codelijst <http://publications.europa.eu/resource/authority/access-right/PUBLIC> verwacht voor toegankelijkheid"
+            "nl": "Enkel waarden uit codelijst <http://publications.europa.eu/resource/authority/access-right> verwacht voor toegankelijkheid"
           },
           "vl:rule": "1362"
         },
