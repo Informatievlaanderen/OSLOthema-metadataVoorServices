@@ -1,7 +1,7 @@
 # List of input files (example files)
 #INPUTS=6.output.jsonld 7.output.jsonld 8.output.jsonld
 #INPUTS=metadata_dcat.jsonld dcatapvl.jsonld geodcatapvl.jsonld
-INPUTS=release/metadata_dcat.jsonld release/dcatapvl.jsonld release/geodcatapvl.jsonld
+INPUTS=release/metadata_dcat.jsonld release/dcatapvl.jsonld release/geodcatapvl.jsonld 
 OUTPUTCSV=$(patsubst %.jsonld,%.csv,${INPUTS})
 
 all: final_with_description.csv final_with_testcount.csv
@@ -34,6 +34,8 @@ sdescription.csv: description.csv
 TESTDATAFILES=${wildcard testdata/*.nt}
 TESTDATARES=$(patsubst %.nt,%.jsonld,${TESTDATAFILES})
 TESTDATARESCSV=$(patsubst %.nt,%.csv,${TESTDATAFILES})
+RESULTTESTDATARES=$(patsubst testdata/%.nt,result/metadata_dcat/%.jsonld,${TESTDATAFILES})
+RESULTTESTDATARESCSV=$(patsubst %.nt,%.csv,${RESULTTESTDATARES})
 
 final_with_testcount.csv: uniq.csv final_with_description.csv
 	(head -n 1 final_with_description.csv && tail -n +2 final_with_description.csv | LANG=en_EN sort -f -t ";" -k 3 ) > fdescriptions.csv
@@ -47,6 +49,19 @@ testdata/%.jsonld: testdata/%.nt
 	     -d '{"contentToValidate":"https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices/raw/validation/$<","validationType":"dcat_ap_vl", "reportSyntax":"application/ld+json"}' \
 	     https://data.dev-vlaanderen.be/shacl-validator-backend/shacl/applicatieprofielen/api/validate > $@
 
+.PRECIOUS: result/metadata_dcat/%.jsonld
+result/metadata_dcat/%.jsonld: testdata/%.nt
+	mkdir -p result/metadata_dcat
+	curl -H "Content-type:application/json" \
+	     -H "Accept: application/json" \
+	     -d '{"contentToValidate":"https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices/raw/validation/$<","validationType":"metadata_dcat", "reportSyntax":"application/ld+json"}' \
+	     https://data.dev-vlaanderen.be/shacl-validator-backend/shacl/applicatieprofielen/api/validate > $@
+
+.PRECIOUS: result/metadata_dcat/%.csv
+result/metadata_dcat/%.csv: result/metadata_dcat/%.jsonld
+
+uniq2 : ${RESULTTESTDATARESCSV}
+
 .PRECIOUS: testdata/%.csv
 testdata/%.csv: testdata/%.jsonld
 	jq '."@graph"[] | [."sourceShape",."@id"] | join(";")' $< | sed 's/\"//g' | sort -t ";" -k 1 > $@
@@ -56,5 +71,13 @@ uniq.csv: ${TESTDATARESCSV}
 	cat ${TESTDATARESCSV} | awk -F ';' '{print $$1;}' | sort -t ';' -k 1 | uniq -c | awk '{print $$2";"$$1;}' > $@
 	sed -i '1s/.*/;test-count/' $@
 
+
 clean:
 	rm -rf ${OUTPUTCSV} final.csv tmp.csv final_with_description.csv ${TESTDATARESCSV} uniq.csv final_with_testcount.csv ${TESTDATARES} sdescription.csv sdescriptions.csv fdescription.csv fdescriptions.csv sfinal.csv final_with_tc.csv final_seed.csv final2.csv
+
+
+ruby-build:
+	docker build -f Dockerfile.ruby -t cruby .
+
+ruby:
+	docker run --rm -it --name crubyt -v $(CURDIR):/data cruby bash

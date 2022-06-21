@@ -336,7 +336,6 @@
       "sh:property": [],
       "sh:targetClass": "http://purl.org/dc/terms/ProvenanceStatement"
     },
------
     {
       "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#StandaardShape",
       "@type": "sh:NodeShape",
@@ -2665,7 +2664,7 @@
           "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#levensfase",
           "sh:severity": "sh:Warning",
           "vl:message": {
-            "nl": "Enkel waarden uit codelijst <https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices/raw/master/codelijsten/levensfase.ttl> verwacht voor levensfase"
+            "nl": "Enkel waarden uit codelijst <https://data.vlaanderen.be/id/conceptscheme/levensfase> verwacht voor levensfase"
           },
           "vl:rule": "1337"
         },
@@ -5320,7 +5319,6 @@
       ],
       "sh:targetClass": "http://www.w3.org/ns/dcat#Relationship"
     },
-
     {
       "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusResourceShape",
       "@type": "sh:NodeShape",
