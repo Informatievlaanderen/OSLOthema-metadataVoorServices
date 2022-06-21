@@ -26,6 +26,8 @@
 <https://mijnorganisatie/opendata/catalogus/dataset/maxcard/1> <http://purl.org/dc/terms/modified> "2016-12-12T12:54:04Z" .
 <https://mijnorganisatie/opendata/catalogus/dataset/maxcard/1> <http://purl.org/dc/terms/publisher> _:b1 .
 <https://mijnorganisatie/opendata/catalogus/dataset/maxcard/1> <http://purl.org/dc/terms/publisher> _:b2 .
+<https://mijnorganisatie/opendata/catalogus/dataset/maxcard/1> <http://purl.org/dc/terms/rightsHolder> _:b1 .
+<https://mijnorganisatie/opendata/catalogus/dataset/maxcard/1> <http://purl.org/dc/terms/rightsHolder> _:b2 .
 <https://mijnorganisatie/opendata/catalogus/dataset/maxcard/1> <http://purl.org/dc/terms/spatial> <http://mir.geopunt.be/cl/Geopunt/VlaamseAdminRegios/Vlaanderen> .
 <https://mijnorganisatie/opendata/catalogus/dataset/maxcard/1> <http://purl.org/dc/terms/temporal> _:b3 .
 <https://mijnorganisatie/opendata/catalogus/dataset/maxcard/1> <http://purl.org/dc/terms/temporal> _:b4 .
@@ -45,6 +47,8 @@
 <https://mijnorganisatie/opendata/catalogus/dataset/maxcard/1> <http://www.w3.org/ns/dcat#keyword> "zwembad"^^<http://www.w3.org/2000/01/rdf-schema#string> .
 <https://mijnorganisatie/opendata/catalogus/dataset/maxcard/1> <http://www.w3.org/ns/dcat#theme> <http://vocab.belgif.be/auth/datatheme/SOCI> .
 <https://mijnorganisatie/opendata/catalogus/dataset/maxcard/1> <http://www.w3.org/ns/dcat#theme> <https://www.eionet.europa.eu/gemet/en/theme/29> .
+<https://mijnorganisatie/opendata/catalogus/dataset/maxcard/1> <http://purl.org/dc/terms/created> "date1".
+<https://mijnorganisatie/opendata/catalogus/dataset/maxcard/1> <http://purl.org/dc/terms/created> "date2".
 _:b0 <http://purl.org/dc/terms/type> <http://purl.org/adms/publishertype/LocalAuthority> .
 _:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
 _:b0 <http://xmlns.com/foaf/0.1/name> "Mijn Organisatie"@nl .
