@@ -17,6 +17,7 @@
     a dct:Standard ;
     skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:notation "LDES" ;
     skos:prefLabel "LDES"@nl ;
     dct:title "Linked Data Event Streams (LDES)"@nl ;
     skos:definition "Linked Data Event Streams of kortweg LDES is een collectie van onveranderlijke elementen, waarbij zowel de collectie als de elementen beschreven zijn door het Resource Description Framework (RDF). De LDES specificatie bouwt voort op de TREE hypermedia specificatie. Een Event Stream is een uitbreiding is van de TREE hypermedia Collection die beschrijft hoe te navigeren over grote collectie data-elementen. Dit laat toe om grote hoeveelheden data efficiënt te publiceren door gebruik te maken van HTTP caching."@nl ;
@@ -28,6 +29,7 @@
     a dct:Standard ;
     skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:notation "REST" ;
     skos:prefLabel "REST"@nl ;
     dct:title "Representational State Transfer (REST)"@nl ;
     skos:definition "Representational State Transfer of kortweg REST is een architecturale stijl voor gedistribueerde hypermedia-systemen zoals ingevoerd en gedefinieerd in 2000 door Roy Fielding, waarbij de toegang tot en bewerking van objecten in een bepaald domein worden beschreven als standaard web operaties op web resources. REST stoelt sterk op de concepten en principes van het HTTP-protocol waarvan Roy Fielding mede-auteur is."@nl ;
@@ -40,6 +42,7 @@
     a dct:Standard ;
     skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:notation "REST richtlijnen Digitaal Vlaanderen" ;
     skos:prefLabel "REST richtlijnen Digitaal Vlaanderen"@nl ;
     dct:title "REST richtlijnen Digitaal Vlaanderen"@nl ;
     skos:definition "De REST richtlijnen van Digitaal Vlaanderen"@nl ;
