@@ -666,6 +666,13 @@
       "sh:targetClass": "http://purl.org/dc/terms/Standard"
     },
     {
+      "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#ContactInfoShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://schema.org/ContactPoint"
+    },
+    {
       "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#ContactinfoShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -2598,7 +2605,7 @@
           },
           "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie",
           "vl:message": {
-            "nl": "De range van landingspagina voor statusinformatie moet van het type <http://www.w3.org/2001/XMLSchema#anyURI> zijn."
+            "nl": "De range van landingspagina voor statusinformatie moet van het type <http://www.w3.org/2000/01/rdf-schema#Resource> zijn."
           },
           "vl:rule": "1334"
         },
@@ -2830,7 +2837,7 @@
           "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand",
           "sh:severity": "sh:Warning",
           "vl:message": {
-            "nl": "Enkel waarden uit codelijst <https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices/raw/master/codelijsten/ontwikkelingstoestand.ttl> verwacht voor ontwikkelingstoestand"
+            "nl": "Enkel waarden uit codelijst <https://data.vlaanderen.be/id/conceptscheme/ontwikkelingstoestand> verwacht voor ontwikkelingstoestand"
           },
           "vl:rule": "1348"
         },
@@ -3160,7 +3167,7 @@
             "rdfs:comment": "codelist restriction",
             "sh:property": {
               "sh:class": "skos:ConceptScheme",
-              "sh:hasValue": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
+              "sh:hasValue": "http://publications.europa.eu/resource/authority/access-right",
               "sh:minCount": "1",
               "sh:nodeKind": "sh:IRI",
               "sh:path": "skos:inScheme"
@@ -3170,7 +3177,7 @@
           "sh:path": "http://purl.org/dc/terms/accessRights",
           "sh:severity": "sh:Warning",
           "vl:message": {
-            "nl": "Enkel waarden uit codelijst <http://publications.europa.eu/resource/authority/access-right/PUBLIC> verwacht voor toegankelijkheid"
+            "nl": "Enkel waarden uit codelijst <http://publications.europa.eu/resource/authority/access-right> verwacht voor toegankelijkheid"
           },
           "vl:rule": "1362"
         },
@@ -3802,7 +3809,7 @@
           },
           "sh:path": "http://www.w3.org/ns/dcat#landingPage",
           "vl:message": {
-            "nl": "De range van landingspagina moet van het type <http://www.w3.org/2001/XMLSchema#anyURI> zijn."
+            "nl": "De range van landingspagina moet van het type <http://www.w3.org/2000/01/rdf-schema#Resource> zijn."
           },
           "vl:rule": "1712"
         },
@@ -4663,22 +4670,6 @@
           "vl:rule": "v095"
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DistributieShape/5c245f65e6c2294cd7079eb566de6fd4e4adb829",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Distributie%3Atitel",
-          "sh:description": {
-            "nl": "De naam van de distributie."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "nl": "titel"
-          },
-          "sh:path": "http://purl.org/dc/terms/title",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor titel"
-          },
-          "vl:rule": "1909"
-        },
-        {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DistributieShape/8041fe094c27b123422bd03a4e13ff0641087607",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Distributie%3Atitel",
           "sh:description": {
@@ -4857,7 +4848,6 @@
       ],
       "sh:targetClass": "http://www.w3.org/ns/dcat#Distribution"
     },
-
     {
       "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#VoorbeeldWeergaveShape",
       "@type": "sh:NodeShape",
@@ -5330,7 +5320,6 @@
       ],
       "sh:targetClass": "http://www.w3.org/ns/dcat#Relationship"
     },
-
 
     {
       "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusResourceShape",
