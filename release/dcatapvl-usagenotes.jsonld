@@ -76,5 +76,74 @@
   },
   "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL",
   "shapes": [
+    {
+      "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#UsageNoteDistributieShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#UsageNoteDistributieShape/1",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:description": {
+            "nl": "Een bondige tekstuele omschrijving van de distributie."
+          },
+          "sh:name": {
+            "nl": "beschrijving"
+          },
+          "sh:path": "http://purl.org/dc/terms/description",
+          "vl:message": {
+            "nl": "De range van beschrijving moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#UsageNoteDistributieShape/2",
+          "sh:description": {
+            "nl": "Een bondige tekstuele omschrijving van de distributie."
+          },
+          "sh:name": {
+            "nl": "beschrijving"
+          },
+          "sh:nodekind": "sh:Literal",
+          "sh:path": "http://purl.org/dc/terms/description",
+          "vl:message": {
+            "nl": "De verwachte waarde voor beschrijving is een Literal"
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#UsageNoteDistributieShape/3",
+          "sh:description": {
+            "nl": "Een bondige tekstuele omschrijving van de catalogus."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "nl": "beschrijving"
+          },
+          "sh:path": "http://purl.org/dc/terms/description",
+          "vl:message": {
+            "nl": "Minimaal 1 waarden verwacht voor beschrijving"
+          },
+	  "sh:severity" : "sh:Warning",
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#UsageNoteDistributieShape/4",
+          "sh:description": {
+            "nl": "Een bondige tekstuele omschrijving van de distributie."
+          },
+          "sh:name": {
+            "nl": "beschrijving"
+          },
+          "sh:path": "http://purl.org/dc/terms/description",
+          "sh:uniqueLang": "true",
+          "vl:message": {
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor beschrijving"
+          },
+          "vl:rule": ""
+        },
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/dcat#Distribution"
+    },
   ]
 }

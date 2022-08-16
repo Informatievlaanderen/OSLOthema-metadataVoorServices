@@ -95,7 +95,7 @@
           "vl:message": {
             "nl": "De range van naam moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
           },
-          "vlb:rule": "v901"
+          "vl:rule": "v901"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#AgentShape/a598a69ea42b9b21520d0d04721dee61cacdc5d9",
