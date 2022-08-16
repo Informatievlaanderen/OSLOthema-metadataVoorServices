@@ -1,0 +1,73 @@
+{
+"@context" : 
+{
+    "Catalogus": "http://www.w3.org/ns/dcat#Catalog",
+    "alternatieveIdentificator": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/adms#identifier",
+      "@type": "@id"
+    },
+    "beschrijving": {
+        "@container": [
+            "@language",
+            "@set"
+        ],
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "contactinformatie": {
+      "@id": "http://www.w3.org/ns/dcat#contactPoint",
+      "@type": "@id"
+    },
+    "heeftDataService": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#service",
+      "@type": "@id"
+    },
+    "heeftDataset": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#dataset",
+      "@type": "@id"
+    },
+    "identificator": {
+      "@id": "http://purl.org/dc/terms/identifier"
+    },
+    "licentie": {
+      "@id": "http://purl.org/dc/terms/license",
+      "@type": "@id"
+    },
+    "record": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#record",
+      "@type": "@id"
+    },
+    "titel": {
+        "@container": [
+            "@language",
+            "@set"
+        ],
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "uitgever": {
+      "@id": "http://purl.org/dc/terms/publisher",
+      "@type": "@id"
+    },
+},
+    "@type": "http://www.w3.org/ns/dcat#Catalog",
+    "@id": "https://test.com/id/catalogus",
+    "heeftDataService": ["http://test.com/id/dataservice1"],
+    "record": ["https://test.com/id/record1"],
+    "heeftDataset": ["https://test.com/id/dataset1"],
+    "contactinformatie": {},
+    "alternatieveIdentificator": {},
+    "titel": {
+        "nl": "titel"
+    },
+    "uitgever": ["https://test.com/id/agent1"],
+    "licentie": ["https://test.com/id/licentie1"],
+    "identificator": "https://test.com/id/catalogus",
+    "beschrijving": {
+        "nl": "beschrijving"
+    }
+}

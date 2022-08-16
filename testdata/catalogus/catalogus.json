@@ -1,0 +1,19 @@
+{
+    "@context": "/doc/ap/geodcatap-vlaanderen/catalogus.jsonld",
+    "@type": "http://www.w3.org/ns/dcat#Catalog",
+    "@id": "{{ID}}",
+    "beschrijving": {
+        "nl": "{{STRING}}"
+    },
+    "identificator": "{{VAL}}",
+    "licentie": "{{VAL}}",
+    "uitgever": "{{VAL}}",
+    "titel": {
+        "nl": "{{STRING}}"
+    },
+    "alternatieveIdentificator": "{{VAL}}",
+    "contactinformatie": "{{VAL}}",
+    "heeftDataset": "{{VAL}}",
+    "record": "{{VAL}}",
+    "heeftDataService": "{{VAL}}"
+}

@@ -1,0 +1,65 @@
+{
+"@context" : 
+{
+    "Catalogus": "http://www.w3.org/ns/dcat#Catalog",
+    "alternatieveIdentificator": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/adms#identifier"
+    },
+    "beschrijving": {
+        "@container": [
+            "@set"
+        ],
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": "@id"
+    },
+    "contactinformatie": {
+      "@id": "http://www.w3.org/ns/dcat#contactPoint"
+    },
+    "heeftDataService": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#service"
+    },
+    "heeftDataset": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#dataset"
+    },
+    "identificator": {
+      "@id": "http://purl.org/dc/terms/identifier",
+      "@type":"@id"
+    },
+    "licentie": {
+      "@id": "http://purl.org/dc/terms/license"
+    },
+    "record": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#record"
+    },
+    "titel": {
+        "@container": [
+            "@set"
+        ],
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": "@id"
+    },
+    "uitgever": {
+      "@id": "http://purl.org/dc/terms/publisher"
+    }
+},
+    "@type": "http://www.w3.org/ns/dcat#Catalog",
+    "@id": "https://test.com/id/catalogus",
+    "heeftDataService": ["http://test.com/id/dataservice1"],
+    "record": ["https://test.com/id/record1"],
+    "heeftDataset": ["https://test.com/id/dataset1"],
+    "contactinformatie": {},
+    "alternatieveIdentificator": {},
+    "titel": {
+        "nl": "titel"
+    },
+    "uitgever": ["https://test.com/id/agent1"],
+    "licentie": ["https://test.com/id/licentie1"],
+    "identificator": "https://test.com/id/catalogus",
+    "beschrijving": {
+        "nl": "beschrijving"
+    }
+}

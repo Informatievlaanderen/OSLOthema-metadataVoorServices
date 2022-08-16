@@ -1,0 +1,18 @@
+{
+    "@type": "http://www.w3.org/ns/dcat#Catalog",
+    "@id": "http://test.com/catalogus",
+    "heeftDataService": [],
+    "record": [],
+    "heeftDataset": [],
+    "contactinformatie": [],
+    "alternatieveIdentificator": [],
+    "titel": {
+        "nl": ""
+    },
+    "uitgever": [],
+    "licentie": [],
+    "identificator": "",
+    "beschrijving": {
+        "nl": ""
+    }
+}
