@@ -1,0 +1,55 @@
+{
+
+    "@context": {   "CatalogusRecord": "http://www.w3.org/ns/dcat#CatalogRecord",
+    "aanmaakdatum": {
+      "@id": "http://purl.org/dc/terms/issued"
+    },
+    "alternatieveIdentificator": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/adms#identifier",
+      "@type": "@id"
+    },
+    "bronMetadataRecordLandingspagina": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#bronMetadataRecordLandingspagina",
+      "@type": "@id"
+    },
+    "bronMetadatarecord": {
+      "@id": "http://purl.org/dc/terms/source",
+      "@type": "@id"
+    },
+    "conform": {
+      "@container": ["@set","@language"],
+      "@id": "http://purl.org/dc/terms/conformsTo",
+      "@type": "@id"
+    },
+    "hoofdonderwerp": {
+      "@id": "http://xmlns.com/foaf/0.1/primaryTopic",
+      "@type": "@id"
+    },
+    "identificator": {
+      "@id": "http://purl.org/dc/terms/identifier",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "titel": {
+      "@container": ["@set","@language"],
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "wijzigingsdatum": {
+      "@id": "http://purl.org/dc/terms/modified"
+    }
+    },
+    "@type": "http://www.w3.org/ns/dcat#CatalogRecord",
+    "@id": "http://test.com/id/catalogusrecord/1",
+    "bronMetadataRecordLandingspagina": "http://test.com/bron/1",
+    "conform": "http://test.com/standaard",
+    "identificator": "http://test.com/id/catalogusrecord/1",
+    "aanmaakdatum": "2022-01-01",
+    "wijzigingsdatum": "2202-03-02",
+    "bronMetadatarecord": "http://test.com/bronrecord/2",
+    "titel": {
+        "nl": "titel"
+    },
+    "alternatieveIdentificator": "id.1",
+    "hoofdonderwerp": "http://test.com/id/dataset1"
+}

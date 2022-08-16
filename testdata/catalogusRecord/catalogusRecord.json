@@ -1,0 +1,57 @@
+{
+
+    "@context": {   "CatalogusRecord": "http://www.w3.org/ns/dcat#CatalogRecord",
+    "aanmaakdatum": {
+      "@id": "http://purl.org/dc/terms/issued",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "alternatieveIdentificator": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/adms#identifier",
+      "@type": "@id"
+    },
+    "bronMetadataRecordLandingspagina": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#bronMetadataRecordLandingspagina",
+      "@type": "@id"
+    },
+    "bronMetadatarecord": {
+      "@id": "http://purl.org/dc/terms/source",
+      "@type": "@id"
+    },
+    "conform": {
+      "@container": ["@set","@language"],
+      "@id": "http://purl.org/dc/terms/conformsTo",
+      "@type": "@id"
+    },
+    "hoofdonderwerp": {
+      "@id": "http://xmlns.com/foaf/0.1/primaryTopic",
+      "@type": "@id"
+    },
+    "identificator": {
+      "@id": "http://purl.org/dc/terms/identifier",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "titel": {
+      "@container": ["@set","@language"],
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "wijzigingsdatum": {
+      "@id": "http://purl.org/dc/terms/modified",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+    },
+    "@type": "http://www.w3.org/ns/dcat#CatalogRecord",
+    "@id": "{{ID}}",
+    "bronMetadataRecordLandingspagina": "{{VAL}}",
+    "conform": "{{VAL}}",
+    "identificator": "{{VAL}}",
+    "aanmaakdatum": "{{DATETIME}}",
+    "wijzigingsdatum": "{{DATETIME}}",
+    "bronMetadatarecord": "{{VAL}}",
+    "titel": {
+        "nl": "{{STRING}}"
+    },
+    "alternatieveIdentificator": "{{VAL}}",
+    "hoofdonderwerp": "{{VAL}}"
+}
