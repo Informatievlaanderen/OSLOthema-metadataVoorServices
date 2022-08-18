@@ -52,7 +52,7 @@
     "uitgever": {
       "@id": "http://purl.org/dc/terms/publisher",
       "@type": "@id"
-    },
+    }
 },
     "@type": "http://www.w3.org/ns/dcat#Catalog",
     "@id": "https://test.com/id/catalogus",
