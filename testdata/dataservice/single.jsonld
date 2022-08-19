@@ -1,0 +1,150 @@
+{
+    "@context": {
+    "Dataservice": "http://www.w3.org/ns/dcat#DataService",
+    "alternatieveIdentificator": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/adms#identifier",
+      "@type": "@id"
+    },
+    "beschrijving": {
+      "@container": ["@set","@language"],
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "biedtInformatieAanOver": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#servesdataset",
+      "@type": "@id"
+    },
+    "conformAanProtocol": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/conformsTo",
+      "@type": "@id"
+    },
+    "contactinformatie": {
+      "@id": "http://www.w3.org/ns/dcat#contactPoint",
+      "@type": "@id"
+    },
+    "creatiedatum": {
+      "@id": "http://purl.org/dc/terms/created",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "endpointUrl": {
+      "@id": "http://www.w3.org/ns/dcat#endpointURL",
+      "@type": "@id"
+    },
+    "endpointbeschrijving": {
+      "@id": "http://www.w3.org/ns/dcat#endpointDescription",
+      "@type": "@id"
+    },
+    "identificator": {
+      "@id": "http://purl.org/dc/terms/identifier"
+    },
+    "landingspagina": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#landingPage",
+      "@type": "@id"
+    },
+    "landingspaginaVoorAuthenticatie": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorAuthenticatie",
+      "@type": "@id"
+    },
+    "landingspaginaVoorGebruiksinformatie": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorGebruiksinformatie",
+      "@type": "@id"
+    },
+    "landingspaginaVoorStatusinformatie": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie",
+      "@type": "@id"
+    },
+    "levensfase": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#levensfase",
+      "@type": "@id"
+    },
+    "licentie": {
+      "@id": "http://purl.org/dc/terms/license",
+      "@type": "@id"
+    },
+    "ontwikkelingstoestand": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand",
+      "@type": "@id"
+    },
+    "publicatiedatum": {
+      "@id": "http://purl.org/dc/terms/issued",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "rechten": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/rights",
+      "@type": "@id"
+    },
+    "statuut": {
+      "@container": "@set",
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
+      "@type": "@id"
+    },
+    "thema": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#theme",
+      "@type": "@id"
+    },
+    "titel": {
+      "@container": ["@set","@language"],
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "toegankelijkheid": {
+      "@id": "http://purl.org/dc/terms/accessRights",
+      "@type": "@id"
+    },
+    "trefwoord": {
+      "@container": ["@set","@language"],
+      "@id": "http://www.w3.org/ns/dcat#keyword",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "versie": {
+      "@id": "http://www.w3.org/2002/07/owl#versionInfo",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "wijzigingsdatum": {
+      "@id": "http://purl.org/dc/terms/modified",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+    },
+    "@type": "http://www.w3.org/ns/dcat#DataService",
+    "@id": "http://test.com/id/dataservice/1"
+    "landingspaginaVoorAuthenticatie": "http://test.com/page1",
+    "landingspaginaVoorGebruiksinformatie": "http://test.com/page2",
+    "landingspaginaVoorStatusinformatie": "http://test.com/page3",
+    "levensfase": "http://test.com/code1",
+    "ontwikkelingstoestand": "http://test.com/code2",
+    "statuut": "http://test.com/code3",
+    "toegankelijkheid": "http://test.com/code4",
+    "conformAanProtocol": "http://test.com/code5",
+    "creatiedatum": "2022-03-12",
+    "beschrijving": {
+        "nl": "data service description"
+    },
+    "identificator": "http://test.com/id/dataservice/1",
+    "publicatiedatum": "2022-04-01",
+    "licentie": "http://test.com/lic1",
+    "wijzigingsdatum": "2022-05-03",
+    "rechten": "http://test.com/right1",
+    "geografischeDekking": "http://test.com/space1",
+    "titel": {
+        "nl": "data service title "
+    },
+    "versie": "version 1.2.2",
+    "alternatieveIdentificator": {},
+    "contactinformatie": {},
+    "endpointbeschrijving": "http://test.com/openapi",
+    "endpointUrl": "http://test.com/endpointurl",
+    "trefwoord": {
+        "nl": "sleutelwoord1"
+    },
+    "landingspagina": "http://test.com/landpage",
+    "biedtInformatieAanOver": "http://test.com/id/dataset/1",
+    "thema": "http://test.com/code6",
+    "serviceType": "http://test.com/code7",
+    "serviceCategorie": "http://test.com/code8"
+}

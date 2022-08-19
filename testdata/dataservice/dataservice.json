@@ -1,0 +1,150 @@
+{
+    "@context": {
+    "Dataservice": "http://www.w3.org/ns/dcat#DataService",
+    "alternatieveIdentificator": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/adms#identifier",
+      "@type": "@id"
+    },
+    "beschrijving": {
+      "@container": ["@set","@language"],
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "biedtInformatieAanOver": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#servesdataset",
+      "@type": "@id"
+    },
+    "conformAanProtocol": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/conformsTo",
+      "@type": "@id"
+    },
+    "contactinformatie": {
+      "@id": "http://www.w3.org/ns/dcat#contactPoint",
+      "@type": "@id"
+    },
+    "creatiedatum": {
+      "@id": "http://purl.org/dc/terms/created",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "endpointUrl": {
+      "@id": "http://www.w3.org/ns/dcat#endpointURL",
+      "@type": "@id"
+    },
+    "endpointbeschrijving": {
+      "@id": "http://www.w3.org/ns/dcat#endpointDescription",
+      "@type": "@id"
+    },
+    "identificator": {
+      "@id": "http://purl.org/dc/terms/identifier"
+    },
+    "landingspagina": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#landingPage",
+      "@type": "@id"
+    },
+    "landingspaginaVoorAuthenticatie": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorAuthenticatie",
+      "@type": "@id"
+    },
+    "landingspaginaVoorGebruiksinformatie": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorGebruiksinformatie",
+      "@type": "@id"
+    },
+    "landingspaginaVoorStatusinformatie": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie",
+      "@type": "@id"
+    },
+    "levensfase": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#levensfase",
+      "@type": "@id"
+    },
+    "licentie": {
+      "@id": "http://purl.org/dc/terms/license",
+      "@type": "@id"
+    },
+    "ontwikkelingstoestand": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand",
+      "@type": "@id"
+    },
+    "publicatiedatum": {
+      "@id": "http://purl.org/dc/terms/issued",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "rechten": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/rights",
+      "@type": "@id"
+    },
+    "statuut": {
+      "@container": "@set",
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
+      "@type": "@id"
+    },
+    "thema": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#theme",
+      "@type": "@id"
+    },
+    "titel": {
+      "@container": ["@set","@language"],
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "toegankelijkheid": {
+      "@id": "http://purl.org/dc/terms/accessRights",
+      "@type": "@id"
+    },
+    "trefwoord": {
+      "@container": ["@set","@language"],
+      "@id": "http://www.w3.org/ns/dcat#keyword",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "versie": {
+      "@id": "http://www.w3.org/2002/07/owl#versionInfo",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "wijzigingsdatum": {
+      "@id": "http://purl.org/dc/terms/modified",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+    },
+    "@type": "http://www.w3.org/ns/dcat#DataService",
+    "@id": "{{ID}}",
+    "landingspaginaVoorAuthenticatie": "{{VAL}}",
+    "landingspaginaVoorGebruiksinformatie": "{{VAL}}",
+    "landingspaginaVoorStatusinformatie": "{{VAL}}",
+    "levensfase": "{{VAL}}",
+    "ontwikkelingstoestand": "{{VAL}}",
+    "statuut": "{{VAL}}",
+    "toegankelijkheid": "{{VAL}}",
+    "conformAanProtocol": "{{VAL}}",
+    "creatiedatum": "{{DATETIME}}",
+    "beschrijving": {
+        "nl": "{{STRING}}"
+    },
+    "identificator": "{{VAL}}",
+    "publicatiedatum": "{{DATETIME}}",
+    "licentie": "{{VAL}}",
+    "wijzigingsdatum": "{{DATETIME}}",
+    "rechten": "{{VAL}}",
+    "geografischeDekking": "{{VAL}}",
+    "titel": {
+        "nl": "{{STRING}}"
+    },
+    "versie": "{{STRING}}",
+    "alternatieveIdentificator": "{{VAL}}",
+    "contactinformatie": "{{VAL}}",
+    "endpointbeschrijving": "{{VAL}}",
+    "endpointUrl": "{{VAL}}",
+    "trefwoord": {
+        "nl": "{{STRING}}"
+    },
+    "landingspagina": "{{VAL}}",
+    "biedtInformatieAanOver": "{{VAL}}",
+    "thema": "{{VAL}}",
+    "serviceType": "{{VAL}}",
+    "serviceCategorie": "{{VAL}}"
+}
