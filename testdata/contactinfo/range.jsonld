@@ -1,0 +1,15 @@
+{
+    "@context": {
+    "Contactinfo": "http://www.w3.org/2006/vcard/ns#Kind",
+    "contactpagina": {
+      "@id": "http://xmlns.com/foaf/0.1/page"
+    },
+    "eMail": {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasEmail"
+    }
+    },
+    "@type": "http://www.w3.org/2006/vcard/ns#Kind",
+    "@id": "http://test.com/id/contactinfo/1",
+    "eMail": "mailto:info@test.com",
+    "contactpagina": "http://test.com/contact"
+}
