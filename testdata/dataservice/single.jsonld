@@ -112,7 +112,7 @@
     }
     },
     "@type": "http://www.w3.org/ns/dcat#DataService",
-    "@id": "http://test.com/id/dataservice/1"
+    "@id": "http://test.com/id/dataservice/1",
     "landingspaginaVoorAuthenticatie": "http://test.com/page1",
     "landingspaginaVoorGebruiksinformatie": "http://test.com/page2",
     "landingspaginaVoorStatusinformatie": "http://test.com/page3",
@@ -121,14 +121,14 @@
     "statuut": "http://test.com/code3",
     "toegankelijkheid": "http://test.com/code4",
     "conformAanProtocol": "http://test.com/code5",
-    "creatiedatum": "2022-03-12",
+    "creatiedatum": "2022-03-12T12:12:12",
     "beschrijving": {
         "nl": "data service description"
     },
     "identificator": "http://test.com/id/dataservice/1",
-    "publicatiedatum": "2022-04-01",
+    "publicatiedatum": "2022-04-01T12:12:12",
     "licentie": "http://test.com/lic1",
-    "wijzigingsdatum": "2022-05-03",
+    "wijzigingsdatum": "2022-05-03T12:12:12",
     "rechten": "http://test.com/right1",
     "geografischeDekking": "http://test.com/space1",
     "titel": {

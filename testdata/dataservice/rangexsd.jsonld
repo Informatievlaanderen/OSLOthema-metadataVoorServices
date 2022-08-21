@@ -106,7 +106,7 @@
     }
     },
     "@type": "http://www.w3.org/ns/dcat#DataService",
-    "@id": "http://test.com/id/dataservice/1"
+    "@id": "http://test.com/id/dataservice/1",
     "landingspaginaVoorAuthenticatie": "http://test.com/page1",
     "landingspaginaVoorGebruiksinformatie": "http://test.com/page2",
     "landingspaginaVoorStatusinformatie": "http://test.com/page3",
@@ -125,7 +125,7 @@
     "rechten": "http://test.com/right1",
     "geografischeDekking": "http://test.com/space1",
     "titel": "data service title ",
-    "versie": "version 1.2.2",
+    "versie": "2022-02-02T12:12:12",
     "alternatieveIdentificator": {},
     "contactinformatie": {},
     "endpointbeschrijving": "http://test.com/openapi",
