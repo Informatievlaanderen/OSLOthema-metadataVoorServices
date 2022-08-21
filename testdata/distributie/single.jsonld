@@ -1,0 +1,69 @@
+{
+    "@context": {
+    "Distributie": "http://www.w3.org/ns/dcat#Distribution",
+    "alternatieveIdentificator": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/adms#identifier",
+      "@type": "@id"
+    },
+    "conform": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/conformsTo",
+      "@type": "@id"
+    },
+    "downloadUrl": {
+      "@id": "http://www.w3.org/ns/dcat#downloadURL",
+      "@type": "@id"
+    },
+    "formaat": {
+      "@id": "http://purl.org/dc/terms/format",
+      "@type": "@id"
+    },
+    "identificator": {
+      "@id": "http://purl.org/dc/terms/identifier",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "licentie": {
+      "@id": "http://purl.org/dc/terms/license",
+      "@type": "@id"
+    },
+    "rechten": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/rights",
+      "@type": "@id"
+    },
+    "titel": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "toegangsUrl": {
+      "@id": "http://www.w3.org/ns/dcat#accessURL",
+      "@type": "@id"
+    },
+    "verdeler": {
+      "@id": "http://data.europa.eu/930/distributor",
+      "@type": "@id"
+    },
+    "wordtAangebodenDoor": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/dcat#accessService",
+      "@type": "@id"
+    }
+    },
+    "@type": "http://www.w3.org/ns/dcat#Distribution",
+    "@id": "http://test.com/id/distributie/1",
+    "verdeler": "http://test.com/id/org/1",
+    "conform": "http://test.com/id/org/2",
+    "formaat": "http://test.com/id/code/1",
+    "identificator": "http://test/id/distributie/1",
+    "licentie": "http://test.com/id/lic1",
+    "rechten": "http://test.com/id/rights",
+    "titel": {
+        "nl": "een distributie titel"
+    },
+    "alternatieveIdentificator": {},
+    "wordtAangebodenDoor": "http://test.com/id/dataservice/1",
+    "toegangsUrl": "http://test.com/page1/",
+    "downloadUrl": "http://test.com/page2/"
+}
