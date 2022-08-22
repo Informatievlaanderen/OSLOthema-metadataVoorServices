@@ -1,0 +1,42 @@
+TOPTARGETS := all clean
+
+SUBDIRS := $(wildcard */.)
+
+$(TOPTARGETS): $(SUBDIRS)
+$(SUBDIRS):
+	$(MAKE) -C $@ $(MAKECMDGOALS)
+
+.PHONY: $(TOPTARGETS) $(SUBDIRS)
+
+
+CSV:= ${shell find testdata -type f -name "*.csv" -print}
+PROFILE=dcat_ap_vl
+
+profilecoverage.csv: ${CSV}
+	cat ${CSV} | awk -F ';' '{print $$1;}' | sort -t ';' -k 1 | uniq -c | awk '{print $$2";"$$1;}' > $@
+	sed -i '1s/.*/${PROFILE};test-count/' $@
+
+testfilecoverage.csv: ${CSV}
+	nn=2 ; \
+	cc=";" ; \
+	echo "rule" > aggr.csv ;\
+	for it in ${CSV} ; do \
+		join --header -a 1  -t ";" -j 1 aggr.csv $$it > /tmp/aggrB.csv ; \
+		join --header -a 1 -a 2  -t ";" -j 1 aggr.csv $$it > /tmp/aggrE.csv ;\
+		comm -1 -3 --output-delimiter="," /tmp/aggrB.csv /tmp/aggrE.csv > /tmp/aggrC.csv ;\
+                awk -F ';' -v OFS=';'  -v column="$$nn"  'NF>$$column{ $$NF=$$NF FS} 1' /tmp/aggrB.csv > /tmp/aggrB1.csv ;\
+		mv /tmp/aggrB1.csv /tmp/aggrB.csv ;\
+		sed -i "s/;/$$cc/" /tmp/aggrC.csv ;\
+		cat /tmp/aggrB.csv /tmp/aggrC.csv > /tmp/aggr.csv ;\
+		cat /tmp/aggr.csv | ( sed -u 1q ; sort ) > /tmp/aggrA.csv ;\
+		cp /tmp/aggrA.csv aggr.csv ;\
+		nn=$$(( $$nn + 1 )) ;\
+		cc=";$$cc" ;\
+	 	done
+	  	
+all: profilecoverage.csv testfilecoverage.csv
+
+
+clean: 
+	rm -rf profilecoverage.csv testfilecoverage.csv
+
