@@ -8,7 +8,7 @@ all: final_with_description.csv final_with_testcount.csv
 
 %.csv: %.jsonld
 	# Entract the ruleid and the id into a file which sorted on the first key (ruleid)
-	jq '.shapes[]."sh:property"[] | [."vl:rule",."@id"] | join(";")' $< | sed 's/\"//g' | awk -F ';' '{if ($$1=="") {print sprintf("%s-%03d","$<",NR)";"$$2;} else {print $$0;}}' | sort -d -t ";" -k 1 > $@
+	jq '.shapes[]."sh:property"[] | [."vl:rule",."@id"] | join(";")' $< | sed 's/\"//g' | awk -F ';' '{if ($$1=="") { $$id = gensub(/(.+)#(.+)/,"\\2\\1/\\2","g", $$0) ; print $$id  ; } else {print $$0;}}' | sort -d -t ";" -k 1 > $@
 	# Add the filename as a header for the 2nd column
 	sed -i '1s?.*?vl:rule;$<?' $@
 	sed -i "s/\r//g" $@
@@ -30,50 +30,25 @@ sdescription.csv: description.csv
 	sort -t ";" -k 1 description.csv > $@
 	sed -i '1s/.*/;description/' $@
 
-# Process the rulefiles
-TESTDATAFILES=${wildcard testdata/*.nt}
-TESTDATARES=$(patsubst %.nt,%.jsonld,${TESTDATAFILES})
-TESTDATARESCSV=$(patsubst %.nt,%.csv,${TESTDATAFILES})
-RESULTTESTDATARES=$(patsubst testdata/%.nt,result/metadata_dcat/%.jsonld,${TESTDATAFILES})
-RESULTTESTDATARESCSV=$(patsubst %.nt,%.csv,${RESULTTESTDATARES})
 
-final_with_testcount.csv: uniq.csv final_with_description.csv
-	(head -n 1 final_with_description.csv && tail -n +2 final_with_description.csv | LANG=en_EN sort -f -t ";" -k 3 ) > fdescriptions.csv
-	LANG=en_EN join -i --header -t ";" -1 3 -2 1 -a 1 -o 1.1,2.2,1.2,1.3,1.4 -e "_" fdescriptions.csv uniq.csv > final_with_tc.csv
-	(head -n 1 final_with_tc.csv && tail -n +2 final_with_tc.csv | sort -d -t ";" -k 1 ) > $@
 
-.PRECIOUS: testdata/%.jsonld
-testdata/%.jsonld: testdata/%.nt
-	curl -H "Content-type:application/json" \
-	     -H "Accept: application/json" \
-	     -d '{"contentToValidate":"https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices/raw/validation/$<","validationType":"dcat_ap_vl", "reportSyntax":"application/ld+json"}' \
-	     https://data.dev-vlaanderen.be/shacl-validator-backend/shacl/applicatieprofielen/api/validate > $@
 
-.PRECIOUS: result/metadata_dcat/%.jsonld
-result/metadata_dcat/%.jsonld: testdata/%.nt
-	mkdir -p result/metadata_dcat
-	curl -H "Content-type:application/json" \
-	     -H "Accept: application/json" \
-	     -d '{"contentToValidate":"https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices/raw/validation/$<","validationType":"metadata_dcat", "reportSyntax":"application/ld+json"}' \
-	     https://data.dev-vlaanderen.be/shacl-validator-backend/shacl/applicatieprofielen/api/validate > $@
 
-.PRECIOUS: result/metadata_dcat/%.csv
-result/metadata_dcat/%.csv: result/metadata_dcat/%.jsonld
-
-uniq2 : ${RESULTTESTDATARESCSV}
-
-.PRECIOUS: testdata/%.csv
-testdata/%.csv: testdata/%.jsonld
-	jq '."@graph"[] | [."sourceShape",."@id"] | join(";")' $< | sed 's/\"//g' | sort -t ";" -k 1 > $@
-	sed -i "s/\r//g" $@
-
-uniq.csv: ${TESTDATARESCSV}
-	cat ${TESTDATARESCSV} | awk -F ';' '{print $$1;}' | sort -t ';' -k 1 | uniq -c | awk '{print $$2";"$$1;}' > $@
-	sed -i '1s/.*/;test-count/' $@
-
+PROFILES=dcat_ap_vl metadata_dcat geodcat_ap_vl
+preparedev:
+	mkdir -p result/dev
+	for it in ${PROFILES} ; do \
+	   mkdir -p result/dev/$$it ; \
+	   cp -r testdata result/dev/$$it ; \
+	done 
+	cp result/makefile.dev result/dev/makefile
+	cp result/makefile.profile result/dev/makefile.profile
+	cp result/makefile.profile-gen result/dev/makefile.profile-gen
+	
 
 clean:
 	rm -rf ${OUTPUTCSV} final.csv tmp.csv final_with_description.csv ${TESTDATARESCSV} uniq.csv final_with_testcount.csv ${TESTDATARES} sdescription.csv sdescriptions.csv fdescription.csv fdescriptions.csv sfinal.csv final_with_tc.csv final_seed.csv final2.csv
+	rm -rf result/dev
 
 
 ruby-build:
