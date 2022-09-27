@@ -13,8 +13,8 @@ The next steps will do a validation for a profile w.r.t. a environment.
 In this case the development environment of data.vlaanderen.be.
 
 ```
-make preparedev
-cd result/dev
+make prepare
+cd result/<environment>
 make prepareprofile
 cd <profile>
 make  

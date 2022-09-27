@@ -1,3 +1,5 @@
+SHELL=/bin/bash
+
 # List of input files (example files)
 #INPUTS=metadata_dcat.jsonld dcatapvl.jsonld geodcatapvl.jsonld
 INPUTS=release/metadata_dcat.jsonld release/dcatapvl.jsonld release/geodcatapvl.jsonld 
@@ -36,20 +38,27 @@ sdescription.csv: description.csv
 
 
 PROFILES=dcat_ap_vl metadata_dcat geodcat_ap_vl
-preparedev:
-	mkdir -p result/dev
+ENVIRONMENTS=result/dev result/test result/prod
+
+prepare: ${ENVIRONMENTS}
+
+.PHONY: prepare
+
+$(ENVIRONMENTS):
+	mkdir -p $@
 	for it in ${PROFILES} ; do \
-	   mkdir -p result/dev/$$it ; \
-	   cp -r testdata result/dev/$$it ; \
+	   mkdir -p $@/$$it ; \
+	   cp -r testdata $@/$$it ; \
 	done 
-	cp result/makefile.dev result/dev/makefile
-	cp result/makefile.profile result/dev/makefile.profile
-	cp result/makefile.profile-gen result/dev/makefile.profile-gen
-	
+	cp result/makefile.env $@/makefile
+	cp result/makefile.profile.$(notdir $@) $@/makefile.profile
+	cp result/makefile.profile-gen $@/makefile.profile-gen
+
+
 
 clean:
 	rm -rf ${OUTPUTCSV} final.csv tmp.csv final_with_description.csv ${TESTDATARESCSV} uniq.csv final_with_testcount.csv ${TESTDATARES} sdescription.csv sdescriptions.csv fdescription.csv fdescriptions.csv sfinal.csv final_with_tc.csv final_seed.csv final2.csv
-	rm -rf result/dev
+	rm -rf ${ENVIRONMENTS}
 
 
 ruby-build:

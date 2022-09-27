@@ -35,8 +35,27 @@ testfilecoverage.csv: $(SUBDIRS)
 		cc=";$$cc" ;\
 	 	done
 	mv aggr.csv testfilecoverage.csv
+
+PROFILECSV=../../../release/dcatapvl.csv
+
+notcovered.csv: profilecoverage.csv ${PROFILECSV}
+	cp profilecoverage.csv /tmp/profilecoverage.csv
+	cp ${PROFILECSV} /tmp/profile.csv
+	# remove first and last line 
+	sed -i "1d" /tmp/profilecoverage.csv 
+	head -n -1 /tmp/profilecoverage.csv > /tmp/profilecoverage2.csv
+	sort -t ';' -k 1 -o /tmp/profilecoverage3.csv /tmp/profilecoverage2.csv 
+	# remove first and last line 
+	sed -i "1d" /tmp/profile.csv
+	head -n -1 /tmp/profile.csv > /tmp/profile2.csv
+	sort -t ';' -k 2 -o /tmp/profile3.csv /tmp/profile2.csv 
+	join -t ';' -1 1 -2 2 -v 2 -e "EE" /tmp/profilecoverage3.csv /tmp/profile3.csv  > notcovered.csv
+
+
 	  	
-all: testfilecoverage.csv profilecoverage.csv 
+all: testfilecoverage.csv profilecoverage.csv notcovered.csv
+
+
 
 
 clean: 
