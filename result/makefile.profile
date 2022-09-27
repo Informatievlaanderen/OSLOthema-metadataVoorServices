@@ -1,6 +1,6 @@
 SHELL=/bin/bash
 VALIDATORAPI=https://data.vlaanderen.be/shacl-validator-backend/shacl/applicatieprofielen/api/validate 
-PROFILE=dcat_ap_vl
+PROFILE=ENVPROFILE
 VALPATH=$(shell pwd | sed "s/.*\(testdata.*\)/\1/" )
 
 

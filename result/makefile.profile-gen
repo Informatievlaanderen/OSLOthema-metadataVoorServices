@@ -9,18 +9,19 @@ $(SUBDIRS):
 .PHONY: $(TOPTARGETS) $(SUBDIRS)
 
 
-CSV:= ${shell find testdata -type f -name "*.csv" -print}
-PROFILE=dcat_ap_vl
+PROFILE:=${shell basename $$PWD}
 
-profilecoverage.csv: ${CSV}
-	cat ${CSV} | awk -F ';' '{print $$1;}' | sort -t ';' -k 1 | uniq -c | awk '{print $$2";"$$1;}' > $@
+profilecoverage.csv: 
+	CSV=$$(find testdata -type f -name "*.csv" -print) ; \
+	cat $${CSV} | awk -F ';' '{print $$1;}' | sort -t ';' -k 1 | uniq -c | awk '{print $$2";"$$1;}' > $@
 	sed -i '1s/.*/${PROFILE};test-count/' $@
 
-testfilecoverage.csv: ${CSV}
+testfilecoverage.csv: $(SUBDIRS)
+	CSV=$$(find testdata -type f -name "*.csv" -print) ; \
 	nn=2 ; \
 	cc=";" ; \
 	echo "rule" > aggr.csv ;\
-	for it in ${CSV} ; do \
+	for it in $${CSV} ; do \
 		join --header -a 1  -t ";" -j 1 aggr.csv $$it > /tmp/aggrB.csv ; \
 		join --header -a 1 -a 2  -t ";" -j 1 aggr.csv $$it > /tmp/aggrE.csv ;\
 		comm -1 -3 --output-delimiter="," /tmp/aggrB.csv /tmp/aggrE.csv > /tmp/aggrC.csv ;\
@@ -33,10 +34,20 @@ testfilecoverage.csv: ${CSV}
 		nn=$$(( $$nn + 1 )) ;\
 		cc=";$$cc" ;\
 	 	done
+	mv aggr.csv testfilecoverage.csv
 	  	
-all: profilecoverage.csv testfilecoverage.csv
+all: testfilecoverage.csv profilecoverage.csv 
 
 
 clean: 
 	rm -rf profilecoverage.csv testfilecoverage.csv
 
+
+
+TESTDATADIRS:=${shell find . -type d -links 2 -print}
+
+prepareprofile:
+	for it in ${TESTDATADIRS} ; do \
+		cp -f ../makefile.profile $$it/makefile ; \
+		sed -i "s/ENVPROFILE/${PROFILE}/g" $$it/makefile ;\
+	done

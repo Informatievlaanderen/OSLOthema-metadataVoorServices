@@ -44,11 +44,13 @@ final_with_testcount.csv: uniq.csv final_with_description.csv
 clean:
 	rm -rf ${OUTPUTCSV} final.csv tmp.csv final_with_description.csv ${TESTDATARESCSV} uniq.csv final_with_testcount.csv ${TESTDATARES} sdescription.csv sdescriptions.csv fdescription.csv fdescriptions.csv sfinal.csv final_with_tc.csv final_seed.csv final2.csv
 
-PROFILE=dcat_ap_vl
-DIRS := ${shell find ${PROFILE} -type d -links 2 -print}
 
-prepareprofile:
-	for it in ${DIRS} ; do \
-		cp -f makefile.profile $$it/makefile ; \
-	done
-	cp makefile.profile-gen ${PROFILE}/makefile
+
+$(PROFILES):
+	mkdir -p $@
+	cp makefile.profile-gen $@/makefile
+	$(MAKE) -C $@ $(MAKECMDGOALS)
+
+.PHONY: prepareprofile $(PROFILES)
+
+prepareprofile: $(PROFILES)
