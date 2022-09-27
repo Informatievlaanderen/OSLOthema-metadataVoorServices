@@ -121,7 +121,7 @@
           "sh:name": {
             "nl": "naam"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://xmlns.com/foaf/0.1/name",
           "vl:message": {
             "nl": "De verwachte waarde voor naam is een Literal"
@@ -207,7 +207,7 @@
           "sh:name": {
             "nl": "bounding box"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://www.w3.org/ns/dcat#bbox",
           "vl:message": {
             "nl": "De verwachte waarde voor bounding box is een Literal"
@@ -239,7 +239,7 @@
           "sh:name": {
             "nl": "centroïde"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://www.w3.org/ns/dcat#centroid",
           "vl:message": {
             "nl": "De verwachte waarde voor centroïde is een Literal"
@@ -255,7 +255,7 @@
           "sh:name": {
             "nl": "geometrie"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://www.w3.org/ns/locn#geometry",
           "vl:message": {
             "nl": "De verwachte waarde voor geometrie is een Literal"
@@ -303,7 +303,7 @@
           "sh:name": {
             "nl": "plaatsnaam"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://www.w3.org/2000/01/rdf-schema#label",
           "vl:message": {
             "nl": "De verwachte waarde voor plaatsnaam is een Literal"
@@ -366,7 +366,7 @@
           "sh:name": {
             "nl": "beschrijving"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/description",
           "vl:message": {
             "nl": "De verwachte waarde voor beschrijving is een Literal"
@@ -414,7 +414,7 @@
           "sh:name": {
             "nl": "publicatiedatum"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/issued",
           "vl:message": {
             "nl": "De verwachte waarde voor publicatiedatum is een Literal"
@@ -478,7 +478,7 @@
           "sh:name": {
             "nl": "specificatie URL"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
           "vl:message": {
             "nl": "De verwachte waarde voor specificatie URL is een rdfs:Resource (URI of blank node)"
@@ -494,7 +494,7 @@
           "sh:name": {
             "nl": "titel"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/title",
           "vl:message": {
             "nl": "De verwachte waarde voor titel is een Literal"
@@ -558,7 +558,7 @@
           "sh:name": {
             "nl": "type"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/type",
           "vl:message": {
             "nl": "De verwachte waarde voor type is een rdfs:Resource (URI of blank node)"
@@ -606,7 +606,7 @@
           "sh:name": {
             "nl": "versie"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://www.w3.org/2002/07/owl#versionInfo",
           "vl:message": {
             "nl": "De verwachte waarde voor versie is een Literal"
@@ -622,7 +622,7 @@
           "sh:name": {
             "nl": "voorkeurslabel"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://www.w3.org/2004/02/skos/core#prefLabel",
           "vl:message": {
             "nl": "De verwachte waarde voor voorkeurslabel is een Literal"
@@ -717,7 +717,7 @@
           "sh:name": {
             "nl": "contactpagina"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://xmlns.com/foaf/0.1/page",
           "vl:message": {
             "nl": "De verwachte waarde voor contactpagina is een rdfs:Resource (URI of blank node)"
@@ -765,7 +765,7 @@
           "sh:name": {
             "nl": "e-mail"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/2006/vcard/ns#hasEmail",
           "vl:message": {
             "nl": "De verwachte waarde voor e-mail is een rdfs:Resource (URI of blank node)"
@@ -821,7 +821,7 @@
           "sh:name": {
             "nl": "gestructureerde identificator"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://data.vlaanderen.be/ns/generiek#gestructureerdeIdentificator",
           "vl:message": {
             "nl": "De verwachte waarde voor gestructureerde identificator is een rdfs:Resource (URI of blank node)"
@@ -837,7 +837,7 @@
           "sh:name": {
             "nl": "notatie"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://www.w3.org/2004/02/skos/core#notation",
           "vl:message": {
             "nl": "De verwachte waarde voor notatie is een Literal"
@@ -917,7 +917,7 @@
           "sh:name": {
             "nl": "toegekend door"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/creator",
           "vl:message": {
             "nl": "De verwachte waarde voor toegekend door is een rdfs:Resource (URI of blank node)"
@@ -949,7 +949,7 @@
           "sh:name": {
             "nl": "toegekend door (String)"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://www.w3.org/ns/adms#schemaAgency",
           "vl:message": {
             "nl": "De verwachte waarde voor toegekend door (String) is een Literal"
@@ -997,7 +997,7 @@
           "sh:name": {
             "nl": "toegekend op"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/issued",
           "vl:message": {
             "nl": "De verwachte waarde voor toegekend op is een Literal"
@@ -1053,7 +1053,7 @@
           "sh:name": {
             "nl": "alternatieve identificator"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/adms#identifier",
           "vl:message": {
             "nl": "De verwachte waarde voor alternatieve identificator is een rdfs:Resource (URI of blank node)"
@@ -1085,7 +1085,7 @@
           "sh:name": {
             "nl": "beschrijving"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/description",
           "vl:message": {
             "nl": "De verwachte waarde voor beschrijving is een Literal"
@@ -1133,7 +1133,7 @@
           "sh:name": {
             "nl": "contactinformatie"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/dcat#contactPoint",
           "vl:message": {
             "nl": "De verwachte waarde voor contactinformatie is een rdfs:Resource (URI of blank node)"
@@ -1213,7 +1213,7 @@
           "sh:name": {
             "nl": "heeft DataService"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/dcat#service",
           "vl:message": {
             "nl": "De verwachte waarde voor heeft DataService is een rdfs:Resource (URI of blank node)"
@@ -1245,7 +1245,7 @@
           "sh:name": {
             "nl": "heeft Dataset"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/dcat#dataset",
           "vl:message": {
             "nl": "De verwachte waarde voor heeft Dataset is een rdfs:Resource (URI of blank node)"
@@ -1309,7 +1309,7 @@
           "sh:name": {
             "nl": "identificator"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/identifier",
           "vl:message": {
             "nl": "De verwachte waarde voor identificator is een Literal"
@@ -1357,7 +1357,7 @@
           "sh:name": {
             "nl": "licentie"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/license",
           "vl:message": {
             "nl": "De verwachte waarde voor licentie is een rdfs:Resource (URI of blank node)"
@@ -1389,7 +1389,7 @@
           "sh:name": {
             "nl": "record"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/dcat#record",
           "vl:message": {
             "nl": "De verwachte waarde voor record is een rdfs:Resource (URI of blank node)"
@@ -1421,7 +1421,7 @@
           "sh:name": {
             "nl": "titel"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/title",
           "vl:message": {
             "nl": "De verwachte waarde voor titel is een Literal"
@@ -1469,7 +1469,7 @@
           "sh:name": {
             "nl": "uitgever"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/publisher",
           "vl:message": {
             "nl": "De verwachte waarde voor uitgever is een rdfs:Resource (URI of blank node)"
@@ -1573,7 +1573,7 @@
           "sh:name": {
             "nl": "aanmaakdatum"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/issued",
           "vl:message": {
             "nl": "De verwachte waarde voor aanmaakdatum is een Literal"
@@ -1605,7 +1605,7 @@
           "sh:name": {
             "nl": "alternatieve identificator"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/adms#identifier",
           "vl:message": {
             "nl": "De verwachte waarde voor alternatieve identificator is een rdfs:Resource (URI of blank node)"
@@ -1669,7 +1669,7 @@
           "sh:name": {
             "nl": "bron metadata record landingspagina"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#bron metadata record landingspagina",
           "vl:message": {
             "nl": "De verwachte waarde voor bron metadata record landingspagina is een rdfs:Resource (URI of blank node)"
@@ -1685,7 +1685,7 @@
           "sh:name": {
             "nl": "bron metadatarecord"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/source",
           "vl:message": {
             "nl": "De verwachte waarde voor bron metadatarecord is een rdfs:Resource (URI of blank node)"
@@ -1733,7 +1733,7 @@
           "sh:name": {
             "nl": "conform"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/conformsTo",
           "vl:message": {
             "nl": "De verwachte waarde voor conform is een rdfs:Resource (URI of blank node)"
@@ -1781,7 +1781,7 @@
           "sh:name": {
             "nl": "hoofdonderwerp"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://xmlns.com/foaf/0.1/primaryTopic",
           "vl:message": {
             "nl": "De verwachte waarde voor hoofdonderwerp is een rdfs:Resource (URI of blank node)"
@@ -1877,7 +1877,7 @@
           "sh:name": {
             "nl": "identificator"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/identifier",
           "vl:message": {
             "nl": "De verwachte waarde voor identificator is een Literal"
@@ -1893,7 +1893,7 @@
           "sh:name": {
             "nl": "titel"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/title",
           "vl:message": {
             "nl": "De verwachte waarde voor titel is een Literal"
@@ -1989,7 +1989,7 @@
           "sh:name": {
             "nl": "wijzigingsdatum"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/modified",
           "vl:message": {
             "nl": "De verwachte waarde voor wijzigingsdatum is een Literal"
@@ -2029,7 +2029,7 @@
           "sh:name": {
             "nl": "alternatieve identificator"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/adms#identifier",
           "vl:message": {
             "nl": "De verwachte waarde voor alternatieve identificator is een rdfs:Resource (URI of blank node)"
@@ -2061,7 +2061,7 @@
           "sh:name": {
             "nl": "beschrijving"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/description",
           "vl:message": {
             "nl": "De verwachte waarde voor beschrijving is een Literal"
@@ -2093,7 +2093,7 @@
           "sh:name": {
             "nl": "biedt informatie aan over"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/dcat#servesdataset",
           "vl:message": {
             "nl": "De verwachte waarde voor biedt informatie aan over is een rdfs:Resource (URI of blank node)"
@@ -2141,7 +2141,7 @@
           "sh:name": {
             "nl": "conform aan protocol"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/conformsTo",
           "vl:message": {
             "nl": "De verwachte waarde voor conform aan protocol is een rdfs:Resource (URI of blank node)"
@@ -2185,7 +2185,7 @@
           "sh:name": {
             "nl": "contactinformatie"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/dcat#contactPoint",
           "vl:message": {
             "nl": "De verwachte waarde voor contactinformatie is een rdfs:Resource (URI of blank node)"
@@ -2249,7 +2249,7 @@
           "sh:name": {
             "nl": "creatiedatum"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/created",
           "vl:message": {
             "nl": "De verwachte waarde voor creatiedatum is een Literal"
@@ -2313,7 +2313,7 @@
           "sh:name": {
             "nl": "endpointURL"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/dcat#endpointURL",
           "vl:message": {
             "nl": "De verwachte waarde voor endpointURL is een rdfs:Resource (URI of blank node)"
@@ -2345,7 +2345,7 @@
           "sh:name": {
             "nl": "endpointbeschrijving"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/dcat#endpointDescription",
           "vl:message": {
             "nl": "De verwachte waarde voor endpointbeschrijving is een rdfs:Resource (URI of blank node)"
@@ -2457,7 +2457,7 @@
           "sh:name": {
             "nl": "identificator"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/identifier",
           "vl:message": {
             "nl": "De verwachte waarde voor identificator is een Literal"
@@ -2473,7 +2473,7 @@
           "sh:name": {
             "nl": "landingspagina"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/dcat#landingPage",
           "vl:message": {
             "nl": "De verwachte waarde voor landingspagina is een rdfs:Resource (URI of blank node)"
@@ -2521,7 +2521,7 @@
           "sh:name": {
             "nl": "landingspagina voor authenticatie"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorAuthenticatie",
           "vl:message": {
             "nl": "De verwachte waarde voor landingspagina voor authenticatie is een rdfs:Resource (URI of blank node)"
@@ -2553,7 +2553,7 @@
           "sh:name": {
             "nl": "landingspagina voor gebruiksinformatie"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorGebruiksinformatie",
           "vl:message": {
             "nl": "De verwachte waarde voor landingspagina voor gebruiksinformatie is een rdfs:Resource (URI of blank node)"
@@ -2617,7 +2617,7 @@
           "sh:name": {
             "nl": "landingspagina voor statusinformatie"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie",
           "vl:message": {
             "nl": "De verwachte waarde voor landingspagina voor statusinformatie is een rdfs:Resource (URI of blank node)"
@@ -2693,7 +2693,7 @@
           "sh:name": {
             "nl": "levensfase"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#levensfase",
           "vl:message": {
             "nl": "De verwachte waarde voor levensfase is een rdfs:Resource (URI of blank node)"
@@ -2757,7 +2757,7 @@
           "sh:name": {
             "nl": "licentie"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/license",
           "vl:message": {
             "nl": "De verwachte waarde voor licentie is een rdfs:Resource (URI of blank node)"
@@ -2805,7 +2805,7 @@
           "sh:name": {
             "nl": "ontwikkelingstoestand"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand",
           "vl:message": {
             "nl": "De verwachte waarde voor ontwikkelingstoestand is een rdfs:Resource (URI of blank node)"
@@ -2865,7 +2865,7 @@
           "sh:name": {
             "nl": "publicatiedatum"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/issued",
           "vl:message": {
             "nl": "De verwachte waarde voor publicatiedatum is een Literal"
@@ -2913,7 +2913,7 @@
           "sh:name": {
             "nl": "rechten"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/rights",
           "vl:message": {
             "nl": "De verwachte waarde voor rechten is een rdfs:Resource (URI of blank node)"
@@ -2957,7 +2957,7 @@
           "sh:name": {
             "nl": "statuut"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
           "vl:message": {
             "nl": "De verwachte waarde voor statuut is een rdfs:Resource (URI of blank node)"
@@ -3033,7 +3033,7 @@
           "sh:name": {
             "nl": "thema"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/dcat#theme",
           "vl:message": {
             "nl": "De verwachte waarde voor thema is een rdfs:Resource (URI of blank node)"
@@ -3065,7 +3065,7 @@
           "sh:name": {
             "nl": "titel"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/title",
           "vl:message": {
             "nl": "De verwachte waarde voor titel is een Literal"
@@ -3113,7 +3113,7 @@
           "sh:name": {
             "nl": "toegankelijkheid"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/accessRights",
           "vl:message": {
             "nl": "De verwachte waarde voor toegankelijkheid is een rdfs:Resource (URI of blank node)"
@@ -3237,7 +3237,7 @@
           "sh:name": {
             "nl": "trefwoord"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://www.w3.org/ns/dcat#keyword",
           "vl:message": {
             "nl": "De verwachte waarde voor trefwoord is een Literal"
@@ -3285,7 +3285,7 @@
           "sh:name": {
             "nl": "versie"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://www.w3.org/2002/07/owl#versionInfo",
           "vl:message": {
             "nl": "De verwachte waarde voor versie is een Literal"
@@ -3333,7 +3333,7 @@
           "sh:name": {
             "nl": "wijzigingsdatum"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/modified",
           "vl:message": {
             "nl": "De verwachte waarde voor wijzigingsdatum is een Literal"
@@ -3373,7 +3373,7 @@
           "sh:name": {
             "nl": "alternatieve identificator"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/adms#identifier",
           "vl:message": {
             "nl": "De verwachte waarde voor alternatieve identificator is een rdfs:Resource (URI of blank node)"
@@ -3405,7 +3405,7 @@
           "sh:name": {
             "nl": "beschrijving"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/description",
           "vl:message": {
             "nl": "De verwachte waarde voor beschrijving is een Literal"
@@ -3453,7 +3453,7 @@
           "sh:name": {
             "nl": "conform"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/conformsTo",
           "vl:message": {
             "nl": "De verwachte waarde voor conform is een rdfs:Resource (URI of blank node)"
@@ -3485,7 +3485,7 @@
           "sh:name": {
             "nl": "contactinformatie"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/dcat#contactPoint",
           "vl:message": {
             "nl": "De verwachte waarde voor contactinformatie is een rdfs:Resource (URI of blank node)"
@@ -3549,7 +3549,7 @@
           "sh:name": {
             "nl": "creatiedatum"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/created",
           "vl:message": {
             "nl": "De verwachte waarde voor creatiedatum is een Literal"
@@ -3597,7 +3597,7 @@
           "sh:name": {
             "nl": "distributie"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/dcat#distribution",
           "vl:message": {
             "nl": "De verwachte waarde voor distributie is een rdfs:Resource (URI of blank node)"
@@ -3645,7 +3645,7 @@
           "sh:name": {
             "nl": "eigenaar"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/rightsHolder",
           "vl:message": {
             "nl": "De verwachte waarde voor eigenaar is een rdfs:Resource (URI of blank node)"
@@ -3677,7 +3677,7 @@
           "sh:name": {
             "nl": "geografische dekking"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/spatial",
           "vl:message": {
             "nl": "De verwachte waarde voor geografische dekking is een rdfs:Resource (URI of blank node)"
@@ -3693,7 +3693,7 @@
           "sh:name": {
             "nl": "herkomst"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/provenance",
           "vl:message": {
             "nl": "De verwachte waarde voor herkomst is een rdfs:Resource (URI of blank node)"
@@ -3773,7 +3773,7 @@
           "sh:name": {
             "nl": "identificator"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/identifier",
           "vl:message": {
             "nl": "De verwachte waarde voor identificator is een Literal"
@@ -3789,7 +3789,7 @@
           "sh:name": {
             "nl": "landingspagina"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/dcat#landingPage",
           "vl:message": {
             "nl": "De verwachte waarde voor landingspagina is een rdfs:Resource (URI of blank node)"
@@ -3837,7 +3837,7 @@
           "sh:name": {
             "nl": "publicatiedatum"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/issued",
           "vl:message": {
             "nl": "De verwachte waarde voor publicatiedatum is een Literal"
@@ -3897,7 +3897,7 @@
           "sh:name": {
             "nl": "statuut"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
           "vl:message": {
             "nl": "De verwachte waarde voor statuut is een rdfs:Resource (URI of blank node)"
@@ -3973,7 +3973,7 @@
           "sh:name": {
             "nl": "thema"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/dcat#theme",
           "vl:message": {
             "nl": "De verwachte waarde voor thema is een rdfs:Resource (URI of blank node)"
@@ -4005,7 +4005,7 @@
           "sh:name": {
             "nl": "titel"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/title",
           "vl:message": {
             "nl": "De verwachte waarde voor titel is een Literal"
@@ -4053,7 +4053,7 @@
           "sh:name": {
             "nl": "toegankelijkheid"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/accessRights",
           "vl:message": {
             "nl": "De verwachte waarde voor toegankelijkheid is een rdfs:Resource (URI of blank node)"
@@ -4177,7 +4177,7 @@
           "sh:name": {
             "nl": "trefwoord"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://www.w3.org/ns/dcat#keyword",
           "vl:message": {
             "nl": "De verwachte waarde voor trefwoord is een Literal"
@@ -4225,7 +4225,7 @@
           "sh:name": {
             "nl": "versie"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://www.w3.org/2002/07/owl#versionInfo",
           "vl:message": {
             "nl": "De verwachte waarde voor versie is een Literal"
@@ -4241,7 +4241,7 @@
           "sh:name": {
             "nl": "voorbeeldweergave"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/adms#sample",
           "vl:message": {
             "nl": "De verwachte waarde voor voorbeeldweergave is een rdfs:Resource (URI of blank node)"
@@ -4305,7 +4305,7 @@
           "sh:name": {
             "nl": "wijzigingsdatum"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/modified",
           "vl:message": {
             "nl": "De verwachte waarde voor wijzigingsdatum is een Literal"
@@ -4345,7 +4345,7 @@
           "sh:name": {
             "nl": "alternatieve identificator"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/adms#identifier",
           "vl:message": {
             "nl": "De verwachte waarde voor alternatieve identificator is een rdfs:Resource (URI of blank node)"
@@ -4361,7 +4361,7 @@
           "sh:name": {
             "nl": "conform"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/conformsTo",
           "vl:message": {
             "nl": "De verwachte waarde voor conform is een rdfs:Resource (URI of blank node)"
@@ -4425,7 +4425,7 @@
           "sh:name": {
             "nl": "downloadURL"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/dcat#downloadURL",
           "vl:message": {
             "nl": "De verwachte waarde voor downloadURL is een rdfs:Resource (URI of blank node)"
@@ -4485,7 +4485,7 @@
           "sh:name": {
             "nl": "formaat"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/format",
           "vl:message": {
             "nl": "De verwachte waarde voor formaat is een rdfs:Resource (URI of blank node)"
@@ -4565,7 +4565,7 @@
           "sh:name": {
             "nl": "identificator"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/identifier",
           "vl:message": {
             "nl": "De verwachte waarde voor identificator is een Literal"
@@ -4613,7 +4613,7 @@
           "sh:name": {
             "nl": "licentie"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/license",
           "vl:message": {
             "nl": "De verwachte waarde voor licentie is een rdfs:Resource (URI of blank node)"
@@ -4645,7 +4645,7 @@
           "sh:name": {
             "nl": "rechten"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/rights",
           "vl:message": {
             "nl": "De verwachte waarde voor rechten is een rdfs:Resource (URI of blank node)"
@@ -4661,7 +4661,7 @@
           "sh:name": {
             "nl": "titel"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/title",
           "vl:message": {
             "nl": "De verwachte waarde voor titel is een Literal"
@@ -4741,7 +4741,7 @@
           "sh:name": {
             "nl": "toegangsURL"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/dcat#accessURL",
           "vl:message": {
             "nl": "De verwachte waarde voor toegangsURL is een rdfs:Resource (URI of blank node)"
@@ -4773,7 +4773,7 @@
           "sh:name": {
             "nl": "verdeler"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://data.europa.eu/930/distributor",
           "vl:message": {
             "nl": "De verwachte waarde voor verdeler is een rdfs:Resource (URI of blank node)"
@@ -4837,7 +4837,7 @@
           "sh:name": {
             "nl": "wordt aangeboden door"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/dcat#accessService",
           "vl:message": {
             "nl": "De verwachte waarde voor wordt aangeboden door is een rdfs:Resource (URI of blank node)"
@@ -4877,7 +4877,7 @@
           "sh:name": {
             "nl": "beschrijving"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/description",
           "vl:message": {
             "nl": "De verwachte waarde voor beschrijving is een Literal"
@@ -4957,7 +4957,7 @@
           "sh:name": {
             "nl": "downloadURL"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/dcat#downloadURL",
           "vl:message": {
             "nl": "De verwachte waarde voor downloadURL is een rdfs:Resource (URI of blank node)"
@@ -5017,7 +5017,7 @@
           "sh:name": {
             "nl": "mediatype"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/dcat#mediatype",
           "vl:message": {
             "nl": "De verwachte waarde voor mediatype is een rdfs:Resource (URI of blank node)"
@@ -5049,7 +5049,7 @@
           "sh:name": {
             "nl": "titel"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/title",
           "vl:message": {
             "nl": "De verwachte waarde voor titel is een Literal"
@@ -5121,7 +5121,7 @@
           "sh:name": {
             "nl": "Catalogus Resource (source)"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.source",
           "vl:message": {
             "nl": "De verwachte waarde voor Catalogus Resource (source) is een rdfs:Resource (URI of blank node)"
@@ -5169,7 +5169,7 @@
           "sh:name": {
             "nl": "Catalogus Resource (target)"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.target",
           "vl:message": {
             "nl": "De verwachte waarde voor Catalogus Resource (target) is een rdfs:Resource (URI of blank node)"
@@ -5309,7 +5309,7 @@
           "sh:name": {
             "nl": "rol"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://www.w3.org/ns/dcat#hadRole",
           "vl:message": {
             "nl": "De verwachte waarde voor rol is een rdfs:Resource (URI of blank node)"
@@ -5349,7 +5349,7 @@
           "sh:name": {
             "nl": "relatie"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/relation",
           "vl:message": {
             "nl": "De verwachte waarde voor relatie is een rdfs:Resource (URI of blank node)"
@@ -5365,7 +5365,7 @@
           "sh:name": {
             "nl": "uitgever"
           },
-          "sh:nodekind": "sh:BlankNodeOrIRI",
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "http://purl.org/dc/terms/publisher",
           "vl:message": {
             "nl": "De verwachte waarde voor uitgever is een rdfs:Resource (URI of blank node)"
