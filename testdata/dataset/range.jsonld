@@ -101,15 +101,15 @@
     "wijzigingsdatum": "2022-02-03T12:12:12",
     "herkomst": "http://test.com/herkomst",
     "eigenaar": "http://test.com/id/org/1",
-    "geografischeDekking": {},
+    "geografischeDekking": "spatial",
     "titel": {
         "nl": "title"
     },
     "versie": "version",
-    "alternatieveIdentificator": {},
+    "alternatieveIdentificator": "id",
     "ruimtelijkVoorstellingstype": "http://test.com/id/code/8",
-    "voorbeeldweergave": {},
-    "contactinformatie": {},
+    "voorbeeldweergave": "example",
+    "contactinformatie": "contactinfo",
     "distributie": "http://test.com/id/distr/1",
     "trefwoord": {
         "nl": "trefwoord"
