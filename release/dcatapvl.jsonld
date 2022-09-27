@@ -2231,22 +2231,6 @@
           "vl:rule": "1363"
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/1b8b3557ea1ccbabc0962c345782ae53740e72e1",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Atrefwoord",
-          "sh:description": {
-            "nl": "Een trefwoord of tag die de resource beschrijft."
-          },
-          "sh:name": {
-            "nl": "trefwoord"
-          },
-          "sh:path": "http://www.w3.org/ns/dcat#keyword",
-          "sh:uniqueLang": "true",
-          "vl:message": {
-            "nl": "Slechts 1 waarde voor elke taal toegelaten voor trefwoord"
-          },
-          "vl:rule": "1364"
-        },
-        {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DataServiceShape/44f6426e2306c5bc0421823eb4a1a034b615f715",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#DataService%3Atrefwoord",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
@@ -2901,22 +2885,6 @@
             "nl": "Maximaal 1 waarden toegelaten voor toegankelijkheid"
           },
           "vl:rule": "v100"
-        },
-        {
-          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/1b8b3557ea1ccbabc0962c345782ae53740e72e1",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Atrefwoord",
-          "sh:description": {
-            "nl": "Een trefwoord of tag die de resource beschrijft."
-          },
-          "sh:name": {
-            "nl": "trefwoord"
-          },
-          "sh:path": "http://www.w3.org/ns/dcat#keyword",
-          "sh:uniqueLang": "true",
-          "vl:message": {
-            "nl": "Slechts 1 waarde voor elke taal toegelaten voor trefwoord"
-          },
-          "vl:rule": "1719"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/44f6426e2306c5bc0421823eb4a1a034b615f715",
