@@ -1,16 +1,16 @@
 # List of input files (example files)
-#INPUTS=6.output.jsonld 7.output.jsonld 8.output.jsonld
 #INPUTS=metadata_dcat.jsonld dcatapvl.jsonld geodcatapvl.jsonld
 INPUTS=release/metadata_dcat.jsonld release/dcatapvl.jsonld release/geodcatapvl.jsonld 
 OUTPUTCSV=$(patsubst %.jsonld,%.csv,${INPUTS})
 
-all: final_with_description.csv final_with_testcount.csv
+all: final_with_description.csv 
 
 %.csv: %.jsonld
 	# Entract the ruleid and the id into a file which sorted on the first key (ruleid)
 	jq '.shapes[]."sh:property"[] | [."vl:rule",."@id"] | join(";")' $< | sed 's/\"//g' | awk -F ';' '{if ($$1=="") { $$id = gensub(/(.+)#(.+)/,"\\2\\1/\\2","g", $$0) ; print $$id  ; } else {print $$0;}}' | sort -d -t ";" -k 1 > $@
 	# Add the filename as a header for the 2nd column
-	sed -i '1s?.*?vl:rule;$<?' $@
+	HH=`basename -s .jsonld $<` ;\
+	sed -i "1s?.*?vl:rule;$${HH}?" $@
 	sed -i "s/\r//g" $@
 
 	# join the files as needed
@@ -23,6 +23,7 @@ final.csv: ${OUTPUTCSV}
 	sed -i "s/\r//g" final.csv
 
 	# Merge in any description/extra information which is needed.
+
 final_with_description.csv: final.csv sdescription.csv
 	join -e "_" -o auto --header -t ";" -j 1 -a 1 final.csv sdescription.csv > $@
 
