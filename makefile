@@ -44,7 +44,7 @@ prepare: ${ENVIRONMENTS}
 
 .PHONY: prepare
 
-$(ENVIRONMENTS):
+$(ENVIRONMENTS): $(PROFILES)
 	mkdir -p $@
 	for it in ${PROFILES} ; do \
 	   mkdir -p $@/$$it ; \
@@ -54,6 +54,10 @@ $(ENVIRONMENTS):
 	cp result/makefile.profile.$(notdir $@) $@/makefile.profile
 	cp result/makefile.profile-gen $@/makefile.profile-gen
 
+$(PROFILES): final.csv
+	cp release/dcatapvl.csv result/dcat_ap_vl.csv
+	cp release/metadata_dcat.csv result/metadata_dcat.csv
+	cp release/geodcatapvl.csv result/geodcat_ap_vl.csv
 
 
 clean:

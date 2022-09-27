@@ -36,7 +36,7 @@ testfilecoverage.csv: $(SUBDIRS)
 	 	done
 	mv aggr.csv testfilecoverage.csv
 
-PROFILECSV=../../../release/dcatapvl.csv
+PROFILECSV=../../${PROFILE}.csv
 
 notcovered.csv: profilecoverage.csv ${PROFILECSV}
 	cp profilecoverage.csv /tmp/profilecoverage.csv
