@@ -1,5 +1,7 @@
 {
     "@context": {
+      "@vocab": "https://data.vlaanderen.be/ns/metadata-dcat#",
+      "@base": "http://test.com/test#",
     "Distributie": "http://www.w3.org/ns/dcat#Distribution",
     "alternatieveIdentificator": {
       "@container": "@set",
@@ -27,9 +29,13 @@
       "@id": "http://purl.org/dc/terms/rights"
     },
     "titel": {
+      "@container": ["@set"],
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "titel-xsd": {
       "@container": ["@set","@language"],
       "@id": "http://purl.org/dc/terms/title",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+      "@type": "http://some/xsd"
     },
     "toegangsUrl": {
       "@id": "http://www.w3.org/ns/dcat#accessURL"
@@ -50,10 +56,9 @@
     "identificator": ["http://test/id/distributie/1","http://test/id/distributie/12"],
     "licentie": ["http://test.com/id/lic1","http://test.com/id/lic12"],
     "rechten": ["http://test.com/id/rights","http://test.com/id/rights2"],
-    "titel": {
-        "nl": ["een distributie titel","een distributie titel2"]
-    },
-    "alternatieveIdentificator": {},
+    "titel": ["een distributie titel","een distributie titel2"],
+    "titel-xsd": ["een distributie titel","een distributie titel2"],
+    "alternatieveIdentificator": "ai1",
     "wordtAangebodenDoor": ["http://test.com/id/dataservice/1","http://test.com/id/dataservice/12"],
     "toegangsUrl": ["http://test.com/page1/","http://test.com/page1/2"],
     "downloadUrl": ["http://test.com/page2/","http://test.com/page2/2"]

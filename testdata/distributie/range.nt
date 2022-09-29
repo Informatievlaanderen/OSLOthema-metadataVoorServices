@@ -11,9 +11,11 @@
 <http://test.com/id/distributie/1> <http://purl.org/dc/terms/license> "http://test.com/id/lic12" .
 <http://test.com/id/distributie/1> <http://purl.org/dc/terms/rights> "http://test.com/id/rights" .
 <http://test.com/id/distributie/1> <http://purl.org/dc/terms/rights> "http://test.com/id/rights2" .
-<http://test.com/id/distributie/1> <http://purl.org/dc/terms/title> "een distributie titel"@nl .
-<http://test.com/id/distributie/1> <http://purl.org/dc/terms/title> "een distributie titel2"@nl .
-<http://test.com/id/distributie/1> <http://www.w3.org/ns/adms#identifier> _:g447140 .
+<http://test.com/id/distributie/1> <http://purl.org/dc/terms/title> "een distributie titel" .
+<http://test.com/id/distributie/1> <http://purl.org/dc/terms/title> "een distributie titel2" .
+<http://test.com/id/distributie/1> <http://purl.org/dc/terms/title> "een distributie titel"^^<http://some/xsd> .
+<http://test.com/id/distributie/1> <http://purl.org/dc/terms/title> "een distributie titel2"^^<http://some/xsd> .
+<http://test.com/id/distributie/1> <http://www.w3.org/ns/adms#identifier> "ai1" .
 <http://test.com/id/distributie/1> <http://www.w3.org/ns/dcat#accessService> "http://test.com/id/dataservice/1" .
 <http://test.com/id/distributie/1> <http://www.w3.org/ns/dcat#accessService> "http://test.com/id/dataservice/12" .
 <http://test.com/id/distributie/1> <http://www.w3.org/ns/dcat#accessURL> "http://test.com/page1/" .

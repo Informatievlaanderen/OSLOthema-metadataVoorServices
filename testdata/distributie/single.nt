@@ -5,7 +5,7 @@
 <http://test.com/id/distributie/1> <http://purl.org/dc/terms/identifier> "http://test/id/distributie/1"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <http://test.com/id/distributie/1> <http://purl.org/dc/terms/license> <http://test.com/id/lic1> .
 <http://test.com/id/distributie/1> <http://purl.org/dc/terms/rights> <http://test.com/id/rights> .
-<http://test.com/id/distributie/1> <http://purl.org/dc/terms/title> _:g447140 .
+<http://test.com/id/distributie/1> <http://purl.org/dc/terms/title> "een distributie titel"@nl .
 <http://test.com/id/distributie/1> <http://www.w3.org/ns/adms#identifier> _:g447160 .
 <http://test.com/id/distributie/1> <http://www.w3.org/ns/dcat#accessService> <http://test.com/id/dataservice/1> .
 <http://test.com/id/distributie/1> <http://www.w3.org/ns/dcat#accessURL> <http://test.com/page1/> .
