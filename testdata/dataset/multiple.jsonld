@@ -118,7 +118,7 @@
     "titel": {
         "nl": ["title","title2"]
     },
-    "versie": "version",
+    "versie": ["version1","version2"],
     "alternatieveIdentificator": {},
     "ruimtelijkVoorstellingstype": ["http://test.com/id/code/8","http://test.com/id/code/82"],
     "voorbeeldweergave": {},

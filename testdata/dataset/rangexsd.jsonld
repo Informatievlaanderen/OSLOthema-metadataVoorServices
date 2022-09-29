@@ -6,8 +6,13 @@
       "@id": "http://www.w3.org/ns/adms#identifier"
     },
     "beschrijving": {
+      "@container": ["@set"],
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "beschrijving-xsd": {
+      "@container": ["@set"],
       "@id": "http://purl.org/dc/terms/description",
-      "@type":"@id"
+      "@type" : "http://some/xsd"
     },
     "conform": {
       "@container": "@set",
@@ -57,27 +62,36 @@
       "@id": "http://www.w3.org/ns/dcat#theme"
     },
     "titel": {
+      "@container": ["@set"],
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "titel-xsd": {
+      "@container": ["@set"],
       "@id": "http://purl.org/dc/terms/title",
-      "@type":"@id"
+      "@type": "http://some/xsd"
     },
     "toegankelijkheid": {
       "@id": "http://purl.org/dc/terms/accessRights"
     },
     "trefwoord": {
+      "@container": ["@set"],
+      "@id": "http://www.w3.org/ns/dcat#keyword"
+    },
+    "trefwoord-xsd": {
+      "@container": ["@set"],
       "@id": "http://www.w3.org/ns/dcat#keyword",
-      "@type":"@id"
+      "@type": "http://some/xsd"
     },
     "versie": {
       "@id": "http://www.w3.org/2002/07/owl#versionInfo",
-      "@type":"@id"
+      "@type": "http://some/xsd"
     },
     "voorbeeldweergave": {
       "@container": "@set",
       "@id": "http://www.w3.org/ns/adms#sample"
     },
     "wijzigingsdatum": {
-      "@id": "http://purl.org/dc/terms/modified",
-      "@type":"@id"
+      "@id": "http://purl.org/dc/terms/modified"
     }
     },
     "@type": "http://www.w3.org/ns/dcat#Dataset",
@@ -91,6 +105,7 @@
     "conform": "http://test.com/id/code/7",
     "creatiedatum": "2022-02-03T12:12:12",
     "beschrijving": "description",
+    "beschrijving-xsd": "description",
     "identificator": "http://test.com/id/dataset/1",
     "publicatiedatum": "2022-02-03T12:12:12",
     "wijzigingsdatum": "2022-02-03T12:12:12",
@@ -98,6 +113,7 @@
     "eigenaar": "http://test.com/id/org/1",
     "geografischeDekking": "spatial",
     "titel": "title",
+    "title-xsd" : "title",
     "versie": "version",
     "alternatieveIdentificator": "id",
     "ruimtelijkVoorstellingstype": "http://test.com/id/code/8",
@@ -105,6 +121,7 @@
     "contactinformatie": "contactinfo",
     "distributie": "http://test.com/id/distr/1",
     "trefwoord": "trefwoord",
+    "trefwoord-xsd": "trefwoord",
     "landingspagina": "http://test.com/page/1",
     "thema": "http://test.com/id/code/9",
     "ruimtelijkeResolutie": "http://test.com/id/code/10"
