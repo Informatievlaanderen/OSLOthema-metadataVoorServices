@@ -1,5 +1,7 @@
 {
     "@context": {
+      "@vocab": "https://data.vlaanderen.be/ns/metadata-dcat#",
+      "@base": "http://test.com/test#",
     "Dataset": "http://www.w3.org/ns/dcat#Dataset",
     "alternatieveIdentificator": {
       "@container": "@set",
