@@ -2763,22 +2763,6 @@
           "vl:rule": "v040"
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/5c245f65e6c2294cd7079eb566de6fd4e4adb829",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Atitel",
-          "sh:description": {
-            "nl": "De naam van de dataset."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "nl": "titel"
-          },
-          "sh:path": "http://purl.org/dc/terms/title",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor titel"
-          },
-          "vl:rule": ""
-        },
-        {
           "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/8041fe094c27b123422bd03a4e13ff0641087607",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/ontwerpstandaard/2021-06-27#Dataset%3Atitel",
           "sh:description": {
