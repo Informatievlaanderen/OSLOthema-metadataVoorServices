@@ -1,5 +1,4 @@
 {
-
     "@context": {   "CatalogusRecord": "http://www.w3.org/ns/dcat#CatalogRecord",
     "aanmaakdatum": {
       "@id": "http://purl.org/dc/terms/issued",
@@ -11,15 +10,13 @@
       "@type": "@id"
     },
     "bronMetadataRecordLandingspagina": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#bronMetadataRecordLandingspagina",
-      "@type": "@id"
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#bron metadata record landingspagina"
     },
     "bronMetadatarecord": {
-      "@id": "http://purl.org/dc/terms/source",
-      "@type": "@id"
+      "@id": "http://purl.org/dc/terms/source"
     },
     "conform": {
-      "@container": ["@set","@language"],
+      "@container": "@set",
       "@id": "http://purl.org/dc/terms/conformsTo",
       "@type": "@id"
     },
@@ -32,7 +29,7 @@
       "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     "titel": {
-      "@container": ["@set","@language"],
+      "@container": "@set",
       "@id": "http://purl.org/dc/terms/title",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
@@ -42,16 +39,5 @@
     }
     },
     "@type": "http://www.w3.org/ns/dcat#CatalogRecord",
-    "@id": "http://test.com/id/catalogusrecord/1",
-    "bronMetadataRecordLandingspagina": ["http://test.com/bron/1","http://test.com/bron/2"],
-    "conform": ["http://test.com/standaard","http://test.com/standaard2"],
-    "identificator": ["http://test.com/id/catalogusrecord/1","http://test.com/id/catalogusrecord/12"],
-    "aanmaakdatum": ["2022-01-01","2022-01-02"],
-    "wijzigingsdatum": ["2202-03-02","2202-03-03"],
-    "bronMetadatarecord": ["http://test.com/bronrecord/2","http://test.com/bronrecord/22"],
-    "titel": {
-        "nl": ["titel","titel2"]
-    },
-    "alternatieveIdentificator": ["id.1","id.12"],
-    "hoofdonderwerp": ["http://test.com/id/dataset1","http://test.com/id/dataset2]"
+    "@id": "http://test.com/id/catalogusrecord/1"
 }

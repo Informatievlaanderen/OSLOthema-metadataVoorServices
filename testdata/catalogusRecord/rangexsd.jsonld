@@ -2,8 +2,7 @@
 
     "@context": {   "CatalogusRecord": "http://www.w3.org/ns/dcat#CatalogRecord",
     "aanmaakdatum": {
-      "@id": "http://purl.org/dc/terms/issued",
-      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      "@id": "http://purl.org/dc/terms/issued"
     },
     "alternatieveIdentificator": {
       "@container": "@set",
@@ -29,16 +28,15 @@
     },
     "identificator": {
       "@id": "http://purl.org/dc/terms/identifier",
-      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      "@type": "http://some/xsd"
     },
     "titel": {
       "@container": ["@set","@language"],
       "@id": "http://purl.org/dc/terms/title",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+      "@type": "http://some/xsd"
     },
     "wijzigingsdatum": {
-      "@id": "http://purl.org/dc/terms/modified",
-      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      "@id": "http://purl.org/dc/terms/modified"
     }
     },
     "@type": "http://www.w3.org/ns/dcat#CatalogRecord",
