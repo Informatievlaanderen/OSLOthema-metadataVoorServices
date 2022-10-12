@@ -1,5 +1,7 @@
 {
     "@context": {
+      "@vocab": "https://data.vlaanderen.be/ns/metadata-dcat#",
+      "@base": "http://test.com/test#",
     "Dataset": "http://www.w3.org/ns/dcat#Dataset",
     "alternatieveIdentificator": {
       "@container": "@set",
@@ -118,11 +120,11 @@
     "titel": {
         "nl": ["title","title2"]
     },
-    "versie": "version",
-    "alternatieveIdentificator": {},
+    "versie": ["version1","version2"],
+    "alternatieveIdentificator": ["ai1", "ai2"],
     "ruimtelijkVoorstellingstype": ["http://test.com/id/code/8","http://test.com/id/code/82"],
-    "voorbeeldweergave": {},
-    "contactinformatie": {},
+    "voorbeeldweergave": ["v1", "v2"],
+    "contactinformatie": ["c1", "c2"],
     "distributie": ["http://test.com/id/distr/1","http://test.com/id/distr/12"],
     "trefwoord": {
         "nl": ["trefwoord","trefwoord2"]

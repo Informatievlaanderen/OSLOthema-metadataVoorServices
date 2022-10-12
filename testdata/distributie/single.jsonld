@@ -1,5 +1,7 @@
 {
     "@context": {
+          "@vocab": "https://data.vlaanderen.be/ns/metadata-dcat#",
+      "@base": "http://test.com/test#",
     "Distributie": "http://www.w3.org/ns/dcat#Distribution",
     "alternatieveIdentificator": {
       "@container": "@set",
@@ -33,7 +35,7 @@
       "@type": "@id"
     },
     "titel": {
-      "@container": "@set",
+      "@container": ["@set","@language"],
       "@id": "http://purl.org/dc/terms/title",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
