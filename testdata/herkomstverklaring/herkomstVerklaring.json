@@ -1,0 +1,8 @@
+{
+    "@context": 
+{
+    "herkomstVerklaring": "http://purl.org/dc/terms/ProvenanceStatement"
+},
+    "@type": "http://purl.org/dc/terms/ProvenanceStatement",
+    "@id": "{{ID}}"
+}

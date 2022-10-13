@@ -1,0 +1,5 @@
+<https://test.com/id/plaats/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Location> .
+<https://test.com/id/plaats/1> <http://www.w3.org/2000/01/rdf-schema#label> "PLACE ABC"@nl .
+<https://test.com/id/plaats/1> <http://www.w3.org/ns/dcat#bbox> "box 123 234 123 121" .
+<https://test.com/id/plaats/1> <http://www.w3.org/ns/dcat#centroid> "cent 121" .
+<https://test.com/id/plaats/1> <http://www.w3.org/ns/locn#geometry> "geo 123" .

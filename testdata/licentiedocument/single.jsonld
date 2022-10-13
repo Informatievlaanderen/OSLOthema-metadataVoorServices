@@ -1,0 +1,8 @@
+{
+    "@context": 
+{
+    "licentieDocument": "http://purl.org/dc/terms/LicenseDocument"
+},
+    "@type": "http://purl.org/dc/terms/LicenseDocument",
+    "@id": "https://test.com/id/licence/12"
+}

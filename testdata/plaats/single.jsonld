@@ -1,0 +1,25 @@
+{
+    "@context": 
+{
+    "plaats": "http://purl.org/dc/terms/Location",
+    "plaatsnaam": {
+        "@container": [
+            "@language",
+            "@set"
+        ],
+        "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "boundingBox": "http://www.w3.org/ns/dcat#bbox",
+    "centroïde": "http://www.w3.org/ns/dcat#centroid",
+    "geometrie": "http://www.w3.org/ns/locn#geometry"
+},
+    "@type": "http://purl.org/dc/terms/Location",
+    "@id": "https://test.com/id/plaats/1",
+    "plaatsnaam": {
+        "nl": "PLACE ABC"
+    },
+    "boundingBox": "box 123 234 123 121",
+    "centroïde": "cent 121",
+    "geometrie": "geo 123"
+}
