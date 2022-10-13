@@ -1,0 +1,34 @@
+{
+    "@context":
+{
+    "voorbeeldweergave": "http://www.w3.org/ns/dcat#Distribution",
+    "beschrijving": {
+        "@container": [
+            "@language",
+            "@set"
+        ],
+        "@id": "http://purl.org/dc/terms/description",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "titel": {
+        "@container": [
+            "@language",
+            "@set"
+        ],
+        "@id": "http://purl.org/dc/terms/title",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "downloadUrl": "http://www.w3.org/ns/dcat#downloadURL",
+    "mediatype": "http://www.w3.org/ns/dcat#mediatype"
+},
+    "@type": "http://www.w3.org/ns/dcat#Distribution",
+    "@id": "{{ID}}",
+    "beschrijving": {
+        "nl": "{{STRING}}"
+    },
+    "titel": {
+        "nl": "{{STRING}}"
+    },
+    "downloadUrl": "{{VAL}}",
+    "mediatype": "{{VAL}}"
+}

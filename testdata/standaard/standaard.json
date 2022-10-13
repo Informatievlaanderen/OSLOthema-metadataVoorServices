@@ -1,0 +1,49 @@
+{
+    "@context": 
+{
+    "standaard": "http://purl.org/dc/terms/Standard",
+    "beschrijving": {
+        "@container": [
+            "@language",
+            "@set"
+        ],
+        "@id": "http://purl.org/dc/terms/description",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "publicatiedatum": {
+        "@id": "http://purl.org/dc/terms/issued",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "titel": {
+        "@container": [
+            "@language",
+            "@set"
+        ],
+        "@id": "http://purl.org/dc/terms/title",
+        "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "type": "http://purl.org/dc/terms/type",
+    "specificatieUrl": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+    "versie": {
+        "@id": "http://www.w3.org/2002/07/owl#versionInfo",
+        "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "voorkeurslabel": {
+        "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+        "@type": "http://www.w3.org/2001/XMLSchema#string"
+    }
+},
+    "@type": "http://purl.org/dc/terms/Standard",
+    "@id": "{{ID}}",
+    "beschrijving": {
+        "nl": "{{STRING}}"
+    },
+    "publicatiedatum": "{{DATETIME}}",
+    "titel": {
+        "nl": "{{STRING}}"
+    },
+    "type": "{{VAL}}",
+    "specificatieUrl": "{{VAL}}",
+    "versie": "{{STRING}}",
+    "voorkeurslabel": "{{STRING}}"
+}

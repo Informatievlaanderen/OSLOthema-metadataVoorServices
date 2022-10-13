@@ -1,0 +1,17 @@
+{
+    "@context": 
+{
+    "catalogusResource": "http://www.w3.org/ns/dcat#Resource",
+    "uitgever": {
+       "@id" : "http://purl.org/dc/terms/publisher"
+},
+    "relatie": { 
+    "@id" : "http://purl.org/dc/terms/relation"
+}
+}
+
+    "@type": "http://www.w3.org/ns/dcat#Resource",
+    "@id": "https://test.com/id/catalogusResource/1",
+    "uitgever": "https://test.com/id/uitgever/1",
+    "relatie": "https://test.com/id/resource/2"
+}

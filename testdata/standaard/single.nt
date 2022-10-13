@@ -1,0 +1,8 @@
+<https://test.com/id/standard/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Standard> .
+<https://test.com/id/standard/1> <http://purl.org/dc/terms/description> "a standard from XYZ"@nl .
+<https://test.com/id/standard/1> <http://purl.org/dc/terms/issued> "2022-05-20T12:14:13"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://test.com/id/standard/1> <http://purl.org/dc/terms/title> "standaard"@nl .
+<https://test.com/id/standard/1> <http://purl.org/dc/terms/type> "https://test.com/cat1" .
+<https://test.com/id/standard/1> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://xyz/123.html" .
+<https://test.com/id/standard/1> <http://www.w3.org/2002/07/owl#versionInfo> "3.2" .
+<https://test.com/id/standard/1> <http://www.w3.org/2004/02/skos/core#prefLabel> "PRD" .

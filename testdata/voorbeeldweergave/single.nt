@@ -1,0 +1,5 @@
+<https://test.com/id/example/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<https://test.com/id/example/1> <http://purl.org/dc/terms/description> "example description"@nl .
+<https://test.com/id/example/1> <http://purl.org/dc/terms/title> "example"@nl .
+<https://test.com/id/example/1> <http://www.w3.org/ns/dcat#downloadURL> "https://test.com/downloadurl" .
+<https://test.com/id/example/1> <http://www.w3.org/ns/dcat#mediatype> "http://iana/JPG" .
