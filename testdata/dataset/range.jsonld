@@ -4,20 +4,16 @@
       "@base": "http://test.com/test#",
     "Dataset": "http://www.w3.org/ns/dcat#Dataset",
   "inspireThema": {
-      "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#INSPIREthema",
-      "@type": "@id"
+      "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#INSPIREthema"
     },
     "isoCategorie": {
-      "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#ISOcategorie",
-      "@type": "@id"
+      "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#ISOcategorie"
     },
     "status": {
-            "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#status",
-      "@type": "@id"
+            "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#status"
     },
     "statuut": {
-            "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
-      "@type": "@id"
+            "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#statuut"
     },
     "alternatieveIdentificator": {
       "@container": "@set",
