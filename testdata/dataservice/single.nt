@@ -17,13 +17,13 @@
 <http://test.com/id/dataservice/1> <https://data.vlaanderen.be/ns/metadata-dcat#geografischeDekking> "http://test.com/space1" .
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/title> "data service title "@nl .
 <http://test.com/id/dataservice/1> <http://www.w3.org/2002/07/owl#versionInfo> "version 1.2.2" .
-<http://test.com/id/dataservice/1> <http://www.w3.org/ns/adms#identifier> _:g447220 .
-<http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#contactPoint> _:g447240 .
+<http://test.com/id/dataservice/1> <http://www.w3.org/ns/adms#identifier> _:g447180 .
+<http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#contactPoint> _:g447200 .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#endpointDescription> <http://test.com/openapi> .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#endpointURL> <http://test.com/endpointurl> .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#keyword> "sleutelwoord1"@nl .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#landingPage> <http://test.com/landpage> .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#servesdataset> <http://test.com/id/dataset/1> .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#theme> <http://test.com/code6> .
-<http://test.com/id/dataservice/1> <https://data.vlaanderen.be/ns/metadata-dcat#serviceType> "http://test.com/code7" .
-<http://test.com/id/dataservice/1> <https://data.vlaanderen.be/ns/metadata-dcat#serviceCategorie> "http://test.com/code8" .
+<http://test.com/id/dataservice/1> <http://data.vlaanderen.be/ns/metadata-dcat#servicetype> <http://test.com/code7> .
+<http://test.com/id/dataservice/1> <http://data.vlaanderen.be/ns/metadata-dcat#servicecategorie> <http://test.com/code8> .

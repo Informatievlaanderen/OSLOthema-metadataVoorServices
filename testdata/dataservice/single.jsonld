@@ -111,6 +111,14 @@
     "wijzigingsdatum": {
       "@id": "http://purl.org/dc/terms/modified",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "serviceType": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#servicetype",
+      "@type": "@id"
+    },
+    "serviceCategorie": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#servicecategorie",
+      "@type": "@id"
     }
     },
     "@type": "http://www.w3.org/ns/dcat#DataService",
