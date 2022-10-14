@@ -1,0 +1,20 @@
+{
+    "@context": 
+{
+    "relatieQualificatie": "http://www.w3.org/ns/dcat#Relationship",
+    "catalogusResourceSource": {
+	    "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.source"
+    },
+    "catalogusResourceTarget": {
+	    "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.target"
+    },
+    "rol": {
+	    "@id" : "http://www.w3.org/ns/dcat#hadRole"
+    }
+},
+    "@type": "http://www.w3.org/ns/dcat#Relationship",
+    "@id": "htttps://test.com/id/relatie/1",
+    "catalogusResourceSource": "http://test.com/id/resource/1",
+    "catalogusResourceTarget": "https://test.com/id/resource/2",
+    "rol": "https://test.com/id/role1"
+}

@@ -1,0 +1,13 @@
+<https://test.com/id/example/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<https://test.com/id/example/1> <http://purl.org/dc/terms/description> "example description"@nl .
+<https://test.com/id/example/1> <http://purl.org/dc/terms/description> "example description2"@nl .
+<https://test.com/id/example/1> <http://purl.org/dc/terms/description> "example description" .
+<https://test.com/id/example/1> <http://purl.org/dc/terms/description> "example description2" .
+<https://test.com/id/example/1> <http://purl.org/dc/terms/title> "example"@nl .
+<https://test.com/id/example/1> <http://purl.org/dc/terms/title> "example2"@nl .
+<https://test.com/id/example/1> <http://purl.org/dc/terms/title> "example" .
+<https://test.com/id/example/1> <http://purl.org/dc/terms/title> "example2" .
+<https://test.com/id/example/1> <http://www.w3.org/ns/dcat#downloadURL> "https://test.com/downloadurl" .
+<https://test.com/id/example/1> <http://www.w3.org/ns/dcat#downloadURL> "https://test.com/downloadurl2" .
+<https://test.com/id/example/1> <http://www.w3.org/ns/dcat#mediatype> "http://iana/JPG" .
+<https://test.com/id/example/1> <http://www.w3.org/ns/dcat#mediatype> "http://iana/JPG2" .

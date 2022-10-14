@@ -1,0 +1,37 @@
+{
+  "@context": {
+    "voorbeeldweergave": "http://www.w3.org/ns/dcat#Distribution",
+    "beschrijving": {
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": "@id"
+    },
+    "beschrijving-xsd": {
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": "https://some/xsd"
+    },
+    "titel": {
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": "@id"
+    },
+    "titel-xsd": {
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": "https://some/xsd"
+    },
+    "downloadUrl": {
+      "@id" : "http://www.w3.org/ns/dcat#downloadURL",
+      "@type": "@id"
+    },
+    "mediatype": {
+       "@id" : "http://www.w3.org/ns/dcat#mediatype",
+      "@type": "@id"
+    }
+  },
+  "@type": "http://www.w3.org/ns/dcat#Distribution",
+  "@id": "https://test.com/id/example/1",
+  "beschrijving": "https://test.com/dummy",
+  "beschrijving-xsd": "example description",
+  "titel": "example",
+  "titel-xsd": "https://test.com/dummy",
+  "downloadUrl": "https://test.com/downloadurl",
+  "mediatype": "http://iana/JPG"
+}

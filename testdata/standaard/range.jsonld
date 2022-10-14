@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "standaard": "http://purl.org/dc/terms/Standard",
+    "beschrijving": {
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": "@id"
+    },
+    "beschrijving-xsd": {
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": "https://some/xsd"
+    },
+    "publicatiedatum": {
+      "@id": "http://purl.org/dc/terms/issued",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "titel": {
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": "@id"
+    },
+    "titel-xsd": {
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": "http://some/xsd"
+    },
+    "type": "http://purl.org/dc/terms/type",
+    "specificatieUrl": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+    "versie": {
+      "@id": "http://www.w3.org/2002/07/owl#versionInfo",
+      "@type": "@id"
+    },
+    "versie-xsd": {
+      "@id": "http://www.w3.org/2002/07/owl#versionInfo",
+      "@type": "http://some/xsd"
+    },
+    "voorkeurslabel-xsd": {
+      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+      "@type": "http://some/xsd"
+    },
+    "voorkeurslabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+      "@type": "@id"
+    }
+  },
+  "@type": "http://purl.org/dc/terms/Standard",
+  "@id": "https://test.com/id/standard/1",
+  "beschrijving": "https://test.com/dummy",
+  "beschrijving-xsd": "a standard from XYZ",
+  "publicatiedatum": "2022-05-20T12:14:13",
+  "titel": "https://test.com/dummy",
+  "titel-xsd": "standaard",
+  "type": "https://test.com/cat1",
+  "specificatieUrl": "https://xyz/123.html",
+  "versie": "https://test.com/dummy",
+  "versie-xsd": "3.2",
+  "voorkeurslabel": "https://test.com/dummy",
+  "voorkeurslabel-xsd": "PRD"
+}
