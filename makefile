@@ -9,7 +9,7 @@ all: final_with_description.csv
 
 %.csv: %.jsonld
 	# Entract the ruleid and the id into a file which sorted on the first key (ruleid)
-	jq '.shapes[]."sh:property"[] | [."vl:rule",."@id"] | join(";")' $< | sed 's/\"//g' | awk -F ';' '{if ($$1=="") { $$id = gensub(/(.+)#(.+)/,"\\2\\1/\\2","g", $$0) ; print $$id  ; } else {print $$0;}}' | sort -d -t ";" -k 1 > $@
+	jq '.shapes[]."sh:property"[] | [."vl:rule",."@id"] | join(";")' $< | sed 's/\"//g' | awk -F ';' '{if ($$1=="") { $$id = gensub(/(.+)#(.+)/,"\\2\\1#\\2","g", $$0) ; print $$id  ; } else {print $$0;}}' | sort -d -t ";" -k 1 > $@
 	# Add the filename as a header for the 2nd column
 	HH=`basename -s .jsonld $<` ;\
 	sed -i "1s?.*?vl:rule;$${HH}?" $@
@@ -70,3 +70,7 @@ ruby-build:
 
 ruby:
 	docker run --rm -it --name crubyt -v $(CURDIR):/data cruby bash
+
+testcases: 
+	find ./testdata -type d -exec chmod 777 {} \;
+	docker run --rm -it --name crubyt -v $(CURDIR):/data cruby make
