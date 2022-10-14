@@ -1,6 +1,22 @@
 {
     "@context": {
     "Dataset": "http://www.w3.org/ns/dcat#Dataset",
+    "inspireThema": {
+      "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#INSPIREthema",
+      "@type": "@id"
+    },
+    "isoCategorie": {
+      "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#ISOcategorie",
+      "@type": "@id"
+    },
+    "status": {
+	    "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#status",
+      "@type": "@id"
+    },
+    "statuut": {
+	    "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
+      "@type": "@id"
+    },
     "alternatieveIdentificator": {
       "@container": "@set",
       "@id": "http://www.w3.org/ns/adms#identifier",
