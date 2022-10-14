@@ -694,7 +694,7 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#Contactinfo Shape/0d43849949c290efe2f3d4ad1d010cdb7f0505bf",
+          "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#ContactinfoShape/0d43849949c290efe2f3d4ad1d010cdb7f0505bf",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-01-23#Contactinfo%20%3Acontactpagina",
           "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
           "sh:description": {
@@ -710,7 +710,7 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#Contactinfo Shape/376ba2894840068d71059e7be03bfaf8995aee90",
+          "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#ContactinfoShape/376ba2894840068d71059e7be03bfaf8995aee90",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-01-23#Contactinfo%20%3Acontactpagina",
           "sh:description": {
             "nl": "Een webpagina die ofwel toelaat om contact op te nemen (via b.v. een webformulier) of die informatie bevat hoe men contact kan opnemen."
@@ -726,7 +726,7 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#Contactinfo Shape/e8ea77ad8b718eacfb82e9303184b04c2e87225e",
+          "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#ContactinfoShape/e8ea77ad8b718eacfb82e9303184b04c2e87225e",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-01-23#Contactinfo%20%3Acontactpagina",
           "sh:description": {
             "nl": "Een webpagina die ofwel toelaat om contact op te nemen (via b.v. een webformulier) of die informatie bevat hoe men contact kan opnemen."
@@ -742,7 +742,7 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#Contactinfo Shape/2cf221c2b6f9a619b0515c507ddd2bbb40fbb285",
+          "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#ContactinfoShape/2cf221c2b6f9a619b0515c507ddd2bbb40fbb285",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-01-23#Contactinfo%20%3Ae-mail",
           "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
           "sh:description": {
@@ -758,7 +758,7 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#Contactinfo Shape/42ad698554950cda0098f1f04803fac8470af8ad",
+          "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#ContactinfoShape/42ad698554950cda0098f1f04803fac8470af8ad",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-01-23#Contactinfo%20%3Ae-mail",
           "sh:description": {
             "nl": "Het e-mailadres waarmee een gebruiker contact kan opnemen voor informatie."
@@ -774,7 +774,7 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#Contactinfo Shape/e852461175947767d03ec8134f830a3e0bd16767",
+          "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#ContactinfoShape/e852461175947767d03ec8134f830a3e0bd16767",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-01-23#Contactinfo%20%3Ae-mail",
           "sh:description": {
             "nl": "Het e-mailadres waarmee een gebruiker contact kan opnemen voor informatie."
