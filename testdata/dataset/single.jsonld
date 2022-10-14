@@ -1,31 +1,18 @@
 {
-    "@context": {
-      "@vocab": "https://data.vlaanderen.be/ns/metadata-dcat#",
-      "@base": "http://test.com/test#",
+  "@context": {
+    "@base": "http://test.com/test#",
+    "@vocab": "https://data.vlaanderen.be/ns/metadata-dcat#",
     "Dataset": "http://www.w3.org/ns/dcat#Dataset",
-  "inspireThema": {
-      "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#INSPIREthema",
-      "@type": "@id"
-    },
-    "isoCategorie": {
-      "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#ISOcategorie",
-      "@type": "@id"
-    },
-    "status": {
-            "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#status",
-      "@type": "@id"
-    },
-    "statuut": {
-            "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
-      "@type": "@id"
-    },
     "alternatieveIdentificator": {
       "@container": "@set",
       "@id": "http://www.w3.org/ns/adms#identifier",
       "@type": "@id"
     },
     "beschrijving": {
-      "@container": ["@set", "@language"],
+      "@container": [
+        "@set",
+        "@language"
+      ],
       "@id": "http://purl.org/dc/terms/description",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
@@ -66,6 +53,14 @@
       "@id": "http://purl.org/dc/terms/identifier",
       "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
+    "inspireThema": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#INSPIREthema",
+      "@type": "@id"
+    },
+    "isoCategorie": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#ISOcategorie",
+      "@type": "@id"
+    },
     "landingspagina": {
       "@container": "@set",
       "@id": "http://www.w3.org/ns/dcat#landingPage",
@@ -74,6 +69,10 @@
     "publicatiedatum": {
       "@id": "http://purl.org/dc/terms/issued",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "status": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#status",
+      "@type": "@id"
     },
     "statuut": {
       "@container": "@set",
@@ -86,8 +85,10 @@
       "@type": "@id"
     },
     "titel": {
-      "@container": ["@set", "@language"],
-      "@id": "http://www.w3.org/ns/dcat#keyword",
+      "@container": [
+        "@set",
+        "@language"
+      ],
       "@id": "http://purl.org/dc/terms/title",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
@@ -96,7 +97,10 @@
       "@type": "@id"
     },
     "trefwoord": {
-      "@container": ["@set", "@language"],
+      "@container": [
+        "@set",
+        "@language"
+      ],
       "@id": "http://www.w3.org/ns/dcat#keyword",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
@@ -113,39 +117,39 @@
       "@id": "http://purl.org/dc/terms/modified",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     }
-    },
-    "@type": "http://www.w3.org/ns/dcat#Dataset",
-    "@id": "http://test.com/id/dataset/1",
-    "gemetConcept": "http://test.com/id/code/1",
-    "inspireThema": "http://test.com/id/code/2",
-    "isoCategorie": "http://test.com/id/code/3",
-    "status": "http://test.com/id/code/4",
-    "statuut": "http://test.com/id/code/5",
-    "toegankelijkheid": "http://test.com/id/code/6",
-    "conform": "http://test.com/id/code/7",
-    "creatiedatum": "2022-02-03T12:12:12",
-    "beschrijving": {
-        "nl": "description"
-    },
-    "identificator": "http://test.com/id/dataset/1",
-    "publicatiedatum": "2022-02-03T12:12:12",
-    "wijzigingsdatum": "2022-02-03T12:12:12",
-    "herkomst": "http://test.com/herkomst",
-    "eigenaar": "http://test.com/id/org/1",
-    "geografischeDekking": {},
-    "titel": {
-        "nl": "title"
-    },
-    "versie": "version",
-    "alternatieveIdentificator": {},
-    "ruimtelijkVoorstellingstype": "http://test.com/id/code/8",
-    "voorbeeldweergave": {},
-    "contactinformatie": {},
-    "distributie": "http://test.com/id/distr/1",
-    "trefwoord": {
-        "nl": "trefwoord"
-    },
-    "landingspagina": "http://test.com/page/1",
-    "thema": "http://test.com/id/code/9",
-    "ruimtelijkeResolutie": "http://test.com/id/code/10"
+  },
+  "@id": "http://test.com/id/dataset/1",
+  "@type": "http://www.w3.org/ns/dcat#Dataset",
+  "alternatieveIdentificator": {},
+  "beschrijving": {
+    "nl": "description"
+  },
+  "conform": "http://test.com/id/code/7",
+  "contactinformatie": {},
+  "creatiedatum": "2022-02-03T12:12:12",
+  "distributie": "http://test.com/id/distr/1",
+  "eigenaar": "http://test.com/id/org/1",
+  "gemetConcept": "http://test.com/id/code/1",
+  "geografischeDekking": {},
+  "herkomst": "http://test.com/herkomst",
+  "identificator": "http://test.com/id/dataset/1",
+  "inspireThema": "http://test.com/id/code/2",
+  "isoCategorie": "http://test.com/id/code/3",
+  "landingspagina": "http://test.com/page/1",
+  "publicatiedatum": "2022-02-03T12:12:12",
+  "ruimtelijkVoorstellingstype": "http://test.com/id/code/8",
+  "ruimtelijkeResolutie": "http://test.com/id/code/10",
+  "status": "http://test.com/id/code/4",
+  "statuut": "http://test.com/id/code/5",
+  "thema": "http://test.com/id/code/9",
+  "titel": {
+    "nl": "title"
+  },
+  "toegankelijkheid": "http://test.com/id/code/6",
+  "trefwoord": {
+    "nl": "trefwoord"
+  },
+  "versie": "version",
+  "voorbeeldweergave": {},
+  "wijzigingsdatum": "2022-02-03T12:12:12"
 }

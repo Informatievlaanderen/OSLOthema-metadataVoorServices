@@ -9,6 +9,7 @@ all: ${OUTPUT-RDF}
 
 clean:
 	rm -rf ${OUTPUT-RDF}
+	rm -rf ${OUTPUT-format}
 
 
 %.format: %.jsonld
