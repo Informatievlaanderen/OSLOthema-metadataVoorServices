@@ -3,6 +3,15 @@
     "@base": "http://test.com/test#",
     "@vocab": "https://data.vlaanderen.be/ns/metadata-dcat#",
     "Dataset": "http://www.w3.org/ns/dcat#Dataset",
+    "gemetConcept": {
+	    "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#GEMETconcept"
+    },
+    "ruimtelijkVoorstellingstype": {
+	    "@id" : "http://www.w3.org/ns/adms#representionTechnique"
+    },
+    "ruimtelijkeResolutie": {
+	    "@id" : "http://www.w3.org/ns/dqv#hasQualityMeasurement"
+    },
     "alternatieveIdentificator": {
       "@container": "@set",
       "@id": "http://www.w3.org/ns/adms#identifier"
