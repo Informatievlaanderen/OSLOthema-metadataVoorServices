@@ -3,6 +3,10 @@
       "@vocab": "https://data.vlaanderen.be/ns/metadata-dcat#",
       "@base": "http://test.com/test#",
     "Dataservice": "http://www.w3.org/ns/dcat#DataService",
+    "geografischeDekking": {
+         "@id":   "http://purl.org/dc/terms/spatial",
+      "@type": "@id"
+ },
     "alternatieveIdentificator": {
       "@container": "@set",
       "@id": "http://www.w3.org/ns/adms#identifier",

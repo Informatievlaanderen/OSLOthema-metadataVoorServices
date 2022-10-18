@@ -7,20 +7,31 @@
 <http://test.com/id/dataservice/1> <http://data.vlaanderen.be/ns/metadata-dcat#statuut> "http://test.com/code3" .
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/accessRights> "http://test.com/code4" .
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/conformsTo> "http://test.com/code5" .
+<http://test.com/id/dataservice/1> <http://purl.org/dc/terms/created> <https://test.com/dummy> .
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/description> "data service description"@nl .
+<http://test.com/id/dataservice/1> <http://purl.org/dc/terms/description> "data service description2"@nl .
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/identifier> <http://test.com/id/dataservice/1> .
+<http://test.com/id/dataservice/1> <http://purl.org/dc/terms/issued> <https://test.com/dummy> .
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/license> "http://test.com/lic1" .
-<http://test.com/id/dataservice/1> <http://purl.org/dc/terms/modified> "2022-05-03T12:12:12"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://test.com/id/dataservice/1> <http://purl.org/dc/terms/modified> <https://test.com/dummy> .
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/rights> "http://test.com/right1" .
-<http://test.com/id/dataservice/1> <https://data.vlaanderen.be/ns/metadata-dcat#geografischeDekking> "http://test.com/space1" .
+<http://test.com/id/dataservice/1> <http://purl.org/dc/terms/spatial> <http://test.com/space1> .
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/title> "data service title "@nl .
-<http://test.com/id/dataservice/1> <http://www.w3.org/ns/adms#identifier> _:g447180 .
-<http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#contactPoint> _:g447200 .
+<http://test.com/id/dataservice/1> <http://purl.org/dc/terms/title> "data service title 2"@nl .
+<http://test.com/id/dataservice/1> <http://www.w3.org/2002/07/owl#versionInfo> <https://test.com/dummy> .
+<http://test.com/id/dataservice/1> <http://www.w3.org/ns/adms#identifier> "http://test.com/12" .
+<http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#contactPoint> "http://test.com/id/contact1" .
+<http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#contactPoint> "http://test.com/id/contact2" .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#endpointDescription> "http://test.com/openapi" .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#endpointURL> "http://test.com/endpointurl" .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#keyword> "sleutelwoord1"@nl .
+<http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#keyword> "sleutelwoord12"@nl .
+<http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#keyword> "keyword1"@en .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#landingPage> "http://test.com/landpage" .
+<http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#landingPage> "http://test.com/landpage2" .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#servesdataset> "http://test.com/id/dataset/1" .
+<http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#servesdataset> "http://test.com/id/dataset/12" .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#theme> "http://test.com/code6" .
+<http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#theme> "http://test.com/code62" .
 <http://test.com/id/dataservice/1> <http://data.vlaanderen.be/ns/metadata-dcat#servicetype> <http://test.com/code7> .
 <http://test.com/id/dataservice/1> <http://data.vlaanderen.be/ns/metadata-dcat#servicecategorie> <http://test.com/code8> .
