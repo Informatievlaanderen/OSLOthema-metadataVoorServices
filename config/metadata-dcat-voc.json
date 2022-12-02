@@ -2,8 +2,8 @@
 {
   "name": "metadata-dcat",
   "type": "voc",
-  "eap": "OSLO-metadataDCAT-voc.eap",
-  "diagram": "OSLO-metadata_dcat",
+  "eap": "OSLO-metadataDCAT-voc-2022.eap",
+  "diagram": "OSLO-metadata-dcat-voc",
   "template": "metadata-dcat-voc.j2",
   "title": "Metadata DCAT",
   "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/ErkendeStandaard",
