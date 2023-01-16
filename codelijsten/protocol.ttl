@@ -771,3 +771,44 @@
     skos:exactMatch   <http://www.opengis.net/def/serviceType/ogc/ods> ;
     rdfs:seeAlso      <https://www.ogc.org/standards/ods> .
 
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:OGC-API-Features>
+    a                 skos:Concept ;
+    a                 dct:Standard ;
+    skos:inscheme     <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel    "OGC API Features"@nl ;
+    skos:definition   "The standard provides API building blocks to create, modify and query features on the Web"@en ;
+    skos:definition   "Deze OGC standaard definieert API bouwblokken voor het aanmaken, wijzigen en ondervragen van (geografische) features"@nl ;
+    dct:title         "OGC API Features"@nl ;
+    dct:description   "Deze OGC standaard definieert API bouwblokken voor het aanmaken, wijzigen en ondervragen van (geografische) features"@nl ;
+    owl:versionInfo   "" ;
+    skos:notation     "OGC:OGC-API-Features" ;
+    skos:narrower     <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:OGC-API-Features-landingpage> ;
+    skos:narrower     <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:OGC-API-Features-landingpage> ;
+    rdfs:seeAlso      <https://docs.ogc.org/is/17-069r3/17-069r3.html#_api_landing_page>.
+
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:OGC-API-Features-landingpage>
+    a                 skos:Concept ;
+    a                 dct:Standard ;
+    skos:inscheme     <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel    "OGC API Feature landing page"@nl ;
+    skos:definition   "The standard decribes the requirements for the landing page of a OGC Feature API"@en; 
+    skos:definition   "Deze OGC standaard definieert de API bouwblok landingspagina voor een OGC Feature API"@nl ;
+    dct:title         "OGC API Feature landingspagina bouwblok"@nl ;
+    dct:description   "Deze OGC standaard definieert de API bouwblok landingspagina voor een OGC Feature API"@nl ;
+    owl:versionInfo   "" ;
+    skos:notation     "OGC:OGC-API-Features-landingpage" ;
+    rdfs:seeAlso      <https://docs.ogc.org/is/17-069r3/17-069r3.html#_api_landing_page>.
+   
+<https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:OGC-API-Features-items>
+    a                 skos:Concept ;
+    a                 dct:Standard ;
+    skos:inscheme     <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
+    skos:prefLabel    "OGC API Features items"@nl ;
+    skos:definition   "This standard describes the requirements for the collection of items of a OGC Feature API"@en ;
+    skos:definition   "Deze OGC standaard definieert de API bouwblok items voor een OGC Feature API"@nl ;
+    dct:title         "OGC API Feature items bouwblok"@nl ;
+    dct:description   "Deze OGC standaard definieert de API bouwblok items voor een OGC Feature API"@nl ;
+    owl:versionInfo   "" ;
+    skos:notation     "OGC:OGC-API-Features-items" ;
+    rdfs:seeAlso      <https://docs.ogc.org/is/17-069r3/17-069r3.html#_items_
