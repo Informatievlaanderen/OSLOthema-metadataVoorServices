@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://data.vlaanderen.be/id/conceptscheme/relatievorm>
+    a skos:ConceptScheme ;
+    skos:prefLabel "conceptscheme relatievorm" ;
+    skos:definition "Codelijst voor de verschillende relatievormen tussen resources in een catalogus. ";
+    skos:scopeNotes "Deze codelijst bevat enkel de vormen die niet expliciet zijn opgenomen in metadata DCAT. De lijst is dus niet een volledige opsomming. Op dit moment de lijst identiek aan DS_AssociationTypeCode gebruikt voor INSPIRE ISO metadata." .
+
+
+<https://data.vlaanderen.be/id/concept/relatievorm/crossReference>
+    a skos:Concept ;
+    skos:definition "reference from one dataset to another"@en;
+    skos:definition "referentie van de ene dataset naar een andere"@nl;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/relatievorm> ;
+    skos:prefLabel "cross reference"@en;
+    skos:prefLabel "kruisverwijzing"@nl ;
+    skos:notation "001";
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/relatievorm> .
+    
+    
+<https://data.vlaanderen.be/id/concept/relatievorm/largerWorkCitation>
+    a skos:Concept ;
+    skos:definition "reference to a master dataset of which this one is a part"@en;
+    skos:definition "referentie naar de dataset waarvan deze een deel is"@nl;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/relatievorm> ;
+    skos:prefLabel "larger work citation"@en ;
+    skos:prefLabel "maakt deel uit van"@en ;
+    skos:notation "002";
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/relatievorm> .
+    
+ <https://data.vlaanderen.be/id/concept/relatievorm/partOfSeamlessDatabase>
+    a skos:Concept ;
+    skos:definition "part of same structured set of data held in a commputer"@en ;
+    skos:definition "deel van een samenhangend geheel van data"@nl;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/relatievorm> ;
+    skos:prefLabel "part of a seamless database"@en ;
+    skos:prefLabel "deel van het samenhangend geheel"@en ;
+    skos:notation "003";
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/relatievorm> .
+   
+<https://data.vlaanderen.be/id/concept/relatievorm/source>
+    a skos:Concept ;
+    skos:definition "mapping an charting information from which the dataset content orginates"@en;
+    skos:definition "de oorsprond van de dataset"@nl;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/relatievorm> ;
+    skos:prefLabel "source"@en ;
+    skos:prefLabel "bron"@nl;
+    skos:notation "004";
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/relatievorm> .
+    
+    
+<https://data.vlaanderen.be/id/concept/relatievorm/stereoMate>
+    a skos:Concept ;
+    skos:definition "part of a set imagery that when used together, provides three-dimensional images"@en;
+    skos:definition "deel van een collectie van beelden die samen een 3D inzicht vormen"@en;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/relatievorm> ;
+    skos:prefLabel "stereo mate"@en ;
+    skos:prefLabel "stereomate"@nl;
+    skos:notation "005";
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/relatievorm> .
