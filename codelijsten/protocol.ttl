@@ -811,4 +811,4 @@
     dct:description   "Deze OGC standaard definieert de API bouwblok items voor een OGC Feature API"@nl ;
     owl:versionInfo   "" ;
     skos:notation     "OGC:OGC-API-Features-items" ;
-    rdfs:seeAlso      <https://docs.ogc.org/is/17-069r3/17-069r3.html#_items_
+    rdfs:seeAlso      <https://docs.ogc.org/is/17-069r3/17-069r3.html#_items>.
