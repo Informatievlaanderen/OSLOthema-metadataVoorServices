@@ -202,7 +202,7 @@
     skos:inscheme      <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
     skos:topConceptOf  <https://data.vlaanderen.be/id/conceptscheme/dataserviceprotocol> ;
     skos:hasTopConcept <https://data.vlaanderen.be/id/concept/dataserviceprotocol/OGC:WFS> ;
-    skos:prefLabel     "WFS-1.0.1-http-get-capabilities"@nl ;
+    skos:prefLabel     "WFS-1.0.0-http-get-capabilities"@nl ;
     skos:definition    "Web Feature Service GetCapabilities genereert een service-metadatadocument dat een WFS beschrijft service geleverd door een server."@nl ;
     dct:title          "Web Feature Service Get Capabilities"@nl ;
     dct:description    "Web Feature Service GetCapabilities genereert een service-metadatadocument dat een WFS beschrijft service geleverd door een server."@nl ;
