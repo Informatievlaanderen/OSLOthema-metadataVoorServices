@@ -18,3 +18,5 @@
 2022-12-05
   - voeg codelijst relatievorm toe
   - fix UML > camelcase elementNames
+2023-03-14
+  - bugfix http -> https
