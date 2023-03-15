@@ -2,6 +2,7 @@
   "@context": {
     "@vocab": "https://data.vlaanderen.be/shacl/metadata_dcat",
     "qb": "http://purl.org/linked-data/cube#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "qb:codeList": {
       "@id": "qb:codeList",
       "@type": "@id"
@@ -1251,22 +1252,6 @@
             "nl": "De verwachte waarde voor heeft Dataset is een rdfs:Resource (URI of blank node)"
           },
           "vl:rule": "v500"
-        },
-        {
-          "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Catalogus%3Aidentificator",
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": {
-            "nl": "De unieke identificator voor de catalogus."
-          },
-          "sh:name": {
-            "nl": "identificator"
-          },
-          "sh:path": "http://purl.org/dc/terms/identifier",
-          "vl:message": {
-            "nl": "De range van identificator moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
-          },
-          "vl:rule": "1110"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusShape/972d73e7a13100b66c0c2f44466edac47aa1ab28",
@@ -3181,22 +3166,6 @@
           "vl:rule": "1363"
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DataServiceShape/1b8b3557ea1ccbabc0962c345782ae53740e72e1",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#DataService%3Atrefwoord",
-          "sh:description": {
-            "nl": "Een trefwoord of tag die de resource beschrijft."
-          },
-          "sh:name": {
-            "nl": "trefwoord"
-          },
-          "sh:path": "http://www.w3.org/ns/dcat#keyword",
-          "sh:uniqueLang": "true",
-          "vl:message": {
-            "nl": "Slechts 1 waarde voor elke taal toegelaten voor trefwoord"
-          },
-          "vl:rule": "1364"
-        },
-        {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DataServiceShape/44f6426e2306c5bc0421823eb4a1a034b615f715",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#DataService%3Atrefwoord",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
@@ -4121,22 +4090,6 @@
           "vl:rule": "v100"
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DatasetShape/1b8b3557ea1ccbabc0962c345782ae53740e72e1",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Dataset%3Atrefwoord",
-          "sh:description": {
-            "nl": "Een trefwoord of tag die de resource beschrijft."
-          },
-          "sh:name": {
-            "nl": "trefwoord"
-          },
-          "sh:path": "http://www.w3.org/ns/dcat#keyword",
-          "sh:uniqueLang": "true",
-          "vl:message": {
-            "nl": "Slechts 1 waarde voor elke taal toegelaten voor trefwoord"
-          },
-          "vl:rule": "1719"
-        },
-        {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DatasetShape/44f6426e2306c5bc0421823eb4a1a034b615f715",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Dataset%3Atrefwoord",
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
@@ -4493,22 +4446,6 @@
           "vl:rule": "1901"
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DistributieShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Distributie%3Aidentificator",
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": {
-            "nl": "De unieke identificator van de distributie."
-          },
-          "sh:name": {
-            "nl": "identificator"
-          },
-          "sh:path": "http://purl.org/dc/terms/identifier",
-          "vl:message": {
-            "nl": "De range van identificator moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
-          },
-          "vl:rule": "1902"
-        },
-        {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DistributieShape/972d73e7a13100b66c0c2f44466edac47aa1ab28",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Distributie%3Aidentificator",
           "sh:description": {
@@ -4846,7 +4783,14 @@
           "sh:name": {
             "nl": "beschrijving"
           },
-          "sh:path": "http://purl.org/dc/terms/description",
+          "sh:path": {
+                "rdf:first" : {
+                      "@id": "http://www.w3.org/ns/adms#sample",
+                      "rdf:rest" : {
+                         "@id" : " http://purl.org/dc/terms/description",
+                          "rdf:rest" : { "@id" : "rdf:nil"}
+                          }
+		},
           "vl:message": {
             "nl": "De range van beschrijving moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
           },
