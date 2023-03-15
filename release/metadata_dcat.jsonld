@@ -4790,6 +4790,7 @@
                          "@id" : " http://purl.org/dc/terms/description",
                           "rdf:rest" : { "@id" : "rdf:nil"}
                           }
+			}
 		},
           "vl:message": {
             "nl": "De range van beschrijving moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
