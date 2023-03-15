@@ -1553,7 +1553,7 @@
           "sh:name": {
             "nl": "bron metadata record landingspagina"
           },
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#bronMetadataRecordLandingspagina",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#bronMetadataRecordLandingspagina",
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor bron metadata record landingspagina"
           },
