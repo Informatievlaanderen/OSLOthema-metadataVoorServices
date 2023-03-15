@@ -3,6 +3,12 @@
     "@vocab": "https://data.vlaanderen.be/shacl/metadata_dcat",
     "qb": "http://purl.org/linked-data/cube#",
     "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdf:first" : {
+       "@type" :  "@id"
+    },
+    "rdf:rest" : {
+       "@type" :  "@id"
+    },
     "qb:codeList": {
       "@id": "qb:codeList",
       "@type": "@id"
@@ -4784,13 +4790,11 @@
             "nl": "beschrijving"
           },
           "sh:path": {
-                "rdf:first" : {
-                      "@id": "http://www.w3.org/ns/adms#sample",
-                      "rdf:rest" : {
-                         "@id" : " http://purl.org/dc/terms/description",
-                          "rdf:rest" : { "@id" : "rdf:nil"}
-                          }
-			}
+                "rdf:first" : "http://www.w3.org/ns/adms#sample",
+                "rdf:rest" : {
+                     "rdf:first" : "http://purl.org/dc/terms/description",
+                     "rdf:rest" : { "@id" : "rdf:nil"}
+                      }
 		},
           "vl:message": {
             "nl": "De range van beschrijving moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
