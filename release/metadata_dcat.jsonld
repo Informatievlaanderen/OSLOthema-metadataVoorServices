@@ -190,22 +190,6 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#PlaatsShape/02f937f793dda13f6197e578a4f0f2ee6c9a5570",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Plaats%3Abounding%20box",
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": {
-            "nl": "de afgrenzing van een plaats als een geografische rechthoek"
-          },
-          "sh:name": {
-            "nl": "bounding box"
-          },
-          "sh:path": "http://www.w3.org/ns/dcat#bbox",
-          "vl:message": {
-            "nl": "De range van bounding box moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
-          },
-          "vl:rule": ""
-        },
-        {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#PlaatsShape/0e46676305fa5dfe461174d2ad578f16fa8d77b6",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Plaats%3Abounding%20box",
           "sh:description": {
@@ -218,22 +202,6 @@
           "sh:path": "http://www.w3.org/ns/dcat#bbox",
           "vl:message": {
             "nl": "De verwachte waarde voor bounding box is een Literal"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#PlaatsShape/2545f2b443edf700f1be24a7ac0d790faddfc7d3",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Plaats%3Acentro%C3%AFde",
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": {
-            "nl": "het geografische middelpunt van een plaats"
-          },
-          "sh:name": {
-            "nl": "centroïde"
-          },
-          "sh:path": "http://www.w3.org/ns/dcat#centroid",
-          "vl:message": {
-            "nl": "De range van centroïde moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
           },
           "vl:rule": ""
         },
@@ -266,22 +234,6 @@
           "sh:path": "http://www.w3.org/ns/locn#geometry",
           "vl:message": {
             "nl": "De verwachte waarde voor geometrie is een Literal"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#PlaatsShape/722a1f18cabb107c684fe4ca857876ade00b0d01",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Plaats%3Ageometrie",
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": {
-            "nl": "de geografische beschrijving van een plaats"
-          },
-          "sh:name": {
-            "nl": "geometrie"
-          },
-          "sh:path": "http://www.w3.org/ns/locn#geometry",
-          "vl:message": {
-            "nl": "De range van geometrie moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
           },
           "vl:rule": ""
         },
@@ -848,22 +800,6 @@
           "sh:path": "http://www.w3.org/2004/02/skos/core#notation",
           "vl:message": {
             "nl": "De verwachte waarde voor notatie is een Literal"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#IdentificatorShape/71a444ee0ec5b354586504464e5c6bffb69d78c8",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Identificator%3Anotatie",
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": {
-            "nl": "String gebruikt om het object uniek te identificeren. "
-          },
-          "sh:name": {
-            "nl": "notatie"
-          },
-          "sh:path": "http://www.w3.org/2004/02/skos/core#notation",
-          "vl:message": {
-            "nl": "De range van notatie moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
           },
           "vl:rule": ""
         },
@@ -1796,22 +1732,6 @@
           "vl:rule": "1209"
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#CatalogusRecord%3Aidentificator",
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": {
-            "nl": "De unieke identificator van het record in de catalogus."
-          },
-          "sh:name": {
-            "nl": "identificator"
-          },
-          "sh:path": "http://purl.org/dc/terms/identifier",
-          "vl:message": {
-            "nl": "De range van identificator moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
-          },
-          "vl:rule": "1210"
-        },
-        {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/972d73e7a13100b66c0c2f44466edac47aa1ab28",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#CatalogusRecord%3Aidentificator",
           "sh:description": {
@@ -2374,22 +2294,6 @@
             "nl": "De range van endpointbeschrijving moet van het type <http://www.w3.org/2000/01/rdf-schema#Resource> zijn."
           },
           "vl:rule": "1321"
-        },
-        {
-          "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DataServiceShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#DataService%3Aidentificator",
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": {
-            "nl": "De unieke identificator van de dataservice."
-          },
-          "sh:name": {
-            "nl": "identificator"
-          },
-          "sh:path": "http://purl.org/dc/terms/identifier",
-          "vl:message": {
-            "nl": "De range van identificator moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
-          },
-          "vl:rule": "1322"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DataServiceShape/972d73e7a13100b66c0c2f44466edac47aa1ab28",
@@ -3674,22 +3578,6 @@
             "nl": "De range van herkomst moet van het type <http://purl.org/dc/terms/ProvenanceStatement> zijn."
           },
           "vl:rule": ""
-        },
-        {
-          "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DatasetShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Dataset%3Aidentificator",
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": {
-            "nl": "De unieke identificator van de dataset."
-          },
-          "sh:name": {
-            "nl": "identificator"
-          },
-          "sh:path": "http://purl.org/dc/terms/identifier",
-          "vl:message": {
-            "nl": "De range van identificator moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
-          },
-          "vl:rule": "v060"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DatasetShape/972d73e7a13100b66c0c2f44466edac47aa1ab28",
