@@ -4763,7 +4763,13 @@
           "sh:name": {
             "nl": "downloadURL"
           },
-          "sh:path": "http://www.w3.org/ns/dcat#downloadURL",
+          "sh:path": {
+                "rdf:first" : "http://www.w3.org/ns/adms#sample",
+                "rdf:rest" : {
+                     "rdf:first" : "http://www.w3.org/ns/dcat#downloadURL",
+                     "rdf:rest" : { "@id" : "rdf:nil"}
+                      }
+		},
           "vl:message": {
             "nl": "Minimaal 1 waarden verwacht voor downloadURL"
           },
