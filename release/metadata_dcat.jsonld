@@ -4681,13 +4681,7 @@
           "sh:name": {
             "nl": "beschrijving"
           },
-          "sh:path": {
-                "rdf:first" : "http://www.w3.org/ns/adms#sample",
-                "rdf:rest" : {
-                     "rdf:first" : "http://purl.org/dc/terms/description",
-                     "rdf:rest" : { "@id" : "rdf:nil"}
-                      }
-		},
+          "sh:path": "http://purl.org/dc/terms/description",
           "vl:message": {
             "nl": "De range van beschrijving moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
           },
@@ -4703,13 +4697,7 @@
             "nl": "beschrijving"
           },
           "sh:nodeKind": "sh:Literal",
-          "sh:path": {
-                "rdf:first" : "http://www.w3.org/ns/adms#sample",
-                "rdf:rest" : {
-                     "rdf:first" : "http://purl.org/dc/terms/description",
-                     "rdf:rest" : { "@id" : "rdf:nil"}
-                      }
-		},
+          "sh:path": "http://purl.org/dc/terms/description",
           "vl:message": {
             "nl": "De verwachte waarde voor beschrijving is een Literal"
           },
@@ -4724,13 +4712,7 @@
           "sh:name": {
             "nl": "beschrijving"
           },
-          "sh:path": {
-                "rdf:first" : "http://www.w3.org/ns/adms#sample",
-                "rdf:rest" : {
-                     "rdf:first" : "http://purl.org/dc/terms/description",
-                     "rdf:rest" : { "@id" : "rdf:nil"}
-                      }
-		},
+          "sh:path": "http://purl.org/dc/terms/description",
           "sh:uniqueLang": "true",
           "vl:message": {
             "nl": "Slechts 1 waarde voor elke taal toegelaten voor beschrijving"
@@ -4747,13 +4729,7 @@
           "sh:name": {
             "nl": "downloadURL"
           },
-          "sh:path": {
-                "rdf:first" : "http://www.w3.org/ns/adms#sample",
-                "rdf:rest" : {
-                     "rdf:first" : "http://www.w3.org/ns/dcat#downloadURL",
-                     "rdf:rest" : { "@id" : "rdf:nil"}
-                      }
-		},
+          "sh:path": "http://www.w3.org/ns/dcat#downloadURL",
           "vl:message": {
             "nl": "De range van downloadURL moet van het type <http://www.w3.org/2000/01/rdf-schema#Resource> zijn."
           },
@@ -4769,13 +4745,7 @@
           "sh:name": {
             "nl": "downloadURL"
           },
-          "sh:path": {
-                "rdf:first" : "http://www.w3.org/ns/adms#sample",
-                "rdf:rest" : {
-                     "rdf:first" : "http://www.w3.org/ns/dcat#downloadURL",
-                     "rdf:rest" : { "@id" : "rdf:nil"}
-                      }
-		},
+          "sh:path": "http://www.w3.org/ns/dcat#downloadURL",
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor downloadURL"
           },
@@ -4807,13 +4777,7 @@
             "nl": "downloadURL"
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": {
-                "rdf:first" : "http://www.w3.org/ns/adms#sample",
-                "rdf:rest" : {
-                     "rdf:first" : "http://www.w3.org/ns/dcat#downloadURL",
-                     "rdf:rest" : { "@id" : "rdf:nil"}
-                      }
-		},
+          "sh:path": "http://www.w3.org/ns/dcat#downloadURL",
           "vl:message": {
             "nl": "De verwachte waarde voor downloadURL is een rdfs:Resource (URI of blank node)"
           },
@@ -4829,13 +4793,7 @@
           "sh:name": {
             "nl": "mediatype"
           },
-          "sh:path": {
-                "rdf:first" : "http://www.w3.org/ns/adms#sample",
-                "rdf:rest" : {
-                     "rdf:first" : "http://www.w3.org/ns/dcat#mediatype",
-                     "rdf:rest" : { "@id" : "rdf:nil"}
-                      }
-		},
+          "sh:path": "http://www.w3.org/ns/dcat#mediatype",
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor mediatype"
           },
@@ -4862,13 +4820,7 @@
             }
           },
           "sh:nodeKind": "sh:IRI",
-          "sh:path": {
-                "rdf:first" : "http://www.w3.org/ns/adms#sample",
-                "rdf:rest" : {
-                     "rdf:first" : "http://www.w3.org/ns/dcat#mediatype",
-                     "rdf:rest" : { "@id" : "rdf:nil"}
-                      }
-		},
+          "sh:path": "http://www.w3.org/ns/dcat#mediatype",
           "sh:severity": "sh:Warning",
           "vl:message": {
             "nl": "Enkel waarden uit codelijst <https://www.iana.org/assignments/media-types/media-types.xhtml> verwacht voor mediatype"
@@ -4885,13 +4837,7 @@
             "nl": "mediatype"
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": {
-                "rdf:first" : "http://www.w3.org/ns/adms#sample",
-                "rdf:rest" : {
-                     "rdf:first" : "http://www.w3.org/ns/dcat#mediatype",
-                     "rdf:rest" : { "@id" : "rdf:nil"}
-                      }
-		},
+          "sh:path": "http://www.w3.org/ns/dcat#mediatype",
           "vl:message": {
             "nl": "De verwachte waarde voor mediatype is een rdfs:Resource (URI of blank node)"
           },
@@ -4907,13 +4853,7 @@
           "sh:name": {
             "nl": "mediatype"
           },
-          "sh:path": {
-                "rdf:first" : "http://www.w3.org/ns/adms#sample",
-                "rdf:rest" : {
-                     "rdf:first" : "http://www.w3.org/ns/dcat#mediatype",
-                     "rdf:rest" : { "@id" : "rdf:nil"}
-                      }
-		},
+          "sh:path": "http://www.w3.org/ns/dcat#mediatype",
           "vl:message": {
             "nl": "De range van mediatype moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
           },
@@ -4929,13 +4869,7 @@
             "nl": "titel"
           },
           "sh:nodeKind": "sh:Literal",
-          "sh:path": {
-                "rdf:first" : "http://www.w3.org/ns/adms#sample",
-                "rdf:rest" : {
-                     "rdf:first" : "http://purl.org/dc/terms/title",
-                     "rdf:rest" : { "@id" : "rdf:nil"}
-                      }
-		},
+          "sh:path": "http://purl.org/dc/terms/title",
           "vl:message": {
             "nl": "De verwachte waarde voor titel is een Literal"
           },
@@ -4950,13 +4884,7 @@
           "sh:name": {
             "nl": "titel"
           },
-          "sh:path": {
-                "rdf:first" : "http://www.w3.org/ns/adms#sample",
-                "rdf:rest" : {
-                     "rdf:first" : "http://purl.org/dc/terms/title",
-                     "rdf:rest" : { "@id" : "rdf:nil"}
-                      }
-		},
+          "sh:path": "http://purl.org/dc/terms/title",
           "sh:uniqueLang": "true",
           "vl:message": {
             "nl": "Slechts 1 waarde voor elke taal toegelaten voor titel"
@@ -4973,13 +4901,7 @@
           "sh:name": {
             "nl": "titel"
           },
-          "sh:path": {
-                "rdf:first" : "http://www.w3.org/ns/adms#sample",
-                "rdf:rest" : {
-                     "rdf:first" : "http://purl.org/dc/terms/title",
-                     "rdf:rest" : { "@id" : "rdf:nil"}
-                      }
-		},
+          "sh:path": "http://purl.org/dc/terms/title",
           "vl:message": {
             "nl": "De range van titel moet van het type <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> zijn."
           },
