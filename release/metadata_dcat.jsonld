@@ -403,7 +403,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#StandaardShape/817c38a73348ef5623204d13efbf44e68a4612e8",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Standaard%3Aspecificatie%20URL",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Een URL waarop men de specificatie kan\nvinden"
           },
@@ -642,7 +642,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#ContactinfoShape/0d43849949c290efe2f3d4ad1d010cdb7f0505bf",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Contactinfo%3Acontactpagina",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Een webpagina die ofwel toelaat om contact op te nemen (via b.v. een webformulier) of die informatie bevat hoe men contact kan opnemen."
           },
@@ -690,7 +690,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#ContactinfoShape/2cf221c2b6f9a619b0515c507ddd2bbb40fbb285",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Contactinfo%3Ae-mail",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Het e-mailadres waarmee een gebruiker contact kan opnemen voor informatie."
           },
@@ -1562,7 +1562,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/e7e0fa856a7a9fd5e0507143109ff56bbed15bc5",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#CatalogusRecord%3Abron%20metadata%20record%20landingspagina",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Een webpagina in een menselijk leesbare vorm van de bron metadata record."
           },
@@ -1610,7 +1610,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/ac72a26a136d49612ab47e1ead54cb3ac0f9dcb3",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#CatalogusRecord%3Abron%20metadatarecord",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "De record in een andere catalogus waarvan deze record en de beschrijvingen van het bijhorende hoofdonderwerp van afgeleid zijn."
           },
@@ -2190,7 +2190,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DataServiceShape/67c89165b0f38567bf099862ffdef88f25e68714",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#DataService%3AendpointURL",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "De rootlocatie of het primaire endpoint van de dienst (een web-resolvable URI)."
           },
@@ -2286,7 +2286,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DataServiceShape/dbc2548616486a154002cfba6a3bc2cbc554a682",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#DataService%3Aendpointbeschrijving",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Een beschrijving van de diensten die beschikbaar zijn via de end-points, met inbegrip van hun operaties, parameters, enz."
           },
@@ -2366,7 +2366,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DataServiceShape/fe1a78c9169da2469a23fd783cf9a69060bfe198",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#DataService%3Alandingspagina",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Een algemene webpagina waarnaar kan worden genavigeerd in een webbrowser, met algemene aanvullende informatie over de dataservice."
           },
@@ -2382,7 +2382,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DataServiceShape/2be8f764879c3f2218306704a430503d286c30e9",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#DataService%3Alandingspagina%20voor%20authenticatie",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Een verwijzing naar de landingspagina met de specifieke informatie over de authenticatie voor de dataservice."
           },
@@ -2462,7 +2462,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DataServiceShape/c4eb7e771a95c6c3e5c04255458173a2b0b40f43",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#DataService%3Alandingspagina%20voor%20gebruiksinformatie",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Een verwijzing naar de landingspagina met de specifieke informatie over het gebruik van de dataservice."
           },
@@ -2478,7 +2478,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DataServiceShape/0cdcfe2387440711ebbe94a2fcc93a29377956c5",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#DataService%3Alandingspagina%20voor%20statusinformatie",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Een verwijzing naar de statuspagina van de dataservice"
           },
@@ -3650,7 +3650,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DatasetShape/fe1a78c9169da2469a23fd783cf9a69060bfe198",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Dataset%3Alandingspagina",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Een algemene webpagina waarnaar kan worden genavigeerd in een webbrowser, met algemene informatie over de dataset, zijn distributies en/of aanvullende informatie."
           },
@@ -4222,7 +4222,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DistributieShape/0e61107f343f202ee672ef465cfcdbbcd746e21d",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Distributie%3AdownloadURL",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "De URL waar de data gedownload kan worden."
           },
@@ -4538,7 +4538,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DistributieShape/3d0e850677d211050dd9e93ec6496e6af9908da6",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Distributie%3AtoegangsURL",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Een URL waar de data kan gevonden worden."
           },
@@ -4722,7 +4722,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#VoorbeeldWeergaveShape/0e61107f343f202ee672ef465cfcdbbcd746e21d",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#VoorbeeldWeergave%3AdownloadURL",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "De URL waar de afbeelding gedownload kan worden."
           },
@@ -4950,7 +4950,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#RelatieQualificatieShape/aa69087cd9f59b7d23c9ca16a88c4298d77dcd0c",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#RelatieQualificatie%3ACatalogus%20Resource%20(source)",
-          "sh:class": "http://www.w3.org/ns/dcat#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Referentie naar verbonden klasse."
           },
@@ -5014,7 +5014,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#RelatieQualificatieShape/80179238c15e4eb0f284c28f3a87c523281be2cd",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#RelatieQualificatie%3ACatalogus%20Resource%20(target)",
-          "sh:class": "http://www.w3.org/ns/dcat#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Referentie naar verbonden klasse."
           },
