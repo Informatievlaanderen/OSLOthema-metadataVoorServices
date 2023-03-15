@@ -85,6 +85,10 @@
       "@id": "sh:targetClass",
       "@type": "@id"
     },
+    "sh:targetObjectsOf": {
+      "@id": "sh:targetObjectsOf",
+      "@type": "@id"
+    },
     "sh:uniqueLang": {
       "@id": "sh:uniqueLang",
       "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -4787,13 +4791,7 @@
           "sh:name": {
             "nl": "downloadURL"
           },
-          "sh:path": {
-                "rdf:first" : "http://www.w3.org/ns/adms#sample",
-                "rdf:rest" : {
-                     "rdf:first" : "http://www.w3.org/ns/dcat#downloadURL",
-                     "rdf:rest" : { "@id" : "rdf:nil"}
-                      }
-		},
+          "sh:path": "http://www.w3.org/ns/dcat#downloadURL",
           "vl:message": {
             "nl": "Minimaal 1 waarden verwacht voor downloadURL"
           },
@@ -4988,7 +4986,7 @@
           "vl:rule": ""
         }
       ],
-      "sh:targetClass": "http://www.w3.org/ns/dcat#Distribution"
+      "sh:targetObjectsOf" : "http://www.w3.org/ns/adms#sample"
     },
     {
       "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#RelatieQualificatieShape",
