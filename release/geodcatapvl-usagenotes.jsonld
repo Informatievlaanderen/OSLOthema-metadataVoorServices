@@ -25,12 +25,12 @@
     },
     "sh:in": {
       "@id": "sh:in",
-      "@container" : "@set",
+      "@container": "@set",
       "@type": "@id"
     },
     "sh:or": {
       "@id": "sh:or",
-      "@container" : "@set",
+      "@container": "@set",
       "@type": "@id"
     },
     "sh:hasValue": {
@@ -90,21 +90,20 @@
       "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#CatalogusMinimumShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
-      "sh:or" : [ 
-          { 
-            "sh:path": "http://www.w3.org/ns/dcat#service",
-            "sh:minCount" : "1"
-          },
-          { 
-            "sh:path": "http://www.w3.org/ns/dcat#dataset",
-            "sh:minCount" : "1"
-          }]
+      "sh:or": [
+        {
+          "sh:path": "http://www.w3.org/ns/dcat#service",
+          "sh:minCount": "1"
+        },
+        {
+          "sh:path": "http://www.w3.org/ns/dcat#dataset",
+          "sh:minCount": "1"
+        }
       ],
-      "vl:message" : { 
-         "nl" : "Minimaal een catalogus met informatie verwacht: ofwel 1 dataset ofwel 1 dataservice moet opgegeven zijn"
+      "vl:message": {
+        "nl": "Minimaal een catalogus met informatie verwacht: ofwel 1 dataset ofwel 1 dataservice moet opgegeven zijn"
       },
-      "vl:rule":""
-      
+      "vl:rule": "",
       "sh:targetClass": "http://www.w3.org/ns/dcat#Catalog"
     },
     {
@@ -123,7 +122,7 @@
             "nl": "licentie"
           },
           "sh:path": "http://purl.org/dc/terms/license",
-          "sh:hasValue" : "https://data.vlaanderen.be/id/licentie/creative-commons-zero-verklaring/v1.0",
+          "sh:hasValue": "https://data.vlaanderen.be/id/licentie/creative-commons-zero-verklaring/v1.0",
           "vl:message": {
             "nl": "De waarde van licentie moet <https://data.vlaanderen.be/id/licentie/creative-commons-zero-verklaring/v1.0> zijn."
           },
@@ -147,16 +146,16 @@
             "nl": "conform"
           },
           "sh:in": [
-                "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL",
-                "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL",
-                "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat"
-                ],
+            "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL",
+            "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL",
+            "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat"
+          ],
           "sh:path": "http://purl.org/dc/terms/conformsTo",
           "vl:message": {
             "nl": "De verwachte waarde voor conform is 1 van de volgende URIs "
           },
           "vl:rule": ""
-        },
+        }
       ],
       "sh:targetClass": "http://www.w3.org/ns/dcat#CatalogRecord"
     },
@@ -166,7 +165,7 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#DataServiceShape/AAA"
+          "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#DataServiceShape/AAA",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-01-23#DataService%3AendpointURL",
           "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
           "sh:description": {
@@ -190,15 +189,16 @@
           "sh:name": {
             "nl": "toegankelijkheid"
           },
-          "sh:in": ["http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC",
-                    "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
-               ],
+          "sh:in": [
+            "http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC",
+            "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+          ],
           "sh:path": "http://purl.org/dc/terms/accessRights",
           "vl:message": {
             "nl": "De verwachte waarde voor toegankelijkheid is PUBLIC of NON-PUBLIC."
           },
           "vl:rule": ""
-        },
+        }
       ],
       "sh:targetClass": "http://www.w3.org/ns/dcat#DataService"
     },
@@ -216,15 +216,16 @@
           "sh:name": {
             "nl": "toegankelijkheid"
           },
-          "sh:in": ["http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC",
-                    "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
-               ],
+          "sh:in": [
+            "http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC",
+            "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+          ],
           "sh:path": "http://purl.org/dc/terms/accessRights",
           "vl:message": {
             "nl": "De verwachte waarde voor toegankelijkheid is PUBLIC of NON-PUBLIC"
           },
           "vl:rule": ""
-        },
+        }
       ],
       "sh:targetClass": "http://www.w3.org/ns/dcat#Dataset"
     },
@@ -232,21 +233,21 @@
       "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#ContactinfoMinimumShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
-      "sh:or" : [ 
-          { 
-            "sh:path": "http://www.w3.org/2006/vcard/ns#hasEmail",
-            "sh:minCount" : "1"
-          },
-          { 
-            "sh:path": "http://xmlns.com/foaf/0.1/page",
-            "sh:minCount" : "1"
-          }]
+      "sh:or": [
+        {
+          "sh:path": "http://www.w3.org/2006/vcard/ns#hasEmail",
+          "sh:minCount": "1"
+        },
+        {
+          "sh:path": "http://xmlns.com/foaf/0.1/page",
+          "sh:minCount": "1"
+        }
       ],
-      "vl:message" : { 
-         "nl" : "Minimaal 1 van de contact mogelijkheden: een contactpagina of een e-mail, moet opgegeven zijn"
+      "vl:message": {
+        "nl": "Minimaal 1 van de contact mogelijkheden: een contactpagina of een e-mail, moet opgegeven zijn"
       },
-      "vl:rule":""
+      "vl:rule": "",
       "sh:targetClass": "http://www.w3.org/2006/vcard/ns#Kind"
-    },
+    }
   ]
 }

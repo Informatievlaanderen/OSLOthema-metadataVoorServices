@@ -2,12 +2,12 @@
   "@context": {
     "@vocab": "https://data.vlaanderen.be/shacl/DCAT-AP-VL",
     "qb": "http://purl.org/linked-data/cube#",
-    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "rdf:first" : {
-       "@type" :  "@id"
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdf:first": {
+      "@type": "@id"
     },
-    "rdf:rest" : {
-       "@type" :  "@id"
+    "rdf:rest": {
+      "@type": "@id"
     },
     "qb:codeList": {
       "@id": "qb:codeList",
@@ -140,7 +140,7 @@
           "sh:name": {
             "nl": "toegankelijkheid"
           },
-          "sh:hasValue" : "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
+          "sh:hasValue": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
           "sh:path": "http://purl.org/dc/terms/accessRights",
           "vl:message": {
             "nl": "De waarde voor toegankelijkheid is <http://publications.europa.eu/resource/authority/access-right/PUBLIC>."
@@ -156,7 +156,7 @@
           "sh:name": {
             "nl": "statuut"
           },
-          "sh:hasValue" : "https://metadata.vlaanderen.be/id/GDI-Vlaanderen-Trefwoorden/VLOPENDATA",
+          "sh:hasValue": "https://metadata.vlaanderen.be/id/GDI-Vlaanderen-Trefwoorden/VLOPENDATA",
           "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#statuut",
           "vl:message": {
             "nl": "statuut bevat minimaal de waarde <https://metadata.vlaanderen.be/id/GDI-Vlaanderen-Trefwoorden/VLOPENDATA>."
@@ -194,7 +194,7 @@
           "sh:name": {
             "nl": "beschrijving"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/description",
           "vl:message": {
             "nl": "De verwachte waarde voor beschrijving is een Literal"
@@ -214,7 +214,7 @@
           "vl:message": {
             "nl": "Minimaal 1 waarden verwacht voor beschrijving"
           },
-	  "sh:severity" : "sh:Warning",
+          "sh:severity": "sh:Warning",
           "vl:rule": ""
         },
         {
@@ -231,9 +231,9 @@
             "nl": "Slechts 1 waarde voor elke taal toegelaten voor beschrijving"
           },
           "vl:rule": ""
-        },
+        }
       ],
       "sh:targetClass": "http://www.w3.org/ns/dcat#Distribution"
-    },
+    }
   ]
 }
