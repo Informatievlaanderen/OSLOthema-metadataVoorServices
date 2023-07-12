@@ -10,7 +10,7 @@
       "@type": "@id"
     },
     "bronMetadataRecordLandingspagina": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#bron metadata record landingspagina"
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#bron metadata record landingspagina"
     },
     "bronMetadatarecord": {
       "@id": "http://purl.org/dc/terms/source"

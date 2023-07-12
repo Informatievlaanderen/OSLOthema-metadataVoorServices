@@ -12,7 +12,7 @@
       "@type": "@id"
     },
     "bronMetadataRecordLandingspagina": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#bronMetadataRecordLandingspagina",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#bronMetadataRecordLandingspagina",
       "@type": "@id"
     },
     "bronMetadatarecord": {

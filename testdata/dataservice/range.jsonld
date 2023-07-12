@@ -46,22 +46,22 @@
       "@id": "http://www.w3.org/ns/dcat#landingPage"
     },
     "landingspaginaVoorAuthenticatie": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorAuthenticatie"
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorAuthenticatie"
     },
     "landingspaginaVoorGebruiksinformatie": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorGebruiksinformatie"
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorGebruiksinformatie"
     },
     "landingspaginaVoorStatusinformatie": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie"
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie"
     },
     "levensfase": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#levensfase"
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#levensfase"
     },
     "licentie": {
       "@id": "http://purl.org/dc/terms/license"
     },
     "ontwikkelingstoestand": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand"
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand"
     },
     "publicatiedatum": {
       "@id": "http://purl.org/dc/terms/issued",
@@ -73,7 +73,7 @@
     },
     "statuut": {
       "@container": "@set",
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#statuut"
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#statuut"
     },
     "thema": {
       "@container": "@set",
@@ -101,11 +101,11 @@
       "@type": "@id"
     },
     "serviceType": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#servicetype",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#servicetype",
       "@type": "@id"
     },
     "serviceCategorie": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#servicecategorie",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#servicecategorie",
       "@type": "@id"
     }
     },

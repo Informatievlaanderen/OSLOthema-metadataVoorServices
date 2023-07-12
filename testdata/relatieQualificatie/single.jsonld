@@ -3,11 +3,11 @@
 {
     "relatieQualificatie": "http://www.w3.org/ns/dcat#Relationship",
     "catalogusResourceSource": {
-	    "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.source",
+	    "@id" : "https://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.source",
 	    "@type" : "@id"
     },
     "catalogusResourceTarget": {
-	    "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.target",
+	    "@id" : "https://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.target",
 	    "@type" : "@id"
     },
     "rol": {

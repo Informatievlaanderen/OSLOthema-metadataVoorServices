@@ -52,19 +52,19 @@
       "@type": "@id"
     },
     "landingspaginaVoorAuthenticatie": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorAuthenticatie",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorAuthenticatie",
       "@type": "@id"
     },
     "landingspaginaVoorGebruiksinformatie": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorGebruiksinformatie",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorGebruiksinformatie",
       "@type": "@id"
     },
     "landingspaginaVoorStatusinformatie": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie",
       "@type": "@id"
     },
     "levensfase": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#levensfase",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#levensfase",
       "@type": "@id"
     },
     "licentie": {
@@ -72,7 +72,7 @@
       "@type": "@id"
     },
     "ontwikkelingstoestand": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand",
       "@type": "@id"
     },
     "publicatiedatum": {
@@ -86,7 +86,7 @@
     },
     "statuut": {
       "@container": "@set",
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#statuut",
       "@type": "@id"
     },
     "thema": {
@@ -117,19 +117,19 @@
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "serviceType": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#servicetype",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#servicetype",
       "@type": "@id"
     },
     "serviceCategorie": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#servicecategorie",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#servicecategorie",
       "@type": "@id"
     }
     },
     "@type": "http://www.w3.org/ns/dcat#DataService",
     "@id": "http://test.com/id/dataservice/1",
-    "landingspaginaVoorAuthenticatie": ["http://test.com/page1","http://test.com/page12"],
-    "landingspaginaVoorGebruiksinformatie": ["http://test.com/page2","http://test.com/page22"],
-    "landingspaginaVoorStatusinformatie": ["http://test.com/page3","http://test.com/page32"],
+    "landingspaginaVoorAuthenticatie": ["http://test.com/page1","http://test.com/page12", {}],
+    "landingspaginaVoorGebruiksinformatie": ["http://test.com/page2","http://test.com/page22", {}],
+    "landingspaginaVoorStatusinformatie": ["http://test.com/page3","http://test.com/page32", {}],
     "levensfase": ["http://test.com/code1","http://test.com/code12"],
     "ontwikkelingstoestand": ["http://test.com/code2","http://test.com/code22"],
     "statuut": ["http://test.com/code3","http://test.com/code32"],
@@ -162,7 +162,7 @@
       { "en": "keyword3" }
 
     ],
-    "landingspagina": ["http://test.com/landpage","http://test.com/landpage2"],
+    "landingspagina": ["http://test.com/landpage","http://test.com/landpage2", {}],
     "biedtInformatieAanOver": ["http://test.com/id/dataset/1","http://test.com/id/dataset/12"],
     "thema": ["http://test.com/code6","http://test.com/code62"],
     "serviceType": ["http://test.com/code7","http://test.com/code72"],

@@ -4,7 +4,7 @@
     "@vocab": "https://data.vlaanderen.be/ns/metadata-dcat#",
     "Dataset": "http://www.w3.org/ns/dcat#Dataset",
     "gemetConcept": {
-	    "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#GEMETconcept"
+	    "@id" : "https://data.vlaanderen.be/ns/metadata-dcat#GEMETconcept"
     },
     "ruimtelijkVoorstellingstype": {
 	    "@id" : "http://www.w3.org/ns/adms#representionTechnique"
@@ -52,10 +52,10 @@
       "@type": "@id"
     },
     "inspireThema": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#INSPIREthema"
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#INSPIREthema"
     },
     "isoCategorie": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#ISOcategorie"
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#ISOcategorie"
     },
     "landingspagina": {
       "@container": "@set",
@@ -66,11 +66,11 @@
       "@type": "@id"
     },
     "status": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#status"
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#status"
     },
     "statuut": {
       "@container": "@set",
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#statuut"
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#statuut"
     },
     "thema": {
       "@container": "@set",

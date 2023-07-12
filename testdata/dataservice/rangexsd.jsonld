@@ -48,6 +48,10 @@
       "@id": "http://www.w3.org/ns/dcat#endpointURL",
       "@type": "@id"
     },
+    "endpointUrl-xsd": {
+      "@id": "http://www.w3.org/ns/dcat#endpointURL",
+      "@type" : "http://some/xsd"
+    },
     "endpointbeschrijving": {
       "@id": "http://www.w3.org/ns/dcat#endpointDescription",
       "@type": "@id"
@@ -61,19 +65,19 @@
       "@type": "@id"
     },
     "landingspaginaVoorAuthenticatie": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorAuthenticatie",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorAuthenticatie",
       "@type": "@id"
     },
     "landingspaginaVoorGebruiksinformatie": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorGebruiksinformatie",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorGebruiksinformatie",
       "@type": "@id"
     },
     "landingspaginaVoorStatusinformatie": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie",
       "@type": "@id"
     },
     "levensfase": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#levensfase",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#levensfase",
       "@type": "@id"
     },
     "licentie": {
@@ -81,7 +85,7 @@
       "@type": "@id"
     },
     "ontwikkelingstoestand": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand",
       "@type": "@id"
     },
     "publicatiedatum": {
@@ -99,7 +103,7 @@
     },
     "statuut": {
       "@container": "@set",
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#statuut",
       "@type": "@id"
     },
     "thema": {
@@ -111,11 +115,6 @@
       "@container": ["@set"],
       "@id": "http://purl.org/dc/terms/title",
       "@type" : "@id"
-    },
-    "titel-xsd": {
-      "@container": ["@set"],
-      "@id": "http://purl.org/dc/terms/title",
-      "@type" : "http://some/xsd"
     },
     "titel-xsd": {
       "@container": ["@set"],
@@ -149,11 +148,11 @@
       "@type" : "http://some/xsd"
     },
     "serviceType": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#servicetype",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#servicetype",
       "@type": "@id"
     },
     "serviceCategorie": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#servicecategorie",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#servicecategorie",
       "@type": "@id"
     }
     },
@@ -179,13 +178,14 @@
     "wijzigingsdatum-xsd": "2022-05-03b",
     "rechten": "http://test.com/right1",
     "geografischeDekking": "http://test.com/space1",
-    "titel": "data service title ",
+    "titel": "dataservicetitle",
     "titel-xsd": "data service title ",
     "versie": "2022-02-02T12:12:12",
     "alternatieveIdentificator": {},
     "contactinformatie": {},
     "endpointbeschrijving": "http://test.com/openapi",
-    "endpointUrl": "http://test.com/endpointurl",
+    "endpointUrl": {},
+    "endpointUrl-xsd": "http://test.com/endpointurl",
     "trefwoord": "sleutelwoord1",
     "trefwoord-xsd": "sleutelwoord1",
     "landingspagina": "http://test.com/landpage",

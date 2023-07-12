@@ -54,19 +54,19 @@
       "@type": "@id"
     },
     "landingspaginaVoorAuthenticatie": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorAuthenticatie",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorAuthenticatie",
       "@type": "@id"
     },
     "landingspaginaVoorGebruiksinformatie": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorGebruiksinformatie",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorGebruiksinformatie",
       "@type": "@id"
     },
     "landingspaginaVoorStatusinformatie": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie",
       "@type": "@id"
     },
     "levensfase": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#levensfase",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#levensfase",
       "@type": "@id"
     },
     "licentie": {
@@ -74,7 +74,7 @@
       "@type": "@id"
     },
     "ontwikkelingstoestand": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand",
       "@type": "@id"
     },
     "publicatiedatum": {
@@ -88,7 +88,7 @@
     },
     "statuut": {
       "@container": "@set",
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#statuut",
       "@type": "@id"
     },
     "thema": {
@@ -119,11 +119,11 @@
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "serviceType": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#servicetype",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#servicetype",
       "@type": "@id"
     },
     "serviceCategorie": {
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#servicecategorie",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#servicecategorie",
       "@type": "@id"
     }
     },
