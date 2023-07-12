@@ -12,6 +12,11 @@
       "@container": ["@set"],
       "@id": "http://purl.org/dc/terms/description"
     },
+    "beschrijving-xsd": {
+      "@container": ["@set"],
+      "@id": "http://purl.org/dc/terms/description",
+      "@type" : "http://some/xsd"
+    },
     "biedtInformatieAanOver": {
       "@container": "@set",
       "@id": "http://www.w3.org/ns/dcat#servesdataset",
@@ -91,6 +96,11 @@
       "@container": ["@set"],
       "@id": "http://purl.org/dc/terms/title"
     },
+    "titel-xsd": {
+      "@container": ["@set"],
+      "@id": "http://purl.org/dc/terms/title",
+      "@type" : "http://some/xsd"
+    },
     "toegankelijkheid": {
       "@id": "http://purl.org/dc/terms/accessRights",
       "@type": "@id"
@@ -119,6 +129,7 @@
     "conformAanProtocol": "http://test.com/code5",
     "creatiedatum": "2022-03-12",
     "beschrijving": "data service description",
+    "beschrijving-xsd": "data service description",
 
     "identificator": "http://test.com/id/dataservice/1",
     "publicatiedatum": "2022-04-01a",
@@ -127,6 +138,7 @@
     "rechten": "http://test.com/right1",
     "geografischeDekking": "http://test.com/space1",
     "titel": "data service title ",
+    "titel-xsd": "data service title ",
     "versie": "2022-02-02T12:12:12",
     "alternatieveIdentificator": {},
     "contactinformatie": {},

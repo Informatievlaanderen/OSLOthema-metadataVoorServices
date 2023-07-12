@@ -123,22 +123,22 @@
     "statuut": ["http://test.com/code3","http://test.com/code32"],
     "toegankelijkheid": ["http://test.com/code4","http://test.com/code42"],
     "conformAanProtocol": ["http://test.com/code5","http://test.com/code52"],
-    "creatiedatum": "2022-03-12T12:12:12",
+    "creatiedatum": ["2022-03-12T12:12:12","2022-03-12T13:23:13"],
     "beschrijving": {
         "nl": ["data service description", "data service description2"]
     },
     "identificator": ["http://test.com/id/dataservice/1","http://test.com/id/dataservice/12"],
-    "publicatiedatum": "2022-04-01T12:12:12",
+    "publicatiedatum": ["2022-05-03T12:12:12","2022-05-03T13:13:13"],
     "licentie": ["http://test.com/lic1","http://test.com/lic12"],
-    "wijzigingsdatum": "2022-05-03T12:12:12",
+    "wijzigingsdatum": ["2022-05-03T12:12:12","2022-05-03T13:13:13"],
     "rechten": ["http://test.com/right1","http://test.com/right12"],
     "geografischeDekking": ["http://test.com/space1","http://test.com/space12"],
     "titel": {
         "nl": ["data service title ","data service title 2"]
     },
-    "versie": "version 1.2.2",
+    "versie": ["version 1.2.2", "v2"],
     "alternatieveIdentificator": {},
-    "contactinformatie": {},
+    "contactinformatie": ["c1", "c2"],
     "endpointbeschrijving": ["http://test.com/openapi","http://test.com/openapi2"],
     "endpointUrl": ["http://test.com/endpointurl","http://test.com/endpointurl2"],
     "trefwoord": [{
