@@ -11,7 +11,11 @@
     },
     "publicatiedatum": {
       "@id": "http://purl.org/dc/terms/issued",
-      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      "@type": "https://some/xsd"
+    },
+    "publicatiedatum-id": {
+      "@id": "http://purl.org/dc/terms/issued",
+      "@type": "@id"
     },
     "titel": {
       "@id": "http://purl.org/dc/terms/title",
@@ -45,10 +49,11 @@
   "beschrijving": "https://test.com/dummy",
   "beschrijving-xsd": "a standard from XYZ",
   "publicatiedatum": "2022-05-20T12:14:13",
+  "publicatiedatum-id": {},
   "titel": "https://test.com/dummy",
   "titel-xsd": "standaard",
   "type": "https://test.com/cat1",
-  "specificatieUrl": "https://xyz/123.html",
+  "specificatieUrl": ["https://xyz/123.html", {} ],
   "versie": "https://test.com/dummy",
   "versie-xsd": "3.2",
   "voorkeurslabel": "https://test.com/dummy",
