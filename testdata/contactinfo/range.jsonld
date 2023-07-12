@@ -6,10 +6,15 @@
     },
     "eMail": {
       "@id": "http://www.w3.org/2006/vcard/ns#hasEmail"
+    },
+    "eMail-id": {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasEmail",
+      "@type" : "@id"
     }
     },
     "@type": "http://www.w3.org/2006/vcard/ns#Kind",
     "@id": "http://test.com/id/contactinfo/1",
     "eMail": "mailto:info@test.com",
+    "eMail-id": {},
     "contactpagina": "http://test.com/contact"
 }

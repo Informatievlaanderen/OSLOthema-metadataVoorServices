@@ -13,6 +13,7 @@
 <http://test.com/id/distributie/1> <http://purl.org/dc/terms/rights> "http://test.com/id/rights2" .
 <http://test.com/id/distributie/1> <http://purl.org/dc/terms/title> "een distributie titel" .
 <http://test.com/id/distributie/1> <http://purl.org/dc/terms/title> "een distributie titel2" .
+<http://test.com/id/distributie/1> <http://purl.org/dc/terms/title> <http://test.com/dummy> .
 <http://test.com/id/distributie/1> <http://purl.org/dc/terms/title> "een distributie titel"^^<http://some/xsd> .
 <http://test.com/id/distributie/1> <http://purl.org/dc/terms/title> "een distributie titel2"^^<http://some/xsd> .
 <http://test.com/id/distributie/1> <http://www.w3.org/ns/adms#identifier> "ai1" .
@@ -20,5 +21,7 @@
 <http://test.com/id/distributie/1> <http://www.w3.org/ns/dcat#accessService> "http://test.com/id/dataservice/12" .
 <http://test.com/id/distributie/1> <http://www.w3.org/ns/dcat#accessURL> "http://test.com/page1/" .
 <http://test.com/id/distributie/1> <http://www.w3.org/ns/dcat#accessURL> "http://test.com/page1/2" .
+<http://test.com/id/distributie/1> <http://www.w3.org/ns/dcat#accessURL> _:g447140 .
 <http://test.com/id/distributie/1> <http://www.w3.org/ns/dcat#downloadURL> "http://test.com/page2/" .
 <http://test.com/id/distributie/1> <http://www.w3.org/ns/dcat#downloadURL> "http://test.com/page2/2" .
+<http://test.com/id/distributie/1> <http://www.w3.org/ns/dcat#downloadURL> _:g447160 .

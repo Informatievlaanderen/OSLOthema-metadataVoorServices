@@ -2,7 +2,12 @@
 
     "@context": {   "CatalogusRecord": "http://www.w3.org/ns/dcat#CatalogRecord",
     "aanmaakdatum": {
-      "@id": "http://purl.org/dc/terms/issued"
+      "@id": "http://purl.org/dc/terms/issued",
+      "@type" : "@id"
+    },
+    "aanmaakdatum-xsd": {
+      "@id": "http://purl.org/dc/terms/issued",
+      "@type" : "https://some.xsd"
     },
     "alternatieveIdentificator": {
       "@container": "@set",
@@ -36,17 +41,24 @@
       "@type": "http://some/xsd"
     },
     "wijzigingsdatum": {
-      "@id": "http://purl.org/dc/terms/modified"
+      "@id": "http://purl.org/dc/terms/modified",
+      "@type" : "@id"
+    },
+    "wijzigingsdatum-xsd": {
+      "@id": "http://purl.org/dc/terms/modified",
+      "@type" : "https://some.xsd"
     }
     },
     "@type": "http://www.w3.org/ns/dcat#CatalogRecord",
     "@id": "http://test.com/id/catalogusrecord/1",
-    "bronMetadataRecordLandingspagina": "http://test.com/bron/1",
+    "bronMetadataRecordLandingspagina": ["http://test.com/bron/1", {}],
     "conform": "http://test.com/standaard",
     "identificator": "http://test.com/id/catalogusrecord/1",
+    "aanmaakdatum": {},
     "aanmaakdatum": "2022-01-01",
-    "wijzigingsdatum": "2202-03-02",
-    "bronMetadatarecord": "http://test.com/bronrecord/2",
+    "wijzigingsdatum": {},
+    "wijzigingsdatum-xsd": "2202-03-02",
+    "bronMetadatarecord": [ "http://test.com/bronrecord/2", {} ],
     "titel": {
         "nl": "titel"
     },
