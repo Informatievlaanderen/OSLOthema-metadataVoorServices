@@ -51,7 +51,7 @@
     "heeftDataService": ["http://test.com/id/dataservice1"],
     "record": ["https://test.com/id/record1"],
     "heeftDataset": ["https://test.com/id/dataset1"],
-    "contactinformatie": {},
+    "contactinformatie": [{}, "a contact desription" ],
     "alternatieveIdentificator": [{},"alternative id" ], 
     "titel": {
         "nl": "titel"

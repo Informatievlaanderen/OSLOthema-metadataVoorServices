@@ -3,6 +3,7 @@
 <https://test.com/id/catalogus> <http://www.w3.org/ns/dcat#record> "https://test.com/id/record1" .
 <https://test.com/id/catalogus> <http://www.w3.org/ns/dcat#dataset> "https://test.com/id/dataset1" .
 <https://test.com/id/catalogus> <http://www.w3.org/ns/dcat#contactPoint> _:g447140 .
+<https://test.com/id/catalogus> <http://www.w3.org/ns/dcat#contactPoint> "a contact desription" .
 <https://test.com/id/catalogus> <http://www.w3.org/ns/adms#identifier> _:g447160 .
 <https://test.com/id/catalogus> <http://www.w3.org/ns/adms#identifier> "alternative id" .
 <https://test.com/id/catalogus> <http://purl.org/dc/terms/title> _:g447180 .
