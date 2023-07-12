@@ -3,6 +3,10 @@
       "@vocab": "https://data.vlaanderen.be/ns/metadata-dcat#",
       "@base": "http://test.com/test#",
     "Dataservice": "http://www.w3.org/ns/dcat#DataService",
+    "geografischeDekking": {
+         "@id":   "http://purl.org/dc/terms/spatial",
+      "@type": "@id"
+ },
     "alternatieveIdentificator": {
       "@container": "@set",
       "@id": "http://www.w3.org/ns/adms#identifier"
@@ -94,7 +98,15 @@
     },
     "wijzigingsdatum": {
       "@id": "http://purl.org/dc/terms/modified",
-      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      "@type": "@id"
+    },
+    "serviceType": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#servicetype",
+      "@type": "@id"
+    },
+    "serviceCategorie": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#servicecategorie",
+      "@type": "@id"
     }
     },
     "@type": "http://www.w3.org/ns/dcat#DataService",
@@ -107,30 +119,31 @@
     "statuut": "http://test.com/code3",
     "toegankelijkheid": "http://test.com/code4",
     "conformAanProtocol": "http://test.com/code5",
-    "creatiedatum": "2022-03-12T12:12:12",
+    "creatiedatum": "https://test.com/dummy",
     "beschrijving": {
-        "nl": "data service description"
+        "nl": ["data service description","data service description2"]
     },
     "identificator": "http://test.com/id/dataservice/1",
-    "publicatiedatum": "2022-04-01T12:12:12",
+    "publicatiedatum": "https://test.com/dummy",
     "licentie": "http://test.com/lic1",
-    "wijzigingsdatum": "2022-05-03T12:12:12",
+    "wijzigingsdatum": "https://test.com/dummy",
     "rechten": "http://test.com/right1",
     "geografischeDekking": "http://test.com/space1",
     "titel": {
-        "nl": "data service title "
+        "nl": ["data service title ","data service title 2"]
     },
-    "versie": "version 1.2.2",
-    "alternatieveIdentificator": {},
-    "contactinformatie": {},
+    "versie": "https://test.com/dummy",
+    "alternatieveIdentificator": "http://test.com/12",
+    "contactinformatie": ["http://test.com/id/contact1","http://test.com/id/contact2"],
     "endpointbeschrijving": "http://test.com/openapi",
     "endpointUrl": "http://test.com/endpointurl",
     "trefwoord": {
-        "nl": "sleutelwoord1"
+        "nl": ["sleutelwoord1","sleutelwoord12"],
+        "en": ["keyword1"]
     },
-    "landingspagina": "http://test.com/landpage",
-    "biedtInformatieAanOver": "http://test.com/id/dataset/1",
-    "thema": "http://test.com/code6",
+    "landingspagina": ["http://test.com/landpage","http://test.com/landpage2"],
+    "biedtInformatieAanOver": ["http://test.com/id/dataset/1","http://test.com/id/dataset/12"],
+    "thema": ["http://test.com/code6","http://test.com/code62"],
     "serviceType": "http://test.com/code7",
     "serviceCategorie": "http://test.com/code8"
 }

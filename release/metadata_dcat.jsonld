@@ -2,6 +2,13 @@
   "@context": {
     "@vocab": "https://data.vlaanderen.be/shacl/metadata_dcat",
     "qb": "http://purl.org/linked-data/cube#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdf:first" : {
+       "@type" :  "@id"
+    },
+    "rdf:rest" : {
+       "@type" :  "@id"
+    },
     "qb:codeList": {
       "@id": "qb:codeList",
       "@type": "@id"
@@ -76,6 +83,10 @@
     },
     "sh:targetClass": {
       "@id": "sh:targetClass",
+      "@type": "@id"
+    },
+    "sh:targetObjectsOf": {
+      "@id": "sh:targetObjectsOf",
       "@type": "@id"
     },
     "sh:uniqueLang": {
@@ -183,22 +194,6 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#PlaatsShape/02f937f793dda13f6197e578a4f0f2ee6c9a5570",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Plaats%3Abounding%20box",
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": {
-            "nl": "de afgrenzing van een plaats als een geografische rechthoek"
-          },
-          "sh:name": {
-            "nl": "bounding box"
-          },
-          "sh:path": "http://www.w3.org/ns/dcat#bbox",
-          "vl:message": {
-            "nl": "De range van bounding box moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
-          },
-          "vl:rule": ""
-        },
-        {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#PlaatsShape/0e46676305fa5dfe461174d2ad578f16fa8d77b6",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Plaats%3Abounding%20box",
           "sh:description": {
@@ -211,22 +206,6 @@
           "sh:path": "http://www.w3.org/ns/dcat#bbox",
           "vl:message": {
             "nl": "De verwachte waarde voor bounding box is een Literal"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#PlaatsShape/2545f2b443edf700f1be24a7ac0d790faddfc7d3",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Plaats%3Acentro%C3%AFde",
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": {
-            "nl": "het geografische middelpunt van een plaats"
-          },
-          "sh:name": {
-            "nl": "centroïde"
-          },
-          "sh:path": "http://www.w3.org/ns/dcat#centroid",
-          "vl:message": {
-            "nl": "De range van centroïde moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
           },
           "vl:rule": ""
         },
@@ -259,22 +238,6 @@
           "sh:path": "http://www.w3.org/ns/locn#geometry",
           "vl:message": {
             "nl": "De verwachte waarde voor geometrie is een Literal"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#PlaatsShape/722a1f18cabb107c684fe4ca857876ade00b0d01",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Plaats%3Ageometrie",
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": {
-            "nl": "de geografische beschrijving van een plaats"
-          },
-          "sh:name": {
-            "nl": "geometrie"
-          },
-          "sh:path": "http://www.w3.org/ns/locn#geometry",
-          "vl:message": {
-            "nl": "De range van geometrie moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
           },
           "vl:rule": ""
         },
@@ -440,7 +403,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#StandaardShape/817c38a73348ef5623204d13efbf44e68a4612e8",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Standaard%3Aspecificatie%20URL",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Een URL waarop men de specificatie kan\nvinden"
           },
@@ -679,7 +642,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#ContactinfoShape/0d43849949c290efe2f3d4ad1d010cdb7f0505bf",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Contactinfo%3Acontactpagina",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Een webpagina die ofwel toelaat om contact op te nemen (via b.v. een webformulier) of die informatie bevat hoe men contact kan opnemen."
           },
@@ -727,7 +690,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#ContactinfoShape/2cf221c2b6f9a619b0515c507ddd2bbb40fbb285",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Contactinfo%3Ae-mail",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Het e-mailadres waarmee een gebruiker contact kan opnemen voor informatie."
           },
@@ -841,22 +804,6 @@
           "sh:path": "http://www.w3.org/2004/02/skos/core#notation",
           "vl:message": {
             "nl": "De verwachte waarde voor notatie is een Literal"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#IdentificatorShape/71a444ee0ec5b354586504464e5c6bffb69d78c8",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Identificator%3Anotatie",
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": {
-            "nl": "String gebruikt om het object uniek te identificeren. "
-          },
-          "sh:name": {
-            "nl": "notatie"
-          },
-          "sh:path": "http://www.w3.org/2004/02/skos/core#notation",
-          "vl:message": {
-            "nl": "De range van notatie moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
           },
           "vl:rule": ""
         },
@@ -1253,22 +1200,6 @@
           "vl:rule": "v500"
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Catalogus%3Aidentificator",
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": {
-            "nl": "De unieke identificator voor de catalogus."
-          },
-          "sh:name": {
-            "nl": "identificator"
-          },
-          "sh:path": "http://purl.org/dc/terms/identifier",
-          "vl:message": {
-            "nl": "De range van identificator moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
-          },
-          "vl:rule": "1110"
-        },
-        {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusShape/972d73e7a13100b66c0c2f44466edac47aa1ab28",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Catalogus%3Aidentificator",
           "sh:description": {
@@ -1622,39 +1553,23 @@
           "sh:name": {
             "nl": "bron metadata record landingspagina"
           },
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#bron metadata record landingspagina",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#bronMetadataRecordLandingspagina",
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor bron metadata record landingspagina"
           },
           "vl:rule": ""
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/48c46070935428444a8dfe37e3b3172aa804f5e0",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#CatalogusRecord%3Abron%20metadata%20record%20landingspagina",
-          "sh:description": {
-            "nl": "Een webpagina in een menselijk leesbare vorm van de bron metadata record."
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "nl": "bron metadata record landingspagina"
-          },
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#bron metadata record landingspagina",
-          "vl:message": {
-            "nl": "Minimaal 1 waarden verwacht voor bron metadata record landingspagina"
-          },
-          "vl:rule": ""
-        },
-        {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/e7e0fa856a7a9fd5e0507143109ff56bbed15bc5",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#CatalogusRecord%3Abron%20metadata%20record%20landingspagina",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Een webpagina in een menselijk leesbare vorm van de bron metadata record."
           },
           "sh:name": {
             "nl": "bron metadata record landingspagina"
           },
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#bron metadata record landingspagina",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#bronMetadataRecordLandingspagina",
           "vl:message": {
             "nl": "De range van bron metadata record landingspagina moet van het type <http://www.w3.org/2000/01/rdf-schema#Resource> zijn."
           },
@@ -1670,7 +1585,7 @@
             "nl": "bron metadata record landingspagina"
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#bron metadata record landingspagina",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#bronMetadataRecordLandingspagina",
           "vl:message": {
             "nl": "De verwachte waarde voor bron metadata record landingspagina is een rdfs:Resource (URI of blank node)"
           },
@@ -1695,7 +1610,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/ac72a26a136d49612ab47e1ead54cb3ac0f9dcb3",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#CatalogusRecord%3Abron%20metadatarecord",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "De record in een andere catalogus waarvan deze record en de beschrijvingen van het bijhorende hoofdonderwerp van afgeleid zijn."
           },
@@ -1819,22 +1734,6 @@
             "nl": "Minimaal 1 waarden verwacht voor hoofdonderwerp"
           },
           "vl:rule": "1209"
-        },
-        {
-          "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#CatalogusRecord%3Aidentificator",
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": {
-            "nl": "De unieke identificator van het record in de catalogus."
-          },
-          "sh:name": {
-            "nl": "identificator"
-          },
-          "sh:path": "http://purl.org/dc/terms/identifier",
-          "vl:message": {
-            "nl": "De range van identificator moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
-          },
-          "vl:rule": "1210"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#CatalogusRecordShape/972d73e7a13100b66c0c2f44466edac47aa1ab28",
@@ -2291,7 +2190,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DataServiceShape/67c89165b0f38567bf099862ffdef88f25e68714",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#DataService%3AendpointURL",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "De rootlocatie of het primaire endpoint van de dienst (een web-resolvable URI)."
           },
@@ -2387,7 +2286,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DataServiceShape/dbc2548616486a154002cfba6a3bc2cbc554a682",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#DataService%3Aendpointbeschrijving",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Een beschrijving van de diensten die beschikbaar zijn via de end-points, met inbegrip van hun operaties, parameters, enz."
           },
@@ -2396,25 +2295,9 @@
           },
           "sh:path": "http://www.w3.org/ns/dcat#endpointDescription",
           "vl:message": {
-            "nl": "De range van endpointbeschrijving moet van het type <http://www.w3.org/2001/XMLSchema#anyURI> zijn."
+            "nl": "De range van endpointbeschrijving moet van het type <http://www.w3.org/2000/01/rdf-schema#Resource> zijn."
           },
           "vl:rule": "1321"
-        },
-        {
-          "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DataServiceShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#DataService%3Aidentificator",
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": {
-            "nl": "De unieke identificator van de dataservice."
-          },
-          "sh:name": {
-            "nl": "identificator"
-          },
-          "sh:path": "http://purl.org/dc/terms/identifier",
-          "vl:message": {
-            "nl": "De range van identificator moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
-          },
-          "vl:rule": "1322"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DataServiceShape/972d73e7a13100b66c0c2f44466edac47aa1ab28",
@@ -2483,7 +2366,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DataServiceShape/fe1a78c9169da2469a23fd783cf9a69060bfe198",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#DataService%3Alandingspagina",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Een algemene webpagina waarnaar kan worden genavigeerd in een webbrowser, met algemene aanvullende informatie over de dataservice."
           },
@@ -2492,21 +2375,21 @@
           },
           "sh:path": "http://www.w3.org/ns/dcat#landingPage",
           "vl:message": {
-            "nl": "De range van landingspagina moet van het type <http://www.w3.org/2001/XMLSchema#anyURI> zijn."
+            "nl": "De range van landingspagina moet van het type <http://www.w3.org/2000/01/rdf-schema#Resource> zijn."
           },
           "vl:rule": "1327"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DataServiceShape/2be8f764879c3f2218306704a430503d286c30e9",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#DataService%3Alandingspagina%20voor%20authenticatie",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Een verwijzing naar de landingspagina met de specifieke informatie over de authenticatie voor de dataservice."
           },
           "sh:name": {
             "nl": "landingspagina voor authenticatie"
           },
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorAuthenticatie",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorAuthenticatie",
           "vl:message": {
             "nl": "De range van landingspagina voor authenticatie moet van het type <http://www.w3.org/2000/01/rdf-schema#Resource> zijn."
           },
@@ -2522,7 +2405,7 @@
             "nl": "landingspagina voor authenticatie"
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorAuthenticatie",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorAuthenticatie",
           "vl:message": {
             "nl": "De verwachte waarde voor landingspagina voor authenticatie is een rdfs:Resource (URI of blank node)"
           },
@@ -2538,7 +2421,7 @@
           "sh:name": {
             "nl": "landingspagina voor authenticatie"
           },
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorAuthenticatie",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorAuthenticatie",
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor landingspagina voor authenticatie"
           },
@@ -2554,7 +2437,7 @@
             "nl": "landingspagina voor gebruiksinformatie"
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorGebruiksinformatie",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorGebruiksinformatie",
           "vl:message": {
             "nl": "De verwachte waarde voor landingspagina voor gebruiksinformatie is een rdfs:Resource (URI of blank node)"
           },
@@ -2570,7 +2453,7 @@
           "sh:name": {
             "nl": "landingspagina voor gebruiksinformatie"
           },
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorGebruiksinformatie",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorGebruiksinformatie",
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor landingspagina voor gebruiksinformatie"
           },
@@ -2579,14 +2462,14 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DataServiceShape/c4eb7e771a95c6c3e5c04255458173a2b0b40f43",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#DataService%3Alandingspagina%20voor%20gebruiksinformatie",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Een verwijzing naar de landingspagina met de specifieke informatie over het gebruik van de dataservice."
           },
           "sh:name": {
             "nl": "landingspagina voor gebruiksinformatie"
           },
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorGebruiksinformatie",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorGebruiksinformatie",
           "vl:message": {
             "nl": "De range van landingspagina voor gebruiksinformatie moet van het type <http://www.w3.org/2000/01/rdf-schema#Resource> zijn."
           },
@@ -2595,14 +2478,14 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DataServiceShape/0cdcfe2387440711ebbe94a2fcc93a29377956c5",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#DataService%3Alandingspagina%20voor%20statusinformatie",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Een verwijzing naar de statuspagina van de dataservice"
           },
           "sh:name": {
             "nl": "landingspagina voor statusinformatie"
           },
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie",
           "vl:message": {
             "nl": "De range van landingspagina voor statusinformatie moet van het type <http://www.w3.org/2000/01/rdf-schema#Resource> zijn."
           },
@@ -2618,7 +2501,7 @@
             "nl": "landingspagina voor statusinformatie"
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie",
           "vl:message": {
             "nl": "De verwachte waarde voor landingspagina voor statusinformatie is een rdfs:Resource (URI of blank node)"
           },
@@ -2634,7 +2517,7 @@
           "sh:name": {
             "nl": "landingspagina voor statusinformatie"
           },
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#landingspaginaVoorStatusinformatie",
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor landingspagina voor statusinformatie"
           },
@@ -2661,7 +2544,7 @@
             }
           },
           "sh:nodeKind": "sh:IRI",
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#levensfase",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#levensfase",
           "sh:severity": "sh:Warning",
           "vl:message": {
             "nl": "Enkel waarden uit codelijst <https://data.vlaanderen.be/id/conceptscheme/levensfase> verwacht voor levensfase"
@@ -2678,7 +2561,7 @@
           "sh:name": {
             "nl": "levensfase"
           },
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#levensfase",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#levensfase",
           "vl:message": {
             "nl": "De range van levensfase moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
           },
@@ -2694,7 +2577,7 @@
             "nl": "levensfase"
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#levensfase",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#levensfase",
           "vl:message": {
             "nl": "De verwachte waarde voor levensfase is een rdfs:Resource (URI of blank node)"
           },
@@ -2710,7 +2593,7 @@
           "sh:name": {
             "nl": "levensfase"
           },
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#levensfase",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#levensfase",
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor levensfase"
           },
@@ -2774,7 +2657,7 @@
           "sh:name": {
             "nl": "ontwikkelingstoestand"
           },
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand",
           "vl:message": {
             "nl": "De range van ontwikkelingstoestand moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
           },
@@ -2790,7 +2673,7 @@
           "sh:name": {
             "nl": "ontwikkelingstoestand"
           },
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand",
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor ontwikkelingstoestand"
           },
@@ -2806,7 +2689,7 @@
             "nl": "ontwikkelingstoestand"
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand",
           "vl:message": {
             "nl": "De verwachte waarde voor ontwikkelingstoestand is een rdfs:Resource (URI of blank node)"
           },
@@ -2833,7 +2716,7 @@
             }
           },
           "sh:nodeKind": "sh:IRI",
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#ontwikkelingstoestand",
           "sh:severity": "sh:Warning",
           "vl:message": {
             "nl": "Enkel waarden uit codelijst <https://data.vlaanderen.be/id/conceptscheme/ontwikkelingstoestand> verwacht voor ontwikkelingstoestand"
@@ -2941,7 +2824,7 @@
             }
           },
           "sh:nodeKind": "sh:IRI",
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#statuut",
           "sh:severity": "sh:Warning",
           "vl:message": {
             "nl": "Enkel waarden uit codelijst <https://metadata.vlaanderen.be/id/GDI-Vlaanderen-Trefwoorden> verwacht voor statuut"
@@ -2958,7 +2841,7 @@
             "nl": "statuut"
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#statuut",
           "vl:message": {
             "nl": "De verwachte waarde voor statuut is een rdfs:Resource (URI of blank node)"
           },
@@ -2974,7 +2857,7 @@
           "sh:name": {
             "nl": "statuut"
           },
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#statuut",
           "vl:message": {
             "nl": "De range van statuut moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
           },
@@ -3195,22 +3078,6 @@
             "nl": "Maximaal 1 waarden toegelaten voor toegankelijkheid"
           },
           "vl:rule": "1363"
-        },
-        {
-          "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DataServiceShape/1b8b3557ea1ccbabc0962c345782ae53740e72e1",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#DataService%3Atrefwoord",
-          "sh:description": {
-            "nl": "Een trefwoord of tag die de resource beschrijft."
-          },
-          "sh:name": {
-            "nl": "trefwoord"
-          },
-          "sh:path": "http://www.w3.org/ns/dcat#keyword",
-          "sh:uniqueLang": "true",
-          "vl:message": {
-            "nl": "Slechts 1 waarde voor elke taal toegelaten voor trefwoord"
-          },
-          "vl:rule": "1364"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DataServiceShape/44f6426e2306c5bc0421823eb4a1a034b615f715",
@@ -3717,22 +3584,6 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DatasetShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Dataset%3Aidentificator",
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": {
-            "nl": "De unieke identificator van de dataset."
-          },
-          "sh:name": {
-            "nl": "identificator"
-          },
-          "sh:path": "http://purl.org/dc/terms/identifier",
-          "vl:message": {
-            "nl": "De range van identificator moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
-          },
-          "vl:rule": "v060"
-        },
-        {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DatasetShape/972d73e7a13100b66c0c2f44466edac47aa1ab28",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Dataset%3Aidentificator",
           "sh:description": {
@@ -3799,7 +3650,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DatasetShape/fe1a78c9169da2469a23fd783cf9a69060bfe198",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Dataset%3Alandingspagina",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Een algemene webpagina waarnaar kan worden genavigeerd in een webbrowser, met algemene informatie over de dataset, zijn distributies en/of aanvullende informatie."
           },
@@ -3881,7 +3732,7 @@
             }
           },
           "sh:nodeKind": "sh:IRI",
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#statuut",
           "sh:severity": "sh:Warning",
           "vl:message": {
             "nl": "Enkel waarden uit codelijst <https://metadata.vlaanderen.be/id/GDI-Vlaanderen-Trefwoorden> verwacht voor statuut"
@@ -3898,7 +3749,7 @@
             "nl": "statuut"
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#statuut",
           "vl:message": {
             "nl": "De verwachte waarde voor statuut is een rdfs:Resource (URI of blank node)"
           },
@@ -3914,7 +3765,7 @@
           "sh:name": {
             "nl": "statuut"
           },
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#statuut",
           "vl:message": {
             "nl": "De range van statuut moet van het type <http://www.w3.org/2004/02/skos/core#Concept> zijn."
           },
@@ -4135,22 +3986,6 @@
             "nl": "Maximaal 1 waarden toegelaten voor toegankelijkheid"
           },
           "vl:rule": "v100"
-        },
-        {
-          "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DatasetShape/1b8b3557ea1ccbabc0962c345782ae53740e72e1",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Dataset%3Atrefwoord",
-          "sh:description": {
-            "nl": "Een trefwoord of tag die de resource beschrijft."
-          },
-          "sh:name": {
-            "nl": "trefwoord"
-          },
-          "sh:path": "http://www.w3.org/ns/dcat#keyword",
-          "sh:uniqueLang": "true",
-          "vl:message": {
-            "nl": "Slechts 1 waarde voor elke taal toegelaten voor trefwoord"
-          },
-          "vl:rule": "1719"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DatasetShape/44f6426e2306c5bc0421823eb4a1a034b615f715",
@@ -4387,7 +4222,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DistributieShape/0e61107f343f202ee672ef465cfcdbbcd746e21d",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Distributie%3AdownloadURL",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "De URL waar de data gedownload kan worden."
           },
@@ -4507,22 +4342,6 @@
             "nl": "Maximaal 1 waarden toegelaten voor formaat"
           },
           "vl:rule": "1901"
-        },
-        {
-          "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DistributieShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Distributie%3Aidentificator",
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": {
-            "nl": "De unieke identificator van de distributie."
-          },
-          "sh:name": {
-            "nl": "identificator"
-          },
-          "sh:path": "http://purl.org/dc/terms/identifier",
-          "vl:message": {
-            "nl": "De range van identificator moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
-          },
-          "vl:rule": "1902"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DistributieShape/972d73e7a13100b66c0c2f44466edac47aa1ab28",
@@ -4719,7 +4538,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DistributieShape/3d0e850677d211050dd9e93ec6496e6af9908da6",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Distributie%3AtoegangsURL",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Een URL waar de data kan gevonden worden."
           },
@@ -4903,7 +4722,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#VoorbeeldWeergaveShape/0e61107f343f202ee672ef465cfcdbbcd746e21d",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#VoorbeeldWeergave%3AdownloadURL",
-          "sh:class": "http://www.w3.org/2000/01/rdf-schema#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "De URL waar de afbeelding gedownload kan worden."
           },
@@ -5089,7 +4908,7 @@
           "vl:rule": ""
         }
       ],
-      "sh:targetClass": "http://www.w3.org/ns/dcat#Distribution"
+      "sh:targetObjectsOf" : "http://www.w3.org/ns/adms#sample"
     },
     {
       "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#RelatieQualificatieShape",
@@ -5106,7 +4925,7 @@
           "sh:name": {
             "nl": "Catalogus Resource (source)"
           },
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.source",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.source",
           "vl:message": {
             "nl": "Minimaal 1 waarden verwacht voor Catalogus Resource (source)"
           },
@@ -5122,7 +4941,7 @@
             "nl": "Catalogus Resource (source)"
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.source",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.source",
           "vl:message": {
             "nl": "De verwachte waarde voor Catalogus Resource (source) is een rdfs:Resource (URI of blank node)"
           },
@@ -5131,14 +4950,14 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#RelatieQualificatieShape/aa69087cd9f59b7d23c9ca16a88c4298d77dcd0c",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#RelatieQualificatie%3ACatalogus%20Resource%20(source)",
-          "sh:class": "http://www.w3.org/ns/dcat#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Referentie naar verbonden klasse."
           },
           "sh:name": {
             "nl": "Catalogus Resource (source)"
           },
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.source",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.source",
           "vl:message": {
             "nl": "De range van Catalogus Resource (source) moet van het type <http://www.w3.org/ns/dcat#Resource> zijn."
           },
@@ -5154,7 +4973,7 @@
           "sh:name": {
             "nl": "Catalogus Resource (source)"
           },
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.source",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.source",
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor Catalogus Resource (source)"
           },
@@ -5170,7 +4989,7 @@
             "nl": "Catalogus Resource (target)"
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.target",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.target",
           "vl:message": {
             "nl": "De verwachte waarde voor Catalogus Resource (target) is een rdfs:Resource (URI of blank node)"
           },
@@ -5186,7 +5005,7 @@
           "sh:name": {
             "nl": "Catalogus Resource (target)"
           },
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.target",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.target",
           "vl:message": {
             "nl": "Minimaal 1 waarden verwacht voor Catalogus Resource (target)"
           },
@@ -5195,14 +5014,14 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#RelatieQualificatieShape/80179238c15e4eb0f284c28f3a87c523281be2cd",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#RelatieQualificatie%3ACatalogus%20Resource%20(target)",
-          "sh:class": "http://www.w3.org/ns/dcat#Resource",
+          "sh:nodeKind": "sh:IRIOrLiteral",
           "sh:description": {
             "nl": "Referentie naar verbonden klasse."
           },
           "sh:name": {
             "nl": "Catalogus Resource (target)"
           },
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.target",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.target",
           "vl:message": {
             "nl": "De range van Catalogus Resource (target) moet van het type <http://www.w3.org/ns/dcat#Resource> zijn."
           },
@@ -5218,37 +5037,9 @@
           "sh:name": {
             "nl": "Catalogus Resource (target)"
           },
-          "sh:path": "http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.target",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.target",
           "vl:message": {
             "nl": "Maximaal 1 waarden toegelaten voor Catalogus Resource (target)"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#RelatieQualificatieShape/110bcc4a81256c6b4b080feb1fd85186147a7841",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#RelatieQualificatie%3Arol",
-          "sh:description": {
-            "nl": "De functie hoe de entiteiten zich tot elkaar verhouden. "
-          },
-          "sh:name": {
-            "nl": "rol"
-          },
-          "sh:node": {
-            "@type": "sh:NodeShape",
-            "rdfs:comment": "codelist restriction",
-            "sh:property": {
-              "sh:class": "skos:ConceptScheme",
-              "sh:hasValue": "http://inspire.ec.europa.eu/metadata-codelist/SpatialRepresentationType",
-              "sh:minCount": "1",
-              "sh:nodeKind": "sh:IRI",
-              "sh:path": "skos:inScheme"
-            }
-          },
-          "sh:nodeKind": "sh:IRI",
-          "sh:path": "http://www.w3.org/ns/dcat#hadRole",
-          "sh:severity": "sh:Warning",
-          "vl:message": {
-            "nl": "Enkel waarden uit codelijst <http://inspire.ec.europa.eu/metadata-codelist/SpatialRepresentationType> verwacht voor rol"
           },
           "vl:rule": ""
         },

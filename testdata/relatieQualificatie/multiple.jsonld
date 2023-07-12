@@ -16,8 +16,8 @@
     }
 },
     "@type": "http://www.w3.org/ns/dcat#Relationship",
-    "@id": "{{ID}}",
-    "catalogusResourceSource": "{{VAL}}",
-    "catalogusResourceTarget)": "{{VAL}}",
-    "rol": "{{VAL}}"
+    "@id": "htttps://test.com/id/relatie/1",
+    "catalogusResourceSource": ["http://test.com/id/resource/1","http://test.com/id/resource/22"],
+    "catalogusResourceTarget": ["https://test.com/id/resource/2","https://test.com/id/resource/22"],
+    "rol": ["https://test.com/id/role1","https://test.com/id/role21"]
 }

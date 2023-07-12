@@ -7,10 +7,10 @@
        "@type" : "@id"
 },
     "relatie": { 
-    "@id" : "http://purl.org/dc/terms/relation"
+    "@id" : "http://purl.org/dc/terms/relation",
        "@type" : "@id"
 }
-}
+},
 
     "@type": "http://www.w3.org/ns/dcat#Resource",
     "@id": "https://test.com/id/catalogusResource/1",

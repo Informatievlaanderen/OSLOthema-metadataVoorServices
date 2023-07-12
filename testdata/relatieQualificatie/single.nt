@@ -1,0 +1,4 @@
+<htttps://test.com/id/relatie/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Relationship> .
+<htttps://test.com/id/relatie/1> <http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.source> <http://test.com/id/resource/1> .
+<htttps://test.com/id/relatie/1> <http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.target> <https://test.com/id/resource/2> .
+<htttps://test.com/id/relatie/1> <http://www.w3.org/ns/dcat#hadRole> <https://test.com/id/role1> .

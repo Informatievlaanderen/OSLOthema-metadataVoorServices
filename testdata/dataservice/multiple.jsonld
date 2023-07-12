@@ -3,6 +3,10 @@
       "@vocab": "https://data.vlaanderen.be/ns/metadata-dcat#",
       "@base": "http://test.com/test#",
     "Dataservice": "http://www.w3.org/ns/dcat#DataService",
+    "geografischeDekking": {
+         "@id":   "http://purl.org/dc/terms/spatial",
+      "@type": "@id"
+ },
     "alternatieveIdentificator": {
       "@container": "@set",
       "@id": "http://www.w3.org/ns/adms#identifier",
@@ -111,6 +115,14 @@
     "wijzigingsdatum": {
       "@id": "http://purl.org/dc/terms/modified",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "serviceType": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#servicetype",
+      "@type": "@id"
+    },
+    "serviceCategorie": {
+      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#servicecategorie",
+      "@type": "@id"
     }
     },
     "@type": "http://www.w3.org/ns/dcat#DataService",
@@ -136,9 +148,9 @@
     "titel": {
         "nl": ["data service title ","data service title 2"]
     },
-    "versie": ["version 1.2.2", "v2"],
+    "versie": ["version 1.2.2","version 1.2.22"],
     "alternatieveIdentificator": {},
-    "contactinformatie": ["c1", "c2"],
+    "contactinformatie": ["http://test.com/id/contact1","http://test.com/id/contact2"],
     "endpointbeschrijving": ["http://test.com/openapi","http://test.com/openapi2"],
     "endpointUrl": ["http://test.com/endpointurl","http://test.com/endpointurl2"],
     "trefwoord": [{

@@ -1,0 +1,47 @@
+{
+  "@context": {
+    "voorbeeldweergave": "http://www.w3.org/ns/dcat#Distribution",
+    "beschrijving": {
+      "@container": [
+        "@language",
+        "@set"
+      ],
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "beschrijving-mul": {
+      "@container": [
+        "@set"
+      ],
+      "@id": "http://purl.org/dc/terms/description"
+    },
+    "titel": {
+      "@container": [
+        "@language",
+        "@set"
+      ],
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "titel-mul": {
+      "@container": [
+        "@set"
+      ],
+      "@id": "http://purl.org/dc/terms/title"
+    },
+    "downloadUrl": "http://www.w3.org/ns/dcat#downloadURL",
+    "mediatype": "http://www.w3.org/ns/dcat#mediatype"
+  },
+  "@type": "http://www.w3.org/ns/dcat#Distribution",
+  "@id": "https://test.com/id/example/1",
+  "beschrijving": {
+    "nl": ["example description","example description2"]
+  },
+  "beschrijving-mul": ["example description","example description2"],
+  "titel": {
+    "nl": ["example","example2"]
+  },
+  "titel-mul": ["example","example2"],
+  "downloadUrl": ["https://test.com/downloadurl","https://test.com/downloadurl2"],
+  "mediatype": ["http://iana/JPG","http://iana/JPG2"]
+}

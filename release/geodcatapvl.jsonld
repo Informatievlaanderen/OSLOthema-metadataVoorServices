@@ -6050,7 +6050,7 @@
           "vl:rule": ""
         }
       ],
-      "sh:targetClass": "http://data.vlaanderen.be/ns/metadata-dcat#RelatieQualificatie.catalogusResource.target"
+      "sh:targetClass": "http://www.w3.org/ns/dcat#Resource"
     },
     {
       "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#ResolutieShape",

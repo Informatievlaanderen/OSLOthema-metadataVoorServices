@@ -2,6 +2,13 @@
   "@context": {
     "@vocab": "https://data.vlaanderen.be/shacl/DCAT-AP-VL",
     "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdf:first": {
+      "@type": "@id"
+    },
+    "rdf:rest": {
+      "@type": "@id"
+    },
     "qb:codeList": {
       "@id": "qb:codeList",
       "@type": "@id"
@@ -11,6 +18,11 @@
       "@id": "rdfs:comment"
     },
     "sh": "http://www.w3.org/ns/shacl#",
+    "sh:and": {
+      "@container": "@set",
+      "@id": "sh:and",
+      "@type": "@id"
+    },
     "sh:class": {
       "@id": "sh:class",
       "@type": "@id"
@@ -25,6 +37,11 @@
     },
     "sh:hasValue": {
       "@id": "sh:hasValue",
+      "@type": "@id"
+    },
+    "sh:in": {
+      "@container": "@set",
+      "@id": "sh:in",
       "@type": "@id"
     },
     "sh:maxCount": {
@@ -47,6 +64,11 @@
       "@id": "sh:nodeKind",
       "@type": "@id"
     },
+    "sh:or": {
+      "@container": "@set",
+      "@id": "sh:or",
+      "@type": "@id"
+    },
     "sh:path": {
       "@id": "sh:path",
       "@type": "@id"
@@ -63,6 +85,10 @@
       "@id": "sh:targetClass",
       "@type": "@id"
     },
+    "sh:targetObjectsOf": {
+      "@id": "sh:targetObjectsOf",
+      "@type": "@id"
+    },
     "sh:uniqueLang": {
       "@id": "sh:uniqueLang",
       "@type": "http://www.w3.org/2001/XMLSchema#boolean"
@@ -76,6 +102,70 @@
   },
   "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL",
   "shapes": [
+    {
+      "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShapeUsageNotes",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#CatalogusShape/509740cc7b3c86ebee90dc6303c11c40e2b08212",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/erkendestandaard/2022-04-21#Catalogus%3Alicentie",
+          "sh:hasValue": "https://data.vlaanderen.be/id/licentie/creative-commons-zero-verklaring/v1.0",
+          "sh:description": {
+            "nl": "De licentie van de catalogus."
+          },
+          "sh:name": {
+            "nl": "licentie"
+          },
+          "sh:path": "http://purl.org/dc/terms/license",
+          "vl:message": {
+            "nl": "De range van licentie moet de waarde <https://data.vlaanderen.be/id/licentie/creative-commons-zero-verklaring/v1.0> zijn."
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/dcat#Catalog"
+    },
+    {
+      "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShapeUsage",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/4def3dfdce28c39c939d893efc2e4974f90a00e6",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/erkendestandaard/2022-04-21#Dataset%3Atoegankelijkheid",
+          "sh:description": {
+            "nl": "De toegankelijkheid voor de dataset."
+          },
+          "sh:name": {
+            "nl": "toegankelijkheid"
+          },
+          "sh:hasValue": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
+          "sh:path": "http://purl.org/dc/terms/accessRights",
+          "vl:message": {
+            "nl": "De waarde voor toegankelijkheid is <http://publications.europa.eu/resource/authority/access-right/PUBLIC>."
+          },
+          "vl:rule": ""
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#DatasetShape/2ea1d293b25f05ec202dd2dcf8924e8518262c91",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/erkendestandaard/2022-04-21#Dataset%3Astatuut",
+          "sh:description": {
+            "nl": "Een aanduiding van op welke basis de catalogusresource beschikbaar is."
+          },
+          "sh:name": {
+            "nl": "statuut"
+          },
+          "sh:hasValue": "https://metadata.vlaanderen.be/id/GDI-Vlaanderen-Trefwoorden/VLOPENDATA",
+          "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#statuut",
+          "vl:message": {
+            "nl": "statuut bevat minimaal de waarde <https://metadata.vlaanderen.be/id/GDI-Vlaanderen-Trefwoorden/VLOPENDATA>."
+          },
+          "vl:rule": ""
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/dcat#Dataset"
+    },
     {
       "@id": "https://data.vlaanderen.be/shacl/DCAT-AP-VL#UsageNoteDistributieShape",
       "@type": "sh:NodeShape",
@@ -104,7 +194,7 @@
           "sh:name": {
             "nl": "beschrijving"
           },
-          "sh:nodekind": "sh:Literal",
+          "sh:nodeKind": "sh:Literal",
           "sh:path": "http://purl.org/dc/terms/description",
           "vl:message": {
             "nl": "De verwachte waarde voor beschrijving is een Literal"
@@ -124,7 +214,7 @@
           "vl:message": {
             "nl": "Minimaal 1 waarden verwacht voor beschrijving"
           },
-	  "sh:severity" : "sh:Warning",
+          "sh:severity": "sh:Warning",
           "vl:rule": ""
         },
         {
@@ -141,9 +231,9 @@
             "nl": "Slechts 1 waarde voor elke taal toegelaten voor beschrijving"
           },
           "vl:rule": ""
-        },
+        }
       ],
       "sh:targetClass": "http://www.w3.org/ns/dcat#Distribution"
-    },
+    }
   ]
 }

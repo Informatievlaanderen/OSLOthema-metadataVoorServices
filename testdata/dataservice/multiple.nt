@@ -16,41 +16,68 @@
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/conformsTo> <http://test.com/code5> .
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/conformsTo> <http://test.com/code52> .
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/created> "2022-03-12T12:12:12"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<<<<<<< HEAD
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/created> "2022-03-12T13:23:13"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+=======
+<http://test.com/id/dataservice/1> <http://purl.org/dc/terms/created> "2022-03-12T12:13:13"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+>>>>>>> 0c208b7d34c16539ef00a12f598920876a9b22ae
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/description> "data service description"@nl .
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/description> "data service description2"@nl .
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/identifier> "http://test.com/id/dataservice/1" .
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/identifier> "http://test.com/id/dataservice/12" .
+<<<<<<< HEAD
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/issued> "2022-05-03T12:12:12"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/issued> "2022-05-03T13:13:13"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/license> <http://test.com/lic1> .
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/license> <http://test.com/lic12> .
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/modified> "2022-05-03T12:12:12"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/modified> "2022-05-03T13:13:13"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+=======
+<http://test.com/id/dataservice/1> <http://purl.org/dc/terms/issued> "2022-04-01T12:12:12"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://test.com/id/dataservice/1> <http://purl.org/dc/terms/issued> "2022-04-01T12:13:13"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://test.com/id/dataservice/1> <http://purl.org/dc/terms/license> <http://test.com/lic1> .
+<http://test.com/id/dataservice/1> <http://purl.org/dc/terms/license> <http://test.com/lic12> .
+<http://test.com/id/dataservice/1> <http://purl.org/dc/terms/modified> "2022-05-03T12:12:12"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://test.com/id/dataservice/1> <http://purl.org/dc/terms/modified> "2022-05-03T12:13:13"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+>>>>>>> 0c208b7d34c16539ef00a12f598920876a9b22ae
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/rights> <http://test.com/right1> .
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/rights> <http://test.com/right12> .
-<http://test.com/id/dataservice/1> <https://data.vlaanderen.be/ns/metadata-dcat#geografischeDekking> "http://test.com/space1" .
-<http://test.com/id/dataservice/1> <https://data.vlaanderen.be/ns/metadata-dcat#geografischeDekking> "http://test.com/space12" .
+<http://test.com/id/dataservice/1> <http://purl.org/dc/terms/spatial> <http://test.com/space1> .
+<http://test.com/id/dataservice/1> <http://purl.org/dc/terms/spatial> <http://test.com/space12> .
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/title> "data service title "@nl .
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/title> "data service title 2"@nl .
 <http://test.com/id/dataservice/1> <http://www.w3.org/2002/07/owl#versionInfo> "version 1.2.2" .
+<<<<<<< HEAD
 <http://test.com/id/dataservice/1> <http://www.w3.org/2002/07/owl#versionInfo> "v2" .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/adms#identifier> _:g447240 .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#contactPoint> <http://test.com/c1> .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#contactPoint> <http://test.com/c2> .
+=======
+<http://test.com/id/dataservice/1> <http://www.w3.org/2002/07/owl#versionInfo> "version 1.2.22" .
+<http://test.com/id/dataservice/1> <http://www.w3.org/ns/adms#identifier> _:g447180 .
+<http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#contactPoint> <http://test.com/id/contact1> .
+<http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#contactPoint> <http://test.com/id/contact2> .
+>>>>>>> 0c208b7d34c16539ef00a12f598920876a9b22ae
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#endpointDescription> <http://test.com/openapi> .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#endpointDescription> <http://test.com/openapi2> .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#endpointURL> <http://test.com/endpointurl> .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#endpointURL> <http://test.com/endpointurl2> .
+<<<<<<< HEAD
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#keyword> _:g447260 .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#keyword> _:g447280 .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#keyword> _:g447300 .
+=======
+<http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#keyword> _:g447200 .
+<http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#keyword> _:g447220 .
+<http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#keyword> _:g447240 .
+>>>>>>> 0c208b7d34c16539ef00a12f598920876a9b22ae
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#landingPage> <http://test.com/landpage> .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#landingPage> <http://test.com/landpage2> .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#servesdataset> <http://test.com/id/dataset/1> .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#servesdataset> <http://test.com/id/dataset/12> .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#theme> <http://test.com/code6> .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#theme> <http://test.com/code62> .
+<<<<<<< HEAD
 <http://test.com/id/dataservice/1> <https://data.vlaanderen.be/ns/metadata-dcat#serviceType> "http://test.com/code7" .
 <http://test.com/id/dataservice/1> <https://data.vlaanderen.be/ns/metadata-dcat#serviceType> "http://test.com/code72" .
 <http://test.com/id/dataservice/1> <https://data.vlaanderen.be/ns/metadata-dcat#serviceCategorie> "http://test.com/code8" .
@@ -60,3 +87,14 @@ _:g447260 <https://data.vlaanderen.be/ns/metadata-dcat#nl> "sleutelwoord12" .
 _:g447280 <https://data.vlaanderen.be/ns/metadata-dcat#nl> "sleutelwoord2" .
 _:g447280 <https://data.vlaanderen.be/ns/metadata-dcat#en> "keyword2" .
 _:g447300 <https://data.vlaanderen.be/ns/metadata-dcat#en> "keyword3" .
+=======
+<http://test.com/id/dataservice/1> <http://data.vlaanderen.be/ns/metadata-dcat#servicetype> <http://test.com/code7> .
+<http://test.com/id/dataservice/1> <http://data.vlaanderen.be/ns/metadata-dcat#servicetype> <http://test.com/code72> .
+<http://test.com/id/dataservice/1> <http://data.vlaanderen.be/ns/metadata-dcat#servicecategorie> <http://test.com/code8> .
+<http://test.com/id/dataservice/1> <http://data.vlaanderen.be/ns/metadata-dcat#servicecategorie> <http://test.com/code28> .
+_:g447200 <https://data.vlaanderen.be/ns/metadata-dcat#nl> "sleutelwoord1" .
+_:g447200 <https://data.vlaanderen.be/ns/metadata-dcat#nl> "sleutelwoord12" .
+_:g447220 <https://data.vlaanderen.be/ns/metadata-dcat#nl> "sleutelwoord2" .
+_:g447220 <https://data.vlaanderen.be/ns/metadata-dcat#en> "keyword2" .
+_:g447240 <https://data.vlaanderen.be/ns/metadata-dcat#en> "keyword3" .
+>>>>>>> 0c208b7d34c16539ef00a12f598920876a9b22ae
