@@ -106,7 +106,7 @@
   "beschrijving": "description",
   "conform": "http://test.com/id/code/7",
   "contactinformatie": "contactinfo",
-  "creatiedatum": "2022-02-03T12:12:12",
+  "creatiedatum": "http://test.com/id/bug",
   "distributie": "http://test.com/id/distr/1",
   "eigenaar": "http://test.com/id/org/1",
   "gemetConcept": "http://test.com/id/code/1",
@@ -115,8 +115,8 @@
   "identificator": "http://test.com/id/dataset/1",
   "inspireThema": "http://test.com/id/code/2",
   "isoCategorie": "http://test.com/id/code/3",
-  "landingspagina": "http://test.com/page/1",
-  "publicatiedatum": "2022-02-03T12:12:12",
+  "landingspagina": {},
+  "publicatiedatum": "http://test.com/id/bug",
   "ruimtelijkVoorstellingstype": "http://test.com/id/code/8",
   "ruimtelijkeResolutie": "http://test.com/id/code/10",
   "status": "http://test.com/id/code/4",
@@ -127,5 +127,5 @@
   "trefwoord": "trefwoord",
   "versie": "version",
   "voorbeeldweergave": "example",
-  "wijzigingsdatum": "2022-02-03T12:12:12"
+  "wijzigingsdatum": "http://test.com/id/bug"
 }

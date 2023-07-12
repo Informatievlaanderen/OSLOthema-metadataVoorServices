@@ -41,7 +41,7 @@
     },
     "creatiedatum": {
       "@id": "http://purl.org/dc/terms/created",
-      "@type": "@id"
+      "@type": "http://some/xsd"
     },
     "distributie": {
       "@container": "@set",
@@ -77,7 +77,7 @@
     },
     "publicatiedatum": {
       "@id": "http://purl.org/dc/terms/issued",
-      "@type": "@id"
+      "@type": "http://some/xsd"
     },
     "status": {
       "@id": "http://data.vlaanderen.be/ns/metadata-dcat#status",
@@ -129,7 +129,8 @@
       "@id": "http://www.w3.org/ns/adms#sample"
     },
     "wijzigingsdatum": {
-      "@id": "http://purl.org/dc/terms/modified"
+      "@id": "http://purl.org/dc/terms/modified",
+      "@type": "http://some/xsd"
     }
   },
   "@id": "http://test.com/id/dataset/1",
