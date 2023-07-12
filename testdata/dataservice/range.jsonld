@@ -4,8 +4,7 @@
       "@base": "http://test.com/test#",
     "Dataservice": "http://www.w3.org/ns/dcat#DataService",
     "geografischeDekking": {
-         "@id":   "http://purl.org/dc/terms/spatial",
-      "@type": "@id"
+         "@id":   "http://purl.org/dc/terms/spatial"
  },
     "alternatieveIdentificator": {
       "@container": "@set",
@@ -101,12 +100,10 @@
       "@type": "@id"
     },
     "serviceType": {
-      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#servicetype",
-      "@type": "@id"
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#servicetype"
     },
     "serviceCategorie": {
-      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#servicecategorie",
-      "@type": "@id"
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#servicecategorie"
     }
     },
     "@type": "http://www.w3.org/ns/dcat#DataService",

@@ -2,7 +2,7 @@
     "@context": {
     "Dataset": "http://www.w3.org/ns/dcat#Dataset",
     "gemetConcept": {
-	    "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#GEMETconcept",
+	    "@id" : "https://data.vlaanderen.be/ns/metadata-dcat#GEMETconcept",
 	    "@type":  "@id"
     },
     "ruimtelijkVoorstellingstype": {
@@ -14,19 +14,19 @@
 	    "@type":  "@id"
     },
     "inspireThema": {
-      "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#INSPIREthema",
+      "@id" : "https://data.vlaanderen.be/ns/metadata-dcat#INSPIREthema",
       "@type": "@id"
     },
     "isoCategorie": {
-      "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#ISOcategorie",
+      "@id" : "https://data.vlaanderen.be/ns/metadata-dcat#ISOcategorie",
       "@type": "@id"
     },
     "status": {
-	    "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#status",
+	    "@id" : "https://data.vlaanderen.be/ns/metadata-dcat#status",
       "@type": "@id"
     },
     "statuut": {
-	    "@id" : "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
+	    "@id" : "https://data.vlaanderen.be/ns/metadata-dcat#statuut",
       "@type": "@id"
     },
     "alternatieveIdentificator": {
@@ -87,7 +87,7 @@
     },
     "statuut": {
       "@container": "@set",
-      "@id": "http://data.vlaanderen.be/ns/metadata-dcat#statuut",
+      "@id": "https://data.vlaanderen.be/ns/metadata-dcat#statuut",
       "@type": "@id"
     },
     "thema": {
