@@ -135,7 +135,7 @@
     "versie": "https://test.com/dummy",
     "alternatieveIdentificator": "http://test.com/12",
     "contactinformatie": ["http://test.com/id/contact1","http://test.com/id/contact2"],
-    "endpointbeschrijving": "http://test.com/openapi",
+    "endpointbeschrijving": ["http://test.com/openapi", {} ],
     "endpointUrl": ["http://test.com/endpointurl", {}],
     "trefwoord": {
         "nl": ["sleutelwoord1","sleutelwoord12"],

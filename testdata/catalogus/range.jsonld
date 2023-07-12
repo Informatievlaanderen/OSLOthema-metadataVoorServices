@@ -52,7 +52,7 @@
     "record": ["https://test.com/id/record1"],
     "heeftDataset": ["https://test.com/id/dataset1"],
     "contactinformatie": {},
-    "alternatieveIdentificator": {},
+    "alternatieveIdentificator": [{},"alternative id" ], 
     "titel": {
         "nl": "titel"
     },

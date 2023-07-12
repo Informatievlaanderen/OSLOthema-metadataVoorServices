@@ -1,6 +1,7 @@
 {
 
     "@context": {   "CatalogusRecord": "http://www.w3.org/ns/dcat#CatalogRecord",
+    "@base" : "https://test.com/base",
     "aanmaakdatum": {
       "@id": "http://purl.org/dc/terms/issued",
       "@type": "@id"
@@ -32,7 +33,7 @@
       "@type": "@id"
     },
     "wijzigingsdatum": {
-      "@id": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "@id": "http://purl.org/dc/terms/modified",
       "@type": "@id"
     }
     },

@@ -55,7 +55,7 @@
     "conform": "http://test.com/standaard",
     "identificator": "http://test.com/id/catalogusrecord/1",
     "aanmaakdatum": {},
-    "aanmaakdatum": "2022-01-01",
+    "aanmaakdatum-xsd": "2022-01-01",
     "wijzigingsdatum": {},
     "wijzigingsdatum-xsd": "2202-03-02",
     "bronMetadatarecord": [ "http://test.com/bronrecord/2", {} ],
