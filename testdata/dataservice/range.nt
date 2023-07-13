@@ -15,7 +15,7 @@
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/license> "http://test.com/lic1" .
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/modified> <https://test.com/dummy> .
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/rights> "http://test.com/right1" .
-<http://test.com/id/dataservice/1> <http://purl.org/dc/terms/spatial> <http://test.com/space1> .
+<http://test.com/id/dataservice/1> <http://purl.org/dc/terms/spatial> "http://test.com/space1" .
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/title> "data service title "@nl .
 <http://test.com/id/dataservice/1> <http://purl.org/dc/terms/title> "data service title 2"@nl .
 <http://test.com/id/dataservice/1> <http://www.w3.org/2002/07/owl#versionInfo> <https://test.com/dummy> .
@@ -35,5 +35,5 @@
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#servesdataset> "http://test.com/id/dataset/12" .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#theme> "http://test.com/code6" .
 <http://test.com/id/dataservice/1> <http://www.w3.org/ns/dcat#theme> "http://test.com/code62" .
-<http://test.com/id/dataservice/1> <https://data.vlaanderen.be/ns/metadata-dcat#servicetype> <http://test.com/code7> .
-<http://test.com/id/dataservice/1> <https://data.vlaanderen.be/ns/metadata-dcat#servicecategorie> <http://test.com/code8> .
+<http://test.com/id/dataservice/1> <https://data.vlaanderen.be/ns/metadata-dcat#servicetype> "http://test.com/code7" .
+<http://test.com/id/dataservice/1> <https://data.vlaanderen.be/ns/metadata-dcat#servicecategorie> "http://test.com/code8" .
