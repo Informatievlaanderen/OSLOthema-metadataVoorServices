@@ -3017,7 +3017,7 @@
           "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#DataServiceShape/82a29198c877e2dae5948024ec3b1eca1a9c488e",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-01-23#DataService%3Aservice%20categorie",
           "sh:description": {
-            "nl": "De categorie waartoe de\ndataservice behoort"
+            "nl": "De categorie waartoe de dataservice behoort"
           },
           "sh:name": {
             "nl": "service categorie"
@@ -3049,10 +3049,10 @@
           "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#DataServiceShape/0c2eaa5b16ef4d4cc0f00b2fd130128e37abbb17",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-01-23#DataService%3Aservice%20type",
           "sh:description": {
-            "nl": "Het type waartoe de\ndataservice behoort"
+            "nl": "De categorie waartoe de dataservice behoort"
           },
           "sh:name": {
-            "nl": "service type"
+            "nl": "service categorie"
           },
           "sh:nodeKind": "sh:BlankNodeOrIRI",
           "sh:path": "https://data.vlaanderen.be/ns/metadata-dcat#servicecategorie",
@@ -3613,7 +3613,7 @@
           "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#DatasetShape/0e1f4afded250c59e548a24c25758ffc3b60b083",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-01-23#Dataset%3AINSPIRE%20thema",
           "sh:description": {
-            "nl": "De rubriek waartoe de\ndataset behoort volgens de\nINSPIRE thema's"
+            "nl": "De rubriek waartoe de dataset behoort volgens de INSPIRE thema's"
           },
           "sh:name": {
             "nl": "INSPIRE thema"
@@ -4130,22 +4130,6 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#DatasetShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-01-23#Dataset%3Aidentificator",
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:description": {
-            "nl": "De unieke identificator van de dataset."
-          },
-          "sh:name": {
-            "nl": "identificator"
-          },
-          "sh:path": "http://purl.org/dc/terms/identifier",
-          "vl:message": {
-            "nl": "De range van identificator moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
-          },
-          "vl:rule": ""
-        },
-        {
           "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#DatasetShape/972d73e7a13100b66c0c2f44466edac47aa1ab28",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-01-23#Dataset%3Aidentificator",
           "sh:description": {
@@ -4626,22 +4610,6 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#DatasetShape/5c245f65e6c2294cd7079eb566de6fd4e4adb829",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-01-23#Dataset%3Atitel",
-          "sh:description": {
-            "nl": "De naam van de dataset."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "nl": "titel"
-          },
-          "sh:path": "http://purl.org/dc/terms/title",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor titel"
-          },
-          "vl:rule": ""
-        },
-        {
           "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#DatasetShape/8041fe094c27b123422bd03a4e13ff0641087607",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-01-23#Dataset%3Atitel",
           "sh:description": {
@@ -4878,34 +4846,6 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#DatasetShape/6388acab6b0d97106c1dd1d45268ebe047c239ae",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-01-23#Dataset%3Avoorbeeldweergave",
-          "sh:description": {
-            "nl": "Een verkleinde weergave van een afbeelding die de dataset illustreert.?"
-          },
-          "sh:name": {
-            "nl": "voorbeeldweergave"
-          },
-          "sh:node": {
-            "@type": "sh:NodeShape",
-            "rdfs:comment": "codelist restriction",
-            "sh:property": {
-              "sh:class": "skos:ConceptScheme",
-              "sh:hasValue": "http://www.w3.org/ns/adms#sample",
-              "sh:minCount": "1",
-              "sh:nodeKind": "sh:IRI",
-              "sh:path": "skos:inScheme"
-            }
-          },
-          "sh:nodeKind": "sh:IRI",
-          "sh:path": "http://www.w3.org/ns/adms#sample",
-          "sh:severity": "sh:Warning",
-          "vl:message": {
-            "nl": "Enkel waarden uit codelijst <http://www.w3.org/ns/adms#sample> verwacht voor voorbeeldweergave"
-          },
-          "vl:rule": ""
-        },
-        {
           "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#DatasetShape/b797fd4af5bc2767e8e3a3799a5aae84ec998d04",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-01-23#Dataset%3Avoorbeeldweergave",
           "sh:class": "http://www.w3.org/ns/dcat#Distribution",
@@ -5090,20 +5030,40 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#DistributieShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-01-23#Distributie%3Aidentificator",
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#DistributieShape/866f7e6bf04104e9aa0f82fa4b8b0ff05ef17dc7",
+          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Distributie%3Aformaat",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:description": {
-            "nl": "De unieke identificator van de distributie."
+            "nl": "Het bestandsformaat waarin de data wordt gedeeld."
           },
           "sh:name": {
-            "nl": "identificator"
+            "nl": "formaat"
           },
-          "sh:path": "http://purl.org/dc/terms/identifier",
-          "vl:message": {
-            "nl": "De range van identificator moet van het type <http://www.w3.org/2000/01/rdf-schema#Literal> zijn."
+          "sh:path": "http://purl.org/dc/terms/format"
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#DistributieShape/942f3743d7958ddb27ecf2f54334a79815173fba",
+          "rdfs:seeAlso": "https://data.dev-vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Distributie%3Aformaat",
+          "sh:description": {
+            "nl": "Het bestandsformaat waarin de data wordt gedeeld."
           },
-          "vl:rule": ""
+          "sh:name": {
+            "nl": "formaat"
+          },
+          "sh:nodeKind": "sh:BlankNodeOrIRI",
+          "sh:path": "http://purl.org/dc/terms/format"
+        },
+        {
+          "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#DistributieShape/c202c852e84ae0c736f1f6a8f8030db817602116",
+          "rdfs:seeAlso": "https://data.dev-vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-04-21#Distributie%3Aformaat",
+          "sh:description": {
+            "nl": "Het bestandsformaat waarin de data wordt gedeeld."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "nl": "formaat"
+          },
+          "sh:path": "http://purl.org/dc/terms/format"
         },
         {
           "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#DistributieShape/972d73e7a13100b66c0c2f44466edac47aa1ab28",
@@ -5246,22 +5206,6 @@
           "sh:path": "http://purl.org/dc/terms/title",
           "vl:message": {
             "nl": "De verwachte waarde voor titel is een Literal"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#DistributieShape/5c245f65e6c2294cd7079eb566de6fd4e4adb829",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-01-23#Distributie%3Atitel",
-          "sh:description": {
-            "nl": "De naam van de distributie."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "nl": "titel"
-          },
-          "sh:path": "http://purl.org/dc/terms/title",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor titel"
           },
           "vl:rule": ""
         },
@@ -5482,22 +5426,6 @@
           "vl:rule": ""
         },
         {
-          "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#VoorbeeldWeergaveShape/4a16176c26d8d5526c76974a1530f1ffdd596e93",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-01-23#VoorbeeldWeergave%3Abeschrijving",
-          "sh:description": {
-            "nl": "Een bondige tekstuele omschrijving van de afbeelding"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "nl": "beschrijving"
-          },
-          "sh:path": "http://purl.org/dc/terms/description",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor beschrijving"
-          },
-          "vl:rule": ""
-        },
-        {
           "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#VoorbeeldWeergaveShape/da05d674f29a225a7115411e9f7ca442a25f2c88",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-01-23#VoorbeeldWeergave%3Abeschrijving",
           "sh:description": {
@@ -5666,22 +5594,6 @@
           "sh:path": "http://purl.org/dc/terms/title",
           "vl:message": {
             "nl": "De verwachte waarde voor titel is een Literal"
-          },
-          "vl:rule": ""
-        },
-        {
-          "@id": "https://data.vlaanderen.be/shacl/GEODCAT-AP-VL#VoorbeeldWeergaveShape/5c245f65e6c2294cd7079eb566de6fd4e4adb829",
-          "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/GEODCAT-AP-VL/erkendestandaard/2022-01-23#VoorbeeldWeergave%3Atitel",
-          "sh:description": {
-            "nl": "naam van de afbeelding"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "nl": "titel"
-          },
-          "sh:path": "http://purl.org/dc/terms/title",
-          "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor titel"
           },
           "vl:rule": ""
         },
