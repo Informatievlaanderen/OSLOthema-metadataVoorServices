@@ -348,13 +348,13 @@
           "sh:description": {
             "nl": "Een bondige tekstuele omschrijving van de catalogus."
           },
-          "sh:maxCount": "1",
+          "sh:uniqueLang": "true",
           "sh:name": {
             "nl": "beschrijving"
           },
           "sh:path": "http://purl.org/dc/terms/description",
           "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor beschrijving"
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor beschrijving"
           },
           "vl:rule": "1103"
         },
@@ -1228,13 +1228,13 @@
           "sh:description": {
             "nl": "Een bondige tekstuele omschrijving van de dataservice."
           },
-          "sh:maxCount": "1",
+          "sh:uniqueLang": "true",
           "sh:name": {
             "nl": "beschrijving"
           },
           "sh:path": "http://purl.org/dc/terms/description",
           "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor beschrijving"
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor beschrijving"
           },
           "vl:rule": "1305"
         },
@@ -2372,13 +2372,13 @@
           "sh:description": {
             "nl": "Een bondige tekstuele omschrijving van de dataset."
           },
-          "sh:maxCount": "1",
+          "sh:uniqueLang": "true",
           "sh:name": {
             "nl": "beschrijving"
           },
           "sh:path": "http://purl.org/dc/terms/description",
           "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor beschrijving"
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor beschrijving"
           },
           "vl:rule": "1702"
         },
