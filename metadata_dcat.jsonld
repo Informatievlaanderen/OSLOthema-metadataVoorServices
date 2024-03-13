@@ -225,7 +225,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#ContactinfoShape/2cf221c2b6f9a619b0515c507ddd2bbb40fbb285",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Contactinfo%20%3Ae-mail",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
+          "sh:nodeKind": "sh:IRI",
           "sh:description": {
             "nl": "Het e-mailadres waarmee een gebruiker contact kan opnemen voor informatie."
           },
@@ -234,7 +234,7 @@
           },
           "sh:path": "http://www.w3.org/2006/vcard/ns#hasEmail",
           "vl:message": {
-            "nl": "De range van e-mail moet van het type <http://www.w3.org/2001/XMLSchema#anyURI> zijn."
+            "nl": "De range van e-mail moet een URI zijn."
           },
           "vl:rule": "413"
         },
