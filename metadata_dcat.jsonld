@@ -700,13 +700,13 @@
           "sh:description": {
             "nl": "De naam van de catalogus."
           },
-          "sh:maxCount": "1",
+          "sh:uniqueLang": "true",
           "sh:name": {
             "nl": "titel"
           },
           "sh:path": "http://purl.org/dc/terms/title",
           "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor titel"
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor titel"
           },
           "vl:rule": "1114"
         },
@@ -1044,13 +1044,13 @@
           "sh:description": {
             "nl": "De naam van het record in de catalogus."
           },
-          "sh:maxCount": "1",
+          "sh:uniqueLang": "true",
           "sh:name": {
             "nl": "titel"
           },
           "sh:path": "http://purl.org/dc/terms/title",
           "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor titel"
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor titel"
           },
           "vl:rule": "1215"
         },
@@ -2064,13 +2064,13 @@
           "sh:description": {
             "nl": "De naam van de dataservice."
           },
-          "sh:maxCount": "1",
+          "sh:uniqueLang": "true",
           "sh:name": {
             "nl": "titel"
           },
           "sh:path": "http://purl.org/dc/terms/title",
           "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor titel"
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor titel"
           },
           "vl:rule": "1356"
         },
@@ -2736,13 +2736,13 @@
           "sh:description": {
             "nl": "De naam van de dataset."
           },
-          "sh:maxCount": "1",
+          "sh:uniqueLang": "true",
           "sh:name": {
             "nl": "titel"
           },
           "sh:path": "http://purl.org/dc/terms/title",
           "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor titel"
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor titel"
           },
           "vl:rule": ""
         },
@@ -3220,13 +3220,13 @@
           "sh:description": {
             "nl": "De naam van de distributie."
           },
-          "sh:maxCount": "1",
+          "sh:uniqueLang": "true",
           "sh:name": {
             "nl": "titel"
           },
           "sh:path": "http://purl.org/dc/terms/title",
           "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor titel"
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor titel"
           },
           "vl:rule": "1909"
         },
