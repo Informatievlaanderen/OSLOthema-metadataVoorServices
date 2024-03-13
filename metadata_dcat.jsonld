@@ -2481,7 +2481,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DatasetShape/458062b0ae03c559426b85df3dd28e1c785acb0b",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Dataset%3Acontactinformatie",
-          "sh:class": "http://schema.org/ContactPoint",
+          "sh:class": "http://www.w3.org/2006/vcard/ns#Kind",
           "sh:description": {
             "nl": "De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de dataset."
           },
@@ -2490,7 +2490,7 @@
           },
           "sh:path": "http://www.w3.org/ns/dcat#contactPoint",
           "vl:message": {
-            "nl": "De range van contactinformatie moet van het type <http://schema.org/ContactPoint> zijn."
+            "nl": "De range van contactinformatie moet van het type <http://www.w3.org/2006/vcard/ns#Kind> zijn."
           },
           "vl:rule": "1406"
         },
