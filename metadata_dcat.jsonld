@@ -225,7 +225,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#ContactinfoShape/2cf221c2b6f9a619b0515c507ddd2bbb40fbb285",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Contactinfo%20%3Ae-mail",
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
+          "sh:nodeKind": "sh:IRI",
           "sh:description": {
             "nl": "Het e-mailadres waarmee een gebruiker contact kan opnemen voor informatie."
           },
@@ -234,7 +234,7 @@
           },
           "sh:path": "http://www.w3.org/2006/vcard/ns#hasEmail",
           "vl:message": {
-            "nl": "De range van e-mail moet van het type <http://www.w3.org/2001/XMLSchema#anyURI> zijn."
+            "nl": "De range van e-mail moet een URI zijn."
           },
           "vl:rule": "413"
         },
@@ -348,13 +348,13 @@
           "sh:description": {
             "nl": "Een bondige tekstuele omschrijving van de catalogus."
           },
-          "sh:maxCount": "1",
+          "sh:uniqueLang": "true",
           "sh:name": {
             "nl": "beschrijving"
           },
           "sh:path": "http://purl.org/dc/terms/description",
           "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor beschrijving"
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor beschrijving"
           },
           "vl:rule": "1103"
         },
@@ -700,13 +700,13 @@
           "sh:description": {
             "nl": "De naam van de catalogus."
           },
-          "sh:maxCount": "1",
+          "sh:uniqueLang": "true",
           "sh:name": {
             "nl": "titel"
           },
           "sh:path": "http://purl.org/dc/terms/title",
           "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor titel"
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor titel"
           },
           "vl:rule": "1114"
         },
@@ -1044,13 +1044,13 @@
           "sh:description": {
             "nl": "De naam van het record in de catalogus."
           },
-          "sh:maxCount": "1",
+          "sh:uniqueLang": "true",
           "sh:name": {
             "nl": "titel"
           },
           "sh:path": "http://purl.org/dc/terms/title",
           "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor titel"
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor titel"
           },
           "vl:rule": "1215"
         },
@@ -1228,13 +1228,13 @@
           "sh:description": {
             "nl": "Een bondige tekstuele omschrijving van de dataservice."
           },
-          "sh:maxCount": "1",
+          "sh:uniqueLang": "true",
           "sh:name": {
             "nl": "beschrijving"
           },
           "sh:path": "http://purl.org/dc/terms/description",
           "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor beschrijving"
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor beschrijving"
           },
           "vl:rule": "1305"
         },
@@ -2064,13 +2064,13 @@
           "sh:description": {
             "nl": "De naam van de dataservice."
           },
-          "sh:maxCount": "1",
+          "sh:uniqueLang": "true",
           "sh:name": {
             "nl": "titel"
           },
           "sh:path": "http://purl.org/dc/terms/title",
           "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor titel"
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor titel"
           },
           "vl:rule": "1356"
         },
@@ -2372,13 +2372,13 @@
           "sh:description": {
             "nl": "Een bondige tekstuele omschrijving van de dataset."
           },
-          "sh:maxCount": "1",
+          "sh:uniqueLang": "true",
           "sh:name": {
             "nl": "beschrijving"
           },
           "sh:path": "http://purl.org/dc/terms/description",
           "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor beschrijving"
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor beschrijving"
           },
           "vl:rule": "1702"
         },
@@ -2481,7 +2481,7 @@
         {
           "@id": "https://data.vlaanderen.be/shacl/metadata_dcat#DatasetShape/458062b0ae03c559426b85df3dd28e1c785acb0b",
           "rdfs:seeAlso": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/erkendestandaard/2021-04-22#Dataset%3Acontactinformatie",
-          "sh:class": "http://schema.org/ContactPoint",
+          "sh:class": "http://www.w3.org/2006/vcard/ns#Kind",
           "sh:description": {
             "nl": "De relevante contactinformatie waarmee een eindgebruiker in contact kan treden met de verantwoordelijken van de dataset."
           },
@@ -2490,7 +2490,7 @@
           },
           "sh:path": "http://www.w3.org/ns/dcat#contactPoint",
           "vl:message": {
-            "nl": "De range van contactinformatie moet van het type <http://schema.org/ContactPoint> zijn."
+            "nl": "De range van contactinformatie moet van het type <http://www.w3.org/2006/vcard/ns#Kind> zijn."
           },
           "vl:rule": "1406"
         },
@@ -2736,13 +2736,13 @@
           "sh:description": {
             "nl": "De naam van de dataset."
           },
-          "sh:maxCount": "1",
+          "sh:uniqueLang": "true",
           "sh:name": {
             "nl": "titel"
           },
           "sh:path": "http://purl.org/dc/terms/title",
           "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor titel"
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor titel"
           },
           "vl:rule": ""
         },
@@ -3220,13 +3220,13 @@
           "sh:description": {
             "nl": "De naam van de distributie."
           },
-          "sh:maxCount": "1",
+          "sh:uniqueLang": "true",
           "sh:name": {
             "nl": "titel"
           },
           "sh:path": "http://purl.org/dc/terms/title",
           "vl:message": {
-            "nl": "Maximaal 1 waarden toegelaten voor titel"
+            "nl": "Slechts 1 waarde voor elke taal toegelaten voor titel"
           },
           "vl:rule": "1909"
         },
