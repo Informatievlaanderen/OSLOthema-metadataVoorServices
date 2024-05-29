@@ -1,36 +1,42 @@
 {
-  "naam": "Conformiteitsraamwerk voor data standaarden",
-  "rapport": "",
-  "verantwoordelijke_organisatie": "Agentschap Digitaal Vlaanderen",
-  "identificator_organisatie": "http://data.vlaanderen.be/id/organisatie/OVO002949",
-  "publicatiedatum": "TBD",
-  "type_toepassing": "TBD",
-  "categorie": "Standaard voor technische interoperabiliteit",
-  "beschrijving": "conformiteitsraamwerk.md",
-  "specificatiedocument": [
+  "title": "Conformiteitsraamwerk voor data standaarden",
+  "category": "Standaard voor technische interoperabiliteit",
+  "usage": "TBD",
+  "status": "standaard-in-ontwikkeling",
+  "descriptionFileName": "conformiteitsraamwerk.md",
+  "responsibleOrganisation": [
     {
-      "naam": "Draft conformiteitsraamwerk",
-      "waarde": "OSLO Conformiteitsraamwerk v1.00_DRAFT.pdf"
+      "name": "Agentschap Digitaal Vlaanderen",
+      "resourceReference": "http://data.vlaanderen.be/id/organisatie/OVO002949"
     }
   ],
-  "documentatie": [],
-  "charter": [],
-  "verslagen": [
+  "publicationDate": "TBD",
+  "specificationDocuments": [
     {
-      "naam": "Verslag workshop - 30 november 2020",
-      "waarde": "Verslag werkgroep OSLO conformiteit.pdf"
+      "name": "Draft conformiteitsraamwerk",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/documents/OSLO Conformiteitsraamwerk v1.00_DRAFT.pdf"
     }
   ],
-  "presentaties": [
+  "documentation": [],
+  "reports": [
     {
-      "naam": "Presentatie workshop - 30 november 2020",
-      "waarde": "20201130 Workshop conformiteitsraamwerk.pdf"
+      "name": "Verslag workshop - 30 november 2020",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/Verslag werkgroep OSLO conformiteit.pdf"
     }
   ],
-  "functioneel_toepassingsgebied": "Conformiteitsraamwerk voor data standaarden in Vlaanderen",
-  "organisatorisch_werkingsgebied": "Alle entiteiten van de Vlaamse overheid",
-  "datum_van_aanmelding": "TBD",
-  "erkenning_werkgroep_datastandaarden": "TBD",
-  "erkenning_stuurgroep": "TBD",
-  "register": "https://overheid.vlaanderen.be/opleiding/publieke-werkgroepen-oslo-metadatastandaard-voor-services"
+  "charter": {
+    "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/charter/"
+  },
+  "presentations": [
+    {
+      "name": "Presentatie workshop - 30 november 2020",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/presentations/20201130 Workshop conformiteitsraamwerk.pdf"
+    }
+  ],
+  "dateOfRegistration": "TBD",
+  "dateOfAcknowledgementByWorkingGroup": "TBD",
+  "dateOfAcknowledgementBySteeringCommittee": "TBD",
+  "repository": "OSLOthema-metadataVoorServices",
+  "datePublicReviewStart": "",
+  "endOfPublicationDate": ""
 }
