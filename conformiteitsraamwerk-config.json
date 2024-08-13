@@ -14,14 +14,14 @@
   "specificationDocuments": [
     {
       "name": "Draft conformiteitsraamwerk",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/documents/OSLO Conformiteitsraamwerk v1.00_DRAFT.pdf"
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/specifications/OSLO%20Conformiteitsraamwerk%20v1.00_DRAFT.pdf"
     }
   ],
   "documentation": [],
   "reports": [
     {
       "name": "Verslag workshop - 30 november 2020",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/Verslag werkgroep OSLO conformiteit.pdf"
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/Verslag%20werkgroep%20OSLO%20conformiteit.pdf"
     }
   ],
   "charter": {
@@ -30,7 +30,7 @@
   "presentations": [
     {
       "name": "Presentatie workshop - 30 november 2020",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/presentations/20201130 Workshop conformiteitsraamwerk.pdf"
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/presentations/20201130%20Workshop%20conformiteitsraamwerk.pdf"
     }
   ],
   "dateOfRegistration": "TBD",

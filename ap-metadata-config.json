@@ -21,57 +21,57 @@
   "reports": [
     {
       "name": "Verslag business werkgroep - 3 september 2020",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/20200903 - OSLO Metadata voor services - Business Werkgroep - Verslag.pdf"
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/20200903%20-%20OSLO%20Metadata%20voor%20services%20-%20Business%20Werkgroep%20-%20Verslag.pdf"
     },
     {
       "name": "Verslag thematische werkgroep 1 - 22 september 2020",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/20200922 - OSLO Metadata voor services - Thematische werkgroep 1 - Verslag.pdf"
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/20200922%20-%20OSLO%20Metadata%20voor%20services%20-%20Thematische%20werkgroep%201%20-%20Verslag.pdf"
     },
     {
       "name": "Verwerking thematische werkgroep 1",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/Verwerking thematische werkgroep 1.pdf"
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/Verwerking%20thematische%20werkgroep%201.pdf"
     },
     {
       "name": "Verslag thematische werkgroep 2 - 13 oktober 2020",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/20201013 - OSLO Metadata voor services - Thematische werkgroep 2 - Verslag.pdf"
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/20201013%20-%20OSLO%20Metadata%20voor%20services%20-%20Thematische%20werkgroep%202%20-%20Verslag.pdf"
     },
     {
       "name": "Verwerking thematische werkgroep 2",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/Verwerking thematische werkgroep 2.pdf"
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/Verwerking%20thematische%20werkgroep%202.pdf"
     },
     {
       "name": "Verslag thematische werkgroep 3 - 10 november 2020",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/20201110 - OSLO Metadata voor services - Thematische werkgroep 3 - Verslag.pdf"
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/20201110%20-%20OSLO%20Metadata%20voor%20services%20-%20Thematische%20werkgroep%203%20-%20Verslag.pdf"
     },
     {
       "name": "Verslag plenaire sessie - 7 december 2020",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/20201207 - OSLO Metadata voor services - Plenaire sessie - Verslag.pdf"
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/20201207%20-%20OSLO%20Metadata%20voor%20services%20-%20Plenaire%20sessie%20-%20Verslag.pdf"
     }
   ],
   "charter": {
     "name": "Charter",
-    "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/charter/Werkgroep charter OSLO metadatastandaard voor services.pdf"
+    "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/charter/Werkgroep%20charter%20OSLO%20metadatastandaard%20voor%20services.pdf"
   },
   "presentations": [
     {
       "name": "Presentatie business werkgroep - 3 september 2020<",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/presentations/20200903 - OSLO Metadata voor services - Business Werkgroep - Presentatie.pdf"
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/presentations/20200903%20-%20OSLO%20Metadata%20voor%20services%20-%20Business%20Werkgroep%20-%20Presentatie.pdf"
     },
     {
       "name": "Presentatie thematische werkgroep 1 - 22 september 2020",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/presentations/20200922 - OSLO Metadata voor services - Thematische Werkgroep 1 - Presentatie.pdf"
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/presentations/20200922%20-%20OSLO%20Metadata%20voor%20services%20-%20Thematische%20Werkgroep%201%20-%20Presentatie.pdf"
     },
     {
       "name": "Presentatie thematische werkgroep 2 - 13 oktober 2020",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/presentations/20201013 - OSLO Metadata voor services - Thematische Werkgroep 2 - Presentatie.pdf"
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/presentations/20201013%20-%20OSLO%20Metadata%20voor%20services%20-%20Thematische%20Werkgroep%202%20-%20Presentatie.pdf"
     },
     {
       "name": "Presentatie thematische werkgroep 3 - 10 november 2020",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/presentations/20201110 - OSLO Metadata voor services - Thematische Werkgroep 3 - Presentatie.pdf"
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/presentations/20201110%20-%20OSLO%20Metadata%20voor%20services%20-%20Thematische%20Werkgroep%203%20-%20Presentatie.pdf"
     },
     {
       "name": "Presentatie plenaire sessie - 7 december 2020",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/presentations/20201207 - OSLO Metadata voor services - Plenaire sessie - Presentatie.pdf"
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/presentations/20201207%20-%20OSLO%20Metadata%20voor%20services%20-%20Plenaire%20sessie%20-%20Presentatie.pdf"
     },
     {
       "name": "Presentatie WG datastandaarden - 11 maart 2021",
