@@ -13,6 +13,6 @@
   "contributors-column": "metadata-dcat",
   "site": "site-skeleton/metadata-voor-services-ap",
   "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-metadataVoorServices/issues",
-  "standaardregisterurl": "https://data.vlaanderen.be/standaarden/erkende-standaard/applicatieprofiel-metadata-dcat.html"
+  "standaardregisterurl": "https://data.vlaanderen.be/standaarden/applicatieprofiel-metadata-dcat/"
 }
 ]
