@@ -20,3 +20,5 @@
   - fix UML > camelcase elementNames
 2023-03-14
   - bugfix http -> https
+2025-8-25
+  - aanpassingen adoptie DCAT-AP 3.0.1
