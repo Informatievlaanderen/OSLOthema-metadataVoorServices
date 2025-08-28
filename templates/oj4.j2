@@ -380,6 +380,7 @@
                                                 <th class="vl-data-table__header-title">Beschrijving</th>
                                                 <th class="vl-data-table__header-title">Gebruik</th>
                                                 <th class="vl-data-table__header-title">Codelijst</th>
+						<th class="vl-data-table__header-title" style="width:3%"> <a href="#reuse-column">Reuse</a></th>
                                              </tr>
                                           </thead>
                                           <tbody class="supertype">
@@ -431,6 +432,17 @@
                                                       {% if prop.codelist %}
                                                          <a href="{{ prop.codelist }}">Link</a>
                                                       {% endif %}
+                                                   </td>
+                                                   <td>
+						       {% if prop.rawTags['DCATAP'] %}
+						       {% if prop.rawTags['reuse'] == "asis"   %}
+							<a href="{{ prop.rawTags['DCATAP'] }}">A</a>
+						       {% else %}
+							<a href="{{ prop.rawTags['DCATAP'] }}">E</a>
+						       {% endif %}
+						       {% else %}
+							 P
+						       {% endif %}
                                                    </td>
                                                 </tr>
                                              {% endfor %}
