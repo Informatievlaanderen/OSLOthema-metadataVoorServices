@@ -434,11 +434,11 @@
                                                       {% endif %}
                                                    </td>
                                                    <td>
-						       {% if prop.rawTags['DCATAP'] %}
-						       {% if prop.rawTags['reuse'] == "asis"   %}
-							<a href="{{ prop.rawTags['DCATAP'] }}">A</a>
+						       {% if prop.DCATAP %}
+						       {% if prop.reuse == "asis"   %}
+							<a href="{{ prop.DCATAP }}">A</a>
 						       {% else %}
-							<a href="{{ prop.rawTags['DCATAP'] }}">E</a>
+							<a href="{{ prop.DCATAP }}">E</a>
 						       {% endif %}
 						       {% else %}
 							 P
