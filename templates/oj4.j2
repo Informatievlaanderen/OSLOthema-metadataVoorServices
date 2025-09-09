@@ -341,6 +341,12 @@
                                           {{ entity.applicationProfileUsageNote[language] | safe }}
                                        </dd>
                                     {% endif %}
+			            {% if prop.DCATAP %}
+                                       <dt>Informatie over de klasse in DCAT-AP</dt>
+                                       <dd>
+					<a href="{{ prop.DCATAP.nl }}">Link</a>
+                                       </dd>
+                                    {% endif %}
                                     {% if ((entity.parents | length) > 0 ) %}
                                        <dt>Subklasse van
                                        </dt>
@@ -441,6 +447,12 @@
 							<a href="{{ prop.DCATAP.nl }}">E</a>
 						       {% endif %}
 						       {% else %}
+						       {% if prop.DCAT %}
+						       {% if prop.reuse.nl == "asis"   %}
+							<a href="{{ prop.DCAT.nl }}">A</a>
+						       {% else %}
+							<a href="{{ prop.DCAT.nl }}">E</a>
+						       {% endif %}
 							 P
 						       {% endif %}
                                                    </td>
