@@ -309,6 +309,8 @@
                                                    </a>
                                                    {% endblock %}
                                                 </div>
+
+						
 						<!--
                         <div class="vl-region vl-region--no-space-top" id="taxonomie">
                            <h2 class="vl-title--h2">Taxonomie</h2>
@@ -447,13 +449,15 @@
 							<a href="{{ prop.DCATAP.nl }}">E</a>
 						       {% endif %}
 						       {% else %}
-						       {% if prop.DCAT %}
-						       {% if prop.reuse.nl == "asis"   %}
-							<a href="{{ prop.DCAT.nl }}">A</a>
-						       {% else %}
-							<a href="{{ prop.DCAT.nl }}">E</a>
-						       {% endif %}
-							 P
+						         {% if prop.DCAT %}
+						         {% if prop.reuse.nl == "asis"   %}
+							  <a href="{{ prop.DCAT.nl }}">A</a>
+						         {% else %}
+							  <a href="{{ prop.DCAT.nl }}">E</a>
+						         {% endif %}
+						         {% else %}
+							  P
+						         {% endif %}
 						       {% endif %}
                                                    </td>
                                                 </tr>
@@ -467,6 +471,24 @@
                         {% endmacro %}
                         <div class="vl-region vl-region--no-space-top">
                            <h2 class="vl-title--h2">Entiteiten</h2>
+
+			   <div id="reuse">
+		           Om inzicht te geven in de motivatie waarom een klasse of eigenschap is opgenomen in dit applicatie profiel, voorzien we 
+			   een hergebruik statement voor elke klasse en eigenschap.
+
+			   <ul>
+				   <li>De klasse of eigenshap kan volledig zoals beschreven in de DCAT-AP specificatie hergebruikt zijn. Dit wordt aangeduidt met het symbool A.</li>
+				   <li>Het hergebruik kan met beperkte aanpassingen, zoals een bijkomende gebruiksnota of kardinaliteits beperking zijn. Dan is het symbool E. </li>
+				   <li>Tenslotte kan het een eigen Vlaamse uitbreiding zijn, dan is het symbool P.</li>
+			   </ul>
+
+			   Bij het maken van een DCAT-AP profiel kan het zijn dat men hergebruik doet van andere DCAT-AP profielen om de use case te behandelen. 
+			   Indien dit een direct hergebruik is van de klasse of eigenschap volgens een ander profiel zoals GeoDCAT-AP of DCAT zelf, dan kan er ook het symbool A toegekend worden. 
+			   In dit geval zal de verwijzing gaan naar de overeenkomstige specificatie.
+
+
+                           </div>
+
                            {% for entity in data.classes %}
                               {% if entity.applicationProfileLabel[language] %}
                                  {% set entitylabel = entity.applicationProfileLabel[language] %}
