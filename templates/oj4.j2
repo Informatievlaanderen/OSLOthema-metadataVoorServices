@@ -435,10 +435,10 @@
                                                    </td>
                                                    <td>
 						       {% if prop.DCATAP %}
-						       {% if prop.reuse == "asis"   %}
-							<a href="{{ prop.DCATAP }}">A</a>
+						       {% if prop.reuse.nl == "asis"   %}
+							<a href="{{ prop.DCATAP.nl }}">A</a>
 						       {% else %}
-							<a href="{{ prop.DCATAP }}">E</a>
+							<a href="{{ prop.DCATAP.nl }}">E</a>
 						       {% endif %}
 						       {% else %}
 							 P
