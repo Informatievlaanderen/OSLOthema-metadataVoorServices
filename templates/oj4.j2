@@ -285,8 +285,8 @@
                                              {%- endfor %}
                                           </p>
                                        {% endblock codelijsten1 %}
-                                    {% endif %}
-                                    {% if ( ( data.dataTypes | length ) > 0 ) %}
+                                 {% endif %}
+                                 {% if ( ( data.dataTypes | length ) > 0 ) %}
                                        <p>
                                           In dit document worden de volgende datatypes toegelicht: <br/> |
                                           {%- for dataType in data.dataTypes %}
@@ -297,11 +297,12 @@
                                              {% endif %}
                                           {%- endfor %}
                                        </p>
-                                    </div>
                                  {% endif %}
+                                 </div>
                               </div>
                            </div>
                         </div>
+
                                                 <div class="vl-region vl-region--no-space-top">
                                                    {% block images %}
                                                    <a href="{{ data.metadata.documentroot }}/html/overview.jpg" target="_blank">
@@ -469,6 +470,7 @@
                               </div>
                            </div>
                         {% endmacro %}
+
                         <div class="vl-region vl-region--no-space-top">
                            <h2 class="vl-title--h2">Entiteiten</h2>
 
