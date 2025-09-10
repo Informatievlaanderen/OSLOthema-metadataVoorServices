@@ -1,4 +1,4 @@
-<section>
+<div class="region region--no-space-top">
 <h2 class="vl-title--h2">Open Data</h2>
 Open Data is een specieke subset van alle informatie is beschikbaar is in Vlaanderen. 
 Het is informatie is met geen tot minimale beperkingen voor hergebruik ontsloten wordt.
@@ -15,19 +15,28 @@ Om vandaag een goede dienstverlening op te zetten is informatie van alle soort e
 B.v. de Data Act (de basis voor de Europese Data Spaces) zet de wettelijke basis voor informatiedeling in een thematische context. Ook hier wordt DCAT(-AP) ingezet. 
 
 <br/>
+<p>
 <ul>
 <li> 1. Licenties: 
-   Een van de Vlaamse hergebruik licenties
+Voor Vlaamse Open Data wordt voor een licentie een PURI verwacht. 
+Het Decreet Hergebruik definieert een aantal licenties. 
+PURIs voor de verschillende mogelijkheden zijn te vinden hier: https://data.vlaanderen.be/doc/licentie/.
+
+Deze richtlijnen voldoen ook aan de <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#legal-information">generieke Europese richtlijnen</a>. De keuze voor een machineleesbare versie (d.m.v. een URI) maakt deze afspraak ook HVD conform.
 </li>
-<li> 2. toegankelijkheid: de toegankelijkheid tot de dataset moet de waarde <a href=" http://publications.europa.eu/resource/authority/access-right/PUBLIC">PUBLIC</a> hebben
+<li> 2. toegankelijkheid: de toegankelijkheid tot de dataset moet de waarde <a href=" http://publications.europa.eu/resource/authority/access-right/PUBLIC">PUBLIC</a> hebben. 
+Wanneer Data Services die een Open Data dataset ontsluiten wordt beschreven dan zal de toegankelijkheid bij minstens 1, zoniet allemaal, ook PUBLIC zijn. 
+Het kan zijn dat een Open Data dataset op een gesloten data platform ook wordt aangeboden en dat de beheerder van de dataset dit ook wil zichtbaar maken. 
+Als het gesloten systeem de enige mogelijkheid is om de dataset te bekomen, dan zijn de voorwaarden voor Open Data niet behaald en is de uitgever verplicht om een publieke toegang te voorzien.
 </li>
 <li>
-3. statuut
+3. statuut: Omdat Open Data soms ook in een beleidscontext gebruikt wordt en men iets wil labelen als Open Data maar waarvoor de voorwaarden nog niet voldaan zijn, is het zinvol om dit beleid/intentie expliciet te capteren en niet af te leiden uit de gegeven metadata. Voor Datasets moet de eigenschap statuut X minstens als waarde hebben, terwijl services het statuut Y minstens als waarde moeten hebben.
+ 
    Minstens de waarde De waarde moet minstens https://metadata.vlaanderen.be/id/GDI-Vlaanderen-Trefwoorden/VLOPENDATASERVICE bevatten.
+   Minstens de waarde De waarde moet minstens https://metadata.vlaanderen.be/id/GDI-Vlaanderen-Trefwoorden/VLOPENDATA bevatten.
 </li>
 </ul>
+</p> 
 
 
-
-
-</section>
+</div>
