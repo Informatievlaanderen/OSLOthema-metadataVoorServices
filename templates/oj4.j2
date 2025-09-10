@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTDXHTML1.0Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xml:lang="{{ language }}" lang="{{ language }}" dir="ltr" typeof="bibo:Document " about="" property="dcterms:language" content="{{ language }}" prefix="dcterms: http://purl.org/dc/terms/ bibo: http://purl.org/ontology/bibo/ schema: http://schema.org/ w3p:
-                                                      http://www.w3.org/2001/02pd/rec54#" xmlns="http://www.w3.org/1999/xhtml">
+                                       http://www.w3.org/2001/02pd/rec54#" xmlns="http://www.w3.org/1999/xhtml">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
@@ -284,8 +284,8 @@
                                              {%- endfor %}
                                           </p>
                                        {% endblock codelijsten1 %}
-                                    {% endif %}
-                                    {% if ( ( data.dataTypes | length ) > 0 ) %}
+                                 {% endif %}
+                                 {% if ( ( data.dataTypes | length ) > 0 ) %}
                                        <p>
                                           In dit document worden de volgende datatypes toegelicht: <br/> |
                                           {%- for dataType in data.dataTypes %}
@@ -296,28 +296,32 @@
                                              {% endif %}
                                           {%- endfor %}
                                        </p>
-                                    {% endif %}
+                                 {% endif %}
                                  </div>
                               </div>
                            </div>
                         </div>
-                        <div class="vl-region vl-region--no-space-top">
-                           {% block images %}
-                              <a href="{{ data.metadata.documentroot }}/html/overview.jpg" target="_blank">
-                                 <img src="{{ data.metadata.documentroot }}/html/overview.jpg"/>
-                              </a>
-                           {% endblock %}
+
+                                                <div class="vl-region vl-region--no-space-top">
+                                                   {% block images %}
+                                                   <a href="{{ data.metadata.documentroot }}/html/overview.jpg" target="_blank">
+                                                   <img src="{{ data.metadata.documentroot }}/html/overview.jpg"/>
+                                                   </a>
+                                                   {% endblock %}
+                                                </div>
+
+						
+						<!--
+                        <div class="vl-region vl-region--no-space-top" id="taxonomie">
+                           <h2 class="vl-title--h2">Taxonomie</h2>
+                           <p>Klik op de cirkels om de boomstructuur uit te breiden of in te krimpen of klik op de tekst labels om rechtstreeks
+                              naar de details van een bepaalde entiteit te gaan.</p>
+                           <div id="tree"></div>
+                           <script src="https://d3js.org/d3.v3.min.js"></script>
+                           {% block taxonomy %}{% endblock %}
+                           <script type="text/javascript" src="/cms/scripts/treeview.js"></script>
                         </div>
-                        <!--
-                                                <div class="vl-region vl-region--no-space-top" id="taxonomie">
-                                                   <h2 class="vl-title--h2">Taxonomie</h2>
-                                                   <p>Klik op de cirkels om de boomstructuur uit te breiden of in te krimpen of klik op de tekst labels om rechtstreeks
-                                                      naar de details van een bepaalde entiteit te gaan.</p>
-                                                   <div id="tree"></div>
-                                                   <script src="https://d3js.org/d3.v3.min.js"></script>
-                                                   {% block taxonomy %}{% endblock %}
-                                                   <script type="text/javascript" src="/cms/scripts/treeview.js"></script>
-                                                </div> -->
+			-->
                         <!-- introduce a macro to keep the template more compact -->
                         {% macro renderentity(entity, entitylabel) %}
                            <div class="vl-region vl-region--no-space-top">
@@ -339,10 +343,10 @@
                                           {{ entity.applicationProfileUsageNote[language] | safe }}
                                        </dd>
                                     {% endif %}
-                                    {% if prop.DCATAP %}
+			            {% if prop.DCATAP %}
                                        <dt>Informatie over de klasse in DCAT-AP</dt>
                                        <dd>
-                                          <a href="{{ prop.DCATAP.nl }}">Link</a>
+					<a href="{{ prop.DCATAP.nl }}">Link</a>
                                        </dd>
                                     {% endif %}
                                     {% if ((entity.parents | length) > 0 ) %}
@@ -384,9 +388,7 @@
                                                 <th class="vl-data-table__header-title">Beschrijving</th>
                                                 <th class="vl-data-table__header-title">Gebruik</th>
                                                 <th class="vl-data-table__header-title">Codelijst</th>
-                                                <th class="vl-data-table__header-title" style="width:3%">
-                                                   <a href="#reuse-column">Reuse</a>
-                                                </th>
+						<th class="vl-data-table__header-title" style="width:3%"> <a href="#reuse-column">Reuse</a></th>
                                              </tr>
                                           </thead>
                                           <tbody class="supertype">
@@ -440,23 +442,23 @@
                                                       {% endif %}
                                                    </td>
                                                    <td>
-                                                      {% if prop.DCATAP %}
-                                                         {% if prop.reuse.nl == "asis" %}
-                                                            <a href="{{ prop.DCATAP.nl }}">A</a>
-                                                         {% else %}
-                                                            <a href="{{ prop.DCATAP.nl }}">E</a>
-                                                         {% endif %}
-                                                      {% else %}
-                                                         {% if prop.DCAT %}
-                                                            {% if prop.reuse.nl == "asis" %}
-                                                               <a href="{{ prop.DCAT.nl }}">A</a>
-                                                            {% else %}
-                                                               <a href="{{ prop.DCAT.nl }}">E</a>
-                                                            {% endif %}
-                                                         {% else %}
-                                                            P
-                                                         {% endif %}
-                                                      {% endif %}
+						       {% if prop.DCATAP %}
+						       {% if prop.reuse.nl == "asis"   %}
+							<a href="{{ prop.DCATAP.nl }}">A</a>
+						       {% else %}
+							<a href="{{ prop.DCATAP.nl }}">E</a>
+						       {% endif %}
+						       {% else %}
+						         {% if prop.DCAT %}
+						         {% if prop.reuse.nl == "asis"   %}
+							  <a href="{{ prop.DCAT.nl }}">A</a>
+						         {% else %}
+							  <a href="{{ prop.DCAT.nl }}">E</a>
+						         {% endif %}
+						         {% else %}
+							  P
+						         {% endif %}
+						       {% endif %}
                                                    </td>
                                                 </tr>
                                              {% endfor %}
@@ -467,24 +469,27 @@
                               </div>
                            </div>
                         {% endmacro %}
+
                         <div class="vl-region vl-region--no-space-top">
                            <h2 class="vl-title--h2">Entiteiten</h2>
-                           <div id="reuse-column">
-                              Om inzicht te geven in de motivatie waarom een klasse of eigenschap is opgenomen in dit applicatie profiel, voorzien we
-                              een hergebruik statement voor elke klasse en eigenschap.
-                              <ul>
-                                 <li>De klasse of eigenshap kan volledig zoals beschreven in de DCAT-AP specificatie hergebruikt zijn. Dit wordt
-                                    aangeduidt met het symbool A.</li>
-                                 <li>Het hergebruik kan met beperkte aanpassingen, zoals een bijkomende gebruiksnota of kardinaliteits beperking zijn.
-                                    Dan is het symbool E.
-                                 </li>
-                                 <li>Tenslotte kan het een eigen Vlaamse uitbreiding zijn, dan is het symbool P.</li>
-                              </ul>
-                              Bij het maken van een DCAT-AP profiel kan het zijn dat men hergebruik doet van andere DCAT-AP profielen om de use case
-                              te behandelen. Indien dit een direct hergebruik is van de klasse of eigenschap volgens een ander profiel zoals
-                              GeoDCAT-AP of DCAT zelf, dan kan er ook het symbool A toegekend worden. In dit geval zal de verwijzing gaan naar de
-                              overeenkomstige specificatie.
+
+			   <div id="reuse-column">
+		           Om inzicht te geven in de motivatie waarom een klasse of eigenschap is opgenomen in dit applicatie profiel, voorzien we 
+			   een hergebruik statement voor elke klasse en eigenschap.
+
+			   <ul>
+				   <li>De klasse of eigenshap kan volledig zoals beschreven in de DCAT-AP specificatie hergebruikt zijn. Dit wordt aangeduidt met het symbool A.</li>
+				   <li>Het hergebruik kan met beperkte aanpassingen, zoals een bijkomende gebruiksnota of kardinaliteits beperking zijn. Dan is het symbool E. </li>
+				   <li>Tenslotte kan het een eigen Vlaamse uitbreiding zijn, dan is het symbool P.</li>
+			   </ul>
+
+			   Bij het maken van een DCAT-AP profiel kan het zijn dat men hergebruik doet van andere DCAT-AP profielen om de use case te behandelen. 
+			   Indien dit een direct hergebruik is van de klasse of eigenschap volgens een ander profiel zoals GeoDCAT-AP of DCAT zelf, dan kan er ook het symbool A toegekend worden. 
+			   In dit geval zal de verwijzing gaan naar de overeenkomstige specificatie.
+
+
                            </div>
+
                            {% for entity in data.classes %}
                               {% if entity.applicationProfileLabel[language] %}
                                  {% set entitylabel = entity.applicationProfileLabel[language] %}
@@ -500,7 +505,7 @@
                            <div class="vl-region vl-region--no-space-top">
                               <h2 class="vl-title--h2">Codelijsten</h2>
                               <p>De klassen, hieronder opgelijst, zijn de codelijsten die expliciet vermeld zijn als klasse in dit applicatieprofiel.
-                              </p>
+                                 </p>
                               {% for entity in data.classes %}
                                  {% if entity.applicationProfileLabel[language] %}
                                     {% set entitylabel = entity.applicationProfileLabel[language] %}
@@ -759,7 +764,10 @@
                            </tbody>
                         </table>
                      </div>
-                     {% block usages %}{% endblock %}
+
+{% block usages %}
+{% endblock %}
+
                   </div>
                   <div class="vl-col--3-12 vl-col--12-12--s push--1-12" id="sideNav">
                      <nav class="vl-side-navigation vl-u-sticky vl-region" id="sideNav">
