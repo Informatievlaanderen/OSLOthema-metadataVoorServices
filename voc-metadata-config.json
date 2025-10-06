@@ -1,8 +1,8 @@
 {
-  "title": "Vocabularium metadata DCAT",
-  "category": "https://data.vlaanderen.be/id/concept/StandaardType/Vocabularium",
+  "title": "Vocabularium metadata DCAT 3.0",
+  "category": "https://data.vlaanderen.be/id/concept/StandaardType/Applicatieprofiel",
   "usage": "https://data.vlaanderen.be/id/concept/StandaardGebruik/Aanbevolen",
-  "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/ErkendeStandaard",
+  "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
   "descriptionFileName": "metadata.md",
   "responsibleOrganisation": [
     {
@@ -10,77 +10,33 @@
       "resourceReference": "http://data.vlaanderen.be/id/organisatie/OVO002949"
     }
   ],
-  "publicationDate": "2021-04-22",
+  "publicationDate": "2025-09-10",
   "specificationDocuments": [
     {
-      "name": "Vocabularium metadata DCAT",
+      "name": "Vocabularium metadata DCAT 3.0",
       "resourceReference": "https://data.vlaanderen.be/ns/metadata-dcat/"
     }
   ],
   "documentation": [],
   "reports": [
     {
-      "name": "Verslag business werkgroep - 3 september 2020",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/20200903 - OSLO Metadata voor services - Business Werkgroep - Verslag.pdf"
-    },
-    {
-      "name": "Verslag thematische werkgroep 1 - 22 september 2020",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/20200922 - OSLO Metadata voor services - Thematische werkgroep 1 - Verslag.pdf"
-    },
-    {
-      "name": "Verwerking thematische werkgroep 1",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/Verwerking thematische werkgroep 1.pdf"
-    },
-    {
-      "name": "Verslag thematische werkgroep 2 - 13 oktober 2020",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/20201013 - OSLO Metadata voor services - Thematische werkgroep 2 - Verslag.pdf"
-    },
-    {
-      "name": "Verwerking thematische werkgroep 2",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/Verwerking thematische werkgroep 2.pdf"
-    },
-    {
-      "name": "Verslag thematische werkgroep 3 - 10 november 2020",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/20201110 - OSLO Metadata voor services - Thematische werkgroep 3 - Verslag.pdf"
-    },
-    {
-      "name": "Verslag plenaire sessie - 7 december 2020",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/20201207 - OSLO Metadata voor services - Plenaire sessie - Verslag.pdf"
+      "name": "Verslag webinar 1 - 17 september 2025",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/Verslag%20webinar%20één%20-%2017%20september%202025.pdf"
     }
   ],
   "charter": {
     "name": "Charter",
-    "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/charter/Werkgroep charter OSLO metadatastandaard voor services.pdf"
+    "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/charter/Charter_OSLO_DCAT3.0.pdf"
   },
   "presentations": [
     {
-      "name": "Presentatie business werkgroep - 3 september 2020<",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/presentations/20200903 - OSLO Metadata voor services - Business Werkgroep - Presentatie.pdf"
-    },
-    {
-      "name": "Presentatie thematische werkgroep 1 - 22 september 2020",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/presentations/20200922 - OSLO Metadata voor services - Thematische Werkgroep 1 - Presentatie.pdf"
-    },
-    {
-      "name": "Presentatie thematische werkgroep 2 - 13 oktober 2020",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/presentations/20201013 - OSLO Metadata voor services - Thematische Werkgroep 2 - Presentatie.pdf"
-    },
-    {
-      "name": "Presentatie thematische werkgroep 3 - 10 november 2020",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/presentations/20201110 - OSLO Metadata voor services - Thematische Werkgroep 3 - Presentatie.pdf"
-    },
-    {
-      "name": "Presentatie plenaire sessie - 7 december 2020",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/presentations/20201207 - OSLO Metadata voor services - Plenaire sessie - Presentatie.pdf"
-    },
-    {
-      "name": "Presentatie WG datastandaarden - 11 maart 2021",
-      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/presentations/OSLO_MetadataDCAT_WG_Datastandaarden_20210311.pdf"
+      "name": "Presentatie webinar 1 - 17 september 2025",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/presentations/Presentatie%20webinar%20één%20-%2017%20september%202025.pdf"
     }
   ],
-  "dateOfRegistration": "2021-07-20",
-  "dateOfAcknowledgementByWorkingGroup": "2021-03-11",
-  "dateOfAcknowledgementBySteeringCommittee": "2021-04-22",
+  "dateOfRegistration": "2025-09-11",
+  "dateOfAcknowledgementByWorkingGroup": "TBD",
+  "dateOfAcknowledgementBySteeringCommittee": "TBD",
   "repository": "OSLOthema-metadataVoorServices",
   "datePublicReviewStart": "",
   "endOfPublicationDate": "",
