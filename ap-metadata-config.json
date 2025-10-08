@@ -1,5 +1,5 @@
 {
-  "title": "Applicatieprofiel metadata DCAT 3.0",
+  "title": "Applicatieprofiel metadata DCAT-AP 3.0",
   "category": "https://data.vlaanderen.be/id/concept/StandaardType/Applicatieprofiel",
   "usage": "https://data.vlaanderen.be/id/concept/StandaardGebruik/Aanbevolen",
   "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
@@ -13,7 +13,7 @@
   "publicationDate": "2025-09-10",
   "specificationDocuments": [
     {
-      "name": "Applicatieprofiel metadata DCAT 3.0",
+      "name": "Applicatieprofiel metadata DCAT-AP 3.0",
       "resourceReference": "https://data.vlaanderen.be/doc/applicatieprofiel/metadata-dcat/ontwerpstandaard/2025-09-16/"
     }
   ],
