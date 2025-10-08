@@ -25,7 +25,7 @@
     }
   ],
   "charter": {
-    "name": "Charter",
+    "name": "Charter OSLO DCAT-AP 3.0",
     "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/charter/Charter_OSLO_DCAT3.0.pdf"
   },
   "presentations": [
