@@ -1,5 +1,5 @@
 {
-  "title": "Vocabularium metadata DCAT-AP 3.0",
+  "title": "Vocabularium metadata DCAT 3.0",
   "category": "https://data.vlaanderen.be/id/concept/StandaardType/Applicatieprofiel",
   "usage": "https://data.vlaanderen.be/id/concept/StandaardGebruik/Aanbevolen",
   "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
@@ -13,15 +13,19 @@
   "publicationDate": "2025-09-10",
   "specificationDocuments": [
     {
-      "name": "Vocabularium metadata DCAT-AP 3.0",
+      "name": "Vocabularium metadata DCAT 3.0",
       "resourceReference": "https://data.vlaanderen.be/doc/vocabularium/metadata-dcat/ontwerpstandaard/2025-09-16/"
     }
   ],
   "documentation": [],
-  "reports": [
+   "reports": [
     {
       "name": "Verslag webinar 1 - 17 september 2025",
       "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/Verslag%20webinar%20één%20-%2017%20september%202025.pdf"
+    },
+     {
+      "name": "Verslag webinar 2 - 21 oktober 2025",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/reports/Verslag_Webinar_2_DCAT-AP.3.0.pdf"
     }
   ],
   "charter": {
@@ -32,6 +36,10 @@
     {
       "name": "Presentatie webinar 1 - 17 september 2025",
       "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/presentations/Presentatie%20webinar%20één%20-%2017%20september%202025.pdf"
+    },
+     {
+      "name": "Presentatie webinar 2 - 21 oktober 2025",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/presentations/Presentatie_webinar_2_OLSO_DCAT-AP3.0.pdf"
     }
   ],
   "dateOfRegistration": "2025-09-11",
