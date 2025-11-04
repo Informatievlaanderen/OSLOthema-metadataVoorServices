@@ -1,6 +1,6 @@
 {
   "title": "Vocabularium metadata DCAT 3.0",
-  "category": "https://data.vlaanderen.be/id/concept/StandaardType/Applicatieprofiel",
+  "category": "https://data.vlaanderen.be/id/concept/StandaardType/Vocabularium",
   "usage": "https://data.vlaanderen.be/id/concept/StandaardGebruik/Aanbevolen",
   "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
   "descriptionFileName": "metadata.md",
