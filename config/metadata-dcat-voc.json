@@ -3,7 +3,7 @@
   "name": "metadata-dcat",
   "type": "voc",
   "eap": "OSLO-metadatavoorservices-reduced.eap",
-  "diagram": "OSLO-metadata_dcat",
+  "diagram": ""OSLO-metadataDCAT-voc",
   "template": "metadata-dcat-voc.j2",
   "title": "Metadata DCAT",
   "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/KandidaatStandaard",
