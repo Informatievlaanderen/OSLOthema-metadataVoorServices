@@ -1,8 +1,8 @@
 {
-  "title": "Vocabularium metadata DCAT 3.0",
+  "title": "Vocabularium metadata DCAT",
   "category": "https://data.vlaanderen.be/id/concept/StandaardType/Vocabularium",
   "usage": "https://data.vlaanderen.be/id/concept/StandaardGebruik/Aanbevolen",
-  "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+  "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/KandidaatStandaard",
   "descriptionFileName": "metadata.md",
   "responsibleOrganisation": [
     {
@@ -13,8 +13,8 @@
   "publicationDate": "2025-09-10",
   "specificationDocuments": [
     {
-      "name": "Vocabularium metadata DCAT 3.0",
-      "resourceReference": "https://data.vlaanderen.be/doc/vocabularium/metadata-dcat/"
+      "name": "Vocabularium metadata DCAT",
+      "resourceReference": "https://data.vlaanderen.be/ns/metadata-dcat/"
     }
   ],
   "documentation": [],
@@ -29,7 +29,7 @@
     }
   ],
   "charter": {
-    "name": "Charter OSLO DCAT-AP 3.0",
+    "name": "Charter OSLO DCAT-AP",
     "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-metadataVoorServices/standaardenregister/charter/Charter_OSLO_DCAT3.0.pdf"
   },
   "presentations": [
