@@ -7,8 +7,8 @@ Het richt zich op het verzamelen van informatie over generieke datasets, distrib
 De datasets en services omvatten zowel publiek toegankelijke als afgeschermde data en diensten (ontwikkeld in en voor eender welk technisch perspectief). 
 Het samenbrengen van al deze informatie in een catalogus laat toe om de vindbaarheid van deze datasets en services te verhogen.
 </p><p>
-Dit applicatieprofiel is het Vlaamse generieke basisprofiel dat in lijn is met DCAT-AP. Afgeleide profielen kunnen zeker aangemaakt worden voor specifieke domeinen of communities. 
-In het verleden was DCAT-AP VL enkel gescoped op Open Data, maar omdat DCAT-AP nu generieker wordt gescoped en we met de naamgeving willen aansluiten op de Europese naamgeving is de OSLO standaard metadata DCAT herdoopt tot DCAT-AP VL. De specifieke Open Data aspecten zijn opgelijst in een aparte sectie.
+Dit applicatieprofiel is het Vlaamse generieke basisprofiel dat in lijn is met DCAT-AP. Afgeleide profielen kunnen aangemaakt worden voor specifieke domeinen of communities. 
+In het verleden was DCAT-AP VL enkel gescoped op Open Data. Omdat de scope nu generieker wordt en we met de naamgeving willen aansluiten op de Europese naamgeving is de OSLO standaard "Metadata DCAT" herdoopt tot "DCAT-AP VL". De specifieke Open Data aspecten zijn opgelijst in een aparte sectie.
 </p>
 
 {% endblock %}
@@ -30,8 +30,8 @@ In het verleden was DCAT-AP VL enkel gescoped op Open Data, maar omdat DCAT-AP n
         <li>MOET voor elke klasse steeds de eigenschappen bevatten die als minimum kardinaliteit 1 hebben.</li>
         <li>MAG NIET meer dan 1 instantie bevatten van eigenschappen die 1 als maximum kardinaliteit hebben.</li>
         <li>MAG terminologie (klassen en eigenschappen) gebruiken op een manier die consistent is met haar semantiek (definitie, gebruik, domein en bereik).</li>
-        <li>MAG uitgebreid worden met klassen en eigenschappen van andere datamodellen (vocabularia) die niet overlappen met terminologie vermeld in dit document of in <a href="https://www.w3.org/TR/vocab-dcat-3/">DCAT</a>, <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1">DCAT-AP</a>.</li>
-        <li>PAST maximaal de algemene en specifieke gebruiksadviezen toe.
+        <li>MAG uitgebreid worden met klassen en eigenschappen van andere datamodellen (vocabularia) die niet overlappen met terminologie vermeld in dit document, <a href="https://www.w3.org/TR/vocab-dcat-3/">DCAT</a> of <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1">DCAT-AP</a>.</li>
+        <li>maximaal de algemene en specifieke gebruiksadviezen toepast.
         </ul>
         </p> 
 
@@ -41,30 +41,31 @@ In het verleden was DCAT-AP VL enkel gescoped op Open Data, maar omdat DCAT-AP n
        <li>Zorg voor stabiele identificatoren voor datasets en dataservices, en waar mogelijk ook voor alle andere vermelde entiteiten.</li>
        <li>Gebruik enkel absolute URLs. Dan blijft onder alle verwerkingsoperaties van de catalogus de URL identiek en is er geen kwaliteitsverlies voor de gebruiker.</li>
        <li>Voor temporele informatie wordt verwacht dat de tijdzone wordt meegegeven.</li>
-       <li>Indien gekozen wordt om de geografische beschrijving als een geometrie mee te geven, dan wordt best gekozen voor een beschrijving met expliciete vermelding van het gebruikte Coordinaten Referentie Systeem (CRS). </li>
+       <li>Indien gekozen wordt om de geografische beschrijving als een geometrie mee te geven, dan wordt best gekozen voor een beschrijving met expliciete vermelding van het gebruikte Coördinaten Referentie Systeem (CRS). </li>
        <li>Beschrijvende informatie zoals titels en beschrijvingen zijn taalafhankelijk. Voorzie voor elke taal slechts één waarde.</li> 
       </ul>
   </div>
 
   <div>
+<!-- missing margin -->
 <h3 class="h3">Informatieveiligheid</h3>
 <p>
 Een semantische specificatie richt zich in de eerste plaats op het maken van afspraken rond de betekenis van termen. Dit is bij uitstek het doel van een vocabularium. Applicatieprofielen zijn gericht op afspraken in een brede gebruikscontext.     
 Daardoor omvatten zij meer en specifieke beperkingen die het gebruik ten goede komen.
 </p><p>
 
-Een van de aspecten voor het gebruik van de specificatie is informatieveiligheid. Het merendeel van de bezorgdheden i.v.m. informatieveiligheid hebben geen directe invloed op een applicatieprofiel. Ze zijn dikwijls van technische aard die buiten de semantische afspraken vallen zoals het encrypteren van datastromen. Bij voorkeur worden deze twee werelden zoveel mogelijk gescheiden en enkel samengevoegd in een implementatie. 
+Eén van de aspecten voor het gebruik van de specificatie is informatieveiligheid. Het merendeel van de bezorgdheden i.v.m. informatieveiligheid heeft geen directe invloed op een applicatieprofiel. Ze zijn dikwijls van technische aard die buiten de semantische afspraken vallen zoals het encrypteren van datastromen. Bij voorkeur worden deze twee werelden zoveel mogelijk gescheiden en enkel samengevoegd in een implementatie. 
 
 </p><p>
-Echter sommige afspraken zijn beïnvloedbaar door informatieveiligheid. Voorbeelden hiervan zijn het al dan niet verplichten van een eigenschap of de range van een eigenschap (een identificator versus een string). Het is aan de opstellers van de specificatie om de juiste balans te vinden.
+Echter zijn sommige afspraken beïnvloedbaar door informatieveiligheid. Voorbeelden hiervan zijn het al dan niet verplichten van een eigenschap of de range van een eigenschap (een identificator versus een string). Het is aan de opstellers van de specificatie om de juiste balans te vinden.
 
 </p><p>
-Voor metadata voor services is een belangrijke gebruikscontext het aggregeren van catalogi komende van verschillende organisaties. Het doel is om deze aggregatie als geheel ter beschikking te stellen van het publiek. Omdat entiteiten van de ene catalogus kunnen verwijzen naar entiteiten van andere catalogi, is het zo goed als onmogelijk om een verschillende informatieveiligheidspolitiek te voeren per ter aggregeren catalogus. Daarom wordt dit niet opgenomen als onderdeel van de specificatie. Indien dit gewenst is, dan zal dit een implementatieafspraak worden.
+Voor metadata van services is een belangrijke gebruikscontext het aggregeren van catalogi komende van verschillende organisaties. Het doel is om deze aggregatie als geheel ter beschikking te stellen van het publiek. Omdat entiteiten van de ene catalogus kunnen verwijzen naar entiteiten van andere catalogi, is het zo goed als onmogelijk om een verschillende informatieveiligheidspolitiek te voeren per te aggregeren catalogus. Daarom wordt dit niet opgenomen als onderdeel van de specificatie. Indien gewenst zal dit een implementatieafspraak worden.
 
 </p><p>
-Omdat de basis van de usecase het publiekelijk delen van informatie is, wordt aangenomen dat de informatiestructuur zoals die in de specificatie opgenomen is ook in die vorm kan gedeeld worden.  
-Informatie waarvan kennis is genomen die omwille van een of andere reden niet publiek kan gemaakt worden, zal dus niet verplicht worden.
-Dikwijls zal die informatie via een andere eigenschap, via een toegangspagina, te vinden zijn voor de gebruiker van de geaggregeerde catalogus.
+Omdat de basis van de usecase het publiek delen van informatie is, wordt aangenomen dat de informatiestructuur zoals die in de specificatie opgenomen is ook in die vorm kan gedeeld worden.  
+Informatie waarvan kennis is genomen die omwille van één of andere reden niet publiek kan gemaakt worden, zal dus niet verplicht worden.
+Dikwijls zal die informatie via een andere eigenschap, via een toegangspagina, te vinden zijn door de gebruiker van de geaggregeerde catalogus.
  
 </p>
 
@@ -72,9 +73,9 @@ Dikwijls zal die informatie via een andere eigenschap, via een toegangspagina, t
 
   <div>
 <p/>
-<h3 class="h3">Service beschrijving en de payload beschrijving</h3>
+<h3 class="h3">Beschrijvingen van service en payload</h3>
 <p>
-Indien een data service beschreven wordt dan is er meestal ook de noodzaak om informatie te geven over de data die ontsloten wordt via de dataservice. Om dit onderscheid eenduidig vast te leggen wordt de volgende ontwerpbeslissing gevolgd. Eigenschappen die rechtstreeks te maken hebben met de dataservice zijn eigenschappen van de dataservice. Eigenschappen die slaan op de ontsloten data zijn eigenschappen van de verbonden aangeboden dataset (of datasets). Bijvoorbeeld, de eigenschap taal voor een dataservice: de service kan in het Engels geschreven zijn waarbij deze antwoordt op queries in het Engels, terwijl de data uit de dataset die aangeboden wordt in die dataservice Nederlandstalig is. Echter indien men wil aangeven dat de informatie ontsloten wordt slechts beschikbaar is in het Nederlands, dan wordt dat aangegeven als waarde voor de taal eigenschap van de aangeboden dataset.  
+Indien een dataservice beschreven wordt dan is er meestal ook de noodzaak om informatie te geven over de data die ontsloten worden via de dataservice. Om dit onderscheid eenduidig vast te leggen wordt de volgende ontwerpbeslissing gevolgd. Eigenschappen die rechtstreeks te maken hebben met de dataservice zijn eigenschappen van de dataservice. Eigenschappen die slaan op de ontsloten data zijn eigenschappen van de verbonden aangeboden dataset (of datasets). Bijvoorbeeld, de eigenschap taal van een dataservice: de service kan in het Engels geschreven zijn waarbij deze antwoordt op queries in het Engels, terwijl de data uit de dataset die aangeboden wordt in die dataservice Nederlandstalig is. Echter indien men wil aangeven dat de informatie ontsloten wordt slechts beschikbaar is in het Nederlands, dan wordt dat aangegeven als waarde van de taal eigenschap van de aangeboden dataset.  
 </p>
   </div>
 
@@ -84,9 +85,9 @@ Indien een data service beschreven wordt dan is er meestal ook de noodzaak om in
 <p>
 In een dagdagelijks gesprek over datasets en hun onsluitingsvormen wordt de term distributie gebruikt in een brede zin. Een distributie is daarin de aanduiding van eender welke vorm van ontsluiting. DCAT heeft ervoor gekozen om een service als een onafhankelijke entiteit op te nemen. Hierdoor ontstaat een spanningsveld tussen de dagdagelijkse terminologie en de formele terminologie van DCAT. Echter zelfs op basis van de definities in DCAT kan men geen precies afgelijnd onderscheid maken tussen een distributie en een dataservice. 
 </p><p>
-Om de catalogusbeheerders in Vlaanderen een uniformere aanpak te geven, wordt het volgende afgesproken. Een distributie zal voornamelijk gebruikt worden om een afgerond geheel van data aan te duiden. Iets dat  downloadbaar is als een file. Een dataset is een abstracte entiteit (een naam voor een geheel aan data); een distributie van de dataset is een concrete vorm die de afnemer van de dataset lokaal kan gebruiken zonder enige andere systeemtoegang. Een distributie zal dus niet bestaan zonder een dataset. 
+Om de catalogusbeheerders in Vlaanderen een uniformere aanpak te geven, wordt het volgende afgesproken. Een distributie zal voornamelijk gebruikt worden om een afgerond geheel van data aan te duiden. Iets dat  downloadbaar is als een file. Een dataset is een abstracte entiteit (een naam voor een geheel aan data). Een distributie van een dataset is een concrete vorm die de afnemer van de dataset lokaal kan gebruiken zonder enige andere systeemtoegang. Een distributie zal dus niet bestaan zonder een dataset. 
 </p><p>
-Alle andere vormen zullen als een dataservice beschreven worden. Een dataservice heeft dikwijls een hoge mate van onafhankelijkheid van een distributie (effectieve data) van een dataset; het kan zelfs niet gebonden zijn aan één dataset. Of het biedt een slimme toegang tot de data (bv. via een query interface).  
+Alle andere vormen zullen als een dataservice beschreven worden. Een dataservice heeft dikwijls een hoge mate van onafhankelijkheid van een distributie (effectieve data) van een dataset; ze kan zelfs niet gebonden zijn aan één dataset. Of ze biedt een slimme toegang tot de data (bv. via een query interface).  
 </p>
 </div>
 

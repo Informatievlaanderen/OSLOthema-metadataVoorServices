@@ -5,7 +5,7 @@
     a skos:ConceptScheme ;
     skos:prefLabel "conceptscheme relatievorm" ;
     skos:definition "Codelijst voor de verschillende relatievormen tussen resources in een catalogus. ";
-    skos:scopeNotes "Deze codelijst bevat enkel de vormen die niet expliciet zijn opgenomen in metadata DCAT. De lijst is dus niet een volledige opsomming. Op dit moment de lijst identiek aan DS_AssociationTypeCode gebruikt voor INSPIRE ISO metadata." .
+    skos:scopeNotes "Deze codelijst bevat enkel de vormen die niet expliciet zijn opgenomen in Metadata DCAT. De lijst is dus niet een volledige opsomming. Op dit moment de lijst identiek aan DS_AssociationTypeCode gebruikt voor INSPIRE ISO metadata." .
 
 
 <https://data.vlaanderen.be/id/concept/relatievorm/crossReference>
