@@ -14,7 +14,7 @@
   "specificationDocuments": [
     {
       "name": "Applicatieprofiel DCAT-AP VL",
-      "resourceReference": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/kandidaatstandaard/2025-12-09/"
+      "resourceReference": "https://data.vlaanderen.be/doc/applicatieprofiel/DCAT-AP-VL/"
     }
   ],
   "documentation": [],
@@ -43,7 +43,7 @@
     }
   ],
   "dateOfRegistration": "2025-09-11",
-  "dateOfAcknowledgementByWorkingGroup": "TBD",
+  "dateOfAcknowledgementByWorkingGroup": "2026-01-08",
   "dateOfAcknowledgementBySteeringCommittee": "TBD",
   "repository": "OSLOthema-metadataVoorServices",
   "datePublicReviewStart": "",
