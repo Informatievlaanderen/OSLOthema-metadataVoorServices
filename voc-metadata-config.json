@@ -2,7 +2,7 @@
   "title": "Vocabularium metadata DCAT",
   "category": "https://data.vlaanderen.be/id/concept/StandaardType/Vocabularium",
   "usage": "https://data.vlaanderen.be/id/concept/StandaardGebruik/Aanbevolen",
-  "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/KandidaatStandaard",
+  "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/ErkendeStandaard",
   "descriptionFileName": "metadata.md",
   "responsibleOrganisation": [
     {
@@ -44,7 +44,7 @@
   ],
   "dateOfRegistration": "2025-09-11",
   "dateOfAcknowledgementByWorkingGroup": "2026-01-08",
-  "dateOfAcknowledgementBySteeringCommittee": "TBD",
+  "dateOfAcknowledgementBySteeringCommittee": "2026-02-20",
   "repository": "OSLOthema-metadataVoorServices",
   "datePublicReviewStart": "",
   "endOfPublicationDate": "",
