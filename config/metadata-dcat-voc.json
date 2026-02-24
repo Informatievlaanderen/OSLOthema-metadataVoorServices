@@ -6,7 +6,7 @@
   "diagram": "OSLO-metadataDCAT-voc",
   "template": "metadata-dcat-voc.j2",
   "title": "Metadata DCAT",
-  "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/KandidaatStandaard",
+  "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/ErkendeStandaard",
   "publication-date": "2025-12-09",
   "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
   "contributors-file": "stakeholders.csv",
