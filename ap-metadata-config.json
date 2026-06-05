@@ -10,7 +10,7 @@
       "resourceReference": "http://data.vlaanderen.be/id/organisatie/OVO002949"
     }
   ],
-  "publicationDate": "2026-02-20",
+  "publicationDate": "2026-02-12",
   "specificationDocuments": [
     {
       "name": "Applicatieprofiel DCAT-AP VL",
@@ -44,7 +44,7 @@
   ],
   "dateOfRegistration": "2025-09-11",
   "dateOfAcknowledgementByWorkingGroup": "2026-01-08",
-  "dateOfAcknowledgementBySteeringCommittee": "2026-02-20",
+  "dateOfAcknowledgementBySteeringCommittee": "2026-02-12",
   "repository": "OSLOthema-metadataVoorServices",
   "datePublicReviewStart": "",
   "endOfPublicationDate": "",
